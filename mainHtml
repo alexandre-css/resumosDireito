@@ -1,0 +1,517 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura de um Acórdão</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0f4f8;
+        }
+        
+        .section-card {
+            transition: all 0.3s ease;
+        }
+        
+        .section-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        
+        .flow-arrow {
+            position: relative;
+        }
+        
+        .flow-arrow::after {
+            content: '';
+            position: absolute;
+            bottom: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 0;
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            border-top: 15px solid #1e40af;
+        }
+        
+        .highlight {
+            background-color: #fef3c7;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mx-auto px-4 py-8 max-w-6xl">
+        <header class="text-center mb-12">
+            <h1 class="text-4xl font-bold text-blue-900 mb-4">Estrutura de um Acórdão</h1>
+            <p class="text-xl text-gray-600">Guia interativo sobre a estrutura e componentes de decisões colegiadas em tribunais brasileiros</p>
+        </header>
+        
+        <div class="bg-white rounded-lg shadow-lg p-6 mb-10">
+            <h2 class="text-2xl font-bold text-blue-800 mb-4">O que é um Acórdão?</h2>
+            <p class="text-gray-700 mb-4">
+                Um <span class="font-semibold">acórdão</span> é a decisão proferida por um órgão colegiado de tribunal, resultado do julgamento de um recurso ou matéria submetida ao colegiado. Distingue-se da sentença, que é proferida por juiz singular.
+            </p>
+            <p class="text-gray-700">
+                Sua estrutura formal e lógica orienta a análise do recurso e a decisão do caso, sendo fundamental que seus componentes sejam observados para garantir validade e clareza.
+            </p>
+        </div>
+        
+        <div class="mb-16">
+            <h2 class="text-2xl font-bold text-blue-800 mb-6 text-center">Fluxo de Análise em um Acórdão</h2>
+            
+            <div class="grid grid-cols-1 gap-8">
+                <!-- Ementa -->
+                <div id="ementa-card" class="section-card bg-blue-100 rounded-lg p-6 border-l-4 border-blue-600 flow-arrow">
+                    <h3 class="text-xl font-bold text-blue-800 mb-2 flex items-center">
+                        <span class="bg-blue-800 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">1</span>
+                        Ementa
+                    </h3>
+                    <p class="text-gray-700">Resumo das principais teses jurídicas e da decisão proferida, localizada no início do acórdão.</p>
+                    <button onclick="showDetails('ementa')" class="mt-4 bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-md transition">Ver detalhes</button>
+                </div>
+                
+                <!-- Relatório -->
+                <div id="relatorio-card" class="section-card bg-blue-100 rounded-lg p-6 border-l-4 border-blue-600 flow-arrow">
+                    <h3 class="text-xl font-bold text-blue-800 mb-2 flex items-center">
+                        <span class="bg-blue-800 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">2</span>
+                        Relatório
+                    </h3>
+                    <p class="text-gray-700">Narração dos fatos do processo, identificação das partes e histórico resumido da marcha processual.</p>
+                    <button onclick="showDetails('relatorio')" class="mt-4 bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-md transition">Ver detalhes</button>
+                </div>
+                
+                <!-- Admissibilidade -->
+                <div id="admissibilidade-card" class="section-card bg-blue-100 rounded-lg p-6 border-l-4 border-blue-600 flow-arrow">
+                    <h3 class="text-xl font-bold text-blue-800 mb-2 flex items-center">
+                        <span class="bg-blue-800 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">3</span>
+                        Admissibilidade
+                    </h3>
+                    <p class="text-gray-700">Verificação dos requisitos para que o recurso possa ser conhecido e julgado pelo tribunal.</p>
+                    <button onclick="showDetails('admissibilidade')" class="mt-4 bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-md transition">Ver detalhes</button>
+                </div>
+                
+                <!-- Preliminares -->
+                <div id="preliminares-card" class="section-card bg-blue-100 rounded-lg p-6 border-l-4 border-blue-600 flow-arrow">
+                    <h3 class="text-xl font-bold text-blue-800 mb-2 flex items-center">
+                        <span class="bg-blue-800 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">4</span>
+                        Preliminares Processuais
+                    </h3>
+                    <p class="text-gray-700">Questões processuais que podem anular o processo ou a decisão recorrida, sem análise do mérito.</p>
+                    <button onclick="showDetails('preliminares')" class="mt-4 bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-md transition">Ver detalhes</button>
+                </div>
+                
+                <!-- Prejudiciais -->
+                <div id="prejudiciais-card" class="section-card bg-blue-100 rounded-lg p-6 border-l-4 border-blue-600 flow-arrow">
+                    <h3 class="text-xl font-bold text-blue-800 mb-2 flex items-center">
+                        <span class="bg-blue-800 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">5</span>
+                        Prejudiciais de Mérito
+                    </h3>
+                    <p class="text-gray-700">Questões que, embora não sejam o mérito principal, devem ser decididas antes dele, pois influenciam o resultado final.</p>
+                    <button onclick="showDetails('prejudiciais')" class="mt-4 bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-md transition">Ver detalhes</button>
+                </div>
+                
+                <!-- Fundamentação -->
+                <div id="fundamentacao-card" class="section-card bg-blue-100 rounded-lg p-6 border-l-4 border-blue-600 flow-arrow">
+                    <h3 class="text-xl font-bold text-blue-800 mb-2 flex items-center">
+                        <span class="bg-blue-800 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">6</span>
+                        Fundamentação
+                    </h3>
+                    <p class="text-gray-700">Coração do acórdão, onde o colegiado expõe razões de fato e de direito para a decisão.</p>
+                    <button onclick="showDetails('fundamentacao')" class="mt-4 bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-md transition">Ver detalhes</button>
+                </div>
+                
+                <!-- Dispositivo -->
+                <div id="dispositivo-card" class="section-card bg-blue-100 rounded-lg p-6 border-l-4 border-blue-600">
+                    <h3 class="text-xl font-bold text-blue-800 mb-2 flex items-center">
+                        <span class="bg-blue-800 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">7</span>
+                        Dispositivo
+                    </h3>
+                    <p class="text-gray-700">Parte final, onde o tribunal profere o comando decisório, indicando o resultado do julgamento.</p>
+                    <button onclick="showDetails('dispositivo')" class="mt-4 bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-md transition">Ver detalhes</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Nulidade x Conversão em Diligência -->
+        <div class="mb-16">
+            <h2 class="text-2xl font-bold text-blue-800 mb-6 text-center">Nulidade x Conversão em Diligência</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="section-card bg-red-100 rounded-lg p-6 border-l-4 border-red-600">
+                    <h3 class="text-xl font-bold text-red-800 mb-2">Nulidade</h3>
+                    <p class="text-gray-700 mb-4">Declarada quando há vício insanável, que prejudica a validade do ato ou processo.</p>
+                    <ul class="list-disc pl-5 text-gray-700">
+                        <li>Vício insanável (ex: ausência de citação válida)</li>
+                        <li>O processo é anulado</li>
+                        <li>Retorna ao juízo de origem</li>
+                        <li>Necessária correção dos atos viciados</li>
+                    </ul>
+                </div>
+                
+                <div class="section-card bg-green-100 rounded-lg p-6 border-l-4 border-green-600">
+                    <h3 class="text-xl font-bold text-green-800 mb-2">Conversão em Diligência</h3>
+                    <p class="text-gray-700 mb-4">Ocorre quando o vício é sanável ou há necessidade de produzir prova indispensável ao julgamento.</p>
+                    <ul class="list-disc pl-5 text-gray-700">
+                        <li>Vício sanável</li>
+                        <li>O tribunal suspende o julgamento</li>
+                        <li>Ordena a realização do ato ou prova</li>
+                        <li>Após a diligência, retoma o julgamento</li>
+                        <li>Evita a anulação e a demora processual</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Modal para detalhes -->
+        <div id="details-modal" class="fixed inset-0 bg-black bg-opacity-50 hidden flex items-center justify-center z-50">
+            <div class="bg-white rounded-lg p-8 max-w-2xl w-full max-h-[80vh] overflow-y-auto">
+                <div class="flex justify-between items-center mb-6">
+                    <h3 id="modal-title" class="text-2xl font-bold text-blue-800"></h3>
+                    <button onclick="closeModal()" class="text-gray-500 hover:text-gray-700">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+                <div id="modal-content" class="text-gray-700"></div>
+                <div class="mt-8 flex justify-end">
+                    <button onclick="closeModal()" class="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-md transition">Fechar</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Quiz -->
+        <div class="mb-16">
+            <h2 class="text-2xl font-bold text-blue-800 mb-6 text-center">Teste seus Conhecimentos</h2>
+            
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <div id="quiz-container">
+                    <div id="question-1" class="quiz-question">
+                        <p class="text-lg font-medium text-gray-800 mb-4">1. Qual é a parte do acórdão que resume as principais teses jurídicas e a decisão proferida?</p>
+                        <div class="space-y-2">
+                            <div class="flex items-center">
+                                <input type="radio" id="q1-a" name="q1" value="a" class="mr-2">
+                                <label for="q1-a" class="text-gray-700">Relatório</label>
+                            </div>
+                            <div class="flex items-center">
+                                <input type="radio" id="q1-b" name="q1" value="b" class="mr-2">
+                                <label for="q1-b" class="text-gray-700">Ementa</label>
+                            </div>
+                            <div class="flex items-center">
+                                <input type="radio" id="q1-c" name="q1" value="c" class="mr-2">
+                                <label for="q1-c" class="text-gray-700">Dispositivo</label>
+                            </div>
+                            <div class="flex items-center">
+                                <input type="radio" id="q1-d" name="q1" value="d" class="mr-2">
+                                <label for="q1-d" class="text-gray-700">Fundamentação</label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="question-2" class="quiz-question mt-8">
+                        <p class="text-lg font-medium text-gray-800 mb-4">2. O que ocorre quando um recurso não atende aos requisitos de admissibilidade?</p>
+                        <div class="space-y-2">
+                            <div class="flex items-center">
+                                <input type="radio" id="q2-a" name="q2" value="a" class="mr-2">
+                                <label for="q2-a" class="text-gray-700">O recurso é conhecido, mas não provido</label>
+                            </div>
+                            <div class="flex items-center">
+                                <input type="radio" id="q2-b" name="q2" value="b" class="mr-2">
+                                <label for="q2-b" class="text-gray-700">O recurso não é conhecido</label>
+                            </div>
+                            <div class="flex items-center">
+                                <input type="radio" id="q2-c" name="q2" value="c" class="mr-2">
+                                <label for="q2-c" class="text-gray-700">O processo é convertido em diligência</label>
+                            </div>
+                            <div class="flex items-center">
+                                <input type="radio" id="q2-d" name="q2" value="d" class="mr-2">
+                                <label for="q2-d" class="text-gray-700">O processo é anulado</label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="question-3" class="quiz-question mt-8">
+                        <p class="text-lg font-medium text-gray-800 mb-4">3. Qual a diferença entre nulidade e conversão em diligência?</p>
+                        <div class="space-y-2">
+                            <div class="flex items-center">
+                                <input type="radio" id="q3-a" name="q3" value="a" class="mr-2">
+                                <label for="q3-a" class="text-gray-700">Não há diferença, são termos sinônimos</label>
+                            </div>
+                            <div class="flex items-center">
+                                <input type="radio" id="q3-b" name="q3" value="b" class="mr-2">
+                                <label for="q3-b" class="text-gray-700">A nulidade ocorre com vícios sanáveis, enquanto a conversão em diligência ocorre com vícios insanáveis</label>
+                            </div>
+                            <div class="flex items-center">
+                                <input type="radio" id="q3-c" name="q3" value="c" class="mr-2">
+                                <label for="q3-c" class="text-gray-700">A nulidade ocorre com vícios insanáveis, enquanto a conversão em diligência ocorre com vícios sanáveis</label>
+                            </div>
+                            <div class="flex items-center">
+                                <input type="radio" id="q3-d" name="q3" value="d" class="mr-2">
+                                <label for="q3-d" class="text-gray-700">A nulidade se refere apenas a questões de mérito, enquanto a conversão em diligência se refere a questões processuais</label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button id="check-answers" class="mt-8 bg-blue-600 hover:bg-blue-700 text-white py-3 px-4 rounded-md transition text-lg font-medium w-full">
+                        Verificar Respostas
+                    </button>
+                    
+                    <div id="quiz-results" class="mt-6 hidden">
+                        <div class="p-4 rounded-lg"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Detalhes de cada seção
+        const sectionDetails = {
+            ementa: {
+                title: "Ementa",
+                content: `
+                    <p class="mb-4">A ementa localiza-se no início do acórdão e tem como função resumir as principais teses jurídicas e a decisão proferida pelo tribunal.</p>
+                    
+                    <p class="mb-4">Características principais:</p>
+                    <ul class="list-disc pl-5 mb-4">
+                        <li>Facilita a consulta e compreensão rápida do conteúdo do acórdão</li>
+                        <li>Destaca os pontos mais relevantes da decisão</li>
+                        <li>Serve como referência para pesquisas jurisprudenciais</li>
+                        <li>Normalmente é redigida em linguagem técnica e concisa</li>
+                    </ul>
+                    
+                    <p class="mb-4">A ementa é especialmente importante para a formação de jurisprudência e para a consulta por outros operadores do direito, que podem rapidamente identificar se aquele julgado é relevante para seus casos.</p>
+                `
+            },
+            relatorio: {
+                title: "Relatório",
+                content: `
+                    <p class="mb-4">O relatório é a parte inicial do acórdão que narra os fatos do processo, identifica as partes e apresenta um histórico resumido da marcha processual e do recurso.</p>
+                    
+                    <p class="mb-4">Elementos essenciais:</p>
+                    <ul class="list-disc pl-5 mb-4">
+                        <li>Identificação das partes</li>
+                        <li>Síntese da petição inicial e da contestação</li>
+                        <li>Resumo da sentença recorrida</li>
+                        <li>Síntese das razões recursais e contrarrazões</li>
+                        <li>Pontos controvertidos do processo</li>
+                    </ul>
+                    
+                    <p class="mb-4">O relatório deve ser descritivo, sem juízo de valor, informando os membros do colegiado sobre o caso. A ausência de relatório pode levar à nulidade do acórdão, salvo exceções legais.</p>
+                `
+            },
+            admissibilidade: {
+                title: "Admissibilidade",
+                content: `
+                    <p class="mb-4">Antes de analisar o mérito, o tribunal verifica se o recurso pode ser conhecido e julgado, analisando os requisitos de admissibilidade.</p>
+                    
+                    <p class="mb-4">Requisitos analisados:</p>
+                    <ul class="list-disc pl-5 mb-4">
+                        <li><span class="font-semibold">Cabimento:</span> se o recurso é adequado para impugnar aquela decisão</li>
+                        <li><span class="font-semibold">Legitimidade:</span> se quem recorre tem legitimidade para fazê-lo</li>
+                        <li><span class="font-semibold">Interesse processual:</span> se há utilidade e necessidade do recurso</li>
+                        <li><span class="font-semibold">Inexistência de fato impeditivo/extintivo:</span> como renúncia ou desistência</li>
+                        <li><span class="font-semibold">Tempestividade:</span> se o recurso foi interposto dentro do prazo legal</li>
+                        <li><span class="font-semibold">Regularidade formal:</span> se atende aos requisitos formais</li>
+                        <li><span class="font-semibold">Preparo:</span> pagamento das custas recursais</li>
+                    </ul>
+                    
+                    <p class="mb-4">Se faltar algum requisito, o recurso pode não ser conhecido. Vícios de admissibilidade, exceto intempestividade, são geralmente sanáveis.</p>
+                    
+                    <p>Quando o recurso não é conhecido, o tribunal não analisa o mérito da questão.</p>
+                `
+            },
+            preliminares: {
+                title: "Preliminares Processuais",
+                content: `
+                    <p class="mb-4">Após a admissibilidade, examinam-se as preliminares, que são questões processuais que, se acolhidas, podem anular o processo ou a decisão recorrida, sem análise do mérito.</p>
+                    
+                    <p class="mb-4">Exemplos de preliminares:</p>
+                    <ul class="list-disc pl-5 mb-4">
+                        <li>Nulidades processuais</li>
+                        <li>Vícios de atividade</li>
+                        <li>Defeitos de representação</li>
+                        <li>Incompetência do juízo</li>
+                        <li>Litispendência</li>
+                        <li>Coisa julgada</li>
+                    </ul>
+                    
+                    <p class="mb-4">As preliminares podem ser alegadas pelas partes ou reconhecidas de ofício pelo tribunal, sempre com garantia do contraditório.</p>
+                    
+                    <p>Se uma preliminar for acolhida, o tribunal pode anular o processo ou a decisão recorrida, determinando o retorno dos autos à origem para correção do vício.</p>
+                `
+            },
+            prejudiciais: {
+                title: "Prejudiciais de Mérito",
+                content: `
+                    <p class="mb-4">São questões que, embora não sejam o mérito principal, devem ser decididas antes dele, pois influenciam o resultado final.</p>
+                    
+                    <p class="mb-4">Exemplos de prejudiciais de mérito:</p>
+                    <ul class="list-disc pl-5 mb-4">
+                        <li>Prescrição</li>
+                        <li>Decadência</li>
+                        <li>Validade de documentos</li>
+                        <li>Validade de contratos</li>
+                        <li>Questões prejudiciais incidentais</li>
+                    </ul>
+                    
+                    <p class="mb-4">Se acolhidas, o tribunal não analisa o mérito principal. Por exemplo, se reconhecida a prescrição, o direito de ação está extinto, tornando desnecessária a análise do mérito da causa.</p>
+                    
+                    <p>Diferentemente das preliminares, que são questões processuais, as prejudiciais de mérito são questões de direito material que afetam o julgamento do mérito.</p>
+                `
+            },
+            fundamentacao: {
+                title: "Fundamentação",
+                content: `
+                    <p class="mb-4">A fundamentação é o coração do acórdão, onde o colegiado expõe as razões de fato e de direito para a decisão.</p>
+                    
+                    <p class="mb-4">Elementos da fundamentação:</p>
+                    <ul class="list-disc pl-5 mb-4">
+                        <li>Análise dos argumentos das partes</li>
+                        <li>Aplicação da norma ao caso concreto</li>
+                        <li>Demonstração do raciocínio jurídico</li>
+                        <li>Análise das provas</li>
+                        <li>Interpretação das normas aplicáveis</li>
+                    </ul>
+                    
+                    <p class="mb-4">A fundamentação deve ser clara, coerente e completa, sob pena de nulidade por omissão, contradição ou obscuridade. Nessa etapa, verifica-se se houve erro na apreciação dos fatos ou aplicação do direito.</p>
+                    
+                    <p class="mb-4">A Constituição Federal, em seu art. 93, IX, exige que todas as decisões judiciais sejam fundamentadas, sob pena de nulidade.</p>
+                    
+                    <p>O CPC/2015 reforçou essa exigência, estabelecendo no art. 489, § 1º, que não se considera fundamentada a decisão que:</p>
+                    <ul class="list-disc pl-5">
+                        <li>Se limita a indicar, reproduzir ou parafrasear ato normativo</li>
+                        <li>Emprega conceitos jurídicos indeterminados sem explicar o motivo concreto de sua incidência</li>
+                        <li>Invoca motivos genéricos</li>
+                        <li>Não enfrenta todos os argumentos deduzidos no processo capazes de infirmar a conclusão</li>
+                        <li>Se limita a invocar precedente ou enunciado de súmula sem identificar seus fundamentos determinantes</li>
+                        <li>Deixa de seguir enunciado de súmula, jurisprudência ou precedente sem demonstrar a distinção ou superação</li>
+                    </ul>
+                `
+            },
+            dispositivo: {
+                title: "Dispositivo",
+                content: `
+                    <p class="mb-4">O dispositivo é a parte final do acórdão, onde o tribunal profere o comando decisório, indicando se o recurso foi conhecido e, se conhecido, o resultado do julgamento.</p>
+                    
+                    <p class="mb-4">Elementos do dispositivo:</p>
+                    <ul class="list-disc pl-5 mb-4">
+                        <li>Decisão sobre o conhecimento do recurso</li>
+                        <li>Resultado do julgamento (provimento total, parcial ou desprovimento)</li>
+                        <li>Comando final (confirmar, reformar ou anular a decisão recorrida)</li>
+                        <li>Disposições sobre custas e honorários advocatícios</li>
+                    </ul>
+                    
+                    <p class="mb-4">O dispositivo deve ser claro e conciso, contendo o comando final do julgamento. A falta de dispositivo implica inexistência do ato judicial.</p>
+                    
+                    <p>É no dispositivo que se encontra a parte da decisão que faz coisa julgada material, conforme o art. 503 do CPC.</p>
+                `
+            }
+        };
+        
+        // Função para mostrar detalhes de uma seção
+        function showDetails(section) {
+            const modal = document.getElementById('details-modal');
+            const modalTitle = document.getElementById('modal-title');
+            const modalContent = document.getElementById('modal-content');
+            
+            modalTitle.textContent = sectionDetails[section].title;
+            modalContent.innerHTML = sectionDetails[section].content;
+            
+            modal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+        
+        // Função para fechar o modal
+        function closeModal() {
+            const modal = document.getElementById('details-modal');
+            modal.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+        
+        // Quiz
+        document.getElementById('check-answers').addEventListener('click', function() {
+            const answers = {
+                q1: document.querySelector('input[name="q1"]:checked')?.value,
+                q2: document.querySelector('input[name="q2"]:checked')?.value,
+                q3: document.querySelector('input[name="q3"]:checked')?.value
+            };
+            
+            const correctAnswers = {
+                q1: 'b', // Ementa
+                q2: 'b', // O recurso não é conhecido
+                q3: 'c'  // A nulidade ocorre com vícios insanáveis...
+            };
+            
+            let score = 0;
+            let feedback = '';
+            
+            // Verificar respostas
+            if (answers.q1 === correctAnswers.q1) score++;
+            if (answers.q2 === correctAnswers.q2) score++;
+            if (answers.q3 === correctAnswers.q3) score++;
+            
+            // Preparar feedback
+            const resultsDiv = document.getElementById('quiz-results');
+            const resultsContent = resultsDiv.querySelector('div');
+            
+            if (score === 3) {
+                resultsContent.className = 'p-4 rounded-lg bg-green-100 border border-green-500';
+                feedback = `
+                    <p class="font-bold text-green-800">Parabéns! Você acertou todas as questões!</p>
+                    <p class="text-green-700 mt-2">Você demonstrou excelente compreensão sobre a estrutura e componentes de um acórdão.</p>
+                `;
+            } else if (score > 0) {
+                resultsContent.className = 'p-4 rounded-lg bg-yellow-100 border border-yellow-500';
+                feedback = `
+                    <p class="font-bold text-yellow-800">Você acertou ${score} de 3 questões.</p>
+                    <p class="text-yellow-700 mt-2">Vamos revisar as respostas corretas:</p>
+                    <ul class="list-disc pl-5 mt-2 text-yellow-700">
+                        <li>1. A parte que resume as principais teses jurídicas é a <strong>Ementa</strong>.</li>
+                        <li>2. Quando um recurso não atende aos requisitos de admissibilidade, ele <strong>não é conhecido</strong>.</li>
+                        <li>3. A nulidade ocorre com vícios <strong>insanáveis</strong>, enquanto a conversão em diligência ocorre com vícios <strong>sanáveis</strong>.</li>
+                    </ul>
+                `;
+            } else {
+                resultsContent.className = 'p-4 rounded-lg bg-red-100 border border-red-500';
+                feedback = `
+                    <p class="font-bold text-red-800">Você não acertou nenhuma questão.</p>
+                    <p class="text-red-700 mt-2">Vamos revisar as respostas corretas:</p>
+                    <ul class="list-disc pl-5 mt-2 text-red-700">
+                        <li>1. A parte que resume as principais teses jurídicas é a <strong>Ementa</strong>.</li>
+                        <li>2. Quando um recurso não atende aos requisitos de admissibilidade, ele <strong>não é conhecido</strong>.</li>
+                        <li>3. A nulidade ocorre com vícios <strong>insanáveis</strong>, enquanto a conversão em diligência ocorre com vícios <strong>sanáveis</strong>.</li>
+                    </ul>
+                    <p class="text-red-700 mt-2">Sugerimos revisar o conteúdo e tentar novamente!</p>
+                `;
+            }
+            
+            resultsContent.innerHTML = feedback;
+            resultsDiv.classList.remove('hidden');
+        });
+        
+        // Fechar modal ao clicar fora dele
+        window.addEventListener('click', function(event) {
+            const modal = document.getElementById('details-modal');
+            if (event.target === modal) {
+                closeModal();
+            }
+        });
+        
+        // Fechar modal com tecla ESC
+        window.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                closeModal();
+            }
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'94da80e14281f8f9',t:'MTc0OTU3NTY0OS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
