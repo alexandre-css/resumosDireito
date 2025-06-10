@@ -67,7 +67,7 @@
         <div class="mb-16">
             <h2 class="text-2xl font-bold text-blue-800 mb-6 text-center">Fluxo de Análise em um Acórdão</h2>
             
-            <div class="grid grid-cols-1 gap-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
                 <!-- Ementa -->
                 <div id="ementa-card" class="section-card bg-blue-100 rounded-lg p-6 border-l-4 border-blue-600 flow-arrow">
                     <h3 class="text-xl font-bold text-blue-800 mb-2 flex items-center">
@@ -171,8 +171,8 @@
         </div>
         
         <!-- Modal para detalhes -->
-        <div id="details-modal" class="fixed inset-0 bg-black bg-opacity-50 hidden flex items-center justify-center z-50">
-            <div class="bg-white rounded-lg p-8 max-w-2xl w-full max-h-[80vh] overflow-y-auto">
+        <div id="details-modal" class="fixed inset-0 bg-black bg-opacity-50 hidden flex items-center justify-center z-50 p-4">
+            <div class="bg-white rounded-lg p-6 md:p-8 max-w-2xl w-full max-h-[80vh] overflow-y-auto mx-4">
                 <div class="flex justify-between items-center mb-6">
                     <h3 id="modal-title" class="text-2xl font-bold text-blue-800"></h3>
                     <button onclick="closeModal()" class="text-gray-500 hover:text-gray-700">
@@ -445,21 +445,24 @@
                 q3: document.querySelector('input[name="q3"]:checked')?.value
             };
             
+            if (!answers.q1 || !answers.q2 || !answers.q3) {
+                alert('Por favor, responda todas as perguntas antes de verificar as respostas.');
+                return;
+            }
+            
             const correctAnswers = {
-                q1: 'b', // Ementa
-                q2: 'b', // O recurso não é conhecido
-                q3: 'c'  // A nulidade ocorre com vícios insanáveis...
+                q1: 'b',
+                q2: 'b',
+                q3: 'c'
             };
             
             let score = 0;
             let feedback = '';
             
-            // Verificar respostas
             if (answers.q1 === correctAnswers.q1) score++;
             if (answers.q2 === correctAnswers.q2) score++;
             if (answers.q3 === correctAnswers.q3) score++;
             
-            // Preparar feedback
             const resultsDiv = document.getElementById('quiz-results');
             const resultsContent = resultsDiv.querySelector('div');
             
@@ -513,5 +516,4 @@
             }
         });
     </script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'94da80e14281f8f9',t:'MTc0OTU3NTY0OS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
