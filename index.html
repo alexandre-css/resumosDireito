@@ -23,28 +23,6 @@
             box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
         }
         
-        .flow-arrow {
-            position: relative;
-        }
-        
-        .flow-arrow::after {
-            content: '';
-            position: absolute;
-            bottom: -30px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 0;
-            height: 0;
-            border-left: 15px solid transparent;
-            border-right: 15px solid transparent;
-            border-top: 15px solid #1e40af;
-        }
-        
-        .highlight {
-            background-color: #fef3c7;
-            padding: 2px 4px;
-            border-radius: 4px;
-        }
     </style>
 </head>
 <body>
@@ -67,75 +45,89 @@
         <div class="mb-16">
             <h2 class="text-2xl font-bold text-blue-800 mb-6 text-center">Fluxo de Análise em um Acórdão</h2>
             
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                <!-- Ementa -->
-                <div id="ementa-card" class="section-card bg-blue-100 rounded-lg p-6 border-l-4 border-blue-600 flow-arrow">
-                    <h3 class="text-xl font-bold text-blue-800 mb-2 flex items-center">
-                        <span class="bg-blue-800 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">1</span>
-                        Ementa
-                    </h3>
-                    <p class="text-gray-700">Resumo das principais teses jurídicas e da decisão proferida, localizada no início do acórdão.</p>
-                    <button onclick="showDetails('ementa')" class="mt-4 bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-md transition">Ver detalhes</button>
-                </div>
-                
-                <!-- Relatório -->
-                <div id="relatorio-card" class="section-card bg-blue-100 rounded-lg p-6 border-l-4 border-blue-600 flow-arrow">
-                    <h3 class="text-xl font-bold text-blue-800 mb-2 flex items-center">
-                        <span class="bg-blue-800 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">2</span>
-                        Relatório
-                    </h3>
-                    <p class="text-gray-700">Narração dos fatos do processo, identificação das partes e histórico resumido da marcha processual.</p>
-                    <button onclick="showDetails('relatorio')" class="mt-4 bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-md transition">Ver detalhes</button>
-                </div>
-                
-                <!-- Admissibilidade -->
-                <div id="admissibilidade-card" class="section-card bg-blue-100 rounded-lg p-6 border-l-4 border-blue-600 flow-arrow">
-                    <h3 class="text-xl font-bold text-blue-800 mb-2 flex items-center">
-                        <span class="bg-blue-800 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">3</span>
-                        Admissibilidade
-                    </h3>
-                    <p class="text-gray-700">Verificação dos requisitos para que o recurso possa ser conhecido e julgado pelo tribunal.</p>
-                    <button onclick="showDetails('admissibilidade')" class="mt-4 bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-md transition">Ver detalhes</button>
-                </div>
-                
-                <!-- Preliminares -->
-                <div id="preliminares-card" class="section-card bg-blue-100 rounded-lg p-6 border-l-4 border-blue-600 flow-arrow">
-                    <h3 class="text-xl font-bold text-blue-800 mb-2 flex items-center">
-                        <span class="bg-blue-800 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">4</span>
-                        Preliminares Processuais
-                    </h3>
-                    <p class="text-gray-700">Questões processuais que podem anular o processo ou a decisão recorrida, sem análise do mérito.</p>
-                    <button onclick="showDetails('preliminares')" class="mt-4 bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-md transition">Ver detalhes</button>
-                </div>
-                
-                <!-- Prejudiciais -->
-                <div id="prejudiciais-card" class="section-card bg-blue-100 rounded-lg p-6 border-l-4 border-blue-600 flow-arrow">
-                    <h3 class="text-xl font-bold text-blue-800 mb-2 flex items-center">
-                        <span class="bg-blue-800 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">5</span>
-                        Prejudiciais de Mérito
-                    </h3>
-                    <p class="text-gray-700">Questões que, embora não sejam o mérito principal, devem ser decididas antes dele, pois influenciam o resultado final.</p>
-                    <button onclick="showDetails('prejudiciais')" class="mt-4 bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-md transition">Ver detalhes</button>
-                </div>
-                
-                <!-- Fundamentação -->
-                <div id="fundamentacao-card" class="section-card bg-blue-100 rounded-lg p-6 border-l-4 border-blue-600 flow-arrow">
-                    <h3 class="text-xl font-bold text-blue-800 mb-2 flex items-center">
-                        <span class="bg-blue-800 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">6</span>
-                        Fundamentação
-                    </h3>
-                    <p class="text-gray-700">Coração do acórdão, onde o colegiado expõe razões de fato e de direito para a decisão.</p>
-                    <button onclick="showDetails('fundamentacao')" class="mt-4 bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-md transition">Ver detalhes</button>
-                </div>
-                
-                <!-- Dispositivo -->
-                <div id="dispositivo-card" class="section-card bg-blue-100 rounded-lg p-6 border-l-4 border-blue-600">
-                    <h3 class="text-xl font-bold text-blue-800 mb-2 flex items-center">
-                        <span class="bg-blue-800 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">7</span>
-                        Dispositivo
-                    </h3>
-                    <p class="text-gray-700">Parte final, onde o tribunal profere o comando decisório, indicando o resultado do julgamento.</p>
-                    <button onclick="showDetails('dispositivo')" class="mt-4 bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-md transition">Ver detalhes</button>
+            <div class="relative max-w-4xl mx-auto">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    
+                    <div id="ementa-card" class="section-card bg-blue-100 rounded-lg p-6 border-l-4 border-blue-600 relative">
+                        <h3 class="text-xl font-bold text-blue-800 mb-2 flex items-center">
+                            <span class="bg-blue-800 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">1</span>
+                            Ementa
+                        </h3>
+                        <p class="text-gray-700">Resumo das principais teses jurídicas e da decisão proferida, localizada no início do acórdão.</p>
+                        <button onclick="showDetails('ementa')" class="mt-4 bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-md transition">Ver detalhes</button>
+                        <div class="absolute top-1/2 right-0 transform -translate-y-1/2 translate-x-full lg:block hidden">
+                            <div class="w-0 h-0 border-l-[15px] border-t-[12px] border-b-[12px] border-l-blue-600 border-t-transparent border-b-transparent"></div>
+                        </div>
+                    </div>
+                    
+                    <div id="relatorio-card" class="section-card bg-blue-100 rounded-lg p-6 border-l-4 border-blue-600 relative">
+                        <h3 class="text-xl font-bold text-blue-800 mb-2 flex items-center">
+                            <span class="bg-blue-800 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">2</span>
+                            Relatório
+                        </h3>
+                        <p class="text-gray-700">Narração dos fatos do processo, identificação das partes e histórico resumido da marcha processual.</p>
+                        <button onclick="showDetails('relatorio')" class="mt-4 bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-md transition">Ver detalhes</button>
+                        <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-full lg:block hidden">
+                            <div class="w-0 h-0 border-l-[12px] border-r-[12px] border-t-[15px] border-l-transparent border-r-transparent border-t-blue-600"></div>
+                        </div>
+                    </div>
+                    
+                    <div id="preliminares-card" class="section-card bg-blue-100 rounded-lg p-6 border-l-4 border-blue-600 relative">
+                        <h3 class="text-xl font-bold text-blue-800 mb-2 flex items-center">
+                            <span class="bg-blue-800 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">4</span>
+                            Preliminares Processuais
+                        </h3>
+                        <p class="text-gray-700">Questões processuais que podem anular o processo ou a decisão recorrida, sem análise do mérito.</p>
+                        <button onclick="showDetails('preliminares')" class="mt-4 bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-md transition">Ver detalhes</button>
+                        <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-full lg:block hidden">
+                            <div class="w-0 h-0 border-l-[12px] border-r-[12px] border-t-[15px] border-l-transparent border-r-transparent border-t-blue-600"></div>
+                        </div>
+                    </div>
+                    
+                    <div id="admissibilidade-card" class="section-card bg-blue-100 rounded-lg p-6 border-l-4 border-blue-600 relative">
+                        <h3 class="text-xl font-bold text-blue-800 mb-2 flex items-center">
+                            <span class="bg-blue-800 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">3</span>
+                            Admissibilidade
+                        </h3>
+                        <p class="text-gray-700">Verificação dos requisitos para que o recurso possa ser conhecido e julgado pelo tribunal.</p>
+                        <button onclick="showDetails('admissibilidade')" class="mt-4 bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-md transition">Ver detalhes</button>
+                        <div class="absolute top-1/2 left-0 transform -translate-y-1/2 -translate-x-full lg:block hidden">
+                            <div class="w-0 h-0 border-r-[15px] border-t-[12px] border-b-[12px] border-r-blue-600 border-t-transparent border-b-transparent"></div>
+                        </div>
+                    </div>
+                    
+                    <div id="prejudiciais-card" class="section-card bg-blue-100 rounded-lg p-6 border-l-4 border-blue-600 relative">
+                        <h3 class="text-xl font-bold text-blue-800 mb-2 flex items-center">
+                            <span class="bg-blue-800 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">5</span>
+                            Prejudiciais de Mérito
+                        </h3>
+                        <p class="text-gray-700">Questões que, embora não sejam o mérito principal, devem ser decididas antes dele, pois influenciam o resultado final.</p>
+                        <button onclick="showDetails('prejudiciais')" class="mt-4 bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-md transition">Ver detalhes</button>
+                        <div class="absolute top-1/2 right-0 transform -translate-y-1/2 translate-x-full lg:block hidden">
+                            <div class="w-0 h-0 border-l-[15px] border-t-[12px] border-b-[12px] border-l-blue-600 border-t-transparent border-b-transparent"></div>
+                        </div>
+                    </div>
+                    
+                    <div id="fundamentacao-card" class="section-card bg-blue-100 rounded-lg p-6 border-l-4 border-blue-600 relative">
+                        <h3 class="text-xl font-bold text-blue-800 mb-2 flex items-center">
+                            <span class="bg-blue-800 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">6</span>
+                            Mérito
+                        </h3>
+                        <p class="text-gray-700">Coração do acórdão, onde o colegiado expõe razões de fato e de direito para a decisão.</p>
+                        <button onclick="showDetails('fundamentacao')" class="mt-4 bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-md transition">Ver detalhes</button>
+                        <div class="absolute bottom-0 left-1/4 transform -translate-x-1/2 translate-y-full lg:block hidden">
+                            <div class="w-0 h-0 border-l-[12px] border-r-[12px] border-t-[15px] border-l-transparent border-r-transparent border-t-blue-600"></div>
+                        </div>
+                    </div>
+                    
+                    <div id="dispositivo-card" class="section-card bg-blue-100 rounded-lg p-6 border-l-4 border-blue-600 relative lg:col-span-2 lg:max-w-md lg:mx-auto">
+                        <h3 class="text-xl font-bold text-blue-800 mb-2 flex items-center">
+                            <span class="bg-blue-800 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">7</span>
+                            Dispositivo
+                        </h3>
+                        <p class="text-gray-700">Parte final, onde o tribunal profere o comando decisório, indicando o resultado do julgamento.</p>
+                        <button onclick="showDetails('dispositivo')" class="mt-4 bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-md transition">Ver detalhes</button>
+                    </div>
                 </div>
             </div>
         </div>
