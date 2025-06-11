@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Honorários de Sucumbência</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+    </script>
+    <script defer src="https://cdn.vercel-insights.com/v1/script.debug.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0f4f8;
+        }
+        
+        .section-card {
+            transition: all 0.3s ease;
+        }
+        
+        .section-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        
+        #sidenav-backdrop {
+            transition: opacity 0.3s ease;
+        }
+        
+        #sidenav {
+            transition: transform 0.3s ease;
+        }
+        
+        .calculator-input {
+            transition: all 0.3s ease;
+        }
+        
+        .calculator-input:focus {
+            outline: 2px solid #3b82f6;
+            outline-offset: 2px;
+        }
+        
+    </style>
+</head>
+<body>
+    <nav class="bg-blue-900 text-white shadow-lg">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <button id="sidenav-toggle" class="mr-4 text-white hover:text-blue-200 transition">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                    <div class="text-xl font-bold">ResumosDireito</div>
+                </div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="/" class="hover:text-blue-200 transition font-medium">Processo Civil</a>
+                    <a href="/penal" class="hover:text-blue-200 transition">Processo Penal</a>
+                    <a href="/constitucional" class="hover:text-blue-200 transition">Constitucional</a>
+                    <a href="/administrativo" class="hover:text-blue-200 transition">Administrativo</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div id="sidenav-backdrop" class="fixed inset-0 bg-black bg-opacity-50 z-40 opacity-0 pointer-events-none transition-opacity"></div>
+    
+    <nav id="sidenav" class="fixed top-0 left-0 z-50 h-screen w-64 bg-white shadow-lg transform -translate-x-full transition-transform">
+        <div class="p-6">
+            <div class="flex justify-between items-center mb-6">
+                <h3 class="text-lg font-semibold text-blue-800">Processo Civil</h3>
+                <button id="sidenav-close" class="text-gray-500 hover:text-gray-700">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+            <ul class="space-y-2">
+                <li>
+                    <a href="index.html" class="block p-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition">
+                        <div class="flex items-center">
+                            <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                            </svg>
+                            Estrutura do Acórdão
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="honorarios.html" class="block p-3 text-blue-600 bg-blue-50 rounded font-medium border-l-4 border-blue-600">
+                        <div class="flex items-center">
+                            <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"></path>
+                            </svg>
+                            Honorários de Sucumbência
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="recursos.html" class="block p-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition">
+                        <div class="flex items-center">
+                            <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M9 19l3 3m0 0l3-3m-3 3V10"></path>
+                            </svg>
+                            Recursos
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="sentenca.html" class="block p-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition">
+                        <div class="flex items-center">
+                            <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
+                            </svg>
+                            Estrutura da Sentença
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="competencia.html" class="block p-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition">
+                        <div class="flex items-center">
+                            <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                            </svg>
+                            Competência
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="absolute bottom-0 left-0 right-0 p-6 border-t border-gray-200">
+            <div class="text-xs text-gray-500 text-center">
+                <p class="font-medium">ResumosDireito</p>
+                <p>TJSC - 2025</p>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto px-4 py-8 max-w-6xl">
+        <nav class="mb-8" aria-label="Breadcrumb">
+            <ol class="flex items-center space-x-2 text-sm text-gray-600">
+                <li><a href="index.html" class="hover:text-blue-600">Início</a></li>
+                <li><svg class="w-4 h-4 mx-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg></li>
+                <li><a href="index.html" class="hover:text-blue-600">Processo Civil</a></li>
+                <li><svg class="w-4 h-4 mx-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg></li>
+                <li class="text-gray-800 font-medium">Honorários de Sucumbência</li>
+            </ol>
+        </nav>
+        
+        <header class="text-center mb-12">
+            <h1 class="text-4xl font-bold text-blue-900 mb-4">Honorários Advocatícios de Sucumbência</h1>
+            <p class="text-xl text-gray-600">Guia completo sobre fixação, cálculo e aplicação dos honorários advocatícios</p>
+        </header>
+        
+        <div class="bg-white rounded-lg shadow-lg p-6 mb-10">
+            <h2 class="text-2xl font-bold text-blue-800 mb-4">Conceito e Natureza</h2>
+            <p class="text-gray-700 mb-4">
+                Os <span class="font-semibold">honorários advocatícios de sucumbência</span> constituem direito do advogado do vencedor e possuem <span class="font-semibold text-blue-600">natureza alimentar</span>, com os mesmos privilégios dos créditos trabalhistas.
+            </p>
+            <p class="text-gray-700">
+                Sua fixação é um <span class="font-semibold">dever do juiz</span> e deve observar rigorosamente os parâmetros legais estabelecidos no Código de Processo Civil.
+            </p>
+        </div>
+
+        <div class="mb-16">
+            <h2 class="text-2xl font-bold text-blue-800 mb-6 text-center">Critérios de Fixação (Art. 85, § 2º, CPC)</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="section-card bg-green-100 rounded-lg p-6 border-l-4 border-green-600">
+                    <h3 class="text-lg font-bold text-green-800 mb-3">Critérios Obrigatórios</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-start">
+                            <span class="bg-green-600 text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 mt-0.5 text-sm">1</span>
+                            <span><span class="font-semibold">Grau de zelo</span> do profissional</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="bg-green-600 text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 mt-0.5 text-sm">2</span>
+                            <span><span class="font-semibold">Lugar de prestação</span> do serviço</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="bg-green-600 text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 mt-0.5 text-sm">3</span>
+                            <span><span class="font-semibold">Natureza e importância</span> da causa</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="bg-green-600 text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 mt-0.5 text-sm">4</span>
+                            <span><span class="font-semibold">Trabalho realizado</span> e tempo exigido</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="section-card bg-blue-100 rounded-lg p-6 border-l-4 border-blue-600">
+                    <h3 class="text-lg font-bold text-blue-800 mb-3">Base de Cálculo</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-start">
+                            <span class="bg-blue-600 text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 mt-0.5 text-sm">1</span>
+                            <span>Valor da <span class="font-semibold">condenação</span></span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="bg-blue-600 text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 mt-0.5 text-sm">2</span>
+                            <span><span class="font-semibold">Proveito econômico</span> obtido</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="bg-blue-600 text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 mt-0.5 text-sm">3</span>
+                            <span>Valor <span class="font-semibold">atualizado da causa</span></span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="bg-blue-600 text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 mt-0.5 text-sm">4</span>
+                            <span><span class="font-semibold">Apreciação equitativa</span> (casos específicos)</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-16">
+            <h2 class="text-2xl font-bold text-blue-800 mb-6 text-center">Percentuais de Fixação</h2>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div class="section-card bg-purple-100 rounded-lg p-6 border-l-4 border-purple-600">
+                    <h3 class="text-xl font-bold text-purple-800 mb-4">Regra Geral</h3>
+                    <div class="bg-purple-50 p-4 rounded-lg border border-purple-200">
+                        <div class="text-center">
+                            <span class="text-3xl font-bold text-purple-600">10% - 20%</span>
+                            <p class="text-purple-700 mt-2">sobre a base de cálculo</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mt-4 text-sm">
+                        Aplicável à maioria dos casos, considerando os critérios do art. 85, § 2º do CPC.
+                    </p>
+                </div>
+
+                <div class="section-card bg-orange-100 rounded-lg p-6 border-l-4 border-orange-600">
+                    <h3 class="text-xl font-bold text-orange-800 mb-4">Fazenda Pública - Percentuais Escalonados</h3>
+                    <div class="space-y-2 text-sm">
+                        <div class="flex justify-between bg-orange-50 p-2 rounded">
+                            <span class="font-medium">Até 200 SM:</span>
+                            <span class="text-orange-600 font-bold">10% - 20%</span>
+                        </div>
+                        <div class="flex justify-between bg-orange-50 p-2 rounded">
+                            <span class="font-medium">200 a 2.000 SM:</span>
+                            <span class="text-orange-600 font-bold">8% - 10%</span>
+                        </div>
+                        <div class="flex justify-between bg-orange-50 p-2 rounded">
+                            <span class="font-medium">2.000 a 20.000 SM:</span>
+                            <span class="text-orange-600 font-bold">5% - 8%</span>
+                        </div>
+                        <div class="flex justify-between bg-orange-50 p-2 rounded">
+                            <span class="font-medium">20.000 a 100.000 SM:</span>
+                            <span class="text-orange-600 font-bold">3% - 5%</span>
+                        </div>
+                        <div class="flex justify-between bg-orange-50 p-2 rounded">
+                            <span class="font-medium">Acima 100.000 SM:</span>
+                            <span class="text-orange-600 font-bold">1% - 3%</span>
+                        </div>
+                    </div>
+                    <p class="text-xs text-gray-600 mt-3">
+                        SM = Salários Mínimos. Percentuais <strong>inversos</strong>: quanto maior o valor, menor o percentual.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-16">
+            <h2 class="text-2xl font-bold text-blue-800 mb-6 text-center">Calculadora de Honorários</h2>
+            
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <h3 class="text-lg font-bold text-blue-800 mb-4">Dados da Causa</h3>
+                        <div class="space-y-4">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Tipo de Demanda</label>
+                                <select id="tipo-demanda" class="calculator-input w-full p-3 border border-gray-300 rounded-lg focus:outline-none">
+                                    <option value="geral">Regra Geral</option>
+                                    <option value="fazenda">Fazenda Pública</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Valor da Condenação/Causa (R$)</label>
+                                <input type="number" id="valor-causa" class="calculator-input w-full p-3 border border-gray-300 rounded-lg focus:outline-none" placeholder="Ex: 50000.00">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Percentual Desejado (%)</label>
+                                <input type="number" id="percentual" class="calculator-input w-full p-3 border border-gray-300 rounded-lg focus:outline-none" placeholder="Ex: 15" min="1" max="20">
+                            </div>
+                            <button onclick="calcularHonorarios()" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-lg transition">
+                                Calcular Honorários
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-lg font-bold text-blue-800 mb-4">Resultado</h3>
+                        <div id="resultado-calculo" class="bg-gray-50 p-4 rounded-lg border">
+                            <p class="text-gray-500 text-center">Preencha os dados ao lado para calcular</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-16">
+            <h2 class="text-2xl font-bold text-blue-800 mb-6 text-center">Situações Especiais</h2>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <div class="section-card bg-yellow-100 rounded-lg p-6 border-l-4 border-yellow-600">
+                    <h3 class="text-lg font-bold text-yellow-800 mb-3">Sucumbência Recíproca</h3>
+                    <div class="bg-yellow-50 p-4 rounded border border-yellow-200 mb-4">
+                        <p class="text-sm text-yellow-800 font-medium">⚠️ VEDADA A COMPENSAÇÃO</p>
+                    </div>
+                    <p class="text-gray-700 text-sm mb-3">
+                        Cada parte paga honorários ao advogado da parte adversa na proporção de sua sucumbência.
+                    </p>
+                    <p class="text-gray-700 text-sm">
+                        <span class="font-semibold">Exemplo:</span> Se A venceu 70% e B venceu 30%, A paga 30% dos honorários do advogado de B, e B paga 70% dos honorários do advogado de A.
+                    </p>
+                </div>
+
+                <div class="section-card bg-red-100 rounded-lg p-6 border-l-4 border-red-600">
+                    <h3 class="text-lg font-bold text-red-800 mb-3">Majoração Recursal</h3>
+                    <div class="bg-red-50 p-4 rounded border border-red-200 mb-4">
+                        <p class="text-sm text-red-800 font-medium">📈 DEVER DO TRIBUNAL</p>
+                    </div>
+                    <p class="text-gray-700 text-sm mb-3">
+                        Quando o recurso não é conhecido ou é desprovido, o tribunal deve majorar os honorários para remunerar o trabalho adicional.
+                    </p>
+                    <div class="text-xs text-gray-600">
+                        <p><strong>Requisitos:</strong></p>
+                        <ul class="list-disc pl-4 mt-1">
+                            <li>Decisão publicada após 18/03/2016</li>
+                            <li>Não conhecimento ou desprovimento</li>
+                            <li>Honorários devidos desde a origem</li>
+                            <li>Limites do art. 85 não atingidos</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-16">
+            <h2 class="text-2xl font-bold text-blue-800 mb-6 text-center">Exceções às Regras Gerais</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div class="bg-red-50 border border-red-200 rounded-lg p-4">
+                    <h4 class="font-bold text-red-800 mb-2">Mandado de Segurança</h4>
+                    <p class="text-sm text-red-700">Não admite condenação em honorários advocatícios</p>
+                </div>
+                
+                <div class="bg-green-50 border border-green-200 rounded-lg p-4">
+                    <h4 class="font-bold text-green-800 mb-2">Defensoria vs Estado</h4>
+                    <p class="text-sm text-green-700">Não há honorários quando Defensoria vence o Estado (confusão)</p>
+                </div>
+                
+                <div class="bg-blue-50 border border-blue-200 rounded-lg p-4">
+                    <h4 class="font-bold text-blue-800 mb-2">Perda do Objeto</h4>
+                    <p class="text-sm text-blue-700">Honorários devidos pela parte que deu causa (princípio da causalidade)</p>
+                </div>
+                
+                <div class="bg-purple-50 border border-purple-200 rounded-lg p-4">
+                    <h4 class="font-bold text-purple-800 mb-2">Execução FP s/ Impugnação</h4>
+                    <p class="text-sm text-purple-700">Não devidos se expedido precatório sem impugnação</p>
+                </div>
+                
+                <div class="bg-orange-50 border border-orange-200 rounded-lg p-4">
+                    <h4 class="font-bold text-orange-800 mb-2">Embargos de Terceiro</h4>
+                    <p class="text-sm text-orange-700">Quem deu causa à constrição indevida arca com honorários</p>
+                </div>
+                
+                <div class="bg-gray-50 border border-gray-200 rounded-lg p-4">
+                    <h4 class="font-bold text-gray-800 mb-2">Rejeição de Impugnação</h4>
+                    <p class="text-sm text-gray-700">Não cabíveis honorários na rejeição de impugnação ao cumprimento</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-16">
+            <h2 class="text-2xl font-bold text-blue-800 mb-6 text-center">Teste seus Conhecimentos</h2>
+            
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <div id="quiz-container">
+                    <div id="question-1" class="quiz-question">
+                        <p class="text-lg font-medium text-gray-800 mb-4">1. Qual é o percentual aplicável na regra geral para fixação de honorários advocatícios?</p>
+                        <div class="space-y-2">
+                            <div class="flex items-center">
+                                <input type="radio" id="q1-a" name="q1" value="a" class="mr-2">
+                                <label for="q1-a" class="text-gray-700">5% a 15%</label>
+                            </div>
+                            <div class="flex items-center">
+                                <input type="radio" id="q1-b" name="q1" value="b" class="mr-2">
+                                <label for="q1-b" class="text-gray-700">10% a 20%</label>
+                            </div>
+                            <div class="flex items-center">
+                                <input type="radio" id="q1-c" name="q1" value="c" class="mr-2">
+                                <label for="q1-c" class="text-gray-700">15% a 25%</label>
+                            </div>
+                            <div class="flex items-center">
+                                <input type="radio" id="q1-d" name="q1" value="d" class="mr-2">
+                                <label for="q1-d" class="text-gray-700">20% a 30%</label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="question-2" class="quiz-question mt-8">
+                        <p class="text-lg font-medium text-gray-800 mb-4">2. O que ocorre com os honorários em caso de sucumbência recíproca no CPC/2015?</p>
+                        <div class="space-y-2">
+                            <div class="flex items-center">
+                                <input type="radio" id="q2-a" name="q2" value="a" class="mr-2">
+                                <label for="q2-a" class="text-gray-700">Os honorários são compensados</label>
+                            </div>
+                            <div class="flex items-center">
+                                <input type="radio" id="q2-b" name="q2" value="b" class="mr-2">
+                                <label for="q2-b" class="text-gray-700">Cada parte paga honorários na proporção de sua sucumbência, sem compensação</label>
+                            </div>
+                            <div class="flex items-center">
+                                <input type="radio" id="q2-c" name="q2" value="c" class="mr-2">
+                                <label for="q2-c" class="text-gray-700">Não há condenação em honorários</label>
+                            </div>
+                            <div class="flex items-center">
+                                <input type="radio" id="q2-d" name="q2" value="d" class="mr-2">
+                                <label for="q2-d" class="text-gray-700">Os honorários são divididos igualmente</label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="question-3" class="quiz-question mt-8">
+                        <p class="text-lg font-medium text-gray-800 mb-4">3. A majoração de honorários em grau recursal é:</p>
+                        <div class="space-y-2">
+                            <div class="flex items-center">
+                                <input type="radio" id="q3-a" name="q3" value="a" class="mr-2">
+                                <label for="q3-a" class="text-gray-700">Uma faculdade do tribunal</label>
+                            </div>
+                            <div class="flex items-center">
+                                <input type="radio" id="q3-b" name="q3" value="b" class="mr-2">
+                                <label for="q3-b" class="text-gray-700">Um dever do tribunal quando preenchidos os requisitos</label>
+                            </div>
+                            <div class="flex items-center">
+                                <input type="radio" id="q3-c" name="q3" value="c" class="mr-2">
+                                <label for="q3-c" class="text-gray-700">Uma sanção ao recorrente</label>
+                            </div>
+                            <div class="flex items-center">
+                                <input type="radio" id="q3-d" name="q3" value="d" class="mr-2">
+                                <label for="q3-d" class="text-gray-700">Aplicável apenas em recursos especiais</label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button id="check-answers" class="mt-8 bg-blue-600 hover:bg-blue-700 text-white py-3 px-4 rounded-md transition text-lg font-medium w-full">
+                        Verificar Respostas
+                    </button>
+                    
+                    <div id="quiz-results" class="mt-6 hidden">
+                        <div class="p-4 rounded-lg"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        const sidenavToggle = document.getElementById('sidenav-toggle');
+        const sidenavClose = document.getElementById('sidenav-close');
+        const sidenav = document.getElementById('sidenav');
+        const backdrop = document.getElementById('sidenav-backdrop');
+
+        function openSidenav() {
+            sidenav.classList.remove('-translate-x-full');
+            backdrop.classList.remove('opacity-0', 'pointer-events-none');
+            backdrop.classList.add('opacity-100');
+        }
+
+        function closeSidenav() {
+            sidenav.classList.add('-translate-x-full');
+            backdrop.classList.add('opacity-0', 'pointer-events-none');
+            backdrop.classList.remove('opacity-100');
+        }
+
+        sidenavToggle.addEventListener('click', openSidenav);
+        sidenavClose.addEventListener('click', closeSidenav);
+        backdrop.addEventListener('click', closeSidenav);
+
+        function calcularHonorarios() {
+            const tipodemanda = document.getElementById('tipo-demanda').value;
+            const valorCausa = parseFloat(document.getElementById('valor-causa').value);
+            const percentual = parseFloat(document.getElementById('percentual').value);
+            const resultadoDiv = document.getElementById('resultado-calculo');
+            
+            if (!valorCausa || !percentual) {
+                resultadoDiv.innerHTML = '<p class="text-red-500 text-center">Preencha todos os campos</p>';
+                return;
+            }
+            
+            let salarioMinimo = 1412; // Valor aproximado para 2025
+            let valorHonorarios = 0;
+            let observacoes = '';
+            let validacao = '';
+            
+            if (tipodemanda === 'geral') {
+                if (percentual < 10 || percentual > 20) {
+                    validacao = '<p class="text-red-600 text-sm mb-2">⚠️ Percentual deve estar entre 10% e 20% para regra geral</p>';
+                }
+                valorHonorarios = (valorCausa * percentual) / 100;
+                observacoes = 'Regra geral aplicada';
+            } else {
+                let valorEmSM = valorCausa / salarioMinimo;
+                let faixaPercentual = '';
+                
+                if (valorEmSM <= 200) {
+                    faixaPercentual = '10% - 20%';
+                    if (percentual < 10 || percentual > 20) {
+                        validacao = '<p class="text-red-600 text-sm mb-2">⚠️ Para esta faixa, use entre 10% e 20%</p>';
+                    }
+                } else if (valorEmSM <= 2000) {
+                    faixaPercentual = '8% - 10%';
+                    if (percentual < 8 || percentual > 10) {
+                        validacao = '<p class="text-red-600 text-sm mb-2">⚠️ Para esta faixa, use entre 8% e 10%</p>';
+                    }
+                } else if (valorEmSM <= 20000) {
+                    faixaPercentual = '5% - 8%';
+                    if (percentual < 5 || percentual > 8) {
+                        validacao = '<p class="text-red-600 text-sm mb-2">⚠️ Para esta faixa, use entre 5% e 8%</p>';
+                    }
+                } else if (valorEmSM <= 100000) {
+                    faixaPercentual = '3% - 5%';
+                    if (percentual < 3 || percentual > 5) {
+                        validacao = '<p class="text-red-600 text-sm mb-2">⚠️ Para esta faixa, use entre 3% e 5%</p>';
+                    }
+                } else {
+                    faixaPercentual = '1% - 3%';
+                    if (percentual < 1 || percentual > 3) {
+                        validacao = '<p class="text-red-600 text-sm mb-2">⚠️ Para esta faixa, use entre 1% e 3%</p>';
+                    }
+                }
+                
+                valorHonorarios = (valorCausa * percentual) / 100;
+                observacoes = `Fazenda Pública - Faixa: ${faixaPercentual} (${valorEmSM.toFixed(0)} SM)`;
+            }
+            
+            resultadoDiv.innerHTML = `
+                ${validacao}
+                <div class="text-center">
+                    <div class="text-2xl font-bold text-blue-600 mb-2">
+                        R$ ${valorHonorarios.toLocaleString('pt-BR', {minimumFractionDigits: 2})}
+                    </div>
+                    <div class="text-sm text-gray-600 mb-3">
+                        ${percentual}% sobre R$ ${valorCausa.toLocaleString('pt-BR', {minimumFractionDigits: 2})}
+                    </div>
+                    <div class="bg-blue-50 p-3 rounded border text-sm text-blue-700">
+                        ${observacoes}
+                    </div>
+                </div>
+            `;
+        }
+        
+        document.getElementById('check-answers').addEventListener('click', function() {
+            const answers = {
+                q1: document.querySelector('input[name="q1"]:checked')?.value,
+                q2: document.querySelector('input[name="q2"]:checked')?.value,
+                q3: document.querySelector('input[name="q3"]:checked')?.value
+            };
+            
+            if (!answers.q1 || !answers.q2 || !answers.q3) {
+                alert('Por favor, responda todas as perguntas antes de verificar as respostas.');
+                return;
+            }
+            
+            const correctAnswers = {
+                q1: 'b',
+                q2: 'b', 
+                q3: 'b'
+            };
+            
+            let score = 0;
+            let feedback = '';
+            
+            if (answers.q1 === correctAnswers.q1) score++;
+            if (answers.q2 === correctAnswers.q2) score++;
+            if (answers.q3 === correctAnswers.q3) score++;
+            
+            const resultsDiv = document.getElementById('quiz-results');
+            const resultsContent = resultsDiv.querySelector('div');
+            
+            if (score === 3) {
+                resultsContent.className = 'p-4 rounded-lg bg-green-100 border border-green-500';
+                feedback = `
+                    <p class="font-bold text-green-800">Parabéns! Você acertou todas as questões!</p>
+                    <p class="text-green-700 mt-2">Você demonstrou excelente compreensão sobre honorários advocatícios de sucumbência.</p>
+                `;
+            } else if (score > 0) {
+                resultsContent.className = 'p-4 rounded-lg bg-yellow-100 border border-yellow-500';
+                feedback = `
+                    <p class="font-bold text-yellow-800">Você acertou ${score} de 3 questões.</p>
+                    <p class="text-yellow-700 mt-2">Respostas corretas:</p>
+                    <ul class="list-disc pl-5 mt-2 text-yellow-700">
+                        <li>1. Regra geral: <strong>10% a 20%</strong></li>
+                        <li>2. CPC/2015 <strong>veda a compensação</strong> - cada parte paga proporcionalmente</li>
+                        <li>3. Majoração recursal é <strong>dever do tribunal</strong> quando preenchidos requisitos</li>
+                    </ul>
+                `;
+            } else {
+                resultsContent.className = 'p-4 rounded-lg bg-red-100 border border-red-500';
+                feedback = `
+                    <p class="font-bold text-red-800">Você não acertou nenhuma questão.</p>
+                    <p class="text-red-700 mt-2">Respostas corretas:</p>
+                    <ul class="list-disc pl-5 mt-2 text-red-700">
+                        <li>1. Regra geral: <strong>10% a 20%</strong></li>
+                        <li>2. CPC/2015 <strong>veda a compensação</strong> - cada parte paga proporcionalmente</li>
+                        <li>3. Majoração recursal é <strong>dever do tribunal</strong> quando preenchidos requisitos</li>
+                    </ul>
+                    <p class="text-red-700 mt-2">Sugerimos revisar o conteúdo!</p>
+                `;
+            }
+            
+            resultsContent.innerHTML = feedback;
+            resultsDiv.classList.remove('hidden');
+        });
+        </script>
+        
+        <footer class="text-center py-8 mt-16">
+            <p class="text-xs text-gray-500">
+                Produzido por Alexandre Claudino Simas Santos - Secretário Jurídico<br>
+                Gabinete do Juiz de Direito de Segundo Grau Alexandre Morais da Rosa<br>
+                Tribunal de Justiça de Santa Catarina<br>
+                Copyleft (ↄ) 2025
+            </p>
+        </footer>
+    </body>
+</html>
