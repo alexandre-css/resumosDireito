@@ -34,14 +34,6 @@
             transition: transform 0.3s ease;
         }
         
-        .calculator-input {
-            transition: all 0.3s ease;
-        }
-        
-        .calculator-input:focus {
-            outline: 2px solid #3b82f6;
-            outline-offset: 2px;
-        }
         
     </style>
 </head>
@@ -168,7 +160,7 @@
         </div>
 
         <div class="mb-16">
-            <h2 class="text-2xl font-bold text-blue-800 mb-6 text-center">Critérios de Fixação (Art. 85, § 2º, CPC)</h2>
+            <h2 class="text-2xl font-bold text-blue-800 mb-6 text-center">Critérios de Fixação (CPC, art. 85, § 2º)</h2>
             
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div class="section-card bg-green-100 rounded-lg p-6 border-l-4 border-green-600">
@@ -230,7 +222,7 @@
                         </div>
                     </div>
                     <p class="text-gray-700 mt-4 text-sm">
-                        Aplicável à maioria dos casos, considerando os critérios do art. 85, § 2º do CPC.
+                        Aplicável à maioria dos casos, considerando os critérios do § 2º do art. 85 do CPC.
                     </p>
                 </div>
 
@@ -260,46 +252,8 @@
                     </div>
                     <p class="text-xs text-gray-600 mt-3">
                         SM = Salários Mínimos. Percentuais <strong>inversos</strong>: quanto maior o valor, menor o percentual.
+                        <br><small>Consulte o valor atual do SM no <a href="https://www.dieese.org.br/analisecestabasica/salarioMinimo.html" target="_blank" class="text-blue-600 hover:text-blue-800 underline">DIEESE</a></small>
                     </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="mb-16">
-            <h2 class="text-2xl font-bold text-blue-800 mb-6 text-center">Calculadora de Honorários</h2>
-            
-            <div class="bg-white rounded-lg shadow-lg p-6">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div>
-                        <h3 class="text-lg font-bold text-blue-800 mb-4">Dados da Causa</h3>
-                        <div class="space-y-4">
-                            <div>
-                                <label class="block text-sm font-medium text-gray-700 mb-2">Tipo de Demanda</label>
-                                <select id="tipo-demanda" class="calculator-input w-full p-3 border border-gray-300 rounded-lg focus:outline-none">
-                                    <option value="geral">Regra Geral</option>
-                                    <option value="fazenda">Fazenda Pública</option>
-                                </select>
-                            </div>
-                            <div>
-                                <label class="block text-sm font-medium text-gray-700 mb-2">Valor da Condenação/Causa (R$)</label>
-                                <input type="number" id="valor-causa" class="calculator-input w-full p-3 border border-gray-300 rounded-lg focus:outline-none" placeholder="Ex: 50000.00">
-                            </div>
-                            <div>
-                                <label class="block text-sm font-medium text-gray-700 mb-2">Percentual Desejado (%)</label>
-                                <input type="number" id="percentual" class="calculator-input w-full p-3 border border-gray-300 rounded-lg focus:outline-none" placeholder="Ex: 15" min="1" max="20">
-                            </div>
-                            <button onclick="calcularHonorarios()" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-lg transition">
-                                Calcular Honorários
-                            </button>
-                        </div>
-                    </div>
-                    
-                    <div>
-                        <h3 class="text-lg font-bold text-blue-800 mb-4">Resultado</h3>
-                        <div id="resultado-calculo" class="bg-gray-50 p-4 rounded-lg border">
-                            <p class="text-gray-500 text-center">Preencha os dados ao lado para calcular</p>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -317,7 +271,7 @@
                         Cada parte paga honorários ao advogado da parte adversa na proporção de sua sucumbência.
                     </p>
                     <p class="text-gray-700 text-sm">
-                        <span class="font-semibold">Exemplo:</span> Se A venceu 70% e B venceu 30%, A paga 30% dos honorários do advogado de B, e B paga 70% dos honorários do advogado de A.
+                        <span class="font-semibold">Exemplo:</span> Se A pediu 100 mil e ganhou 70 mil, A paga 10-20% sobre 30 mil para advogado de B, e B para 10-20% sobre 70 mil para advogado de A.
                     </p>
                 </div>
 
@@ -342,18 +296,132 @@
             </div>
         </div>
 
-        <div class="mb-16">
+
+        <div class="mt-16">
+            <h2 class="text-2xl font-bold text-blue-800 mb-8 text-center">Fluxograma: Fixação de Honorários em Sucumbência Recíproca</h2>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="flex flex-col items-center space-y-6">
+                    
+                
+                    <div class="border-2 border-blue-400 bg-blue-50 px-8 py-4 rounded-md text-center font-medium text-blue-800">
+                        Há Sucumbência Recíproca?<br>
+                        <span class="text-sm font-normal">(ambas as partes vencem e perdem em parte)</span>
+                    </div>
+                    
+                    <div class="flex items-start justify-center space-x-24">
+                        <div class="flex flex-col items-center space-y-6">
+                            <div class="bg-red-100 text-red-800 px-6 py-2 rounded-md text-sm font-semibold border border-red-200">
+                                NÃO
+                            </div>
+                            <div class="w-0.5 h-6 bg-slate-400"></div>
+                            <div class="bg-gray-100 text-gray-800 px-6 py-4 rounded-md text-center max-w-xs border border-gray-200">
+                                <div class="font-medium mb-2">Regra Geral</div>
+                                <div class="text-sm">Uma parte vencedora, outra perdedora integral</div>
+                            </div>
+                            <div class="w-0.5 h-6 bg-slate-400"></div>
+                            <div class="bg-slate-700 text-white px-6 py-3 rounded-md text-center font-medium">
+                                Fim
+                            </div>
+                        </div>
+                        
+                        <div class="flex flex-col items-center space-y-6">
+                            <div class="bg-green-100 text-green-800 px-6 py-2 rounded-md text-sm font-semibold border border-green-200">
+                                SIM
+                            </div>
+                            <div class="w-0.5 h-6 bg-slate-400"></div>
+                            
+                            <div class="grid grid-cols-2 gap-8">
+                                <div class="flex flex-col items-center space-y-4">
+                                    <div class="bg-blue-600 text-white px-6 py-3 rounded-md text-center font-medium">
+                                        Honorários do<br>Advogado do Autor
+                                    </div>
+                                    <div class="w-0.5 h-4 bg-slate-400"></div>
+                                    <div class="bg-blue-50 border border-blue-200 px-4 py-3 rounded-md text-center text-sm max-w-xs">
+                                        <div class="font-semibold text-blue-800 mb-1">Base de Cálculo</div>
+                                        <div class="text-blue-700">Valor da condenação obtida pelo Autor</div>
+                                    </div>
+                                    <div class="w-0.5 h-4 bg-slate-400"></div>
+                                    <div class="bg-blue-50 border border-blue-200 px-4 py-3 rounded-md text-center text-sm max-w-xs">
+                                        <div class="font-semibold text-blue-800 mb-1">Percentual</div>
+                                        <div class="text-blue-700">10% a 20%</div>
+                                        <div class="text-xs text-blue-600 mt-1">Critérios do CPC/2015</div>
+                                    </div>
+                                    <div class="w-0.5 h-4 bg-slate-400"></div>
+                                    <div class="bg-blue-100 border border-blue-300 px-4 py-2 rounded-md text-center text-sm">
+                                        <div class="font-semibold text-blue-800">Pagador: Réu</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex flex-col items-center space-y-4">
+                                    <div class="bg-purple-600 text-white px-6 py-3 rounded-md text-center font-medium">
+                                        Honorários do<br>Advogado do Réu
+                                    </div>
+                                    <div class="w-0.5 h-4 bg-slate-400"></div>
+                                    <div class="bg-purple-50 border border-purple-200 px-4 py-3 rounded-md text-center text-sm max-w-xs">
+                                        <div class="font-semibold text-purple-800 mb-1">Base de Cálculo</div>
+                                        <div class="text-purple-700">Proveito econômico obtido pelo Réu</div>
+                                    </div>
+                                    <div class="w-0.5 h-4 bg-slate-400"></div>
+                                    <div class="bg-purple-50 border border-purple-200 px-4 py-3 rounded-md text-center text-sm max-w-xs">
+                                        <div class="font-semibold text-purple-800 mb-1">Percentual</div>
+                                        <div class="text-purple-700">10% a 20%</div>
+                                        <div class="text-xs text-purple-600 mt-1">Critérios do CPC/2015</div>
+                                    </div>
+                                    <div class="w-0.5 h-4 bg-slate-400"></div>
+                                    <div class="bg-purple-100 border border-purple-300 px-4 py-2 rounded-md text-center text-sm">
+                                        <div class="font-semibold text-purple-800">Pagador: Autor</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="w-0.5 h-6 bg-slate-400"></div>
+                            
+                            <div class="bg-red-600 text-white px-8 py-4 rounded-md text-center font-semibold border-2 border-red-700">
+                                Vedação à Compensação
+                                <div class="text-sm font-normal mt-1">CPC/2015, art. 85, § 14</div>
+                            </div>
+                            
+                            <div class="w-0.5 h-6 bg-slate-400"></div>
+                            
+                            <div class="bg-amber-100 border-2 border-amber-300 px-8 py-4 rounded-md text-center max-w-xl">
+                                <div class="font-semibold text-amber-800 mb-2">Condenações Autônomas</div>
+                                <div class="text-sm text-amber-700">Não podem ser compensadas entre si</div>
+                            </div>
+                            
+                            <div class="w-0.5 h-6 bg-slate-400"></div>
+                            
+                            <div class="bg-slate-100 border-2 border-slate-300 px-8 py-4 rounded-md text-center max-w-xl">
+                                <div class="font-semibold text-slate-800">Cada parte paga integralmente os honorários devidos ao advogado da parte contrária</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+        <div class="mt-8 text-center">
+            <div class="bg-slate-50 border border-slate-200 rounded-md px-6 py-4 text-sm text-slate-700">
+                <div class="font-semibold mb-2">Critérios para fixação do percentual (CPC/2015)</div>
+                <div>Grau
+
+                <div class="mt-6 text-center text-xs text-gray-600">
+                    <p><strong>Critérios do CPC/2015 para fixação do percentual:</strong></p>
+                    <p>Grau de zelo, lugar da prestação do serviço, natureza e importância da causa, trabalho realizado pelo advogado e tempo exigido para o serviço</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-8">
             <h2 class="text-2xl font-bold text-blue-800 mb-6 text-center">Exceções às Regras Gerais</h2>
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                 <div class="bg-red-50 border border-red-200 rounded-lg p-4">
-                    <h4 class="font-bold text-red-800 mb-2">Mandado de Segurança</h4>
-                    <p class="text-sm text-red-700">Não admite condenação em honorários advocatícios</p>
+                    <h4 class="font-bold text-red-800 mb-2">Mandado de Segurança e Habeas Data</h4>
+                    <p class="text-sm text-red-700">Não admitem condenação em honorários advocatícios</p>
                 </div>
                 
                 <div class="bg-green-50 border border-green-200 rounded-lg p-4">
-                    <h4 class="font-bold text-green-800 mb-2">Defensoria vs Estado</h4>
-                    <p class="text-sm text-green-700">Não há honorários quando Defensoria vence o Estado (confusão)</p>
+                    <h4 class="font-bold text-green-800 mb-2">Rejeição ou Improcedência de Embargos à Execução</h4>
+                    <p class="text-sm text-green-700">Verbas sucumbenciais serão acrescidas ao valor do débito principal</p>
                 </div>
                 
                 <div class="bg-blue-50 border border-blue-200 rounded-lg p-4">
@@ -363,22 +431,420 @@
                 
                 <div class="bg-purple-50 border border-purple-200 rounded-lg p-4">
                     <h4 class="font-bold text-purple-800 mb-2">Execução FP s/ Impugnação</h4>
-                    <p class="text-sm text-purple-700">Não devidos se expedido precatório sem impugnação</p>
+                    <p class="text-sm text-purple-700">Não devidos se expedido precatório sem impugnação (exceto cumprimento individual de sentença coletiva)</p>
                 </div>
                 
                 <div class="bg-orange-50 border border-orange-200 rounded-lg p-4">
                     <h4 class="font-bold text-orange-800 mb-2">Embargos de Terceiro</h4>
-                    <p class="text-sm text-orange-700">Quem deu causa à constrição indevida arca com honorários</p>
+                    <p class="text-sm text-orange-700">Quem deu causa à constrição indevida arca com os honorários</p>
                 </div>
                 
                 <div class="bg-gray-50 border border-gray-200 rounded-lg p-4">
                     <h4 class="font-bold text-gray-800 mb-2">Rejeição de Impugnação</h4>
-                    <p class="text-sm text-gray-700">Não cabíveis honorários na rejeição de impugnação ao cumprimento</p>
+                    <p class="text-sm text-gray-700">Não cabíveis honorários na rejeição de impugnação ao cumprimento de sentença</p>
                 </div>
             </div>
         </div>
 
         <div class="mb-16">
+            <h2 class="text-2xl font-bold text-blue-800 mb-6 text-center">Hipóteses Especiais de Redução dos Honorários</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="section-card bg-indigo-100 rounded-lg p-6 border-l-4 border-indigo-600">
+                    <h3 class="text-lg font-bold text-indigo-800 mb-3 flex items-center">
+                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                        Ação Monitória
+                    </h3>
+                    <div class="bg-indigo-50 p-3 rounded border border-indigo-200 mb-3">
+                        <p class="text-sm text-indigo-800 font-medium">CPC, art. 701</p>
+                    </div>
+                    <p class="text-gray-700 text-sm">
+                        Fixados em <span class="font-bold text-indigo-600">5%</span> sobre o valor atribuído à causa se o réu cumprir a obrigação no prazo de 15 dias.
+                    </p>
+                </div>
+
+                <div class="section-card bg-teal-100 rounded-lg p-6 border-l-4 border-teal-600">
+                    <h3 class="text-lg font-bold text-teal-800 mb-3 flex items-center">
+                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l4-4 4 4m0 6l-4 4-4-4"></path>
+                        </svg>
+                        Ilegitimidade Passiva
+                    </h3>
+                    <div class="bg-teal-50 p-3 rounded border border-teal-200 mb-3">
+                        <p class="text-sm text-teal-800 font-medium">CPC, art. 338</p>
+                    </div>
+                    <p class="text-gray-700 text-sm">
+                        Fixados entre <span class="font-bold text-teal-600">3% e 5%</span> sobre o valor atribuído à causa caso o autor substitua o réu na petição inicial.
+                    </p>
+                </div>
+
+                <div class="section-card bg-emerald-100 rounded-lg p-6 border-l-4 border-emerald-600">
+                    <h3 class="text-lg font-bold text-emerald-800 mb-3 flex items-center">
+                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        Reconhecimento e Cumprimento Simultâneo
+                    </h3>
+                    <div class="bg-emerald-50 p-3 rounded border border-emerald-200 mb-3">
+                        <p class="text-sm text-emerald-800 font-medium">CPC, art. 90, § 4º</p>
+                    </div>
+                    <p class="text-gray-700 text-sm">
+                        <span class="font-bold text-emerald-600">Redução dos honorários à metade</span> quando há reconhecimento e cumprimento simultâneo do pedido.
+                    </p>
+                </div>
+
+                <div class="section-card bg-cyan-100 rounded-lg p-6 border-l-4 border-cyan-600">
+                    <h3 class="text-lg font-bold text-cyan-800 mb-3 flex items-center">
+                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                        </svg>
+                        Desistência em Casos Repetitivos
+                    </h3>
+                    <div class="bg-cyan-50 p-3 rounded border border-cyan-200 mb-3">
+                        <p class="text-sm text-cyan-800 font-medium">CPC, art. 1.040, § 2º</p>
+                    </div>
+                    <p class="text-gray-700 text-sm">
+                        Publicado acórdão fixando tese em RE ou REsp repetitivos, o autor que desistir da ação será <span class="font-bold text-cyan-600">dispensado do pagamento de honorários</span>.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    <div class="mb-16">
+        <div class="text-center mb-6 cursor-pointer" onclick="toggleSumulas('stj')">
+            <h2 class="text-2xl font-bold text-blue-800 flex items-center justify-center hover:text-blue-600 transition-colors">
+                Súmulas do Superior Tribunal de Justiça sobre Honorários
+                <svg id="arrow-stj" class="w-6 h-6 ml-2 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+            </h2>
+            <p class="text-sm text-gray-600 mt-2">Clique para expandir/recolher</p>
+        </div>
+        
+        <div id="sumulas-stj" class="overflow-hidden transition-all duration-500 max-h-0">
+            <div class="relative">
+                <div class="absolute inset-0 bg-gradient-to-r from-blue-100 via-purple-50 to-indigo-100 rounded-2xl opacity-30"></div>
+                <div class="relative grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 p-6">
+                
+                <div class="bg-white border-l-4 border-red-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                    <div class="flex items-center mb-2">
+                        <div class="bg-red-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">14</div>
+                        <h4 class="font-bold text-red-700">Correção Monetária</h4>
+                    </div>
+                    <p class="text-sm text-gray-700 italic">"Arbitrados os honorários advocatícios em percentual sobre o valor da causa, a correção monetária incide a partir do respectivo ajuizamento".</p>
+                </div>
+                
+                <div class="bg-white border-l-4 border-orange-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                    <div class="flex items-center mb-2">
+                        <div class="bg-orange-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">105</div>
+                        <h4 class="font-bold text-orange-700">Mandado de Segurança</h4>
+                    </div>
+                    <p class="text-sm text-gray-700 italic">"Na ação de mandado de segurança não se admite condenação em honorários advocatícios".</p>
+                </div>
+                
+                <div class="bg-white border-l-4 border-yellow-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                    <div class="flex items-center mb-2">
+                        <div class="bg-yellow-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">110</div>
+                        <h4 class="font-bold text-yellow-700">Ações Acidentárias</h4>
+                    </div>
+                    <p class="text-sm text-gray-700 italic">"Isenção do pagamento de honorários advocatícios, nas ações acidentarias, e restrita ao segurado".</p>
+                </div>
+                
+                <div class="bg-white border-l-4 border-green-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                    <div class="flex items-center mb-2">
+                        <div class="bg-green-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">111</div>
+                        <h4 class="font-bold text-green-700">Ações Previdenciárias</h4>
+                    </div>
+                    <p class="text-sm text-gray-700 italic">"Os honorários advocatícios, nas ações previdenciárias, não incidem sobre as prestações vencidas após a sentença".</p>
+                </div>
+                
+                <div class="bg-white border-l-4 border-teal-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                    <div class="flex items-center mb-2">
+                        <div class="bg-teal-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">131</div>
+                        <h4 class="font-bold text-teal-700">Desapropriação - Juros</h4>
+                    </div>
+                    <p class="text-sm text-gray-700 italic">"Nas ações de desapropriação incluem-se no calculo da verba advocatícia as parcelas relativas aos juros compensatórios e moratórios, devidamente corrigidas".</p>
+                </div>
+                
+                <div class="bg-white border-l-4 border-blue-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                    <div class="flex items-center mb-2">
+                        <div class="bg-blue-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">141</div>
+                        <h4 class="font-bold text-blue-700">Desapropriação Direta</h4>
+                    </div>
+                    <p class="text-sm text-gray-700 italic">"Os honorários de advogado em desapropriação direta são calculados sobre a diferença entre a indenização e a oferta, corrigidas monetariamente".</p>
+                </div>
+                
+                <div class="bg-white border-l-4 border-indigo-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                    <div class="flex items-center mb-2">
+                        <div class="bg-indigo-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">153</div>
+                        <h4 class="font-bold text-indigo-700">Execução Fiscal</h4>
+                    </div>
+                    <p class="text-sm text-gray-700 italic">"A desistência da execução fiscal, apos o oferecimento dos embargos, não exime o exequente dos encargos da sucumbência".</p>
+                </div>
+                
+                <div class="bg-white border-l-4 border-purple-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                    <div class="flex items-center mb-2">
+                        <div class="bg-purple-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">201</div>
+                        <h4 class="font-bold text-purple-700">Fixação em SM</h4>
+                    </div>
+                    <p class="text-sm text-gray-700 italic">"Os honorários advocatícios não podem ser fixados em salários-mínimos".</p>
+                </div>
+                
+                <div class="bg-white border-l-4 border-pink-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 relative">
+                    <div class="flex items-center mb-2">
+                        <div class="bg-pink-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">306</div>
+                        <h4 class="font-bold text-pink-700">Compensação</h4>
+                        <div class="ml-auto relative">
+                            <div class="bg-orange-500 text-white px-2 py-1 rounded-full text-xs font-bold cursor-help" onmouseenter="showTooltip306(event)" onmouseleave="hideTooltip306()">
+                                SÚMULA SUPERADA
+                            </div>
+                            <div id="tooltip-306" class="absolute bottom-full right-0 mb-2 w-80 bg-gray-800 text-white text-xs rounded-lg p-3 opacity-0 pointer-events-none transition-opacity duration-200 z-10">
+                                <div>
+                                    <strong>Entendimento Superado:</strong><br>
+                                    Incompatibilidade com o disposto no § 14 do art. 85 do Código de Processo Civil, que proíbe expressamente a compensação.
+                                </div>
+                                <div class="absolute top-full right-4 w-0 h-0 border-l-4 border-r-4 border-t-4 border-l-transparent border-r-transparent border-t-gray-800"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-sm text-gray-700 italic line-through opacity-60">"Os honorários advocatícios devem ser compensados quando houver sucumbência recíproca, assegurado o direito autônomo do advogado à execução do saldo sem excluir a legitimidade da própria parte".</p>
+                </div>
+                
+                <div class="bg-white border-l-4 border-rose-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                    <div class="flex items-center mb-2">
+                        <div class="bg-rose-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">325</div>
+                        <h4 class="font-bold text-rose-700">Remessa Oficial</h4>
+                    </div>
+                    <p class="text-sm text-gray-700 italic">"A remessa oficial devolve ao Tribunal o reexame de todas as parcelas da condenação suportadas pela Fazenda Pública, inclusive dos honorários de advogado".</p>
+                </div>
+                
+                <div class="bg-white border-l-4 border-emerald-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                    <div class="flex items-center mb-2">
+                        <div class="bg-emerald-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">345</div>
+                        <h4 class="font-bold text-emerald-700">Ações Coletivas</h4>
+                    </div>
+                    <p class="text-sm text-gray-700 italic">"São devidos honorários advocatícios pela Fazenda Pública nas execuções individuais de sentença proferida em ações coletivas, ainda que não embargadas".</p>
+                </div>
+                
+                <div class="bg-white border-l-4 border-cyan-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 relative">
+                    <div class="flex items-center mb-2">
+                        <div class="bg-cyan-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">421</div>
+                        <h4 class="font-bold text-cyan-700">Defensoria Pública</h4>
+                        <div class="ml-auto relative">
+                            <div class="bg-red-500 text-white px-2 py-1 rounded-full text-xs font-bold cursor-help" onmouseenter="showTooltip(event)" onmouseleave="hideTooltip()">
+                                SÚMULA CANCELADA
+                            </div>
+                            <div id="tooltip-421" class="absolute bottom-full right-0 mb-2 w-80 bg-gray-800 text-white text-xs rounded-lg p-3 opacity-0 pointer-events-none transition-opacity duration-200 z-10">
+                                <div class="mb-2">
+                                    <strong>Cancelamento:</strong><br>
+                                    A Corte Especial, na sessão de 17/04/2024, ao julgar a Questão de Ordem no REsp 1.108.013/RJ (Projeto de Súmula n. 851), determinou o CANCELAMENTO da Súmula 421 do STJ (DJe 22/04/2024).
+                                </div>
+                                <div>
+                                    <strong>Tema 1002/STF:</strong><br>
+                                    1. É devido o pagamento de honorários sucumbenciais à Defensoria Pública, quando representa parte vencedora em demanda ajuizada contra qualquer ente público, inclusive aquele que integra;<br>
+                                    2. O valor recebido a título de honorários sucumbenciais deve ser destinado, exclusivamente, ao aparelhamento das Defensorias Públicas, vedado o seu rateio entre os membros da instituição.
+                                </div>
+                                <div class="absolute top-full right-4 w-0 h-0 border-l-4 border-r-4 border-t-4 border-l-transparent border-r-transparent border-t-gray-800"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-sm text-gray-700 italic line-through opacity-60">"Os honorários advocatícios não são devidos à Defensoria Pública quando ela atua contra a pessoa jurídica de direito público à qual pertença".</p>
+                </div>
+                
+                <div class="bg-white border-l-4 border-amber-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 relative">
+                    <div class="flex items-center mb-2">
+                        <div class="bg-amber-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">453</div>
+                        <h4 class="font-bold text-amber-700">Omissão Judicial</h4>
+                        <div class="ml-auto relative">
+                            <div class="bg-orange-500 text-white px-2 py-1 rounded-full text-xs font-bold cursor-help" onmouseenter="showTooltip453(event)" onmouseleave="hideTooltip453()">
+                                SÚMULA SUPERADA
+                            </div>
+                            <div id="tooltip-453" class="absolute bottom-full right-0 mb-2 w-80 bg-gray-800 text-white text-xs rounded-lg p-3 opacity-0 pointer-events-none transition-opacity duration-200 z-10">
+                                <div>
+                                    <strong>Entendimento Superado:</strong><br>
+                                    Incompatibilidade com o disposto no § 18 do art. 85 do Código de Processo Civil, que prevê o direito ao ajuizamento de ação autônoma para definição e cobrança dos honorários em caso de omissão quanto à fixação.
+                                </div>
+                                <div class="absolute top-full right-4 w-0 h-0 border-l-4 border-r-4 border-t-4 border-l-transparent border-r-transparent border-t-gray-800"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-sm text-gray-700 italic line-through opacity-60">"Os honorários sucumbenciais, quando omitidos em decisão transitada em julgado, não podem ser cobrados em execução ou em ação própria".</p>
+                </div>
+                
+                <div class="bg-white border-l-4 border-lime-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                    <div class="flex items-center mb-2">
+                        <div class="bg-lime-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">488</div>
+                        <h4 class="font-bold text-lime-700">Lei 9.469/1997</h4>
+                    </div>
+                    <p class="text-sm text-gray-700 italic">"O § 2º do art. 6º da Lei n. 9.469/1997, que obriga à repartição dos honorários advocatícios, é inaplicável a acordos ou transações celebrados em data anterior à sua vigência".</p>
+                </div>
+                
+                <div class="bg-gradient-to-r from-blue-500 to-purple-600 text-white border-l-4 border-blue-700 rounded-lg p-4 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="flex items-center mb-2">
+                        <div class="bg-white text-blue-600 rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">517</div>
+                        <h4 class="font-bold">Cumprimento de Sentença</h4>
+                    </div>
+                    <p class="text-sm italic">"São devidos honorários advocatícios no cumprimento de sentença, haja ou não impugnação, depois de escoado o prazo para pagamento voluntário, que se inicia após a intimação do advogado da parte executada."</p>
+                </div>
+                
+                <div class="bg-gradient-to-r from-red-500 to-pink-600 text-white border-l-4 border-red-700 rounded-lg p-4 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="flex items-center mb-2">
+                        <div class="bg-white text-red-600 rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">519</div>
+                        <h4 class="font-bold">Rejeição de Impugnação</h4>
+                    </div>
+                    <p class="text-sm italic">"Na hipótese de rejeição da impugnação ao cumprimento de sentença, não são cabíveis honorários advocatícios."</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="mt-6 text-center">
+            <div class="inline-flex items-center bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm">
+                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                As Súmulas 517 e 519 são as mais recentes sobre o tema
+            </div>
+        </div>
+    </div>
+
+<div class="mt-8">
+    <div class="text-center mb-6 cursor-pointer" onclick="toggleSumulas('stf')">
+        <h2 class="text-2xl font-bold text-red-800 flex items-center justify-center hover:text-red-600 transition-colors">
+            Súmulas do Supremo Tribunal Federal sobre Honorários
+            <svg id="arrow-stf" class="w-6 h-6 ml-2 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+        </h2>
+        <p class="text-sm text-gray-600 mt-2">Clique para expandir/recolher</p>
+    </div>
+    
+    <div id="sumulas-stf" class="overflow-hidden transition-all duration-500 max-h-0">
+        <div class="relative">
+            <div class="absolute inset-0 bg-gradient-to-r from-red-100 via-pink-50 to-rose-100 rounded-2xl opacity-30"></div>
+            <div class="relative grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 p-6">
+            
+            <div class="bg-white border-l-4 border-red-600 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                <div class="flex items-center mb-2">
+                    <div class="bg-red-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">185</div>
+                    <h4 class="font-bold text-red-700">Reajustamento Pecuário</h4>
+                </div>
+                <p class="text-sm text-gray-700 italic">"Em processo de reajustamento pecuário, não responde a união pelos honorários do advogado do credor ou do devedor".</p>
+            </div>
+            
+            <div class="bg-white border-l-4 border-orange-600 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                <div class="flex items-center mb-2">
+                    <div class="bg-orange-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">234</div>
+                    <h4 class="font-bold text-orange-700">Acidente do Trabalho</h4>
+                </div>
+                <p class="text-sm text-gray-700 italic">"São devidos honorários de advogado em ação de acidente do trabalho julgada procedente".</p>
+            </div>
+            
+            <div class="bg-white border-l-4 border-yellow-600 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                <div class="flex items-center mb-2">
+                    <div class="bg-yellow-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">256</div>
+                    <h4 class="font-bold text-yellow-700">Pedido Implícito</h4>
+                </div>
+                <p class="text-sm text-gray-700 italic">"É dispensável pedido expresso para condenação do réu em honorários, com fundamento nos arts. 63 ou 64 do Código de Processo Civil".</p>
+            </div>
+            
+            <div class="bg-white border-l-4 border-green-600 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                <div class="flex items-center mb-2">
+                    <div class="bg-green-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">257</div>
+                    <h4 class="font-bold text-green-700">Ação Regressiva</h4>
+                </div>
+                <p class="text-sm text-gray-700 italic">"São cabíveis honorários de advogado na ação regressiva do segurador contra o causador do dano".</p>
+            </div>
+            
+            <div class="bg-white border-l-4 border-teal-600 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                <div class="flex items-center mb-2">
+                    <div class="bg-teal-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">389</div>
+                    <h4 class="font-bold text-teal-700">Fixação e RE</h4>
+                </div>
+                <p class="text-sm text-gray-700 italic">"Salvo limite legal, a fixação de honorários de advogado, em complemento da condenação, depende das circunstâncias da causa, não dando lugar a recurso extraordinário".</p>
+            </div>
+            
+            <div class="bg-white border-l-4 border-blue-600 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                <div class="flex items-center mb-2">
+                    <div class="bg-blue-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">450</div>
+                    <h4 class="font-bold text-blue-700">Justiça Gratuita</h4>
+                </div>
+                <p class="text-sm text-gray-700 italic">"São devidos honorários de advogado sempre que vencedor o beneficiário de justiça gratuita".</p>
+            </div>
+            
+            <div class="bg-white border-l-4 border-indigo-600 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                <div class="flex items-center mb-2">
+                    <div class="bg-indigo-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">512</div>
+                    <h4 class="font-bold text-indigo-700">Mandado de Segurança</h4>
+                </div>
+                <p class="text-sm text-gray-700 italic">"Não cabe condenação em honorários de advogado na ação de mandado de segurança".</p>
+            </div>
+            
+            <div class="bg-white border-l-4 border-purple-600 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                <div class="flex items-center mb-2">
+                    <div class="bg-purple-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">616</div>
+                    <h4 class="font-bold text-purple-700">Multa Contratual</h4>
+                </div>
+                <p class="text-sm text-gray-700 italic">"É permitida a cumulação da multa contratual com os honorários de advogado, após o advento do Código de Processo Civil vigente".</p>
+            </div>
+            
+            <div class="bg-white border-l-4 border-pink-600 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                <div class="flex items-center mb-2">
+                    <div class="bg-pink-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">617</div>
+                    <h4 class="font-bold text-pink-700">Desapropriação - Base</h4>
+            </div>
+                <p class="text-sm text-gray-700 italic">"A base de cálculo dos honorários de advogado em desapropriação é a diferença entre a oferta e a indenização, corrigidas ambas monetariamente".</p>
+            </div>
+            
+            <div class="bg-white border-l-4 border-rose-600 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                <div class="flex items-center mb-2">
+                    <div class="bg-rose-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">633</div>
+                    <h4 class="font-bold text-rose-700">Recurso Extraordinário Trabalhista</h4>
+                </div>
+                <p class="text-sm text-gray-700 italic">"É incabível a condenação em verba honorária nos recursos extraordinários interpostos em processo trabalhista, exceto nas hipóteses previstas na Lei 5584/1970".</p>
+            </div>
+
+            <div class="col-span-full bg-gradient-to-r from-yellow-400 via-yellow-500 to-amber-500 text-white border-4 border-yellow-600 rounded-lg p-6 shadow-2xl hover:shadow-3xl transition-all duration-300 transform hover:-translate-y-2">
+                <div class="flex items-center mb-4">
+                    <div class="bg-white text-yellow-600 rounded-full w-12 h-12 flex items-center justify-center text-lg font-bold mr-4 shadow-lg">
+                        47
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-xl">SÚMULA VINCULANTE</h4>
+                        <p class="text-yellow-100 text-sm">Natureza Alimentar dos Honorários</p>
+                    </div>
+                    <div class="ml-auto">
+                        <div class="bg-red-600 text-white px-3 py-1 rounded-full text-xs font-bold animate-pulse">
+                            VINCULANTE
+                        </div>
+                    </div>
+                </div>
+                <p class="text-lg italic leading-relaxed">"Os honorários advocatícios incluídos na condenação ou destacados do montante principal devido ao credor consubstanciam verba de natureza alimentar cuja satisfação ocorrerá com a expedição de precatório ou requisição de pequeno valor, observada ordem especial restrita aos créditos dessa natureza."</p>
+                <div class="mt-4 text-center">
+                    <div class="inline-flex items-center bg-yellow-600 bg-opacity-50 px-3 py-1 rounded-full text-sm">
+                        <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                        Efeito vinculante para todos os órgãos do Poder Judiciário
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+    </div>
+    
+    <div class="mt-6 text-center">
+        <div class="inline-flex items-center bg-red-100 text-red-800 px-4 py-2 rounded-full text-sm">
+            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z"></path>
+            </svg>
+            Algumas súmulas podem estar superadas pela legislação atual
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-8">
             <h2 class="text-2xl font-bold text-blue-800 mb-6 text-center">Teste seus Conhecimentos</h2>
             
             <div class="bg-white rounded-lg shadow-lg p-6">
@@ -483,79 +949,6 @@
         sidenavClose.addEventListener('click', closeSidenav);
         backdrop.addEventListener('click', closeSidenav);
 
-        function calcularHonorarios() {
-            const tipodemanda = document.getElementById('tipo-demanda').value;
-            const valorCausa = parseFloat(document.getElementById('valor-causa').value);
-            const percentual = parseFloat(document.getElementById('percentual').value);
-            const resultadoDiv = document.getElementById('resultado-calculo');
-            
-            if (!valorCausa || !percentual) {
-                resultadoDiv.innerHTML = '<p class="text-red-500 text-center">Preencha todos os campos</p>';
-                return;
-            }
-            
-            let salarioMinimo = 1412; // Valor aproximado para 2025
-            let valorHonorarios = 0;
-            let observacoes = '';
-            let validacao = '';
-            
-            if (tipodemanda === 'geral') {
-                if (percentual < 10 || percentual > 20) {
-                    validacao = '<p class="text-red-600 text-sm mb-2">⚠️ Percentual deve estar entre 10% e 20% para regra geral</p>';
-                }
-                valorHonorarios = (valorCausa * percentual) / 100;
-                observacoes = 'Regra geral aplicada';
-            } else {
-                let valorEmSM = valorCausa / salarioMinimo;
-                let faixaPercentual = '';
-                
-                if (valorEmSM <= 200) {
-                    faixaPercentual = '10% - 20%';
-                    if (percentual < 10 || percentual > 20) {
-                        validacao = '<p class="text-red-600 text-sm mb-2">⚠️ Para esta faixa, use entre 10% e 20%</p>';
-                    }
-                } else if (valorEmSM <= 2000) {
-                    faixaPercentual = '8% - 10%';
-                    if (percentual < 8 || percentual > 10) {
-                        validacao = '<p class="text-red-600 text-sm mb-2">⚠️ Para esta faixa, use entre 8% e 10%</p>';
-                    }
-                } else if (valorEmSM <= 20000) {
-                    faixaPercentual = '5% - 8%';
-                    if (percentual < 5 || percentual > 8) {
-                        validacao = '<p class="text-red-600 text-sm mb-2">⚠️ Para esta faixa, use entre 5% e 8%</p>';
-                    }
-                } else if (valorEmSM <= 100000) {
-                    faixaPercentual = '3% - 5%';
-                    if (percentual < 3 || percentual > 5) {
-                        validacao = '<p class="text-red-600 text-sm mb-2">⚠️ Para esta faixa, use entre 3% e 5%</p>';
-                    }
-                } else {
-                    faixaPercentual = '1% - 3%';
-                    if (percentual < 1 || percentual > 3) {
-                        validacao = '<p class="text-red-600 text-sm mb-2">⚠️ Para esta faixa, use entre 1% e 3%</p>';
-                    }
-                }
-                
-                valorHonorarios = (valorCausa * percentual) / 100;
-                observacoes = `Fazenda Pública - Faixa: ${faixaPercentual} (${valorEmSM.toFixed(0)} SM)`;
-            }
-            
-            resultadoDiv.innerHTML = `
-                ${validacao}
-                <div class="text-center">
-                    <div class="text-2xl font-bold text-blue-600 mb-2">
-                        R$ ${valorHonorarios.toLocaleString('pt-BR', {minimumFractionDigits: 2})}
-                    </div>
-                    <div class="text-sm text-gray-600 mb-3">
-                        ${percentual}% sobre R$ ${valorCausa.toLocaleString('pt-BR', {minimumFractionDigits: 2})}
-                    </div>
-                    <div class="bg-blue-50 p-3 rounded border text-sm text-blue-700">
-                        ${observacoes}
-                    </div>
-                </div>
-            `;
-        }
-        
         document.getElementById('check-answers').addEventListener('click', function() {
             const answers = {
                 q1: document.querySelector('input[name="q1"]:checked')?.value,
@@ -617,7 +1010,58 @@
             
             resultsContent.innerHTML = feedback;
             resultsDiv.classList.remove('hidden');
-        });
+            });
+
+function showTooltip(event) {
+    const tooltip = document.getElementById('tooltip-421');
+    tooltip.classList.remove('opacity-0');
+    tooltip.classList.add('opacity-100');
+}
+
+function hideTooltip() {
+    const tooltip = document.getElementById('tooltip-421');
+    tooltip.classList.remove('opacity-100');
+    tooltip.classList.add('opacity-0');
+
+}
+
+function showTooltip306(event) {
+    const tooltip = document.getElementById('tooltip-306');
+    tooltip.classList.remove('opacity-0');
+    tooltip.classList.add('opacity-100');
+}
+
+function hideTooltip306() {
+    const tooltip = document.getElementById('tooltip-306');
+    tooltip.classList.remove('opacity-100');
+    tooltip.classList.add('opacity-0');
+}
+
+function showTooltip453(event) {
+    const tooltip = document.getElementById('tooltip-453');
+    tooltip.classList.remove('opacity-0');
+    tooltip.classList.add('opacity-100');
+}
+
+function hideTooltip453() {
+    const tooltip = document.getElementById('tooltip-453');
+    tooltip.classList.remove('opacity-100');
+    tooltip.classList.add('opacity-0');
+}
+
+function toggleSumulas(tipo) {
+    const container = document.getElementById(`sumulas-${tipo}`);
+    const arrow = document.getElementById(`arrow-${tipo}`);
+    
+    if (container.style.maxHeight === '0px' || container.style.maxHeight === '') {
+        container.style.maxHeight = container.scrollHeight + 'px';
+        arrow.style.transform = 'rotate(180deg)';
+    } else {
+        container.style.maxHeight = '0px';
+        arrow.style.transform = 'rotate(0deg)';
+    }
+}
+
         </script>
         
         <footer class="text-center py-8 mt-16">
@@ -630,3 +1074,4 @@
         </footer>
     </body>
 </html>
+
