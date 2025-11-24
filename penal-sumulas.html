@@ -1,0 +1,1468 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Súmulas - Processo Penal</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+        </script>
+        <script defer src="https://cdn.vercel-insights.com/v1/script.debug.js"></script>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+            body {
+                font-family: 'Roboto', sans-serif;
+                background-color: #f0f4f8;
+            }
+
+            .section-card {
+                transition: all 0.3s ease;
+            }
+
+            .section-card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            }
+
+            #sidenav-backdrop {
+                transition: opacity 0.3s ease;
+            }
+
+            #sidenav {
+                transition: transform 0.3s ease;
+            }
+
+            .sumula-card {
+                cursor: pointer;
+                user-select: none;
+            }
+
+            .sumula-card:active {
+                transform: scale(0.98) !important;
+            }
+        </style>
+    </head>
+
+    <body>
+        <nav class="bg-blue-900 text-white shadow-lg">
+            <div class="container mx-auto px-4">
+                <div class="flex justify-between items-center py-4">
+                    <div class="flex items-center">
+                        <button id="sidenav-toggle" class="mr-4 text-white hover:text-blue-200 transition">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h16"></path>
+                            </svg>
+                        </button>
+                        <div class="flex items-center gap-2">
+                            <div class="text-xl font-bold">ResumosDireito</div>
+                            <div class="text-xl font-light text-blue-200">Penal</div>
+                        </div>
+                    </div>
+                    <div class="hidden md:flex space-x-6">
+                        <a href="/" class="hover:text-blue-200 transition">Civil</a>
+                        <a href="/penal-sumulas.html" class="hover:text-blue-200 transition font-medium">Penal</a>
+                        <a href="/constitucional" class="hover:text-blue-200 transition">Constitucional</a>
+                        <a href="/administrativo" class="hover:text-blue-200 transition">Administrativo</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div id="sidenav-backdrop"
+            class="fixed inset-0 bg-black bg-opacity-50 z-40 opacity-0 pointer-events-none transition-opacity"></div>
+
+        <nav id="sidenav"
+            class="fixed top-0 left-0 z-50 h-screen w-64 bg-white shadow-lg transform -translate-x-full transition-transform">
+            <div class="p-6">
+                <div class="flex justify-between items-center mb-6">
+                    <h3 class="text-lg font-semibold text-blue-800">Penal</h3>
+                    <button id="sidenav-close" class="text-gray-500 hover:text-gray-700">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+                <ul class="space-y-2">
+                    <li>
+                        <a href="penal-sumulas.html"
+                            class="block p-3 text-blue-600 bg-blue-50 rounded font-medium border-l-4 border-blue-600">
+                            <div class="flex items-center">
+                                <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
+                                    </path>
+                                </svg>
+                                Súmulas
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="absolute bottom-0 left-0 right-0 p-6 border-t border-gray-200">
+                <div class="text-xs text-gray-500 text-center">
+                    <p class="font-medium">ResumosDireito</p>
+                    <p>2025</p>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container mx-auto px-4 py-8 max-w-6xl">
+            <nav class="mb-8" aria-label="Breadcrumb">
+                <ol class="flex items-center space-x-2 text-sm text-gray-600">
+                    <li><a href="/" class="hover:text-blue-600">Início</a></li>
+                    <li><svg class="w-4 h-4 mx-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                clip-rule="evenodd"></path>
+                        </svg></li>
+                    <li><a href="/penal" class="hover:text-blue-600">Processo Penal</a></li>
+                    <li><svg class="w-4 h-4 mx-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                clip-rule="evenodd"></path>
+                        </svg></li>
+                    <li class="text-gray-800 font-medium">Súmulas</li>
+                </ol>
+            </nav>
+
+            <header class="text-center mb-12">
+                <h1 class="text-4xl font-bold text-blue-900 mb-4">Súmulas em Matéria Criminal</h1>
+                <p class="text-xl text-gray-600">Compilação das súmulas do STF e STJ sobre questões de Direito Penal,
+                    Processo Penal,
+                    Execução Penal e ECA</p>
+            </header>
+
+            <!-- Sistema de Busca -->
+            <div class="bg-white rounded-lg shadow-lg p-6 mb-10">
+                <div class="flex flex-col md:flex-row gap-4 items-center">
+                    <div class="flex-1 w-full">
+                        <div class="relative">
+                            <input type="text" id="searchInput"
+                                placeholder="Buscar por número, palavra-chave ou conteúdo da súmula..."
+                                class="w-full px-4 py-3 pl-12 border-2 border-blue-300 rounded-lg focus:outline-none focus:border-blue-500 transition" />
+                            <svg class="w-6 h-6 text-blue-400 absolute left-3 top-3.5" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="flex gap-2">
+                        <button onclick="filtrarPorTribunal('todos')" id="btn-todos"
+                            class="px-4 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition font-medium">
+                            Todos
+                        </button>
+                        <button onclick="filtrarPorTribunal('STF')" id="btn-STF"
+                            class="px-4 py-3 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 transition font-medium">
+                            STF
+                        </button>
+                        <button onclick="filtrarPorTribunal('STJ')" id="btn-STJ"
+                            class="px-4 py-3 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 transition font-medium">
+                            STJ
+                        </button>
+                    </div>
+                </div>
+                <div id="searchResults" class="mt-4 text-sm text-gray-600"></div>
+            </div>
+
+            <!-- Área de Resultados da Busca -->
+            <div id="searchResultsContainer" class="mb-10" style="display: none;">
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <div class="flex justify-between items-center mb-4">
+                        <h2 class="text-2xl font-bold text-blue-900">Resultados da Busca</h2>
+                        <button onclick="limparBusca()"
+                            class="px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600 transition text-sm font-medium">
+                            Limpar Busca
+                        </button>
+                    </div>
+                    <div id="searchResultsGrid" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
+                        <!-- Resultados serão inseridos aqui -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- SÚMULAS DO STF -->
+            <div class="mt-16">
+                <div class="text-center mb-6 cursor-pointer" onclick="toggleSumulas('stf')">
+                    <h2
+                        class="text-2xl font-bold text-red-800 flex items-center justify-center hover:text-red-600 transition-colors">
+                        Súmulas do STF
+                        <svg id="arrow-stf" class="w-6 h-6 ml-2 transform transition-transform duration-300" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </h2>
+                    <p class="text-sm text-gray-600 mt-2">Clique para expandir/recolher</p>
+                </div>
+
+                <div id="sumulas-stf" class="overflow-hidden transition-all duration-500 max-h-0">
+                    <div class="relative">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-r from-red-100 via-pink-50 to-rose-100 rounded-2xl opacity-30">
+                        </div>
+                        <div class="relative grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 p-6">
+
+                            <div
+                                class="bg-white border-l-4 border-orange-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                <div class="flex items-center mb-2">
+                                    <div
+                                        class="bg-orange-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                        145</div>
+                                    <h4 class="font-bold text-orange-700">Crime Impossível</h4>
+                                </div>
+                                <p class="text-sm text-gray-700 italic text-justify">Não há crime, quando a preparação
+                                    do flagrante pela polícia torna impossível a sua consumação.</p>
+                            </div>
+
+                            <div
+                                class="bg-white border-l-4 border-indigo-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                <div class="flex items-center mb-2">
+                                    <div
+                                        class="bg-indigo-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                        146</div>
+                                    <h4 class="font-bold text-indigo-700">Prescrição</h4>
+                                </div>
+                                <p class="text-sm text-gray-700 italic text-justify">A prescrição da ação penal
+                                    regula-se pela pena concretizada na sentença, quando não há recurso da acusação.</p>
+                            </div>
+
+                            <div
+                                class="bg-white border-l-4 border-rose-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                <div class="flex items-center mb-2">
+                                    <div
+                                        class="bg-rose-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                        246</div>
+                                    <h4 class="font-bold text-rose-700">Cheque Sem Fraude</h4>
+                                </div>
+                                <p class="text-sm text-gray-700 italic text-justify">Comprovado não ter havido fraude,
+                                    não se configura o crime de emissão de cheque sem fundos.</p>
+                            </div>
+
+                            <div
+                                class="bg-white border-l-4 border-cyan-600 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                <div class="flex items-center mb-2">
+                                    <div
+                                        class="bg-cyan-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                        393</div>
+                                    <h4 class="font-bold text-cyan-700">Revisão Criminal</h4>
+                                </div>
+                                <p class="text-sm text-gray-700 italic text-justify">Para requerer revisão criminal, o
+                                    condenado não é obrigado a recolher-se à prisão.</p>
+                            </div>
+
+                            <div
+                                class="bg-white border-l-4 border-teal-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                <div class="flex items-center mb-2">
+                                    <div
+                                        class="bg-teal-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                        422</div>
+                                    <h4 class="font-bold text-teal-700">Medida de Segurança</h4>
+                                </div>
+                                <p class="text-sm text-gray-700 italic text-justify">A absolvição criminal não prejudica
+                                    a medida de segurança, quando couber, ainda que importe privação da liberdade.</p>
+                            </div>
+
+                            <div
+                                class="bg-white border-l-4 border-blue-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                <div class="flex items-center mb-2">
+                                    <div
+                                        class="bg-blue-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                        451</div>
+                                    <h4 class="font-bold text-blue-700">Cessação do Exercício</h4>
+                                </div>
+                                <p class="text-sm text-gray-700 italic text-justify">A competência especial por
+                                    prerrogativa de função não se estende ao crime cometido após a cessação definitiva
+                                    do exercício funcional.</p>
+                            </div>
+
+                            <div
+                                class="bg-white border-l-4 border-indigo-600 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                <div class="flex items-center mb-2">
+                                    <div
+                                        class="bg-indigo-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                        497</div>
+                                    <h4 class="font-bold text-indigo-700">Crime Continuado</h4>
+                                </div>
+                                <p class="text-sm text-gray-700 italic text-justify">Quando se tratar de crime
+                                    continuado, a prescrição regula-se pela pena imposta na sentença, não se computando
+                                    o acréscimo decorrente da continuação.</p>
+                            </div>
+
+                            <div
+                                class="bg-white border-l-4 border-teal-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                <div class="flex items-center mb-2">
+                                    <div
+                                        class="bg-teal-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                        498</div>
+                                    <h4 class="font-bold text-teal-700">Economia Popular</h4>
+                                </div>
+                                <p class="text-sm text-gray-700 italic text-justify">Compete à Justiça dos Estados, em
+                                    ambas as instâncias, o processo e o julgamento dos crimes contra a economia popular.
+                                </p>
+                            </div>
+
+                            <div
+                                class="bg-white border-l-4 border-blue-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                <div class="flex items-center mb-2">
+                                    <div
+                                        class="bg-blue-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                        499</div>
+                                    <h4 class="font-bold text-blue-700">Sursis</h4>
+                                </div>
+                                <p class="text-sm text-gray-700 italic text-justify">Não obsta à concessão do "sursis"
+                                    condenação anterior à pena de multa.</p>
+                            </div>
+
+                            <div
+                                class="bg-white border-l-4 border-teal-600 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                <div class="flex items-center mb-2">
+                                    <div
+                                        class="bg-teal-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                        522</div>
+                                    <h4 class="font-bold text-teal-700">Drogas</h4>
+                                </div>
+                                <p class="text-sm text-gray-700 italic text-justify">Salvo ocorrência de tráfico para o
+                                    exterior, quando, então, a competência será da Justiça Federal, compete à justiça
+                                    dos estados o processo e julgamento dos crimes relativos a entorpecentes.</p>
+                            </div>
+
+                            <div
+                                class="bg-white border-l-4 border-red-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                <div class="flex items-center mb-2">
+                                    <div
+                                        class="bg-red-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                        524</div>
+                                    <h4 class="font-bold text-red-700">Arquivamento</h4>
+                                </div>
+                                <p class="text-sm text-gray-700 italic text-justify">Arquivado o inquérito policial, por
+                                    despacho do juiz, a requerimento do promotor de justiça, não pode a ação penal ser
+                                    iniciada, sem novas provas.</p>
+                            </div>
+
+                            <div
+                                class="bg-white border-l-4 border-teal-600 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                <div class="flex items-center mb-2">
+                                    <div
+                                        class="bg-teal-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                        525</div>
+                                    <h4 class="font-bold text-teal-700">Aplicação em 2ª Instância</h4>
+                                </div>
+                                <p class="text-sm text-gray-700 italic text-justify">A medida de segurança não será
+                                    aplicada em segunda instância, quando só o réu tenha recorrido.</p>
+                            </div>
+
+                            <div
+                                class="bg-white border-l-4 border-red-600 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                <div class="flex items-center mb-2">
+                                    <div
+                                        class="bg-red-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                        554</div>
+                                    <h4 class="font-bold text-red-700">Pagamento Posterior</h4>
+                                </div>
+                                <p class="text-sm text-gray-700 italic text-justify">O pagamento de cheque emitido sem
+                                    provisão de fundos, após o recebimento da denúncia, não obsta ao prosseguimento da
+                                    ação penal.</p>
+                            </div>
+
+                            <div
+                                class="bg-white border-l-4 border-purple-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                <div class="flex items-center mb-2">
+                                    <div
+                                        class="bg-purple-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                        555</div>
+                                    <h4 class="font-bold text-purple-700">Conflito de Competência</h4>
+                                </div>
+                                <p class="text-sm text-gray-700 italic text-justify">É competente o Tribunal de Justiça
+                                    para julgar conflito de jurisdição entre Juiz de Direito do estado e a Justiça
+                                    Militar local.</p>
+                            </div>
+
+                            <div
+                                class="bg-white border-l-4 border-purple-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                <div class="flex items-center mb-2">
+                                    <div
+                                        class="bg-purple-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                        592</div>
+                                    <h4 class="font-bold text-purple-700">Crimes Falimentares</h4>
+                                </div>
+                                <p class="text-sm text-gray-700 italic text-justify">Nos crimes falimentares, aplicam-se
+                                    as causas interruptivas da prescrição, previstas no código penal.</p>
+                            </div>
+
+                            <div
+                                class="bg-white border-l-4 border-orange-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                <div class="flex items-center mb-2">
+                                    <div
+                                        class="bg-orange-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                        594</div>
+                                    <h4 class="font-bold text-orange-700">Queixa e Representação</h4>
+                                </div>
+                                <p class="text-sm text-gray-700 italic text-justify">Os direitos de queixa e de
+                                    representação podem ser exercidos, independentemente, pelo ofendido ou por seu
+                                    representante legal.</p>
+                            </div>
+
+                            <div
+                                class="bg-white border-l-4 border-yellow-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                <div class="flex items-center mb-2">
+                                    <div
+                                        class="bg-yellow-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                        608</div>
+                                    <h4 class="font-bold text-yellow-700">Estupro</h4>
+                                </div>
+                                <p class="text-sm text-gray-700 italic text-justify">No crime de estupro, praticado
+                                    mediante violência real, a ação penal é pública incondicionada.</p>
+                            </div>
+
+                            <div
+                                class="bg-white border-l-4 border-lime-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                <div class="flex items-center mb-2">
+                                    <div
+                                        class="bg-lime-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                        609</div>
+                                    <h4 class="font-bold text-lime-700">Sonegação Fiscal</h4>
+                                </div>
+                                <p class="text-sm text-gray-700 italic text-justify">É pública incondicionada a ação
+                                    penal por crime de sonegação fiscal.</p>
+                            </div>
+
+                            <div
+                                class="bg-white border-l-4 border-pink-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                <div class="flex items-center mb-2">
+                                    <div
+                                        class="bg-pink-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                        610</div>
+                                    <h4 class="font-bold text-pink-700">Latrocínio</h4>
+                                </div>
+                                <p class="text-sm text-gray-700 italic text-justify">Há crime de latrocínio, quando o
+                                    homicídio se consuma, ainda que não realize o agente a subtração de bens da vítima.
+                                </p>
+                            </div>
+
+                            <div
+                                class="bg-white border-l-4 border-red-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                <div class="flex items-center mb-2">
+                                    <div
+                                        class="bg-red-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                        611</div>
+                                    <h4 class="font-bold text-red-700">Lei Penal Mais Benigna</h4>
+                                </div>
+                                <p class="text-sm text-gray-700 italic text-justify">Transitada em julgado a sentença
+                                    condenatória, compete ao juízo das execuções a aplicação de lei mais benigna.</p>
+                            </div>
+
+                            <div
+                                class="bg-white border-l-4 border-pink-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                <div class="flex items-center mb-2">
+                                    <div
+                                        class="bg-pink-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                        700</div>
+                                    <h4 class="font-bold text-pink-700">Prazo para Agravo</h4>
+                                </div>
+                                <p class="text-sm text-gray-700 italic text-justify">É de cinco dias o prazo para
+                                    interposição de agravo contra decisão do juiz da execução penal.</p>
+                            </div>
+
+                            <div
+                                class="bg-white border-l-4 border-indigo-600 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                <div class="flex items-center mb-2">
+                                    <div
+                                        class="bg-indigo-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                        702</div>
+                                    <h4 class="font-bold text-indigo-700">Prefeitos</h4>
+                                </div>
+                                <p class="text-sm text-gray-700 italic text-justify">A competência do Tribunal de
+                                    Justiça para julgar prefeitos restringe-se aos crimes de competência da justiça
+                                    comum estadual; nos demais casos, a competência originária caberá ao respectivo
+                                    tribunal de segundo grau.</p>
+                            </div>
+
+                            <div
+                                class="bg-white border-l-4 border-cyan-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                <div class="flex items-center mb-2">
+                                    <div
+                                        class="bg-cyan-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                        703</div>
+                                    <h4 class="font-bold text-cyan-700">Prefeito</h4>
+                                </div>
+                                <p class="text-sm text-gray-700 italic text-justify">A extinção do mandato do prefeito
+                                    não impede a instauração de processo pela prática dos crimes previstos no art. 1º do
+                                    decreto-lei 201/1967.</p>
+                            </div>
+
+                            <div
+                                class="bg-white border-l-4 border-blue-600 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                <div class="flex items-center mb-2">
+                                    <div
+                                        class="bg-blue-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                        704</div>
+                                    <h4 class="font-bold text-blue-700">Conexão</h4>
+                                </div>
+                                <p class="text-sm text-gray-700 italic text-justify">Não viola as garantias do juiz
+                                    natural, da ampla defesa e do devido processo legal a atração por continência ou
+                                    conexão do processo do co-réu ao foro por prerrogativa de função de um dos
+                                    denunciados.</p>
+                            </div>
+
+                            <div
+                                class="bg-white border-l-4 border-yellow-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                <div class="flex items-center mb-2">
+                                    <div
+                                        class="bg-yellow-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                        711</div>
+                                    <h4 class="font-bold text-yellow-700">Crime Continuado</h4>
+                                </div>
+                                <p class="text-sm text-gray-700 italic text-justify">A lei penal mais grave aplica-se ao
+                                    crime continuado ou ao crime permanente, se a sua vigência é anterior à cessação da
+                                    continuidade ou da permanência.</p>
+                            </div>
+
+                            <div
+                                class="bg-white border-l-4 border-green-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                <div class="flex items-center mb-2">
+                                    <div
+                                        class="bg-green-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                        714</div>
+                                    <h4 class="font-bold text-green-700">Crime Contra Honra</h4>
+                                </div>
+                                <p class="text-sm text-gray-700 italic text-justify">É concorrente a legitimidade do
+                                    ofendido, mediante queixa, e do ministério público, condicionada à representação do
+                                    ofendido, para a ação penal por crime contra a honra de servidor público em razão do
+                                    exercício de suas funções.</p>
+                            </div>
+
+                            <div
+                                class="bg-white border-l-4 border-rose-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                <div class="flex items-center mb-2">
+                                    <div
+                                        class="bg-rose-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                        715</div>
+                                    <h4 class="font-bold text-rose-700">Pena Unificada</h4>
+                                </div>
+                                <p class="text-sm text-gray-700 italic text-justify">A pena unificada para atender ao
+                                    limite de trinta anos de cumprimento, determinado pelo art. 75 do código penal, não
+                                    é considerada para a concessão de outros benefícios, como o livramento condicional
+                                    ou regime mais favorável de execução.</p>
+                            </div>
+
+                            <div
+                                class="bg-white border-l-4 border-red-700 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                <div class="flex items-center mb-2">
+                                    <div
+                                        class="bg-red-700 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                        716</div>
+                                    <h4 class="font-bold text-red-700">Progressão Antes do Trânsito</h4>
+                                </div>
+                                <p class="text-sm text-gray-700 italic text-justify">Admite-se a progressão de regime de
+                                    cumprimento da pena ou a aplicação imediata de regime menos severo nela determinada,
+                                    antes do trânsito em julgado da sentença condenatória.</p>
+                            </div>
+
+                            <div
+                                class="bg-white border-l-4 border-amber-600 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                <div class="flex items-center mb-2">
+                                    <div
+                                        class="bg-amber-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                        717</div>
+                                    <h4 class="font-bold text-amber-700">Prisão Especial</h4>
+                                </div>
+                                <p class="text-sm text-gray-700 italic text-justify">Não impede a progressão de regime
+                                    de execução da pena, fixada em sentença não transitada em julgado, o fato de o réu
+                                    se encontrar em prisão especial.</p>
+                            </div>
+
+                            <div
+                                class="bg-white border-l-4 border-green-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                <div class="flex items-center mb-2">
+                                    <div
+                                        class="bg-green-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                        718</div>
+                                    <h4 class="font-bold text-green-700">Regime de Cumprimento</h4>
+                                </div>
+                                <p class="text-sm text-gray-700 italic text-justify">A opinião do julgador sobre a
+                                    gravidade em abstrato do crime não constitui motivação idônea para a imposição de
+                                    regime mais severo do que o permitido segundo a pena aplicada.</p>
+                            </div>
+
+                            <div
+                                class="bg-white border-l-4 border-green-600 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                <div class="flex items-center mb-2">
+                                    <div
+                                        class="bg-green-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                        719</div>
+                                    <h4 class="font-bold text-green-700">Regime Mais Severo</h4>
+                                </div>
+                                <p class="text-sm text-gray-700 italic text-justify">A imposição do regime de
+                                    cumprimento mais severo do que a pena aplicada permitir exige motivação idônea.</p>
+                            </div>
+
+                            <div
+                                class="bg-white border-l-4 border-amber-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                <div class="flex items-center mb-2">
+                                    <div
+                                        class="bg-amber-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                        720</div>
+                                    <h4 class="font-bold text-amber-700">Direção Sem Habilitação</h4>
+                                </div>
+                                <p class="text-sm text-gray-700 italic text-justify">O art. 309 do Código de Trânsito
+                                    Brasileiro, que reclama decorra do fato perigo de dano, derrogou o art. 32 da lei
+                                    das contravenções penais no tocante à direção sem habilitação em vias terrestres.
+                                </p>
+                            </div>
+
+                            <div
+                                class="bg-white border-l-4 border-indigo-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                <div class="flex items-center mb-2">
+                                    <div
+                                        class="bg-indigo-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                        721</div>
+                                    <h4 class="font-bold text-indigo-700">Tribunal do Júri</h4>
+                                </div>
+                                <p class="text-sm text-gray-700 italic text-justify">A competência constitucional do
+                                    Tribunal do Júri prevalece sobre o foro por prerrogativa de função estabelecido
+                                    exclusivamente pela Constituição Estadual.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SÚMULAS DO STJ - PENAL E PROCESSO PENAL -->
+                <div class="mt-16">
+                    <div class="text-center mb-6 cursor-pointer" onclick="toggleSumulas('stj-penal')">
+                        <h2
+                            class="text-2xl font-bold text-blue-800 flex items-center justify-center hover:text-blue-600 transition-colors">
+                            Súmulas do STJ
+                            <svg id="arrow-stj-penal" class="w-6 h-6 ml-2 transform transition-transform duration-300"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7">
+                                </path>
+                            </svg>
+                        </h2>
+                        <p class="text-sm text-gray-600 mt-2">Clique para expandir/recolher</p>
+                    </div>
+
+                    <div id="sumulas-stj-penal" class="overflow-hidden transition-all duration-500 max-h-0">
+                        <div class="relative">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-r from-blue-100 via-indigo-50 to-purple-100 rounded-2xl opacity-30">
+                            </div>
+                            <div class="relative grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 p-6">
+
+                                <div
+                                    class="bg-white border-l-4 border-orange-600 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                    <div class="flex items-center mb-2">
+                                        <div
+                                            class="bg-orange-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                            140</div>
+                                        <h4 class="font-bold text-orange-700">Indígena</h4>
+                                    </div>
+                                    <p class="text-sm text-gray-700 italic text-justify">Compete a Justiça Comum
+                                        Estadual
+                                        processar e julgar crime em que o indígena figure como autor ou vítima.</p>
+                                </div>
+
+                                <div
+                                    class="bg-white border-l-4 border-yellow-600 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                    <div class="flex items-center mb-2">
+                                        <div
+                                            class="bg-yellow-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                            147</div>
+                                        <h4 class="font-bold text-yellow-700">Funcionário Público Federal</h4>
+                                    </div>
+                                    <p class="text-sm text-gray-700 italic text-justify">Compete a Justiça Federal
+                                        processar
+                                        e julgar os crimes praticados contra funcionário público federal, quando
+                                        relacionados com o exercício da função.</p>
+                                </div>
+
+                                <div
+                                    class="bg-white border-l-4 border-blue-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                    <div class="flex items-center mb-2">
+                                        <div
+                                            class="bg-blue-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                            231</div>
+                                        <h4 class="font-bold text-blue-700">Circunstância Atenuante</h4>
+                                    </div>
+                                    <p class="text-sm text-gray-700 italic text-justify">A incidência da circunstância
+                                        atenuante não pode conduzir à redução da pena abaixo do mínimo legal.</p>
+                                </div>
+
+                                <div
+                                    class="bg-white border-l-4 border-indigo-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                    <div class="flex items-center mb-2">
+                                        <div
+                                            class="bg-indigo-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                            241</div>
+                                        <h4 class="font-bold text-indigo-700">Reincidência</h4>
+                                    </div>
+                                    <p class="text-sm text-gray-700 italic text-justify">A reincidência penal não pode
+                                        ser
+                                        considerada como circunstância agravante e, simultaneamente, como circunstância
+                                        judicial.</p>
+                                </div>
+
+                                <div
+                                    class="bg-white border-l-4 border-yellow-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                    <div class="flex items-center mb-2">
+                                        <div
+                                            class="bg-yellow-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                            269</div>
+                                        <h4 class="font-bold text-yellow-700">Regime Semiaberto</h4>
+                                    </div>
+                                    <p class="text-sm text-gray-700 italic text-justify">É admissível a adoção do regime
+                                        prisional semiaberto aos reincidentes condenados a pena igual ou inferior a
+                                        quatro
+                                        anos se favoráveis as circunstâncias judiciais.</p>
+                                </div>
+
+                                <div
+                                    class="bg-white border-l-4 border-blue-600 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 relative">
+                                    <div class="flex items-center mb-2">
+                                        <div
+                                            class="bg-blue-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                            439</div>
+                                        <h4 class="font-bold text-blue-700">Exame Criminológico</h4>
+                                        <div class="ml-auto relative">
+                                            <div
+                                                class="bg-orange-500 text-white px-3 py-1 rounded-full text-xs font-bold flex items-center justify-center whitespace-nowrap">
+                                                SUPERADA EM PARTE</div>
+                                        </div>
+                                    </div>
+                                    <p class="text-sm text-gray-700 italic mb-2">Admite-se o exame criminológico pelas
+                                        peculiaridades do caso, desde que em decisão motivada.</p>
+                                    <p class="text-xs bg-blue-50 p-2 rounded border-l-2 border-blue-300">A Lei
+                                        14.843/2024
+                                        tornou obrigatório o exame criminológico, devendo ser fundamentada sua dispensa
+                                        excepcional.</p>
+                                </div>
+
+                                <div
+                                    class="bg-white border-l-4 border-green-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                    <div class="flex items-center mb-2">
+                                        <div
+                                            class="bg-green-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                            440</div>
+                                        <h4 class="font-bold text-green-700">Pena-Base no Mínimo</h4>
+                                    </div>
+                                    <p class="text-sm text-gray-700 italic text-justify">Fixada a pena-base no mínimo
+                                        legal,
+                                        é vedado o estabelecimento de regime prisional mais gravoso do que o cabível em
+                                        razão da sanção imposta, com base apenas na gravidade abstrata do delito.</p>
+                                </div>
+
+                                <div
+                                    class="bg-white border-l-4 border-indigo-600 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                    <div class="flex items-center mb-2">
+                                        <div
+                                            class="bg-indigo-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                            441</div>
+                                        <h4 class="font-bold text-indigo-700">Falta Grave</h4>
+                                    </div>
+                                    <p class="text-sm text-gray-700 italic text-justify">A falta grave não interrompe o
+                                        prazo para obtenção de livramento condicional.</p>
+                                </div>
+
+                                <div
+                                    class="bg-white border-l-4 border-purple-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                    <div class="flex items-center mb-2">
+                                        <div
+                                            class="bg-purple-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                            442</div>
+                                        <h4 class="font-bold text-purple-700">Furto Qualificado</h4>
+                                    </div>
+                                    <p class="text-sm text-gray-700 italic text-justify">É inadmissível aplicar, no
+                                        furto
+                                        qualificado, pelo concurso de agentes, a majorante do roubo.</p>
+                                </div>
+
+                                <div
+                                    class="bg-white border-l-4 border-pink-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                    <div class="flex items-center mb-2">
+                                        <div
+                                            class="bg-pink-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                            443</div>
+                                        <h4 class="font-bold text-pink-700">Roubo Circunstanciado</h4>
+                                    </div>
+                                    <p class="text-sm text-gray-700 italic text-justify">O aumento na terceira fase de
+                                        aplicação da pena no crime de roubo circunstanciado exige fundamentação
+                                        concreta,
+                                        não sendo suficiente para a sua exasperação a mera indicação do número de
+                                        majorantes.</p>
+                                </div>
+
+                                <div
+                                    class="bg-white border-l-4 border-teal-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                    <div class="flex items-center mb-2">
+                                        <div
+                                            class="bg-teal-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                            444</div>
+                                        <h4 class="font-bold text-teal-700">Inquéritos em Curso</h4>
+                                    </div>
+                                    <p class="text-sm text-gray-700 italic text-justify">É vedada a utilização de
+                                        inquéritos
+                                        policiais e ações penais em curso para agravar a pena-base.</p>
+                                </div>
+
+                                <div
+                                    class="bg-white border-l-4 border-purple-600 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                    <div class="flex items-center mb-2">
+                                        <div
+                                            class="bg-purple-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                            491</div>
+                                        <h4 class="font-bold text-purple-700">Progressão Per Saltum</h4>
+                                    </div>
+                                    <p class="text-sm text-gray-700 italic text-justify">É inadmissível a chamada
+                                        progressão
+                                        per saltum de regime prisional.</p>
+                                </div>
+
+                                <div
+                                    class="bg-white border-l-4 border-rose-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                    <div class="flex items-center mb-2">
+                                        <div
+                                            class="bg-rose-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                            511</div>
+                                        <h4 class="font-bold text-rose-700">Furto Privilegiado</h4>
+                                    </div>
+                                    <p class="text-sm text-gray-700 italic text-justify">É possível o reconhecimento do
+                                        privilégio previsto no § 2º do art. 155 do CP nos casos de crime de furto
+                                        qualificado, se estiverem presentes a primariedade do agente, o pequeno valor da
+                                        coisa e a qualificadora for de ordem objetiva.</p>
+                                </div>
+
+                                <div
+                                    class="bg-white border-l-4 border-pink-600 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                    <div class="flex items-center mb-2">
+                                        <div
+                                            class="bg-pink-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                            534</div>
+                                        <h4 class="font-bold text-pink-700">Interrupção da Contagem</h4>
+                                    </div>
+                                    <p class="text-sm text-gray-700 italic text-justify">A prática de falta grave
+                                        interrompe
+                                        a contagem do prazo para a progressão de regime de cumprimento de pena, o qual
+                                        se
+                                        reinicia a partir do cometimento dessa infração.</p>
+                                </div>
+
+                                <div
+                                    class="bg-white border-l-4 border-purple-700 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                    <div class="flex items-center mb-2">
+                                        <div
+                                            class="bg-purple-700 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                            536</div>
+                                        <h4 class="font-bold text-purple-700">Suspensão e Transação</h4>
+                                    </div>
+                                    <p class="text-sm text-gray-700 italic text-justify">A suspensão condicional do
+                                        processo
+                                        e a transação penal não se aplicam na hipótese de delitos sujeitos ao rito da
+                                        Lei
+                                        Maria da Penha.</p>
+                                </div>
+
+                                <div
+                                    class="bg-white border-l-4 border-red-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                    <div class="flex items-center mb-2">
+                                        <div
+                                            class="bg-red-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                            545</div>
+                                        <h4 class="font-bold text-red-700">Confissão</h4>
+                                    </div>
+                                    <p class="text-sm text-gray-700 italic text-justify">A confissão do autor
+                                        possibilita a
+                                        atenuação da pena prevista no art. 65, III, d, do Código Penal,
+                                        independentemente de
+                                        ser utilizada na formação do convencimento do julgador.</p>
+                                </div>
+
+                                <div
+                                    class="bg-white border-l-4 border-pink-700 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                    <div class="flex items-center mb-2">
+                                        <div
+                                            class="bg-pink-700 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                            589</div>
+                                        <h4 class="font-bold text-pink-700">Insignificância</h4>
+                                    </div>
+                                    <p class="text-sm text-gray-700 italic text-justify">É inaplicável o princípio da
+                                        insignificância nos crimes ou contravenções penais praticados contra a mulher no
+                                        âmbito das relações domésticas.</p>
+                                </div>
+
+                                <div
+                                    class="bg-white border-l-4 border-orange-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                    <div class="flex items-center mb-2">
+                                        <div
+                                            class="bg-orange-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                            636</div>
+                                        <h4 class="font-bold text-orange-700">Folha de Antecedentes</h4>
+                                    </div>
+                                    <p class="text-sm text-gray-700 italic text-justify">A folha de antecedentes
+                                        criminais é
+                                        documento suficiente a comprovar os maus antecedentes e a reincidência.</p>
+                                </div>
+
+                                <div
+                                    class="bg-white border-l-4 border-cyan-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                    <div class="flex items-center mb-2">
+                                        <div
+                                            class="bg-cyan-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                            659</div>
+                                        <h4 class="font-bold text-cyan-700">Crime Continuado</h4>
+                                    </div>
+                                    <p class="text-sm text-gray-700 italic text-justify">A fração de aumento em razão da
+                                        prática de crime continuado deve ser fixada de acordo com o número de delitos
+                                        cometidos, aplicando-se 1/6 pela prática de duas infrações, 1/5 para três, 1/4
+                                        para
+                                        quatro, 1/3 para cinco, 1/2 para seis e 2/3 para sete ou mais infrações.</p>
+                                </div>
+
+                                <div
+                                    class="bg-white border-l-4 border-rose-600 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                    <div class="flex items-center mb-2">
+                                        <div
+                                            class="bg-rose-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                            660</div>
+                                        <h4 class="font-bold text-rose-700">Celular na Prisão</h4>
+                                    </div>
+                                    <p class="text-sm text-gray-700 italic text-justify">A posse, pelo apenado, de
+                                        aparelho
+                                        celular ou de seus componentes essenciais constitui falta grave.</p>
+                                </div>
+
+                                <div
+                                    class="bg-white border-l-4 border-red-600 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                    <div class="flex items-center mb-2">
+                                        <div
+                                            class="bg-red-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                            661</div>
+                                        <h4 class="font-bold text-red-700">Perícia do Celular</h4>
+                                    </div>
+                                    <p class="text-sm text-gray-700 italic text-justify">A falta grave prescinde da
+                                        perícia
+                                        do celular apreendido ou de seus componentes essenciais.</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SÚMULAS DO STJ - ECA -->
+                    <div class="mt-16">
+                        <div class="text-center mb-6 cursor-pointer" onclick="toggleSumulas('stj-eca')">
+                            <h2
+                                class="text-2xl font-bold text-purple-800 flex items-center justify-center hover:text-purple-600 transition-colors">
+                                Súmulas do STJ (ECA)
+                                <svg id="arrow-stj-eca" class="w-6 h-6 ml-2 transform transition-transform duration-300"
+                                    fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7">
+                                    </path>
+                                </svg>
+                            </h2>
+                            <p class="text-sm text-gray-600 mt-2">Clique para expandir/recolher</p>
+                        </div>
+
+                        <div id="sumulas-stj-eca" class="overflow-hidden transition-all duration-500 max-h-0">
+                            <div class="relative">
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-r from-purple-100 via-pink-50 to-fuchsia-100 rounded-2xl opacity-30">
+                                </div>
+                                <div class="relative grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 p-6">
+
+                                    <div
+                                        class="bg-white border-l-4 border-purple-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                        <div class="flex items-center mb-2">
+                                            <div
+                                                class="bg-purple-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                                108</div>
+                                            <h4 class="font-bold text-purple-700">Medidas Sócio-educativas</h4>
+                                        </div>
+                                        <p class="text-sm text-gray-700 italic text-justify">A aplicação de medidas
+                                            sócio-educativas ao adolescente, pela prática de ato infracional, é da
+                                            competência
+                                            exclusiva do juiz.</p>
+                                    </div>
+
+                                    <div
+                                        class="bg-white border-l-4 border-pink-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                        <div class="flex items-center mb-2">
+                                            <div
+                                                class="bg-pink-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                                265</div>
+                                            <h4 class="font-bold text-pink-700">Oitiva do Menor</h4>
+                                        </div>
+                                        <p class="text-sm text-gray-700 italic text-justify">É necessária a oitiva do
+                                            menor
+                                            infrator antes de decretar-se a regressão da medida sócio-educativa.</p>
+                                    </div>
+
+                                    <div
+                                        class="bg-white border-l-4 border-rose-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                        <div class="flex items-center mb-2">
+                                            <div
+                                                class="bg-rose-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                                338</div>
+                                            <h4 class="font-bold text-rose-700">Prescrição</h4>
+                                        </div>
+                                        <p class="text-sm text-gray-700 italic text-justify">A prescrição penal é
+                                            aplicável nas
+                                            medidas sócio-educativas.</p>
+                                    </div>
+
+                                    <div
+                                        class="bg-white border-l-4 border-red-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                        <div class="flex items-center mb-2">
+                                            <div
+                                                class="bg-red-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                                342</div>
+                                            <h4 class="font-bold text-red-700">Nulidade da Desistência</h4>
+                                        </div>
+                                        <p class="text-sm text-gray-700 italic text-justify">No procedimento para
+                                            aplicação de
+                                            medida sócio-educativa, é nula a desistência de outras provas em face da
+                                            confissão
+                                            do adolescente.</p>
+                                    </div>
+
+                                    <div
+                                        class="bg-white border-l-4 border-orange-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                        <div class="flex items-center mb-2">
+                                            <div
+                                                class="bg-orange-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                                383</div>
+                                            <h4 class="font-bold text-orange-700">Competência</h4>
+                                        </div>
+                                        <p class="text-sm text-gray-700 italic text-justify">A competência para
+                                            processar e
+                                            julgar as ações conexas de interesse de menor é, em princípio, do foro do
+                                            domicílio
+                                            do detentor de sua guarda.</p>
+                                    </div>
+
+                                    <div
+                                        class="bg-white border-l-4 border-yellow-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                        <div class="flex items-center mb-2">
+                                            <div
+                                                class="bg-yellow-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                                492</div>
+                                            <h4 class="font-bold text-yellow-700">Tráfico de Drogas</h4>
+                                        </div>
+                                        <p class="text-sm text-gray-700 italic text-justify">O ato infracional análogo
+                                            ao
+                                            tráfico de drogas, por si só, não conduz obrigatoriamente à imposição de
+                                            medida
+                                            socioeducativa de internação do adolescente.</p>
+                                    </div>
+
+                                    <div
+                                        class="bg-white border-l-4 border-green-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                        <div class="flex items-center mb-2">
+                                            <div
+                                                class="bg-green-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                                594</div>
+                                            <h4 class="font-bold text-green-700">Legitimidade MP</h4>
+                                        </div>
+                                        <p class="text-sm text-gray-700 italic text-justify">O Ministério Público tem
+                                            legitimidade ativa para ajuizar ação de alimentos em proveito de criança ou
+                                            adolescente independentemente do exercício do poder familiar dos pais, ou do
+                                            fato de
+                                            o menor se encontrar nas situações de risco descritas no art. 98 do Estatuto
+                                            da
+                                            Criança e do Adolescente, ou de quaisquer outros questionamentos acerca da
+                                            existência ou eficiência da Defensoria Pública na comarca.</p>
+                                    </div>
+
+                                    <div
+                                        class="bg-white border-l-4 border-teal-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                        <div class="flex items-center mb-2">
+                                            <div
+                                                class="bg-teal-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                                605</div>
+                                            <h4 class="font-bold text-teal-700">Maioridade Penal</h4>
+                                        </div>
+                                        <p class="text-sm text-gray-700 italic text-justify">A superveniência da
+                                            maioridade
+                                            penal não interfere na apuração de ato infracional nem na aplicabilidade de
+                                            medida
+                                            socioeducativa em curso, inclusive na liberdade assistida, enquanto não
+                                            atingida a
+                                            idade de 21 anos.</p>
+                                    </div>
+
+                                    <div
+                                        class="bg-white border-l-4 border-cyan-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                        <div class="flex items-center mb-2">
+                                            <div
+                                                class="bg-cyan-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                                669</div>
+                                            <h4 class="font-bold text-cyan-700">Bebida Alcoólica</h4>
+                                        </div>
+                                        <p class="text-sm text-gray-700 italic text-justify">Fornecimento de bebida
+                                            alcoólica a
+                                            criança ou adolescente, após o advento da lei 13.106/15, configura o crime
+                                            previsto
+                                            no art. 243 do ECA.</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <script>
+                            const sidenavToggle = document.getElementById('sidenav-toggle');
+                            const sidenavClose = document.getElementById('sidenav-close');
+                            const sidenav = document.getElementById('sidenav');
+                            const backdrop = document.getElementById('sidenav-backdrop');
+
+                            function openSidenav() {
+                                sidenav.classList.remove('-translate-x-full');
+                                backdrop.classList.remove('opacity-0', 'pointer-events-none');
+                                backdrop.classList.add('opacity-100');
+                            }
+
+                            function closeSidenav() {
+                                sidenav.classList.add('-translate-x-full');
+                                backdrop.classList.add('opacity-0', 'pointer-events-none');
+                                backdrop.classList.remove('opacity-100');
+                            }
+
+                            sidenavToggle.addEventListener('click', openSidenav);
+                            sidenavClose.addEventListener('click', closeSidenav);
+                            backdrop.addEventListener('click', closeSidenav);
+
+                            function toggleSumulas(tipo) {
+                                const container = document.getElementById(`sumulas-${tipo}`);
+                                const arrow = document.getElementById(`arrow-${tipo}`);
+
+                                if (container.style.maxHeight === '0px' || container.style.maxHeight === '') {
+                                    container.style.maxHeight = container.scrollHeight + 'px';
+                                    arrow.style.transform = 'rotate(180deg)';
+                                } else {
+                                    container.style.maxHeight = '0px';
+                                    arrow.style.transform = 'rotate(0deg)';
+                                }
+                            }
+
+                            function copiarSumula(numero, tribunal, vinculante = false, textoSumula = '') {
+                                // Formatar número com ponto se tiver mais de 3 dígitos
+                                let numeroFormatado = numero.toString();
+                                if (numeroFormatado.length > 3) {
+                                    numeroFormatado = numeroFormatado.slice(0, -3) + '.' + numeroFormatado.slice(-3);
+                                }
+
+                                // Limpar o texto da súmula (remover aspas existentes, pontos finais e limpar espaços)
+                                let textoLimpo = textoSumula.trim().replace(/^[""]|[""]$/g, '').replace(/\.$/, '');
+
+                                // Montar texto conforme formato
+                                let texto = '';
+                                if (vinculante) {
+                                    // Súmulas vinculantes não incluem o tribunal
+                                    texto = `Súmula Vinculante ${numeroFormatado}: "${textoLimpo}".`;
+                                } else {
+                                    texto = `Súmula ${numeroFormatado}/${tribunal}: "${textoLimpo}".`;
+                                }
+
+                                // Copiar para área de transferência
+                                navigator.clipboard.writeText(texto).then(() => {
+                                    // Feedback visual
+                                    mostrarNotificacao('Súmula copiada!');
+                                }).catch(err => {
+                                    console.error('Erro ao copiar:', err);
+                                    mostrarNotificacao('Erro ao copiar', true);
+                                });
+                            }
+
+                            function mostrarNotificacao(mensagem, erro = false) {
+                                // Criar elemento de notificação
+                                const notificacao = document.createElement('div');
+                                notificacao.textContent = mensagem;
+                                notificacao.className = `fixed top-4 right-4 px-6 py-3 rounded-lg shadow-lg text-white font-medium z-50 transition-opacity duration-300 ${erro ? 'bg-red-600' : 'bg-green-600'}`;
+
+                                document.body.appendChild(notificacao);
+
+                                // Remover após 2 segundos
+                                setTimeout(() => {
+                                    notificacao.style.opacity = '0';
+                                    setTimeout(() => {
+                                        document.body.removeChild(notificacao);
+                                    }, 300);
+                                }, 2000);
+                            }
+
+                            // Adicionar evento de clique a todos os cards de súmulas ao carregar a página
+                            document.addEventListener('DOMContentLoaded', function () {
+                                // Adicionar classe, eventos e IDs únicos para súmulas do STF
+                                document.querySelectorAll('#sumulas-stf .bg-white, #sumulas-stf .bg-gradient-to-r').forEach((card, index) => {
+                                    card.classList.add('sumula-card');
+                                    card.dataset.cardId = `stf-${index}`; // ID único
+                                    const numero = card.querySelector('.rounded-full')?.textContent.trim();
+                                    const textoSumula = card.querySelector('p.italic')?.textContent.trim();
+                                    if (numero && textoSumula) {
+                                        const isVinculante = card.classList.contains('bg-gradient-to-r');
+                                        card.onclick = () => copiarSumula(numero, 'STF', isVinculante, textoSumula);
+                                    }
+                                });
+
+                                // Adicionar classe, eventos e IDs únicos para súmulas do STJ - Penal
+                                document.querySelectorAll('#sumulas-stj-penal .bg-white, #sumulas-stj-penal .bg-gradient-to-r').forEach((card, index) => {
+                                    card.classList.add('sumula-card');
+                                    card.dataset.cardId = `stj-penal-${index}`; // ID único
+                                    const numero = card.querySelector('.rounded-full')?.textContent.trim();
+                                    const textoSumula = card.querySelector('p.italic')?.textContent.trim();
+                                    if (numero && textoSumula) {
+                                        const isVinculante = card.classList.contains('bg-gradient-to-r');
+                                        card.onclick = () => copiarSumula(numero, 'STJ', isVinculante, textoSumula);
+                                    }
+                                });
+
+                                // Adicionar classe, eventos e IDs únicos para súmulas do STJ - ECA
+                                document.querySelectorAll('#sumulas-stj-eca .bg-white').forEach((card, index) => {
+                                    card.classList.add('sumula-card');
+                                    card.dataset.cardId = `stj-eca-${index}`; // ID único
+                                    const numero = card.querySelector('.rounded-full')?.textContent.trim();
+                                    const textoSumula = card.querySelector('p.italic')?.textContent.trim();
+                                    if (numero && textoSumula) {
+                                        card.onclick = () => copiarSumula(numero, 'STJ', false, textoSumula);
+                                    }
+                                });
+
+                                // Configurar busca
+                                const searchInput = document.getElementById('searchInput');
+                                searchInput.addEventListener('input', realizarBusca);
+                            });
+
+                            // Variável global para controlar filtro de tribunal
+                            let tribunalFiltro = 'todos';
+
+                            function filtrarPorTribunal(tribunal) {
+                                tribunalFiltro = tribunal;
+
+                                // Atualizar botões
+                                document.querySelectorAll('[id^="btn-"]').forEach(btn => {
+                                    btn.classList.remove('bg-blue-600', 'text-white');
+                                    btn.classList.add('bg-gray-200', 'text-gray-700');
+                                });
+                                document.getElementById(`btn-${tribunal}`).classList.remove('bg-gray-200', 'text-gray-700');
+                                document.getElementById(`btn-${tribunal}`).classList.add('bg-blue-600', 'text-white');
+
+                                // Limpar busca e mostrar seções
+                                const searchInput = document.getElementById('searchInput');
+                                const searchResultsContainer = document.getElementById('searchResultsContainer');
+
+                                // Se houver busca ativa, reexecutar busca com novo filtro
+                                if (searchInput.value.trim()) {
+                                    realizarBusca();
+                                    return;
+                                }
+
+                                // Se não houver busca, apenas mostrar/ocultar seções baseado no filtro
+                                searchResultsContainer.style.display = 'none';
+
+                                const secaoSTF = document.querySelector('#sumulas-stf').closest('.mt-16');
+                                const secaoSTJPenal = document.querySelector('#sumulas-stj-penal').closest('.mt-16');
+                                const secaoSTJECA = document.querySelector('#sumulas-stj-eca').closest('.mt-16');
+
+                                if (tribunal === 'todos') {
+                                    secaoSTF.style.display = '';
+                                    secaoSTJPenal.style.display = '';
+                                    secaoSTJECA.style.display = '';
+                                } else if (tribunal === 'STF') {
+                                    secaoSTF.style.display = '';
+                                    secaoSTJPenal.style.display = 'none';
+                                    secaoSTJECA.style.display = 'none';
+                                } else if (tribunal === 'STJ') {
+                                    secaoSTF.style.display = 'none';
+                                    secaoSTJPenal.style.display = '';
+                                    secaoSTJECA.style.display = '';
+                                }
+                            }
+
+                            function realizarBusca() {
+                                const termo = document.getElementById('searchInput').value.toLowerCase().trim();
+                                const searchResults = document.getElementById('searchResults');
+                                const searchResultsContainer = document.getElementById('searchResultsContainer');
+                                const searchResultsGrid = document.getElementById('searchResultsGrid');
+
+                                if (!termo) {
+                                    // Limpar busca - esconder área de resultados e mostrar seções originais
+                                    searchResultsContainer.style.display = 'none';
+                                    searchResultsGrid.innerHTML = '';
+                                    searchResults.textContent = '';
+
+                                    // Mostrar todas as seções originais baseado no filtro atual
+                                    const secaoSTF = document.querySelector('#sumulas-stf').closest('.mt-16');
+                                    const secaoSTJPenal = document.querySelector('#sumulas-stj-penal').closest('.mt-16');
+                                    const secaoSTJECA = document.querySelector('#sumulas-stj-eca').closest('.mt-16');
+
+                                    if (tribunalFiltro === 'todos') {
+                                        secaoSTF.style.display = '';
+                                        secaoSTJPenal.style.display = '';
+                                        secaoSTJECA.style.display = '';
+                                    } else if (tribunalFiltro === 'STF') {
+                                        secaoSTF.style.display = '';
+                                        secaoSTJPenal.style.display = 'none';
+                                        secaoSTJECA.style.display = 'none';
+                                    } else if (tribunalFiltro === 'STJ') {
+                                        secaoSTF.style.display = 'none';
+                                        secaoSTJPenal.style.display = '';
+                                        secaoSTJECA.style.display = '';
+                                    }
+
+                                    return;
+                                }
+
+                                let cardsEncontrados = [];
+                                let chavesSumulasAdicionadas = new Set();
+
+                                // Buscar apenas em seções STF se filtro STF
+                                if (tribunalFiltro === 'todos' || tribunalFiltro === 'STF') {
+                                    document.querySelectorAll('#sumulas-stf .sumula-card').forEach(card => {
+                                        const numero = card.querySelector('.rounded-full')?.textContent.trim() || '';
+                                        const titulo = card.querySelector('h4')?.textContent || '';
+                                        const conteudo = card.querySelector('p.italic')?.textContent || '';
+
+                                        const textoCompleto = `${numero} ${titulo} ${conteudo}`.toLowerCase();
+                                        const chaveUnica = `${numero}-STF`;
+
+                                        if (textoCompleto.includes(termo) && !chavesSumulasAdicionadas.has(chaveUnica)) {
+                                            chavesSumulasAdicionadas.add(chaveUnica);
+
+                                            const cardClone = card.cloneNode(true);
+
+                                            cardsEncontrados.push({
+                                                card: cardClone,
+                                                numero: numero,
+                                                textoSumula: conteudo.trim(),
+                                                isVinculante: card.classList.contains('bg-gradient-to-r'),
+                                                tribunal: 'STF'
+                                            });
+                                        }
+                                    });
+                                }
+
+                                // Buscar apenas em seções STJ se filtro STJ ou todos
+                                if (tribunalFiltro === 'todos' || tribunalFiltro === 'STJ') {
+                                    // STJ Penal
+                                    document.querySelectorAll('#sumulas-stj-penal .sumula-card').forEach(card => {
+                                        const numero = card.querySelector('.rounded-full')?.textContent.trim() || '';
+                                        const titulo = card.querySelector('h4')?.textContent || '';
+                                        const conteudo = card.querySelector('p.italic')?.textContent || '';
+
+                                        const textoCompleto = `${numero} ${titulo} ${conteudo}`.toLowerCase();
+                                        const chaveUnica = `${numero}-STJ`;
+
+                                        if (textoCompleto.includes(termo) && !chavesSumulasAdicionadas.has(chaveUnica)) {
+                                            chavesSumulasAdicionadas.add(chaveUnica);
+
+                                            const cardClone = card.cloneNode(true);
+
+                                            cardsEncontrados.push({
+                                                card: cardClone,
+                                                numero: numero,
+                                                textoSumula: conteudo.trim(),
+                                                isVinculante: card.classList.contains('bg-gradient-to-r'),
+                                                tribunal: 'STJ'
+                                            });
+                                        }
+                                    });
+
+                                    // STJ ECA
+                                    document.querySelectorAll('#sumulas-stj-eca .sumula-card').forEach(card => {
+                                        const numero = card.querySelector('.rounded-full')?.textContent.trim() || '';
+                                        const titulo = card.querySelector('h4')?.textContent || '';
+                                        const conteudo = card.querySelector('p.italic')?.textContent || '';
+
+                                        const textoCompleto = `${numero} ${titulo} ${conteudo}`.toLowerCase();
+                                        const chaveUnica = `${numero}-STJ`;
+
+                                        if (textoCompleto.includes(termo) && !chavesSumulasAdicionadas.has(chaveUnica)) {
+                                            chavesSumulasAdicionadas.add(chaveUnica);
+
+                                            const cardClone = card.cloneNode(true);
+
+                                            cardsEncontrados.push({
+                                                card: cardClone,
+                                                numero: numero,
+                                                textoSumula: conteudo.trim(),
+                                                isVinculante: false,
+                                                tribunal: 'STJ'
+                                            });
+                                        }
+                                    });
+                                }
+
+                                // Ocultar seções originais
+                                document.querySelector('#sumulas-stf').closest('.mt-16').style.display = 'none';
+                                document.querySelector('#sumulas-stj-penal').closest('.mt-16').style.display = 'none';
+                                document.querySelector('#sumulas-stj-eca').closest('.mt-16').style.display = 'none';
+
+                                // Mostrar área de resultados
+                                searchResultsContainer.style.display = '';
+                                searchResultsGrid.innerHTML = '';
+
+                                const totalEncontradas = cardsEncontrados.length;
+
+                                if (totalEncontradas === 0) {
+                                    searchResults.innerHTML = '<span class="text-red-600">Nenhuma súmula encontrada.</span>';
+                                    searchResultsGrid.innerHTML = '<div class="col-span-full text-center text-gray-500 py-8">Nenhum resultado encontrado para sua busca.</div>';
+                                } else {
+                                    searchResults.innerHTML = `<span class="text-green-600">✓ ${totalEncontradas} súmula(s) encontrada(s)</span>`;
+
+                                    // Separar cards por tribunal
+                                    const cardsSTF = cardsEncontrados.filter(item => item.tribunal === 'STF');
+                                    const cardsSTJ = cardsEncontrados.filter(item => item.tribunal === 'STJ');
+
+                                    // Adicionar seção STF se houver resultados
+                                    if (cardsSTF.length > 0) {
+                                        const separadorSTF = document.createElement('div');
+                                        separadorSTF.className = 'col-span-full mt-4 mb-2';
+                                        separadorSTF.innerHTML = '<h3 class="text-xl font-bold text-red-700 border-b-2 border-red-300 pb-2">Súmulas do STF</h3>';
+                                        searchResultsGrid.appendChild(separadorSTF);
+
+                                        cardsSTF.forEach(item => {
+                                            item.card.onclick = () => copiarSumula(item.numero, item.tribunal, item.isVinculante, item.textoSumula);
+                                            searchResultsGrid.appendChild(item.card);
+                                        });
+                                    }
+
+                                    // Adicionar seção STJ se houver resultados
+                                    if (cardsSTJ.length > 0) {
+                                        const separadorSTJ = document.createElement('div');
+                                        separadorSTJ.className = 'col-span-full mt-6 mb-2';
+                                        separadorSTJ.innerHTML = '<h3 class="text-xl font-bold text-blue-700 border-b-2 border-blue-300 pb-2">Súmulas do STJ</h3>';
+                                        searchResultsGrid.appendChild(separadorSTJ);
+
+                                        cardsSTJ.forEach(item => {
+                                            item.card.onclick = () => copiarSumula(item.numero, item.tribunal, item.isVinculante, item.textoSumula);
+                                            searchResultsGrid.appendChild(item.card);
+                                        });
+                                    }
+                                }
+                            }
+
+                            function limparBusca() {
+                                document.getElementById('searchInput').value = '';
+                                realizarBusca();
+                            }
+                        </script>
+
+                        <footer class="text-center py-8 mt-16">
+                            <p class="text-xs text-gray-500">
+                                Produzido por Alexandre Claudino Simas Santos - Secretário Jurídico<br>
+                                Gabinete do Juiz de Direito de Segundo Grau Alexandre Morais da Rosa<br>
+                                Tribunal de Justiça de Santa Catarina<br>
+                                Copyleft (ↄ) 2025
+                            </p>
+                        </footer>
+    </body>
+
+</html>

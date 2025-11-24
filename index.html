@@ -1,520 +1,658 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estrutura de um Acórdão</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
-    </script>
-    <script defer src="https://cdn.vercel-insights.com/v1/script.debug.js"></script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
-        
-        body {
-            font-family: 'Roboto', sans-serif;
-            background-color: #f0f4f8;
-        }
-        
-        .section-card {
-            transition: all 0.3s ease;
-        }
-        
-        .section-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-        }
-        
-        #sidenav-backdrop {
-            transition: opacity 0.3s ease;
-        }
-        
-        #sidenav {
-            transition: transform 0.3s ease;
-        }
-        
-    </style>
-</head>
-<body>
-    <nav class="bg-blue-900 text-white shadow-lg">
-        <div class="container mx-auto px-4">
-            <div class="flex justify-between items-center py-4">
-                <div class="flex items-center">
-                    <button id="sidenav-toggle" class="mr-4 text-white hover:text-blue-200 transition">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                        </svg>
-                    </button>
-                    <div class="text-xl font-bold">ResumosDireito</div>
-                </div>
-                <div class="hidden md:flex space-x-6">
-                    <a href="/" class="hover:text-blue-200 transition font-medium">Processo Civil</a>
-                    <a href="/penal" class="hover:text-blue-200 transition">Processo Penal</a>
-                    <a href="/constitucional" class="hover:text-blue-200 transition">Constitucional</a>
-                    <a href="/administrativo" class="hover:text-blue-200 transition">Administrativo</a>
-                </div>
-            </div>
-        </div>
-    </nav>
 
-    <div id="sidenav-backdrop" class="fixed inset-0 bg-black bg-opacity-50 z-40 opacity-0 pointer-events-none transition-opacity"></div>
-    
-    <nav id="sidenav" class="fixed top-0 left-0 z-50 h-screen w-64 bg-white shadow-lg transform -translate-x-full transition-transform">
-        <div class="p-6">
-            <div class="flex justify-between items-center mb-6">
-                <h3 class="text-lg font-semibold text-blue-800">Processo Civil</h3>
-                <button id="sidenav-close" class="text-gray-500 hover:text-gray-700">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-                    </svg>
-                </button>
-            </div>
-            <ul class="space-y-2">
-                <li>
-                    <a href="/" class="block p-3 text-blue-600 bg-blue-50 rounded font-medium border-l-4 border-blue-600">
-                        <div class="flex items-center">
-                            <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
-                            </svg>
-                            Estrutura do Acórdão
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="honorários.html" class="block p-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition">
-                        <div class="flex items-center">
-                            <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"></path>
-                            </svg>
-                            Honorários de Sucumbência
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="recursos.html" class="block p-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition">
-                        <div class="flex items-center">
-                            <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M9 19l3 3m0 0l3-3m-3 3V10"></path>
-                            </svg>
-                            Recursos
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="sentenca.html" class="block p-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition">
-                        <div class="flex items-center">
-                            <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
-                            </svg>
-                            Estrutura da Sentença
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="competencia.html" class="block p-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition">
-                        <div class="flex items-center">
-                            <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
-                            </svg>
-                            Competência
-                        </div>
-                    </a>
-                </li>
-            </ul>
-        </div>
-        
-        <div class="absolute bottom-0 left-0 right-0 p-6 border-t border-gray-200">
-            <div class="text-xs text-gray-500 text-center">
-                <p class="font-medium">ResumosDireito</p>
-                <p>2025</p>
-            </div>
-        </div>
-    </nav>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Estrutura de um Acórdão</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+        </script>
+        <script defer src="https://cdn.vercel-insights.com/v1/script.debug.js"></script>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
-    <div class="container mx-auto px-4 py-8 max-w-6xl">
-        <nav class="mb-8" aria-label="Breadcrumb">
-            <ol class="flex items-center space-x-2 text-sm text-gray-600">
-                <li><a href="/" class="hover:text-blue-600">Início</a></li>
-                <li><svg class="w-4 h-4 mx-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg></li>
-                <li><a href="/" class="hover:text-blue-600">Processo Civil</a></li>
-                <li><svg class="w-4 h-4 mx-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg></li>
-                <li class="text-gray-800 font-medium">Estrutura do Acórdão</li>
-            </ol>
+            body {
+                font-family: 'Roboto', sans-serif;
+                background-color: #f0f4f8;
+            }
+
+            .section-card {
+                transition: all 0.3s ease;
+            }
+
+            .section-card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            }
+
+            #sidenav-backdrop {
+                transition: opacity 0.3s ease;
+            }
+
+            #sidenav {
+                transition: transform 0.3s ease;
+            }
+        </style>
+    </head>
+
+    <body>
+        <nav class="bg-blue-900 text-white shadow-lg">
+            <div class="container mx-auto px-4">
+                <div class="flex justify-between items-center py-4">
+                    <div class="flex items-center">
+                        <button id="sidenav-toggle" class="mr-4 text-white hover:text-blue-200 transition">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h16"></path>
+                            </svg>
+                        </button>
+                        <div class="flex items-center gap-2">
+                            <div class="text-xl font-bold">ResumosDireito</div>
+                            <div class="text-xl font-light text-blue-200">Civil</div>
+                        </div>
+                    </div>
+                    <div class="hidden md:flex space-x-6">
+                        <a href="/" class="hover:text-blue-200 transition font-medium">Civil</a>
+                        <a href="/penal-sumulas.html" class="hover:text-blue-200 transition">Penal</a>
+                        <a href="/constitucional" class="hover:text-blue-200 transition">Constitucional</a>
+                        <a href="/administrativo" class="hover:text-blue-200 transition">Administrativo</a>
+                    </div>
+                </div>
+            </div>
         </nav>
-        
-        <header class="text-center mb-12">
-            <h1 class="text-4xl font-bold text-blue-900 mb-4">Estrutura de um Acórdão</h1>
-            <p class="text-xl text-gray-600">Guia interativo sobre a estrutura e componentes de decisões colegiadas</p>
-        </header>
-        
-        <div class="bg-white rounded-lg shadow-lg p-6 mb-10">
-            <h2 class="text-2xl font-bold text-blue-800 mb-4">O que é um Acórdão?</h2>
-            <p class="text-gray-700 mb-4">
-                Um <span class="font-semibold">acórdão</span> é a decisão proferida por um órgão colegiado de tribunal, resultado do julgamento de um recurso ou matéria submetida ao colegiado. Distingue-se da sentença, que é proferida por juiz singular.
-            </p>
-            <p class="text-gray-700">
-                Sua estrutura formal e lógica orienta a análise do recurso e a decisão do caso, sendo fundamental que seus componentes sejam observados para garantir validade e clareza.
-            </p>
-        </div>
-        
-        <div class="mt-16">
-            <h2 class="text-2xl font-bold text-blue-800 mb-6 text-center">Fluxo de Análise em um Acórdão</h2>
-            
-            <div class="relative max-w-4xl mx-auto">
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                    
-                    <div id="ementa-card" class="section-card bg-blue-100 rounded-lg p-6 border-l-4 border-blue-600 relative">
-                        <h3 class="text-xl font-bold text-blue-800 mb-2 flex items-center">
-                            <span class="bg-blue-800 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">1</span>
-                            Ementa
-                        </h3>
-                        <p class="text-gray-700">Resumo das principais teses jurídicas e da decisão proferida, localizada no início do acórdão.</p>
-                        <button onclick="showDetails('ementa')" class="mt-4 bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-md transition">Ver detalhes</button>
-                        <div class="absolute top-1/2 right-0 transform -translate-y-1/2 translate-x-full lg:block hidden">
-                            <div class="w-0 h-0 border-l-[15px] border-t-[12px] border-b-[12px] border-l-blue-600 border-t-transparent border-b-transparent"></div>
-                        </div>
-                    </div>
-                    
-                    <div id="relatorio-card" class="section-card bg-blue-100 rounded-lg p-6 border-l-4 border-blue-600 relative">
-                        <h3 class="text-xl font-bold text-blue-800 mb-2 flex items-center">
-                            <span class="bg-blue-800 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">2</span>
-                            Relatório
-                        </h3>
-                        <p class="text-gray-700">Narração dos fatos do processo, identificação das partes e histórico resumido da marcha processual.</p>
-                        <button onclick="showDetails('relatorio')" class="mt-4 bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-md transition">Ver detalhes</button>
-                        <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-full lg:block hidden">
-                            <div class="w-0 h-0 border-l-[12px] border-r-[12px] border-t-[15px] border-l-transparent border-r-transparent border-t-blue-600"></div>
-                        </div>
-                    </div>
-                    
-                    <div id="preliminares-card" class="section-card bg-blue-100 rounded-lg p-6 border-l-4 border-blue-600 relative">
-                        <h3 class="text-xl font-bold text-blue-800 mb-2 flex items-center">
-                            <span class="bg-blue-800 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">4</span>
-                            Preliminares da Causa
-                        </h3>
-                        <p class="text-gray-700">Questões processuais que podem anular o processo ou a decisão recorrida, sem análise do mérito.</p>
-                        <button onclick="showDetails('preliminares')" class="mt-4 bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-md transition">Ver detalhes</button>
-                        <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-full lg:block hidden">
-                            <div class="w-0 h-0 border-l-[12px] border-r-[12px] border-t-[15px] border-l-transparent border-r-transparent border-t-blue-600"></div>
-                        </div>
-                    </div>
-                    
-                    <div id="admissibilidade-card" class="section-card bg-blue-100 rounded-lg p-6 border-l-4 border-blue-600 relative">
-                        <h3 class="text-xl font-bold text-blue-800 mb-2 flex items-center">
-                            <span class="bg-blue-800 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">3</span>
-                            Admissibilidade
-                        </h3>
-                        <p class="text-gray-700">Verificação dos requisitos para que o recurso possa ser conhecido e julgado pelo tribunal.</p>
-                        <button onclick="showDetails('admissibilidade')" class="mt-4 bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-md transition">Ver detalhes</button>
-                        <div class="absolute top-1/2 left-0 transform -translate-y-1/2 -translate-x-full lg:block hidden">
-                            <div class="w-0 h-0 border-r-[15px] border-t-[12px] border-b-[12px] border-r-blue-600 border-t-transparent border-b-transparent"></div>
-                        </div>
-                    </div>
-                    
-                    <div id="prejudiciais-card" class="section-card bg-blue-100 rounded-lg p-6 border-l-4 border-blue-600 relative">
-                        <h3 class="text-xl font-bold text-blue-800 mb-2 flex items-center">
-                            <span class="bg-blue-800 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">5</span>
-                            Prejudiciais de Mérito
-                        </h3>
-                        <p class="text-gray-700">Questões que, embora não sejam o mérito principal, devem ser decididas antes dele, pois influenciam o resultado final.</p>
-                        <button onclick="showDetails('prejudiciais')" class="mt-4 bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-md transition">Ver detalhes</button>
-                        <div class="absolute top-1/2 right-0 transform -translate-y-1/2 translate-x-full lg:block hidden">
-                            <div class="w-0 h-0 border-l-[15px] border-t-[12px] border-b-[12px] border-l-blue-600 border-t-transparent border-b-transparent"></div>
-                        </div>
-                    </div>
-                    
-                    <div id="fundamentacao-card" class="section-card bg-blue-100 rounded-lg p-6 border-l-4 border-blue-600 relative">
-                        <h3 class="text-xl font-bold text-blue-800 mb-2 flex items-center">
-                            <span class="bg-blue-800 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">6</span>
-                            Mérito
-                        </h3>
-                        <p class="text-gray-700">Coração do acórdão, onde o colegiado expõe razões de fato e de direito para a decisão.</p>
-                        <button onclick="showDetails('fundamentacao')" class="mt-4 bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-md transition">Ver detalhes</button>
-                        <div class="absolute bottom-0 left-1/4 transform -translate-x-1/2 translate-y-full lg:block hidden">
-                            <div class="w-0 h-0 border-l-[12px] border-r-[12px] border-t-[15px] border-l-transparent border-r-transparent border-t-blue-600"></div>
-                        </div>
-                    </div>
-                    
-                    <div id="dispositivo-card" class="section-card bg-blue-100 rounded-lg p-6 border-l-4 border-blue-600 relative lg:col-span-2 lg:max-w-md lg:mx-auto">
-                        <h3 class="text-xl font-bold text-blue-800 mb-2 flex items-center">
-                            <span class="bg-blue-800 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">7</span>
-                            Dispositivo
-                        </h3>
-                        <p class="text-gray-700">Parte final, onde o tribunal profere o comando decisório, indicando o resultado do julgamento.</p>
-                        <button onclick="showDetails('dispositivo')" class="mt-4 bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-md transition">Ver detalhes</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="mt-16">
-            <h2 class="text-2xl font-bold text-blue-800 mb-6 text-center">Atenção às diferenças!</h2>
-            
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
-                <div class="section-card bg-purple-100 rounded-lg p-6 border-l-4 border-purple-600 relative">
-                    <div class="flex items-center mb-3">
-                        <h3 class="text-lg font-bold text-purple-800">Juízo de Admissibilidade Recursal / Preliminar do recuso</h3>
-                    </div>
-                    <p class="text-gray-700 text-sm mb-4">O tribunal verifica primeiro se o recurso em si atende aos requisitos legais (cabimento, tempestividade, preparo, etc.) para ser conhecido.</p>
-                    <div class="bg-purple-50 p-3 rounded border-l-2 border-purple-300">
-                        <p class="text-xs text-purple-700 font-medium">Resultado: Se não for admissível, o recurso é não conhecido.</p>
-                    </div>
-                    <div class="absolute bottom-0 right-1/2 transform translate-x-1/2 translate-y-full lg:block hidden">
-                        <div class="w-0 h-0 border-l-[12px] border-r-[12px] border-t-[15px] border-l-transparent border-r-transparent border-t-purple-600"></div>
-                    </div>
-                </div>
-                
-                <div class="section-card bg-orange-100 rounded-lg p-6 border-l-4 border-orange-600 relative">
-                    <div class="flex items-center mb-3">
-                        <h3 class="text-lg font-bold text-orange-800">Preliminares da Causa Suscitadas em Recurso: Preliminar da Causa e Prejudicial de Mérito</h3>
-                    </div>
-                    <p class="text-gray-700 text-sm mb-4">São questões processuais (vícios, falta de pressupostos/condições da ação, prescrição, decadência) que surgiram na instância inferior e são arguidas no recurso. Elas compõem o mérito do recurso e são analisadas após a admissibilidade recursal.</p>
-                    <div class="bg-orange-50 p-3 rounded border-l-2 border-orange-300">
-                        <p class="text-xs text-orange-700 font-medium">Resultado: Seu acolhimento leva ao provimento ou desprovimento do recurso (e, frequentemente, à anulação da decisão ou do processo de origem). Primeiro devem ser analisadas as preliminares da causa e, após, as prejudiciais de mérito. A prescrição e a decadência são prejudiciais de mérito examinadas neste momento.</p>
-                    </div>
-                    <div class="absolute bottom-0 right-1/2 transform translate-x-1/2 translate-y-full lg:block hidden">
-                        <div class="w-0 h-0 border-l-[12px] border-r-[12px] border-t-[15px] border-l-transparent border-r-transparent border-t-orange-600"></div>
-                    </div>
-                </div>
-                
-                <div class="section-card bg-green-100 rounded-lg p-6 border-l-4 border-green-600 relative">
-                    <div class="flex items-center mb-3">
-                        <h3 class="text-lg font-bold text-green-800">Mérito Principal da Causa</h3>
-                    </div>
-                    <p class="text-gray-700 text-sm mb-4">É a discussão sobre a pretensão de direito material (o pedido da ação principal). O tribunal só chega a este ponto se o recurso for conhecido e após resolver as preliminares da causa eventualmente arguidas.</p>
-                    <div class="bg-green-50 p-3 rounded border-l-2 border-green-300">
-                        <p class="text-xs text-green-700 font-medium">Resultado: O julgamento resulta na procedência ou improcedência do pedido principal.</p>
-                    </div>
-                    <div class="absolute bottom-0 right-1/2 transform translate-x-1/2 translate-y-full lg:block hidden">
-                        <div class="w-0 h-0 border-l-[12px] border-r-[12px] border-t-[15px] border-l-transparent border-r-transparent border-t-green-600"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <div class="mt-16">
-            <h2 class="text-2xl font-bold text-blue-800 mb-6 text-center">Nulidade x Conversão em Diligência</h2>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="section-card bg-red-100 rounded-lg p-6 border-l-4 border-red-600">
-                    <h3 class="text-xl font-bold text-red-800 mb-2">Nulidade</h3>
-                    <p class="text-gray-700 mb-4">Declarada quando há vício insanável, que prejudica a validade do ato ou processo.</p>
-                    <ul class="list-disc pl-5 text-gray-700">
-                        <li>Vício insanável (ex: ausência de citação válida)</li>
-                        <li>O processo é anulado</li>
-                        <li>Retorna ao juízo de origem</li>
-                        <li>Necessária correção dos atos viciados</li>
-                    </ul>
-                </div>
-                
-                <div class="section-card bg-green-100 rounded-lg p-6 border-l-4 border-green-600">
-                    <h3 class="text-xl font-bold text-green-800 mb-2">Conversão em Diligência</h3>
-                    <p class="text-gray-700 mb-4">Ocorre quando o vício é sanável ou há necessidade de produzir prova indispensável ao julgamento.</p>
-                    <ul class="list-disc pl-5 text-gray-700">
-                        <li>Vício sanável</li>
-                        <li>O tribunal suspende o julgamento</li>
-                        <li>Ordena a realização do ato ou prova</li>
-                        <li>Após a diligência, retoma o julgamento</li>
-                        <li>Evita a anulação e a demora processual</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        
-        <div id="details-modal" class="fixed inset-0 bg-black bg-opacity-50 hidden flex items-center justify-center z-50 p-4">
-            <div class="bg-white rounded-lg p-6 md:p-8 max-w-2xl w-full max-h-[80vh] overflow-y-auto mx-4">
+        <div id="sidenav-backdrop"
+            class="fixed inset-0 bg-black bg-opacity-50 z-40 opacity-0 pointer-events-none transition-opacity"></div>
+
+        <nav id="sidenav"
+            class="fixed top-0 left-0 z-50 h-screen w-64 bg-white shadow-lg transform -translate-x-full transition-transform">
+            <div class="p-6">
                 <div class="flex justify-between items-center mb-6">
-                    <h3 id="modal-title" class="text-2xl font-bold text-blue-800"></h3>
-                    <button onclick="closeModal()" class="text-gray-500 hover:text-gray-700">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    <h3 class="text-lg font-semibold text-blue-800">Civil</h3>
+                    <button id="sidenav-close" class="text-gray-500 hover:text-gray-700">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12"></path>
                         </svg>
                     </button>
                 </div>
-                <div id="modal-content" class="text-gray-700"></div>
-                <div class="mt-8 flex justify-end">
-                    <button onclick="closeModal()" class="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-md transition">Fechar</button>
+                <ul class="space-y-2">
+                    <li>
+                        <a href="/"
+                            class="block p-3 text-blue-600 bg-blue-50 rounded font-medium border-l-4 border-blue-600">
+                            <div class="flex items-center">
+                                <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
+                                    </path>
+                                </svg>
+                                Estrutura do Acórdão
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="honorários.html"
+                            class="block p-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition">
+                            <div class="flex items-center">
+                                <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1">
+                                    </path>
+                                </svg>
+                                Honorários de Sucumbência
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="recursos.html"
+                            class="block p-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition">
+                            <div class="flex items-center">
+                                <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M9 19l3 3m0 0l3-3m-3 3V10">
+                                    </path>
+                                </svg>
+                                Recursos
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="sentenca.html"
+                            class="block p-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition">
+                            <div class="flex items-center">
+                                <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2">
+                                    </path>
+                                </svg>
+                                Estrutura da Sentença
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="competencia.html"
+                            class="block p-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition">
+                            <div class="flex items-center">
+                                <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4">
+                                    </path>
+                                </svg>
+                                Competência
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="absolute bottom-0 left-0 right-0 p-6 border-t border-gray-200">
+                <div class="text-xs text-gray-500 text-center">
+                    <p class="font-medium">ResumosDireito</p>
+                    <p>2025</p>
                 </div>
             </div>
-        </div>
+        </nav>
 
-        <div class="mt-16">
-            <h2 class="text-2xl font-bold text-blue-800 mb-6 text-center">Exemplo de Estrutura de Acórdão (Relatório/Voto)</h2>
-            
-            <div class="max-w-4xl mx-auto bg-white border-2 border-gray-300 shadow-lg rounded-lg overflow-hidden">
-                <div class="bg-white p-6 border-b border-gray-300 text-center">
-                    <h3 class="text-lg font-bold text-gray-800 mb-2">ESTADO DE SANTA CATARINA</h3>
-                    <h4 class="text-lg font-bold text-gray-800 mb-4">TRIBUNAL DE JUSTIÇA</h4>
+        <div class="container mx-auto px-4 py-8 max-w-6xl">
+            <nav class="mb-8" aria-label="Breadcrumb">
+                <ol class="flex items-center space-x-2 text-sm text-gray-600">
+                    <li><a href="/" class="hover:text-blue-600">Início</a></li>
+                    <li><svg class="w-4 h-4 mx-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                clip-rule="evenodd"></path>
+                        </svg></li>
+                    <li><a href="/" class="hover:text-blue-600">Civil</a></li>
+                    <li><svg class="w-4 h-4 mx-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                clip-rule="evenodd"></path>
+                        </svg></li>
+                    <li class="text-gray-800 font-medium">Estrutura do Acórdão</li>
+                </ol>
+            </nav>
 
+            <header class="text-center mb-12">
+                <h1 class="text-4xl font-bold text-blue-900 mb-4">Estrutura de um Acórdão</h1>
+                <p class="text-xl text-gray-600">Guia interativo sobre a estrutura e componentes de decisões colegiadas
+                </p>
+            </header>
 
-                    <div class="text-left mt-4 space-y-1">
-                        <p><span class="font-bold">APELAÇÃO Nº XXXX-XX.XXXX.X.XX.XXXX/SC</p>
-                        <p><span class="font-bold">RELATOR:</span> DESEMBARGADOR [NOME DO RELATOR]</p>
-                        <p><span class="font-bold">APELANTE:</span> [NOME DA PARTE] (RÉU)</p>
-                        <p><span class="font-bold">APELADO:</span> [NOME DA PARTE] (AUTOR)</p>
+            <div class="bg-white rounded-lg shadow-lg p-6 mb-10">
+                <h2 class="text-2xl font-bold text-blue-800 mb-4">O que é um Acórdão?</h2>
+                <p class="text-gray-700 mb-4">
+                    Um <span class="font-semibold">acórdão</span> é a decisão proferida por um órgão colegiado de
+                    tribunal, resultado do julgamento de um recurso ou matéria submetida ao colegiado. Distingue-se da
+                    sentença, que é proferida por juiz singular.
+                </p>
+                <p class="text-gray-700">
+                    Sua estrutura formal e lógica orienta a análise do recurso e a decisão do caso, sendo fundamental
+                    que seus componentes sejam observados para garantir validade e clareza.
+                </p>
+            </div>
+
+            <div class="mt-16">
+                <h2 class="text-2xl font-bold text-blue-800 mb-6 text-center">Fluxo de Análise em um Acórdão</h2>
+
+                <div class="relative max-w-4xl mx-auto">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+
+                        <div id="ementa-card"
+                            class="section-card bg-blue-100 rounded-lg p-6 border-l-4 border-blue-600 relative">
+                            <h3 class="text-xl font-bold text-blue-800 mb-2 flex items-center">
+                                <span
+                                    class="bg-blue-800 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">1</span>
+                                Ementa
+                            </h3>
+                            <p class="text-gray-700">Resumo das principais teses jurídicas e da decisão proferida,
+                                localizada no início do acórdão.</p>
+                            <button onclick="showDetails('ementa')"
+                                class="mt-4 bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-md transition">Ver
+                                detalhes</button>
+                            <div
+                                class="absolute top-1/2 right-0 transform -translate-y-1/2 translate-x-full lg:block hidden">
+                                <div
+                                    class="w-0 h-0 border-l-[15px] border-t-[12px] border-b-[12px] border-l-blue-600 border-t-transparent border-b-transparent">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="relatorio-card"
+                            class="section-card bg-blue-100 rounded-lg p-6 border-l-4 border-blue-600 relative">
+                            <h3 class="text-xl font-bold text-blue-800 mb-2 flex items-center">
+                                <span
+                                    class="bg-blue-800 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">2</span>
+                                Relatório
+                            </h3>
+                            <p class="text-gray-700">Narração dos fatos do processo, identificação das partes e
+                                histórico resumido da marcha processual.</p>
+                            <button onclick="showDetails('relatorio')"
+                                class="mt-4 bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-md transition">Ver
+                                detalhes</button>
+                            <div
+                                class="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-full lg:block hidden">
+                                <div
+                                    class="w-0 h-0 border-l-[12px] border-r-[12px] border-t-[15px] border-l-transparent border-r-transparent border-t-blue-600">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="preliminares-card"
+                            class="section-card bg-blue-100 rounded-lg p-6 border-l-4 border-blue-600 relative">
+                            <h3 class="text-xl font-bold text-blue-800 mb-2 flex items-center">
+                                <span
+                                    class="bg-blue-800 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">4</span>
+                                Preliminares da Causa
+                            </h3>
+                            <p class="text-gray-700">Questões processuais que podem anular o processo ou a decisão
+                                recorrida, sem análise do mérito.</p>
+                            <button onclick="showDetails('preliminares')"
+                                class="mt-4 bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-md transition">Ver
+                                detalhes</button>
+                            <div
+                                class="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-full lg:block hidden">
+                                <div
+                                    class="w-0 h-0 border-l-[12px] border-r-[12px] border-t-[15px] border-l-transparent border-r-transparent border-t-blue-600">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="admissibilidade-card"
+                            class="section-card bg-blue-100 rounded-lg p-6 border-l-4 border-blue-600 relative">
+                            <h3 class="text-xl font-bold text-blue-800 mb-2 flex items-center">
+                                <span
+                                    class="bg-blue-800 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">3</span>
+                                Admissibilidade
+                            </h3>
+                            <p class="text-gray-700">Verificação dos requisitos para que o recurso possa ser conhecido e
+                                julgado pelo tribunal.</p>
+                            <button onclick="showDetails('admissibilidade')"
+                                class="mt-4 bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-md transition">Ver
+                                detalhes</button>
+                            <div
+                                class="absolute top-1/2 left-0 transform -translate-y-1/2 -translate-x-full lg:block hidden">
+                                <div
+                                    class="w-0 h-0 border-r-[15px] border-t-[12px] border-b-[12px] border-r-blue-600 border-t-transparent border-b-transparent">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="prejudiciais-card"
+                            class="section-card bg-blue-100 rounded-lg p-6 border-l-4 border-blue-600 relative">
+                            <h3 class="text-xl font-bold text-blue-800 mb-2 flex items-center">
+                                <span
+                                    class="bg-blue-800 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">5</span>
+                                Prejudiciais de Mérito
+                            </h3>
+                            <p class="text-gray-700">Questões que, embora não sejam o mérito principal, devem ser
+                                decididas antes dele, pois influenciam o resultado final.</p>
+                            <button onclick="showDetails('prejudiciais')"
+                                class="mt-4 bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-md transition">Ver
+                                detalhes</button>
+                            <div
+                                class="absolute top-1/2 right-0 transform -translate-y-1/2 translate-x-full lg:block hidden">
+                                <div
+                                    class="w-0 h-0 border-l-[15px] border-t-[12px] border-b-[12px] border-l-blue-600 border-t-transparent border-b-transparent">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="fundamentacao-card"
+                            class="section-card bg-blue-100 rounded-lg p-6 border-l-4 border-blue-600 relative">
+                            <h3 class="text-xl font-bold text-blue-800 mb-2 flex items-center">
+                                <span
+                                    class="bg-blue-800 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">6</span>
+                                Mérito
+                            </h3>
+                            <p class="text-gray-700">Coração do acórdão, onde o colegiado expõe razões de fato e de
+                                direito para a decisão.</p>
+                            <button onclick="showDetails('fundamentacao')"
+                                class="mt-4 bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-md transition">Ver
+                                detalhes</button>
+                            <div
+                                class="absolute bottom-0 left-1/4 transform -translate-x-1/2 translate-y-full lg:block hidden">
+                                <div
+                                    class="w-0 h-0 border-l-[12px] border-r-[12px] border-t-[15px] border-l-transparent border-r-transparent border-t-blue-600">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="dispositivo-card"
+                            class="section-card bg-blue-100 rounded-lg p-6 border-l-4 border-blue-600 relative lg:col-span-2 lg:max-w-md lg:mx-auto">
+                            <h3 class="text-xl font-bold text-blue-800 mb-2 flex items-center">
+                                <span
+                                    class="bg-blue-800 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">7</span>
+                                Dispositivo
+                            </h3>
+                            <p class="text-gray-700">Parte final, onde o tribunal profere o comando decisório, indicando
+                                o resultado do julgamento.</p>
+                            <button onclick="showDetails('dispositivo')"
+                                class="mt-4 bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-md transition">Ver
+                                detalhes</button>
+                        </div>
                     </div>
                 </div>
-                
-                <div class="p-6 font-mono text-sm leading-relaxed" style="text-indent: 2rem;">
-                    <div class="text-center mb-6">
-                        <h4 class="font-bold text-2xl">RELATÓRIO</h4>
+            </div>
+
+            <div class="mt-16">
+                <h2 class="text-2xl font-bold text-blue-800 mb-6 text-center">Atenção às diferenças!</h2>
+
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                    <div class="section-card bg-purple-100 rounded-lg p-6 border-l-4 border-purple-600 relative">
+                        <div class="flex items-center mb-3">
+                            <h3 class="text-lg font-bold text-purple-800">Juízo de Admissibilidade Recursal / Preliminar
+                                do recuso</h3>
+                        </div>
+                        <p class="text-gray-700 text-sm mb-4">O tribunal verifica primeiro se o recurso em si atende aos
+                            requisitos legais (cabimento, tempestividade, preparo, etc.) para ser conhecido.</p>
+                        <div class="bg-purple-50 p-3 rounded border-l-2 border-purple-300">
+                            <p class="text-xs text-purple-700 font-medium">Resultado: Se não for admissível, o recurso é
+                                não conhecido.</p>
+                        </div>
+                        <div
+                            class="absolute bottom-0 right-1/2 transform translate-x-1/2 translate-y-full lg:block hidden">
+                            <div
+                                class="w-0 h-0 border-l-[12px] border-r-[12px] border-t-[15px] border-l-transparent border-r-transparent border-t-purple-600">
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="space-y-6">
-                        <div class="border-l-4 border-blue-500 pl-4">
-                            <p class="text-gray-700">Trata-se de recurso de apelação em que figuram como apelante [APELANTE] e apelado [APELADO], interposto contra sentença proferida pelo juízo de origem nos autos [N. AUTOS]. </p>
+                    <div class="section-card bg-orange-100 rounded-lg p-6 border-l-4 border-orange-600 relative">
+                        <div class="flex items-center mb-3">
+                            <h3 class="text-lg font-bold text-orange-800">Preliminares da Causa Suscitadas em Recurso:
+                                Preliminar da Causa e Prejudicial de Mérito</h3>
                         </div>
-                        
+                        <p class="text-gray-700 text-sm mb-4">São questões processuais (vícios, falta de
+                            pressupostos/condições da ação, prescrição, decadência) que surgiram na instância inferior e
+                            são arguidas no recurso. Elas compõem o mérito do recurso e são analisadas após a
+                            admissibilidade recursal.</p>
+                        <div class="bg-orange-50 p-3 rounded border-l-2 border-orange-300">
+                            <p class="text-xs text-orange-700 font-medium">Resultado: Seu acolhimento leva ao provimento
+                                ou desprovimento do recurso (e, frequentemente, à anulação da decisão ou do processo de
+                                origem). Primeiro devem ser analisadas as preliminares da causa e, após, as prejudiciais
+                                de mérito. A prescrição e a decadência são prejudiciais de mérito examinadas neste
+                                momento.</p>
+                        </div>
+                        <div
+                            class="absolute bottom-0 right-1/2 transform translate-x-1/2 translate-y-full lg:block hidden">
+                            <div
+                                class="w-0 h-0 border-l-[12px] border-r-[12px] border-t-[15px] border-l-transparent border-r-transparent border-t-orange-600">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-card bg-green-100 rounded-lg p-6 border-l-4 border-green-600 relative">
+                        <div class="flex items-center mb-3">
+                            <h3 class="text-lg font-bold text-green-800">Mérito Principal da Causa</h3>
+                        </div>
+                        <p class="text-gray-700 text-sm mb-4">É a discussão sobre a pretensão de direito material (o
+                            pedido da ação principal). O tribunal só chega a este ponto se o recurso for conhecido e
+                            após resolver as preliminares da causa eventualmente arguidas.</p>
+                        <div class="bg-green-50 p-3 rounded border-l-2 border-green-300">
+                            <p class="text-xs text-green-700 font-medium">Resultado: O julgamento resulta na procedência
+                                ou improcedência do pedido principal.</p>
+                        </div>
+                        <div
+                            class="absolute bottom-0 right-1/2 transform translate-x-1/2 translate-y-full lg:block hidden">
+                            <div
+                                class="w-0 h-0 border-l-[12px] border-r-[12px] border-t-[15px] border-l-transparent border-r-transparent border-t-green-600">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-16">
+                <h2 class="text-2xl font-bold text-blue-800 mb-6 text-center">Nulidade x Conversão em Diligência</h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="section-card bg-red-100 rounded-lg p-6 border-l-4 border-red-600">
+                        <h3 class="text-xl font-bold text-red-800 mb-2">Nulidade</h3>
+                        <p class="text-gray-700 mb-4">Declarada quando há vício insanável, que prejudica a validade do
+                            ato ou processo.</p>
+                        <ul class="list-disc pl-5 text-gray-700">
+                            <li>Vício insanável (ex: ausência de citação válida)</li>
+                            <li>O processo é anulado</li>
+                            <li>Retorna ao juízo de origem</li>
+                            <li>Necessária correção dos atos viciados</li>
+                        </ul>
+                    </div>
+
+                    <div class="section-card bg-green-100 rounded-lg p-6 border-l-4 border-green-600">
+                        <h3 class="text-xl font-bold text-green-800 mb-2">Conversão em Diligência</h3>
+                        <p class="text-gray-700 mb-4">Ocorre quando o vício é sanável ou há necessidade de produzir
+                            prova indispensável ao julgamento.</p>
+                        <ul class="list-disc pl-5 text-gray-700">
+                            <li>Vício sanável</li>
+                            <li>O tribunal suspende o julgamento</li>
+                            <li>Ordena a realização do ato ou prova</li>
+                            <li>Após a diligência, retoma o julgamento</li>
+                            <li>Evita a anulação e a demora processual</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div id="details-modal"
+                class="fixed inset-0 bg-black bg-opacity-50 hidden flex items-center justify-center z-50 p-4">
+                <div class="bg-white rounded-lg p-6 md:p-8 max-w-2xl w-full max-h-[80vh] overflow-y-auto mx-4">
+                    <div class="flex justify-between items-center mb-6">
+                        <h3 id="modal-title" class="text-2xl font-bold text-blue-800"></h3>
+                        <button onclick="closeModal()" class="text-gray-500 hover:text-gray-700">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div id="modal-content" class="text-gray-700"></div>
+                    <div class="mt-8 flex justify-end">
+                        <button onclick="closeModal()"
+                            class="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-md transition">Fechar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-16">
+                <h2 class="text-2xl font-bold text-blue-800 mb-6 text-center">Exemplo de Estrutura de Acórdão
+                    (Relatório/Voto)</h2>
+
+                <div class="max-w-4xl mx-auto bg-white border-2 border-gray-300 shadow-lg rounded-lg overflow-hidden">
+                    <div class="bg-white p-6 border-b border-gray-300 text-center">
+                        <h3 class="text-lg font-bold text-gray-800 mb-2">ESTADO DE SANTA CATARINA</h3>
+                        <h4 class="text-lg font-bold text-gray-800 mb-4">TRIBUNAL DE JUSTIÇA</h4>
+
+
+                        <div class="text-left mt-4 space-y-1">
+                            <p><span class="font-bold">APELAÇÃO Nº XXXX-XX.XXXX.X.XX.XXXX/SC</p>
+                            <p><span class="font-bold">RELATOR:</span> DESEMBARGADOR [NOME DO RELATOR]</p>
+                            <p><span class="font-bold">APELANTE:</span> [NOME DA PARTE] (RÉU)</p>
+                            <p><span class="font-bold">APELADO:</span> [NOME DA PARTE] (AUTOR)</p>
+                        </div>
+                    </div>
+
+                    <div class="p-6 font-mono text-sm leading-relaxed" style="text-indent: 2rem;">
                         <div class="text-center mb-6">
-                            <h4 class="font-bold text-2xl">VOTO</h4>
+                            <h4 class="font-bold text-2xl">RELATÓRIO</h4>
                         </div>
 
                         <div class="space-y-6">
+                            <div class="border-l-4 border-blue-500 pl-4">
+                                <p class="text-gray-700">Trata-se de recurso de apelação em que figuram como apelante
+                                    [APELANTE] e apelado [APELADO], interposto contra sentença proferida pelo juízo de
+                                    origem nos autos [N. AUTOS]. </p>
+                            </div>
 
-                        <div class="border-l-4 border-purple-500 pl-4">
-                            <h5 class="font-bold text-purple-800 mb-2">1. ADMISSIBILIDADE</h5>
-                            <p class="text-gray-700 ">Preenchidos os pressupostos extrínsecos e intrínsecos de admissibilidade, conheço do recurso.</p>
-                        </div>
-                        
-                        <div class="border-l-4 border-orange-500 pl-4">
-                            <h5 class="font-bold text-orange-800 mb-2">2. PRELIMINARES DA CAUSA</h5>
-                            <p class="text-gray-700 ">Quanto à preliminar de nulidade do laudo pericial [...]</p>
-                        </div>
-                        
-                        <div class="border-l-4 border-yellow-500 pl-4">
-                            <h5 class="font-bold text-yellow-800 mb-2">3. PREJUDICIAIS DE MÉRITO</h5>
-                            <p class="text-gray-700 ">No que diz respeito às alegações de prescrição e decadência [...]</p>
-                        </div>
-                        
-                        <div class="border-l-4 border-green-500 pl-4">
-                            <h5 class="font-bold text-green-800 mb-2">4. MÉRITO</h5>
-                            <p class="text-gray-700 ">A questão central consiste em [DEFINIR O PROBLEMA]. Em análise dos autos, verifica-se que [FUNDAMENTAÇÃO]. Nos termos do art. 166 do Código Civil, o negócio jurídico é nulo quando: [...]. É esse o entendimento do Superior Tribunal de Justiça: [...].</p>
-                        </div>
-                        
-                        <div class="border-l-4 border-red-500 pl-4">
-                            <h5 class="font-bold text-red-800 mb-2">5. DISPOSITIVO</h5>
-                            <p class="text-gray-700 ">Por tais razões, voto por conhecer do recurso e negar-lhe/dar-lhe provimento, a fim de [...]</p>
+                            <div class="text-center mb-6">
+                                <h4 class="font-bold text-2xl">VOTO</h4>
+                            </div>
+
+                            <div class="space-y-6">
+
+                                <div class="border-l-4 border-purple-500 pl-4">
+                                    <h5 class="font-bold text-purple-800 mb-2">1. ADMISSIBILIDADE</h5>
+                                    <p class="text-gray-700 ">Preenchidos os pressupostos extrínsecos e intrínsecos de
+                                        admissibilidade, conheço do recurso.</p>
+                                </div>
+
+                                <div class="border-l-4 border-orange-500 pl-4">
+                                    <h5 class="font-bold text-orange-800 mb-2">2. PRELIMINARES DA CAUSA</h5>
+                                    <p class="text-gray-700 ">Quanto à preliminar de nulidade do laudo pericial [...]
+                                    </p>
+                                </div>
+
+                                <div class="border-l-4 border-yellow-500 pl-4">
+                                    <h5 class="font-bold text-yellow-800 mb-2">3. PREJUDICIAIS DE MÉRITO</h5>
+                                    <p class="text-gray-700 ">No que diz respeito às alegações de prescrição e
+                                        decadência [...]</p>
+                                </div>
+
+                                <div class="border-l-4 border-green-500 pl-4">
+                                    <h5 class="font-bold text-green-800 mb-2">4. MÉRITO</h5>
+                                    <p class="text-gray-700 ">A questão central consiste em [DEFINIR O PROBLEMA]. Em
+                                        análise dos autos, verifica-se que [FUNDAMENTAÇÃO]. Nos termos do art. 166 do
+                                        Código Civil, o negócio jurídico é nulo quando: [...]. É esse o entendimento do
+                                        Superior Tribunal de Justiça: [...].</p>
+                                </div>
+
+                                <div class="border-l-4 border-red-500 pl-4">
+                                    <h5 class="font-bold text-red-800 mb-2">5. DISPOSITIVO</h5>
+                                    <p class="text-gray-700 ">Por tais razões, voto por conhecer do recurso e
+                                        negar-lhe/dar-lhe provimento, a fim de [...]</p>
+                                </div>
+                            </div>
+
+                            <div class="mt-8 text-center">
+                                <p class="font-bold">[NOME DO RELATOR]</p>
+                                <p class="text-sm">Desembargador</p>
+                            </div>
                         </div>
                     </div>
-                    
-                    <div class="mt-8 text-center">
-                        <p class="font-bold">[NOME DO RELATOR]</p>
-                        <p class="text-sm">Desembargador</p>
+                </div>
+
+                <div class="mt-16">
+                    <h2 class="text-2xl font-bold text-blue-800 mb-6 text-center">Teste seus Conhecimentos</h2>
+
+                    <div class="bg-white rounded-lg shadow-lg p-6">
+                        <div id="quiz-container">
+                            <div id="question-1" class="quiz-question">
+                                <p class="text-lg font-medium text-gray-800 mb-4">1. Qual é a parte do acórdão que
+                                    resume as principais teses jurídicas e a decisão proferida?</p>
+                                <div class="space-y-2">
+                                    <div class="flex items-center">
+                                        <input type="radio" id="q1-a" name="q1" value="a" class="mr-2">
+                                        <label for="q1-a" class="text-gray-700">Relatório</label>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <input type="radio" id="q1-b" name="q1" value="b" class="mr-2">
+                                        <label for="q1-b" class="text-gray-700">Ementa</label>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <input type="radio" id="q1-c" name="q1" value="c" class="mr-2">
+                                        <label for="q1-c" class="text-gray-700">Dispositivo</label>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <input type="radio" id="q1-d" name="q1" value="d" class="mr-2">
+                                        <label for="q1-d" class="text-gray-700">Fundamentação</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="question-2" class="quiz-question mt-8">
+                                <p class="text-lg font-medium text-gray-800 mb-4">2. O que ocorre quando um recurso não
+                                    atende aos requisitos de admissibilidade?</p>
+                                <div class="space-y-2">
+                                    <div class="flex items-center">
+                                        <input type="radio" id="q2-a" name="q2" value="a" class="mr-2">
+                                        <label for="q2-a" class="text-gray-700">O recurso é conhecido, mas não
+                                            provido</label>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <input type="radio" id="q2-b" name="q2" value="b" class="mr-2">
+                                        <label for="q2-b" class="text-gray-700">O recurso não é conhecido</label>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <input type="radio" id="q2-c" name="q2" value="c" class="mr-2">
+                                        <label for="q2-c" class="text-gray-700">O processo é convertido em
+                                            diligência</label>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <input type="radio" id="q2-d" name="q2" value="d" class="mr-2">
+                                        <label for="q2-d" class="text-gray-700">O processo é anulado</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="question-3" class="quiz-question mt-8">
+                                <p class="text-lg font-medium text-gray-800 mb-4">3. Qual a diferença entre nulidade e
+                                    conversão em diligência?</p>
+                                <div class="space-y-2">
+                                    <div class="flex items-center">
+                                        <input type="radio" id="q3-a" name="q3" value="a" class="mr-2">
+                                        <label for="q3-a" class="text-gray-700">Não há diferença, são termos
+                                            sinônimos</label>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <input type="radio" id="q3-b" name="q3" value="b" class="mr-2">
+                                        <label for="q3-b" class="text-gray-700">A nulidade ocorre com vícios sanáveis,
+                                            enquanto a conversão em diligência ocorre com vícios insanáveis</label>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <input type="radio" id="q3-c" name="q3" value="c" class="mr-2">
+                                        <label for="q3-c" class="text-gray-700">A nulidade ocorre com vícios insanáveis,
+                                            enquanto a conversão em diligência ocorre com vícios sanáveis</label>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <input type="radio" id="q3-d" name="q3" value="d" class="mr-2">
+                                        <label for="q3-d" class="text-gray-700">A nulidade se refere apenas a questões
+                                            de mérito, enquanto a conversão em diligência se refere a questões
+                                            processuais</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button id="check-answers"
+                                class="mt-8 bg-blue-600 hover:bg-blue-700 text-white py-3 px-4 rounded-md transition text-lg font-medium w-full">
+                                Verificar Respostas
+                            </button>
+
+                            <div id="quiz-results" class="mt-6 hidden">
+                                <div class="p-4 rounded-lg"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        
-        <div class="mt-16">
-            <h2 class="text-2xl font-bold text-blue-800 mb-6 text-center">Teste seus Conhecimentos</h2>
-            
-            <div class="bg-white rounded-lg shadow-lg p-6">
-                <div id="quiz-container">
-                    <div id="question-1" class="quiz-question">
-                        <p class="text-lg font-medium text-gray-800 mb-4">1. Qual é a parte do acórdão que resume as principais teses jurídicas e a decisão proferida?</p>
-                        <div class="space-y-2">
-                            <div class="flex items-center">
-                                <input type="radio" id="q1-a" name="q1" value="a" class="mr-2">
-                                <label for="q1-a" class="text-gray-700">Relatório</label>
-                            </div>
-                            <div class="flex items-center">
-                                <input type="radio" id="q1-b" name="q1" value="b" class="mr-2">
-                                <label for="q1-b" class="text-gray-700">Ementa</label>
-                            </div>
-                            <div class="flex items-center">
-                                <input type="radio" id="q1-c" name="q1" value="c" class="mr-2">
-                                <label for="q1-c" class="text-gray-700">Dispositivo</label>
-                            </div>
-                            <div class="flex items-center">
-                                <input type="radio" id="q1-d" name="q1" value="d" class="mr-2">
-                                <label for="q1-d" class="text-gray-700">Fundamentação</label>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div id="question-2" class="quiz-question mt-8">
-                        <p class="text-lg font-medium text-gray-800 mb-4">2. O que ocorre quando um recurso não atende aos requisitos de admissibilidade?</p>
-                        <div class="space-y-2">
-                            <div class="flex items-center">
-                                <input type="radio" id="q2-a" name="q2" value="a" class="mr-2">
-                                <label for="q2-a" class="text-gray-700">O recurso é conhecido, mas não provido</label>
-                            </div>
-                            <div class="flex items-center">
-                                <input type="radio" id="q2-b" name="q2" value="b" class="mr-2">
-                                <label for="q2-b" class="text-gray-700">O recurso não é conhecido</label>
-                            </div>
-                            <div class="flex items-center">
-                                <input type="radio" id="q2-c" name="q2" value="c" class="mr-2">
-                                <label for="q2-c" class="text-gray-700">O processo é convertido em diligência</label>
-                            </div>
-                            <div class="flex items-center">
-                                <input type="radio" id="q2-d" name="q2" value="d" class="mr-2">
-                                <label for="q2-d" class="text-gray-700">O processo é anulado</label>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div id="question-3" class="quiz-question mt-8">
-                        <p class="text-lg font-medium text-gray-800 mb-4">3. Qual a diferença entre nulidade e conversão em diligência?</p>
-                        <div class="space-y-2">
-                            <div class="flex items-center">
-                                <input type="radio" id="q3-a" name="q3" value="a" class="mr-2">
-                                <label for="q3-a" class="text-gray-700">Não há diferença, são termos sinônimos</label>
-                            </div>
-                            <div class="flex items-center">
-                                <input type="radio" id="q3-b" name="q3" value="b" class="mr-2">
-                                <label for="q3-b" class="text-gray-700">A nulidade ocorre com vícios sanáveis, enquanto a conversão em diligência ocorre com vícios insanáveis</label>
-                            </div>
-                            <div class="flex items-center">
-                                <input type="radio" id="q3-c" name="q3" value="c" class="mr-2">
-                                <label for="q3-c" class="text-gray-700">A nulidade ocorre com vícios insanáveis, enquanto a conversão em diligência ocorre com vícios sanáveis</label>
-                            </div>
-                            <div class="flex items-center">
-                                <input type="radio" id="q3-d" name="q3" value="d" class="mr-2">
-                                <label for="q3-d" class="text-gray-700">A nulidade se refere apenas a questões de mérito, enquanto a conversão em diligência se refere a questões processuais</label>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <button id="check-answers" class="mt-8 bg-blue-600 hover:bg-blue-700 text-white py-3 px-4 rounded-md transition text-lg font-medium w-full">
-                        Verificar Respostas
-                    </button>
-                    
-                    <div id="quiz-results" class="mt-6 hidden">
-                        <div class="p-4 rounded-lg"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <script>
-        const sidenavToggle = document.getElementById('sidenav-toggle');
-        const sidenavClose = document.getElementById('sidenav-close');
-        const sidenav = document.getElementById('sidenav');
-        const backdrop = document.getElementById('sidenav-backdrop');
 
-        function openSidenav() {
-            sidenav.classList.remove('-translate-x-full');
-            backdrop.classList.remove('opacity-0', 'pointer-events-none');
-            backdrop.classList.add('opacity-100');
-        }
+            <script>
+                const sidenavToggle = document.getElementById('sidenav-toggle');
+                const sidenavClose = document.getElementById('sidenav-close');
+                const sidenav = document.getElementById('sidenav');
+                const backdrop = document.getElementById('sidenav-backdrop');
 
-        function closeSidenav() {
-            sidenav.classList.add('-translate-x-full');
-            backdrop.classList.add('opacity-0', 'pointer-events-none');
-            backdrop.classList.remove('opacity-100');
-        }
+                function openSidenav() {
+                    sidenav.classList.remove('-translate-x-full');
+                    backdrop.classList.remove('opacity-0', 'pointer-events-none');
+                    backdrop.classList.add('opacity-100');
+                }
 
-        sidenavToggle.addEventListener('click', openSidenav);
-        sidenavClose.addEventListener('click', closeSidenav);
-        backdrop.addEventListener('click', closeSidenav);
+                function closeSidenav() {
+                    sidenav.classList.add('-translate-x-full');
+                    backdrop.classList.add('opacity-0', 'pointer-events-none');
+                    backdrop.classList.remove('opacity-100');
+                }
 
-        const sectionDetails = {
-            ementa: {
-                title: "Ementa",
-                content: `
+                sidenavToggle.addEventListener('click', openSidenav);
+                sidenavClose.addEventListener('click', closeSidenav);
+                backdrop.addEventListener('click', closeSidenav);
+
+                const sectionDetails = {
+                    ementa: {
+                        title: "Ementa",
+                        content: `
                     <p class="mb-4">A ementa localiza-se no início do acórdão e tem como função resumir as principais teses jurídicas e a decisão proferida pelo tribunal.</p>
                     
                     <p class="mb-4">Características principais:</p>
@@ -527,10 +665,10 @@
                     
                     <p class="mb-4">A ementa é especialmente importante para a formação de jurisprudência e para a consulta por outros operadores do direito, que podem rapidamente identificar se aquele julgado é relevante para seus casos.</p>
                 `
-            },
-            relatorio: {
-                title: "Relatório",
-                content: `
+                    },
+                    relatorio: {
+                        title: "Relatório",
+                        content: `
                     <p class="mb-4">O relatório é a parte inicial do acórdão que narra os fatos do processo, identifica as partes e apresenta um histórico resumido da marcha processual e do recurso.</p>
                     
                     <p class="mb-4">Elementos essenciais:</p>
@@ -544,10 +682,10 @@
                     
                     <p class="mb-4">O relatório deve ser descritivo, sem juízo de valor, informando os membros do colegiado sobre o caso. A ausência de relatório pode levar à nulidade do acórdão, salvo exceções legais.</p>
                 `
-            },
-            admissibilidade: {
-                title: "Admissibilidade",
-                content: `
+                    },
+                    admissibilidade: {
+                        title: "Admissibilidade",
+                        content: `
                     <p class="mb-4">Antes de analisar o mérito, o tribunal verifica se o recurso pode ser conhecido e julgado, analisando os requisitos de admissibilidade.</p>
                     
                     <p class="mb-4">Requisitos analisados:</p>
@@ -565,10 +703,10 @@
                     
                     <p>Quando o recurso não é conhecido, o tribunal não analisa o mérito da questão.</p>
                 `
-            },
-            preliminares: {
-                title: "Preliminares da Causa",
-                content: `
+                    },
+                    preliminares: {
+                        title: "Preliminares da Causa",
+                        content: `
                     <p class="mb-4">Após a admissibilidade, examinam-se as preliminares, que são questões processuais que, se acolhidas, podem anular o processo ou a decisão recorrida, sem análise do mérito.</p>
                     
                     <p class="mb-4">Exemplos de preliminares:</p>
@@ -585,10 +723,10 @@
                     
                     <p>Se uma preliminar for acolhida, o tribunal pode anular o processo ou a decisão recorrida, determinando o retorno dos autos à origem para correção do vício.</p>
                 `
-            },
-            prejudiciais: {
-                title: "Prejudiciais de Mérito",
-                content: `
+                    },
+                    prejudiciais: {
+                        title: "Prejudiciais de Mérito",
+                        content: `
                     <p class="mb-4">São questões que, embora não sejam o mérito principal, devem ser decididas antes dele, pois influenciam o resultado final.</p>
                     
                     <p class="mb-4">Exemplos de prejudiciais de mérito:</p>
@@ -604,10 +742,10 @@
                     
                     <p>Diferentemente das preliminares, que são questões processuais, as prejudiciais de mérito são questões de direito material que afetam o julgamento do mérito.</p>
                 `
-            },
-            fundamentacao: {
-                title: "Fundamentação",
-                content: `
+                    },
+                    fundamentacao: {
+                        title: "Fundamentação",
+                        content: `
                     <p class="mb-4">A fundamentação é o coração do acórdão, onde o colegiado expõe as razões de fato e de direito para a decisão.</p>
                     
                     <p class="mb-4">Elementos da fundamentação:</p>
@@ -633,10 +771,10 @@
                         <li>Deixa de seguir enunciado de súmula, jurisprudência ou precedente sem demonstrar a distinção ou superação</li>
                     </ul>
                 `
-            },
-            dispositivo: {
-                title: "Dispositivo",
-                content: `
+                    },
+                    dispositivo: {
+                        title: "Dispositivo",
+                        content: `
                     <p class="mb-4">O dispositivo é a parte final do acórdão, onde o tribunal profere o comando decisório, indicando se o recurso foi conhecido e, se conhecido, o resultado do julgamento.</p>
                     
                     <p class="mb-4">Elementos do dispositivo:</p>
@@ -651,64 +789,64 @@
                     
                     <p>É no dispositivo que se encontra a parte da decisão que faz coisa julgada material, conforme o art. 503 do CPC.</p>
                 `
-            }
-        };
-        
-        function showDetails(section) {
-            const modal = document.getElementById('details-modal');
-            const modalTitle = document.getElementById('modal-title');
-            const modalContent = document.getElementById('modal-content');
-            
-            modalTitle.textContent = sectionDetails[section].title;
-            modalContent.innerHTML = sectionDetails[section].content;
-            
-            modal.classList.remove('hidden');
-            document.body.style.overflow = 'hidden';
-        }
-        
-        function closeModal() {
-            const modal = document.getElementById('details-modal');
-            modal.classList.add('hidden');
-            document.body.style.overflow = 'auto';
-        }
-        
-        document.getElementById('check-answers').addEventListener('click', function() {
-            const answers = {
-                q1: document.querySelector('input[name="q1"]:checked')?.value,
-                q2: document.querySelector('input[name="q2"]:checked')?.value,
-                q3: document.querySelector('input[name="q3"]:checked')?.value
-            };
-            
-            if (!answers.q1 || !answers.q2 || !answers.q3) {
-                alert('Por favor, responda todas as perguntas antes de verificar as respostas.');
-                return;
-            }
-            
-            const correctAnswers = {
-                q1: 'b',
-                q2: 'b',
-                q3: 'c'
-            };
-            
-            let score = 0;
-            let feedback = '';
-            
-            if (answers.q1 === correctAnswers.q1) score++;
-            if (answers.q2 === correctAnswers.q2) score++;
-            if (answers.q3 === correctAnswers.q3) score++;
-            
-            const resultsDiv = document.getElementById('quiz-results');
-            const resultsContent = resultsDiv.querySelector('div');
-            
-            if (score === 3) {
-                resultsContent.className = 'p-4 rounded-lg bg-green-100 border border-green-500';
-                feedback = `
+                    }
+                };
+
+                function showDetails(section) {
+                    const modal = document.getElementById('details-modal');
+                    const modalTitle = document.getElementById('modal-title');
+                    const modalContent = document.getElementById('modal-content');
+
+                    modalTitle.textContent = sectionDetails[section].title;
+                    modalContent.innerHTML = sectionDetails[section].content;
+
+                    modal.classList.remove('hidden');
+                    document.body.style.overflow = 'hidden';
+                }
+
+                function closeModal() {
+                    const modal = document.getElementById('details-modal');
+                    modal.classList.add('hidden');
+                    document.body.style.overflow = 'auto';
+                }
+
+                document.getElementById('check-answers').addEventListener('click', function () {
+                    const answers = {
+                        q1: document.querySelector('input[name="q1"]:checked')?.value,
+                        q2: document.querySelector('input[name="q2"]:checked')?.value,
+                        q3: document.querySelector('input[name="q3"]:checked')?.value
+                    };
+
+                    if (!answers.q1 || !answers.q2 || !answers.q3) {
+                        alert('Por favor, responda todas as perguntas antes de verificar as respostas.');
+                        return;
+                    }
+
+                    const correctAnswers = {
+                        q1: 'b',
+                        q2: 'b',
+                        q3: 'c'
+                    };
+
+                    let score = 0;
+                    let feedback = '';
+
+                    if (answers.q1 === correctAnswers.q1) score++;
+                    if (answers.q2 === correctAnswers.q2) score++;
+                    if (answers.q3 === correctAnswers.q3) score++;
+
+                    const resultsDiv = document.getElementById('quiz-results');
+                    const resultsContent = resultsDiv.querySelector('div');
+
+                    if (score === 3) {
+                        resultsContent.className = 'p-4 rounded-lg bg-green-100 border border-green-500';
+                        feedback = `
                     <p class="font-bold text-green-800">Parabéns! Você acertou todas as questões!</p>
                     <p class="text-green-700 mt-2">Você demonstrou excelente compreensão sobre a estrutura e componentes de um acórdão.</p>
                 `;
-            } else if (score > 0) {
-                resultsContent.className = 'p-4 rounded-lg bg-yellow-100 border border-yellow-500';
-                feedback = `
+                    } else if (score > 0) {
+                        resultsContent.className = 'p-4 rounded-lg bg-yellow-100 border border-yellow-500';
+                        feedback = `
                     <p class="font-bold text-yellow-800">Você acertou ${score} de 3 questões.</p>
                     <p class="text-yellow-700 mt-2">Vamos revisar as respostas corretas:</p>
                     <ul class="list-disc pl-5 mt-2 text-yellow-700">
@@ -717,9 +855,9 @@
                         <li>3. A nulidade ocorre com vícios <strong>insanáveis</strong>, enquanto a conversão em diligência ocorre com vícios <strong>sanáveis</strong>.</li>
                     </ul>
                 `;
-            } else {
-                resultsContent.className = 'p-4 rounded-lg bg-red-100 border border-red-500';
-                feedback = `
+                    } else {
+                        resultsContent.className = 'p-4 rounded-lg bg-red-100 border border-red-500';
+                        feedback = `
                     <p class="font-bold text-red-800">Você não acertou nenhuma questão.</p>
                     <p class="text-red-700 mt-2">Vamos revisar as respostas corretas:</p>
                     <ul class="list-disc pl-5 mt-2 text-red-700">
@@ -729,33 +867,34 @@
                     </ul>
                     <p class="text-red-700 mt-2">Sugerimos revisar o conteúdo e tentar novamente!</p>
                 `;
-            }
-            
-            resultsContent.innerHTML = feedback;
-            resultsDiv.classList.remove('hidden');
-        });
-        
-        window.addEventListener('click', function(event) {
-            const modal = document.getElementById('details-modal');
-            if (event.target === modal) {
-                closeModal();
-            }
-        });
-        
-        window.addEventListener('keydown', function(event) {
-            if (event.key === 'Escape') {
-                closeModal();
-            }
-        });
-        </script>
-        
-        <footer class="text-center py-8 mt-16">
-            <p class="text-xs text-gray-500">
-                Produzido por Alexandre Claudino Simas Santos - Secretário Jurídico<br>
-                Gabinete do Juiz de Direito de Segundo Grau Alexandre Morais da Rosa<br>
-                Tribunal de Justiça de Santa Catarina<br>
-                Copyleft (ↄ) 2025
-            </p>
-        </footer>
+                    }
+
+                    resultsContent.innerHTML = feedback;
+                    resultsDiv.classList.remove('hidden');
+                });
+
+                window.addEventListener('click', function (event) {
+                    const modal = document.getElementById('details-modal');
+                    if (event.target === modal) {
+                        closeModal();
+                    }
+                });
+
+                window.addEventListener('keydown', function (event) {
+                    if (event.key === 'Escape') {
+                        closeModal();
+                    }
+                });
+            </script>
+
+            <footer class="text-center py-8 mt-16">
+                <p class="text-xs text-gray-500">
+                    Produzido por Alexandre Claudino Simas Santos - Secretário Jurídico<br>
+                    Gabinete do Juiz de Direito de Segundo Grau Alexandre Morais da Rosa<br>
+                    Tribunal de Justiça de Santa Catarina<br>
+                    Copyleft (ↄ) 2025
+                </p>
+            </footer>
     </body>
+
 </html>
