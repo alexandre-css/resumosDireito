@@ -588,7 +588,7 @@
       "numero": 575,
       "titulo": "Direção de Veículo",
       "texto": "Constitui crime a conduta de permitir, confiar ou entregar a direção de veículo automotor a pessoa que não seja habilitada, ou que se encontre em qualquer das situações previstas no art. 310 do CTB, independentemente da ocorrência de lesão ou de perigo de dano concreto na condução do veículo.",
-      "cor": "sky",
+      "cor": "green",
       "vinculante": false,
       "chips": []
     },
@@ -725,7 +725,7 @@
     },
     {
       "numero": 658,
-      "titulo": "Apropriação Indébita",
+      "titulo": "Apropriação Indébita Tributária",
       "texto": "O crime de apropriação indébita tributária pode ocorrer tanto em operações próprias como em razão de substituição tributária.",
       "cor": "stone",
       "vinculante": false,
@@ -767,7 +767,7 @@
       "numero": 664,
       "titulo": "Embriaguez ao Volante",
       "texto": "É inaplicável a consunção entre o delito de embriaguez ao volante e o de condução de veículo automotor sem habilitação.",
-      "cor": "sky",
+      "cor": "green",
       "vinculante": false,
       "chips": []
     },

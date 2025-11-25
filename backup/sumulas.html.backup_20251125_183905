@@ -306,6 +306,11 @@
             
             
             
+            
+            
+            
+            
+            
             <!-- SÚMULAS DO STF -->
             <div class="mt-16">
                 <div class="text-center mb-6 cursor-pointer" onclick="toggleSumulas('stf')">
@@ -343,7 +348,7 @@
                                                 VINCULANTE</div>
                                         </div>
                                     </div>
-                                    <p class="text-sm text-white italic text-justify">Só é lícito o uso de algemas em caso de resistência e de fundado receio de fuga ou de perigo à integridade física própria ou alheia, por parte do preso ou de terceiros, justificada a excepcionalidade por escrito, sob pena de responsabilidade disciplinar civil e penal do agente ou da autoridade e de nulidade da prisão ou do ato processual a que se refere, sem prejuízo da responsabilidade civil do Estado.</p>
+                                    <p class="text-sm text-white italic text-justify">Só é lícito o uso de algemas em casos de resistência e de fundado receio de fuga ou de perigo à integridade física própria ou alheia, por parte do preso ou de terceiros, justificada a excepcionalidade por escrito, sob pena de responsabilidade disciplinar, civil e penal do agente ou da autoridade e de nulidade da prisão ou do ato processual a que se refere, sem prejuízo da responsabilidade civil do Estado.</p>
                                 </div>
 
                                 <!-- Súmula 14/STF -->
@@ -377,7 +382,7 @@
                                                 VINCULANTE</div>
                                         </div>
                                     </div>
-                                    <p class="text-sm text-white italic text-justify">Não se tipifica crime material contra a ordem tributária, previsto no art. 1º, incisos I a IV, da lei 8.137/90, antes do lançamento definitivo do tributo.</p>
+                                    <p class="text-sm text-white italic text-justify">Não se tipifica crime material contra a ordem tributária, previsto no art. 1º, incisos I a IV, da Lei 8.137/1990, antes do lançamento definitivo do tributo.</p>
                                 </div>
 
                                 <!-- Súmula 26/STF -->
@@ -394,7 +399,7 @@
                                                 VINCULANTE</div>
                                         </div>
                                     </div>
-                                    <p class="text-sm text-white italic text-justify">Para efeito de progressão de regime no cumprimento de pena por crime hediondo, ou equiparado, o juízo da execução observará a inconstitucionalidade do art. 2º da lei n. 8.072, de 25 de julho de 1990, sem prejuízo de avaliar se o condenado preenche, ou não, os requisitos objetivos e subjetivos do benefício, podendo determinar, para tal fim, de modo fundamentado, a realização de exame criminológico.</p>
+                                    <p class="text-sm text-white italic text-justify">Para efeito de progressão de regime no cumprimento de pena por crime hediondo, ou equiparado, o juízo da execução observará a inconstitucionalidade do art. 2º da Lei 8.072, de 25 de julho de 1990, sem prejuízo de avaliar se o condenado preenche, ou não, os requisitos objetivos e subjetivos do benefício, podendo determinar, para tal fim, de modo fundamentado, a realização de exame criminológico.</p>
                                 </div>
 
                                 <!-- Súmula 35/STF -->
@@ -479,7 +484,7 @@
                                                 VINCULANTE</div>
                                         </div>
                                     </div>
-                                    <p class="text-sm text-white italic text-justify">É impositiva a fixação do regime aberto e a substituição da pena privativa de liberdade por restritiva de direitos quando reconhecida a figura do tráfico privilegiado (art. 33, § 4º, da Lei 11.343/06) e ausentes vetores negativos na primeira fase da dosimetria (art. 59 do CP), observados os requisitos do art. 33, § 2º, alínea 'c' e do art. 44, ambos do Código Penal.</p>
+                                    <p class="text-sm text-white italic text-justify">É impositiva a fixação do regime aberto e a substituição da pena privativa de liberdade por restritiva de direitos quando reconhecida a figura do tráfico privilegiado (art. 33, § 4º, da Lei 11.343/06) e ausentes vetores negativos na primeira fase da dosimetria (art. 59 do CP), observados os requisitos do art. 33, § 2º, alínea c, e do art. 44, ambos do Código Penal.</p>
                                 </div>
 
                                 <!-- Súmula 63/STF -->
@@ -525,12 +530,12 @@
 
                                 <!-- Súmula 155/STF -->
                                 <div
-                                    class="bg-white border-l-4 border-red-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                    class="bg-white border-l-4 border-violet-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                                     <div class="flex items-center mb-2">
                                         <div
-                                            class="bg-red-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                            class="bg-violet-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             155</div>
-                                        <h4 class="font-bold text-red-700">Intimação Precatória</h4>
+                                        <h4 class="font-bold text-violet-700">Intimação Precatória</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">É relativa a nulidade do processo criminal por falta de intimação da expedição de precatória para inquirição de testemunha.</p>
                                 </div>
@@ -621,24 +626,24 @@
 
                                 <!-- Súmula 351/STF -->
                                 <div
-                                    class="bg-white border-l-4 border-teal-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                    class="bg-white border-l-4 border-violet-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                                     <div class="flex items-center mb-2">
                                         <div
-                                            class="bg-teal-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                            class="bg-violet-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             351</div>
-                                        <h4 class="font-bold text-teal-700">Citação por Edital</h4>
+                                        <h4 class="font-bold text-violet-700">Citação por Edital</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">É nula a citação por edital de réu preso na mesma unidade da federação em que o juiz exerce a sua jurisdição.</p>
                                 </div>
 
                                 <!-- Súmula 355/STF -->
                                 <div
-                                    class="bg-white border-l-4 border-cyan-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                    class="bg-white border-l-4 border-teal-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                                     <div class="flex items-center mb-2">
                                         <div
-                                            class="bg-cyan-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                            class="bg-teal-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             355</div>
-                                        <h4 class="font-bold text-cyan-700">Embargos Infringentes</h4>
+                                        <h4 class="font-bold text-teal-700">Embargos Infringentes</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">Em caso de embargos infringentes parciais, é tardio o recurso extraordinário interposto após o julgamento dos embargos, quanto à parte da decisão embargada que não fora por eles abrangida.</p>
                                 </div>
@@ -729,12 +734,12 @@
 
                                 <!-- Súmula 451/STF -->
                                 <div
-                                    class="bg-white border-l-4 border-blue-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                    class="bg-white border-l-4 border-purple-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                                     <div class="flex items-center mb-2">
                                         <div
-                                            class="bg-blue-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                            class="bg-purple-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             451</div>
-                                        <h4 class="font-bold text-blue-700">Cessação do Exercício</h4>
+                                        <h4 class="font-bold text-purple-700">Cessação do Exercício</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">A competência especial por prerrogativa de função não se estende ao crime cometido após a cessação definitiva do exercício funcional.</p>
                                 </div>
@@ -777,12 +782,12 @@
 
                                 <!-- Súmula 499/STF -->
                                 <div
-                                    class="bg-white border-l-4 border-blue-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                    class="bg-white border-l-4 border-pink-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                                     <div class="flex items-center mb-2">
                                         <div
-                                            class="bg-blue-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                            class="bg-pink-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             499</div>
-                                        <h4 class="font-bold text-blue-700">Sursis</h4>
+                                        <h4 class="font-bold text-pink-700">Sursis</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">Não obsta à concessão do "sursis" condenação anterior à pena de multa.</p>
                                 </div>
@@ -904,7 +909,7 @@
                                             606</div>
                                         <h4 class="font-bold text-amber-700">Habeas Corpus Originário</h4>
                                     </div>
-                                    <p class="text-sm text-gray-700 italic text-justify">Não cabe habeas corpus originário para o Tribunal Pleno de decisão de Turma ou do Plenário, proferida em habeas corpus ou no respectivo recurso.</p>
+                                    <p class="text-sm text-gray-700 italic text-justify">Não cabe habeas corpus originário para o Tribunal Pleno de decisão de Turma, ou do Plenário, proferida em habeas corpus ou no respectivo recurso.</p>
                                 </div>
 
                                 <!-- Súmula 608/STF -->
@@ -1065,26 +1070,26 @@
 
                                 <!-- Súmula 703/STF -->
                                 <div
-                                    class="bg-white border-l-4 border-cyan-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                    class="bg-white border-l-4 border-green-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                                     <div class="flex items-center mb-2">
                                         <div
-                                            class="bg-cyan-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                            class="bg-green-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             703</div>
-                                        <h4 class="font-bold text-cyan-700">Prefeito - Extinção do Mandato</h4>
+                                        <h4 class="font-bold text-green-700">Prefeito - Extinção do Mandato</h4>
                                     </div>
-                                    <p class="text-sm text-gray-700 italic text-justify">A extinção do mandato do prefeito não impede a instauração de processo pela prática dos crimes previstos no art. 1º do decreto-lei 201/1967.</p>
+                                    <p class="text-sm text-gray-700 italic text-justify">A extinção do mandato do prefeito não impede a instauração de processo pela prática dos crimes previstos no art. 1º do Dl. 201/67.</p>
                                 </div>
 
                                 <!-- Súmula 704/STF -->
                                 <div
-                                    class="bg-white border-l-4 border-blue-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                    class="bg-white border-l-4 border-emerald-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                                     <div class="flex items-center mb-2">
                                         <div
-                                            class="bg-blue-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                            class="bg-emerald-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             704</div>
-                                        <h4 class="font-bold text-blue-700">Conexão - Foro por Prerrogativa</h4>
+                                        <h4 class="font-bold text-emerald-700">Conexão - Foro por Prerrogativa</h4>
                                     </div>
-                                    <p class="text-sm text-gray-700 italic text-justify">Não viola as garantias do juiz natural, da ampla defesa e do devido processo legal a atração por continência ou conexão do processo do co-réu ao foro por prerrogativa de função de um dos denunciados.</p>
+                                    <p class="text-sm text-gray-700 italic text-justify">Não viola as garantias do juiz natural, da ampla defesa e do devido processo legal a atração por continência ou conexão do processo do corréu ao foro por prerrogativa de função de um dos denunciados.</p>
                                 </div>
 
                                 <!-- Súmula 705/STF -->
@@ -1113,12 +1118,12 @@
 
                                 <!-- Súmula 707/STF -->
                                 <div
-                                    class="bg-white border-l-4 border-blue-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                    class="bg-white border-l-4 border-violet-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                                     <div class="flex items-center mb-2">
                                         <div
-                                            class="bg-blue-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                            class="bg-violet-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             707</div>
-                                        <h4 class="font-bold text-blue-700">Nulidade - Intimação Contrarrazões</h4>
+                                        <h4 class="font-bold text-violet-700">Nulidade - Intimação Contrarrazões</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">Constitui nulidade a falta de intimação do denunciado para oferecer contra-razões ao recurso interposto da rejeição da denúncia, não a suprindo a nomeação de defensor dativo.</p>
                                 </div>
@@ -1221,12 +1226,12 @@
 
                                 <!-- Súmula 716/STF -->
                                 <div
-                                    class="bg-white border-l-4 border-red-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                    class="bg-white border-l-4 border-orange-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                                     <div class="flex items-center mb-2">
                                         <div
-                                            class="bg-red-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                            class="bg-orange-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             716</div>
-                                        <h4 class="font-bold text-red-700">Progressão Antes do Trânsito</h4>
+                                        <h4 class="font-bold text-orange-700">Progressão Antes do Trânsito</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">Admite-se a progressão de regime de cumprimento da pena ou a aplicação imediata de regime menos severo nela determinada, antes do trânsito em julgado da sentença condenatória.</p>
                                 </div>
@@ -1687,7 +1692,7 @@
                                         <div
                                             class="bg-purple-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             209</div>
-                                        <h4 class="font-bold text-purple-700">Prefeito - Verba Estadual</h4>
+                                        <h4 class="font-bold text-purple-700">Competência - Prefeito - Verba Municipal</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">Compete à Justiça Estadual processar e julgar prefeito por desvio de verba transferida e incorporada ao patrimônio municipal.</p>
                                 </div>
@@ -1850,12 +1855,12 @@
 
                                 <!-- Súmula 439/STJ -->
                                 <div
-                                    class="bg-white border-l-4 border-blue-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 relative">
+                                    class="bg-white border-l-4 border-orange-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 relative">
                                     <div class="flex items-center mb-2">
                                         <div
-                                            class="bg-blue-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                            class="bg-orange-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             439</div>
-                                        <h4 class="font-bold text-blue-700">Exame Criminológico</h4>
+                                        <h4 class="font-bold text-orange-700">Exame Criminológico</h4>
                                         <div class="ml-auto relative">
                                             <div
                                                 class="bg-orange-500 text-white px-3 py-1 rounded-full text-xs font-bold flex items-center justify-center whitespace-nowrap">
@@ -1863,7 +1868,7 @@
                                         </div>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">Admite-se o exame criminológico pelas peculiaridades do caso, desde que em decisão motivada.</p>
-                                    <p class="text-xs bg-blue-50 p-2 rounded border-l-2 border-blue-300 mt-2 text-justify">A Lei n. 14.843/2024 tornou obrigatório o exame criminológico, devendo ser fundamentada sua dispensa excepcional.</p>
+                                    <p class="text-xs bg-orange-50 p-2 rounded border-l-2 border-orange-300 mt-2 text-justify">A Lei n. 14.843/2024 tornou obrigatório o exame criminológico, devendo ser fundamentada sua dispensa excepcional.</p>
                                 </div>
 
                                 <!-- Súmula 440/STJ -->
@@ -1928,12 +1933,12 @@
 
                                 <!-- Súmula 455/STJ -->
                                 <div
-                                    class="bg-white border-l-4 border-cyan-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                    class="bg-white border-l-4 border-teal-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                                     <div class="flex items-center mb-2">
                                         <div
-                                            class="bg-cyan-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                            class="bg-teal-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             455</div>
-                                        <h4 class="font-bold text-cyan-700">Produção Antecipada</h4>
+                                        <h4 class="font-bold text-teal-700">Produção Antecipada</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">A decisão que determina a produção antecipada de provas com base no art. 366 do CPP deve ser concretamente fundamentada, não a justificando unicamente o mero decurso do tempo.</p>
                                 </div>
@@ -2198,12 +2203,12 @@
 
                                 <!-- Súmula 574/STJ -->
                                 <div
-                                    class="bg-white border-l-4 border-cyan-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                    class="bg-white border-l-4 border-green-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                                     <div class="flex items-center mb-2">
                                         <div
-                                            class="bg-cyan-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                            class="bg-green-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             574</div>
-                                        <h4 class="font-bold text-cyan-700">Direito Autoral</h4>
+                                        <h4 class="font-bold text-green-700">Direito Autoral</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">Para a configuração do delito de violação de direito autoral e a comprovação de sua materialidade, é suficiente a perícia realizada por amostragem do produto apreendido, nos aspectos externos do material, e é desnecessária a identificação dos titulares dos direitos autorais violados ou daqueles que os representem.</p>
                                 </div>
@@ -2425,19 +2430,19 @@
                                         <div
                                             class="bg-stone-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             658</div>
-                                        <h4 class="font-bold text-stone-700">Apropriação Indébita</h4>
+                                        <h4 class="font-bold text-stone-700">Apropriação Indébita Tributária</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">O crime de apropriação indébita tributária pode ocorrer tanto em operações próprias como em razão de substituição tributária.</p>
                                 </div>
 
                                 <!-- Súmula 659/STJ -->
                                 <div
-                                    class="bg-white border-l-4 border-cyan-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                    class="bg-white border-l-4 border-pink-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                                     <div class="flex items-center mb-2">
                                         <div
-                                            class="bg-cyan-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                            class="bg-pink-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             659</div>
-                                        <h4 class="font-bold text-cyan-700">Crime Continuado</h4>
+                                        <h4 class="font-bold text-pink-700">Crime Continuado</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">A fração de aumento em razão da prática de crime continuado deve ser fixada de acordo com o número de delitos cometidos, aplicando-se 1/6 pela prática de duas infrações, 1/5 para três, 1/4 para quatro, 1/3 para cinco, 1/2 para seis e 2/3 para sete ou mais infrações.</p>
                                 </div>
@@ -2468,24 +2473,24 @@
 
                                 <!-- Súmula 662/STJ -->
                                 <div
-                                    class="bg-white border-l-4 border-cyan-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                    class="bg-white border-l-4 border-orange-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                                     <div class="flex items-center mb-2">
                                         <div
-                                            class="bg-cyan-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                            class="bg-orange-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             662</div>
-                                        <h4 class="font-bold text-cyan-700">Sistema Penitenciário Federal</h4>
+                                        <h4 class="font-bold text-orange-700">Sistema Penitenciário Federal</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">Para a prorrogação do prazo de permanência no sistema penitenciário federal, é prescindível a ocorrência de fato novo; basta constar, em decisão fundamentada, a persistência dos motivos que ensejaram a transferência inicial do preso.</p>
                                 </div>
 
                                 <!-- Súmula 664/STJ -->
                                 <div
-                                    class="bg-white border-l-4 border-sky-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                    class="bg-white border-l-4 border-green-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                                     <div class="flex items-center mb-2">
                                         <div
-                                            class="bg-sky-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                            class="bg-green-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             664</div>
-                                        <h4 class="font-bold text-sky-700">Embriaguez ao Volante</h4>
+                                        <h4 class="font-bold text-green-700">Embriaguez ao Volante</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">É inaplicável a consunção entre o delito de embriaguez ao volante e o de condução de veículo automotor sem habilitação.</p>
                                 </div>
@@ -2621,7 +2626,7 @@
                                         <div
                                             class="bg-lime-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             492</div>
-                                        <h4 class="font-bold text-lime-700">Tráfico de Drogas</h4>
+                                        <h4 class="font-bold text-lime-700">Tráfico - Medida Sócio-educativa</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">O ato infracional análogo ao tráfico de drogas, por si só, não conduz obrigatoriamente à imposição de medida socioeducativa de internação do adolescente.</p>
                                 </div>

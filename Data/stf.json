@@ -122,7 +122,7 @@
       "numero": 155,
       "titulo": "Intimação Precatória",
       "texto": "É relativa a nulidade do processo criminal por falta de intimação da expedição de precatória para inquirição de testemunha.",
-      "cor": "red",
+      "cor": "violet",
       "vinculante": false,
       "chips": []
     },
@@ -186,7 +186,7 @@
       "numero": 351,
       "titulo": "Citação por Edital",
       "texto": "É nula a citação por edital de réu preso na mesma unidade da federação em que o juiz exerce a sua jurisdição.",
-      "cor": "teal",
+      "cor": "violet",
       "vinculante": false,
       "chips": []
     },
@@ -202,7 +202,7 @@
       "numero": 361,
       "titulo": "Nulidade Exame Pericial",
       "texto": "No processo penal, é nulo o exame realizado por um só perito, considerando-se impedido o que tiver funcionado, anteriormente, na diligência de apreensão.",
-      "cor": "sky",
+      "cor": "violet",
       "vinculante": false,
       "chips": []
     },
@@ -506,7 +506,7 @@
       "numero": 706,
       "titulo": "Nulidade - Prevenção",
       "texto": "É relativa a nulidade decorrente da inobservância da competência penal por prevenção.",
-      "cor": "sky",
+      "cor": "violet",
       "vinculante": false,
       "chips": []
     },
