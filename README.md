@@ -78,9 +78,22 @@ Isso abre uma interface web completa onde você pode:
 
 ---
 
-## 🎨 Cores Disponíveis
+## 🎨 Cores e Categorias
 
-`red`, `blue`, `green`, `purple`, `pink`, `indigo`, `yellow`, `orange`, `teal`, `cyan`, `lime`, `emerald`, `violet`, `fuchsia`, `rose`, `sky`, `amber`, `gray`
+### Categorias Principais:
+
+-   🔴 **Vermelho** - Júri
+-   🟠 **Laranja** - Execução Penal
+-   🟢 **Verde** - Crimes Geral
+-   🔷 **Teal** - Processual
+-   💙 **Índigo** - Prescrição
+-   🟣 **Roxo** - Competência
+-   🌸 **Rosa** - Aplicação da Pena
+-   🌹 **Rosa-forte** - Perdão Judicial
+
+### Mais 15 categorias adicionais disponíveis!
+
+Veja todas as cores no editor ou em `docs/GUIA_SUMULAS.md`
 
 ---
 

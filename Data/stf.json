@@ -36,7 +36,7 @@
       "numero": 26,
       "titulo": "Exame Criminológico",
       "texto": "Para efeito de progressão de regime no cumprimento de pena por crime hediondo, ou equiparado, o juízo da execução observará a inconstitucionalidade do art. 2º da lei n. 8.072, de 25 de julho de 1990, sem prejuízo de avaliar se o condenado preenche, ou não, os requisitos objetivos e subjetivos do benefício, podendo determinar, para tal fim, de modo fundamentado, a realização de exame criminológico.",
-      "cor": "purple",
+      "cor": "orange",
       "vinculante": true,
       "chips": [
         "VINCULANTE"
@@ -76,7 +76,7 @@
       "numero": 56,
       "titulo": "Regime Prisional",
       "texto": "A falta de estabelecimento penal adequado não autoriza a manutenção do condenado em regime prisional mais gravoso, devendo-se observar, nessa hipótese, os parâmetros fixados no RE 641.320/RS.",
-      "cor": "teal",
+      "cor": "orange",
       "vinculante": true,
       "chips": [
         "VINCULANTE"
@@ -178,7 +178,7 @@
       "numero": 344,
       "titulo": "HC - Recurso Ex Officio",
       "texto": "Sentença de primeira instância concessiva de \"habeas corpus\", em caso de crime praticado em detrimento de bens, serviços ou interesses da união, está sujeita a recurso \"ex officio\".",
-      "cor": "emerald",
+      "cor": "amber",
       "vinculante": false,
       "chips": []
     },
@@ -226,7 +226,7 @@
       "numero": 395,
       "titulo": "Habeas Corpus - Custas",
       "texto": "Não se conhece de recurso de \"habeas corpus\" cujo objeto seja resolver sobre o ônus das custas, por não estar mais em causa a liberdade de locomoção.",
-      "cor": "indigo",
+      "cor": "amber",
       "vinculante": false,
       "chips": []
     },
@@ -370,7 +370,7 @@
       "numero": 606,
       "titulo": "Habeas Corpus Originário",
       "texto": "Não cabe \"habeas corpus\" originário para o tribunal pleno de decisão de turma, ou do plenário, proferida em \"habeas corpus\" ou no respectivo recurso.",
-      "cor": "red",
+      "cor": "amber",
       "vinculante": false,
       "chips": []
     },
@@ -410,7 +410,7 @@
       "numero": 691,
       "titulo": "Habeas Corpus - Competência",
       "texto": "Não compete ao Supremo Tribunal Federal conhecer de \"habeas corpus\" impetrado contra decisão do relator que, em \"habeas corpus\" requerido a Tribunal Superior, indefere a liminar.",
-      "cor": "orange",
+      "cor": "amber",
       "vinculante": false,
       "chips": []
     },
@@ -426,7 +426,7 @@
       "numero": 693,
       "titulo": "Habeas Corpus - Multa",
       "texto": "Não cabe \"habeas corpus\" contra decisão condenatória a pena de multa, ou relativo a processo em curso por infração penal a que a pena pecuniária seja a única cominada.",
-      "cor": "yellow",
+      "cor": "amber",
       "vinculante": false,
       "chips": []
     },
@@ -434,7 +434,7 @@
       "numero": 694,
       "titulo": "Habeas Corpus - Exclusão Militar",
       "texto": "Não cabe \"habeas corpus\" contra a imposição da pena de exclusão de militar ou de perda de patente ou de função pública.",
-      "cor": "lime",
+      "cor": "amber",
       "vinculante": false,
       "chips": []
     },
@@ -442,7 +442,7 @@
       "numero": 695,
       "titulo": "Habeas Corpus - Pena Extinta",
       "texto": "Não cabe \"habeas corpus\" quando já extinta a pena privativa de liberdade.",
-      "cor": "green",
+      "cor": "amber",
       "vinculante": false,
       "chips": []
     },
@@ -458,7 +458,7 @@
       "numero": 700,
       "titulo": "Agravo em Execução - Prazo",
       "texto": "É de cinco dias o prazo para interposição de agravo contra decisão do juiz da execução penal.",
-      "cor": "pink",
+      "cor": "orange",
       "vinculante": false,
       "chips": []
     },
@@ -594,7 +594,7 @@
       "numero": 717,
       "titulo": "Progressão em Prisão Especial",
       "texto": "Não impede a progressão de regime de execução da pena, fixada em sentença não transitada em julgado, o fato de o réu se encontrar em prisão especial.",
-      "cor": "amber",
+      "cor": "orange",
       "vinculante": false,
       "chips": []
     },

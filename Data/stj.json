@@ -6,7 +6,7 @@
       "numero": 17,
       "titulo": "Falso e Estelionato",
       "texto": "Quando o falso se exaure no estelionato, sem mais potencialidade lesiva, é por este absorvido.",
-      "cor": "red",
+      "cor": "green",
       "vinculante": false,
       "chips": []
     },
@@ -14,7 +14,7 @@
       "numero": 18,
       "titulo": "Perdão Judicial",
       "texto": "A sentença concessiva do perdão judicial é declaratória da extinção da punibilidade, não subsistindo qualquer efeito condenatório.",
-      "cor": "orange",
+      "cor": "purple",
       "vinculante": false,
       "chips": []
     },
@@ -22,7 +22,7 @@
       "numero": 21,
       "titulo": "Pronúncia",
       "texto": "Pronunciado o réu, fica superada a alegação do constrangimento ilegal da prisão por excesso de prazo na instrução.",
-      "cor": "amber",
+      "cor": "red",
       "vinculante": false,
       "chips": []
     },
@@ -30,7 +30,7 @@
       "numero": 24,
       "titulo": "Estelionato Previdenciário",
       "texto": "Aplica-se ao crime de estelionato, em que figure como vítima entidade autárquica da previdência social, a qualificadora do § 3º, do art. 171 do Código Penal.",
-      "cor": "yellow",
+      "cor": "green",
       "vinculante": false,
       "chips": []
     },
@@ -38,7 +38,7 @@
       "numero": 40,
       "titulo": "Saída Temporária",
       "texto": "Para obtenção dos benefícios de saída temporária e trabalho externo, considera- se o tempo de cumprimento da pena no regime fechado.",
-      "cor": "lime",
+      "cor": "orange",
       "vinculante": false,
       "chips": []
     },
@@ -46,7 +46,7 @@
       "numero": 48,
       "titulo": "Competência - Estelionato",
       "texto": "Compete ao juízo do local da obtenção da vantagem ilícita processar e julgar crime de estelionato cometido mediante falsificação de cheque.",
-      "cor": "green",
+      "cor": "purple",
       "vinculante": false,
       "chips": []
     },
@@ -54,7 +54,7 @@
       "numero": 51,
       "titulo": "Jogo do Bicho",
       "texto": "A punição do intermediador, no jogo do bicho, independe da identificação do \"apostador\" ou do \"banqueiro\".",
-      "cor": "emerald",
+      "cor": "green",
       "vinculante": false,
       "chips": []
     },
@@ -70,7 +70,7 @@
       "numero": 53,
       "titulo": "Competência - Civil",
       "texto": "Compete a Justiça Comum Estadual processar e julgar civil acusado de prática de crime contra instituições militares estaduais.",
-      "cor": "cyan",
+      "cor": "purple",
       "vinculante": false,
       "chips": []
     },
@@ -78,15 +78,15 @@
       "numero": 59,
       "titulo": "Conflito de Competência",
       "texto": "Não há conflito de competência se já existe sentença com trânsito em julgado, proferida por um dos juízos conflitantes.",
-      "cor": "sky",
+      "cor": "purple",
       "vinculante": false,
       "chips": []
     },
     {
       "numero": 62,
-      "titulo": "Carteira de Trabalho",
+      "titulo": "Competência - Falso CTPS",
       "texto": "Compete a Justiça Estadual processar e julgar o crime de falsa anotação na carteira de trabalho e previdência social, atribuído a empresa privada.",
-      "cor": "blue",
+      "cor": "purple",
       "vinculante": false,
       "chips": []
     },
@@ -94,23 +94,23 @@
       "numero": 64,
       "titulo": "Excesso de Prazo",
       "texto": "Não constitui constrangimento ilegal o excesso de prazo na instrução, provocado pela defesa.",
-      "cor": "indigo",
+      "cor": "teal",
       "vinculante": false,
       "chips": []
     },
     {
       "numero": 73,
-      "titulo": "Moeda Falsa",
+      "titulo": "Competência - Moeda Falsa",
       "texto": "A utilização de papel moeda grosseiramente falsificado configura, em tese, o crime de estelionato, da competência da Justiça Estadual.",
-      "cor": "violet",
+      "cor": "purple",
       "vinculante": false,
       "chips": []
     },
     {
       "numero": 74,
-      "titulo": "Menoridade",
+      "titulo": "Prova Menoridade",
       "texto": "Para efeitos penais, o reconhecimento da menoridade do réu requer prova por documento hábil.",
-      "cor": "purple",
+      "cor": "pink",
       "vinculante": false,
       "chips": []
     },
@@ -126,79 +126,79 @@
       "numero": 96,
       "titulo": "Extorsão",
       "texto": "O crime de extorsão consuma-se independentemente da obtenção da vantagem indevida.",
-      "cor": "pink",
+      "cor": "green",
       "vinculante": false,
       "chips": []
     },
     {
       "numero": 104,
-      "titulo": "Falsificação",
+      "titulo": "Competência - Falsificação",
       "texto": "Compete a Justiça Estadual o processo e julgamento dos crimes de falsificação e uso de documento falso relativo a estabelecimento particular de ensino.",
-      "cor": "rose",
+      "cor": "purple",
       "vinculante": false,
       "chips": []
     },
     {
       "numero": 107,
-      "titulo": "Estelionato INSS",
+      "titulo": "Competência - Estelionato INSS",
       "texto": "Compete à Justiça Comum Estadual processar e julgar crime de estelionato praticado mediante falsificação das guias de recolhimento das contribuições previdenciárias, quando não ocorrente lesão à autarquia federal.",
-      "cor": "red",
+      "cor": "purple",
       "vinculante": false,
       "chips": []
     },
     {
       "numero": 122,
-      "titulo": "Conexão Federal",
+      "titulo": "Competência - Conexão Federal",
       "texto": "Compete a justiça federal o processo e julgamento unificado dos crimes conexos de competência federal e estadual, não se aplicando a regra do art. 78, II, \"a\", do Código de Processo Penal.",
-      "cor": "orange",
+      "cor": "purple",
       "vinculante": false,
       "chips": []
     },
     {
       "numero": 140,
-      "titulo": "Indígena",
-      "texto": "Compete a Justiça Comum Estadual processar e julgar crime em que o indígena figure como autor ou vítima.",
-      "cor": "orange",
+      "titulo": "Competência - Indígena",
+      "texto": "Compete à Justiça Comum Estadual processar e julgar crime em que o indígena figure como autor ou vítima.",
+      "cor": "purple",
       "vinculante": false,
       "chips": []
     },
     {
       "numero": 147,
-      "titulo": "Funcionário Público Federal",
-      "texto": "Compete a Justiça Federal processar e julgar os crimes praticados contra funcionário público federal, quando relacionados com o exercício da função.",
-      "cor": "yellow",
+      "titulo": "Competência - Funcionário Público Federal",
+      "texto": "Compete à Justiça Federal processar e julgar os crimes praticados contra funcionário público federal, quando relacionados com o exercício da função.",
+      "cor": "purple",
       "vinculante": false,
       "chips": []
     },
     {
       "numero": 151,
-      "titulo": "Contrabando e Descaminho",
-      "texto": "A competência para o processo e julgamento por crime de contrabando ou descaminho define-se pela prevenção do Juízo Federal do lugar da apreensão dos bens.",
-      "cor": "amber",
+      "titulo": "Competência - Contrabando e Descaminho",
+      "texto": "A competência para o processo e julgamento por crime de contrabando ou descaminho define-se pela prevenção do juízo federal do lugar da apreensão dos bens.",
+      "cor": "purple",
       "vinculante": false,
       "chips": []
     },
     {
       "numero": 164,
       "titulo": "Prefeito - Foro",
-      "texto": "O prefeito municipal, após a extinção do mandato, continua sujeito a processo por crime previsto no art. 1º do Decreto-lei n. 201, de 27/02/67.",
-      "cor": "yellow",
+      "texto": "O prefeito municipal, após a extinção do mandato, continua sujeito a processo por crime previsto no art. 1. do Dec. Lei n. 201, de 27/02/67.\n",
+      "cor": "green",
       "vinculante": false,
       "chips": []
     },
     {
       "numero": 165,
-      "titulo": "Falso Testemunho",
-      "texto": "Compete a justiça federal processar e julgar crime de falso testemunho cometido no processo trabalhista.",
-      "cor": "lime",
+      "titulo": "Competência - Falso Testemunho Trabalhista",
+      "texto": "Compete à Justiça Federal processar e julgar crime de falso testemunho cometido no processo trabalhista.",
+      "cor": "purple",
       "vinculante": false,
       "chips": []
     },
     {
       "numero": 171,
-      "titulo": "Penas Cumulativas",
+      "titulo": "Cumulação de Penas e Substituição",
       "texto": "Cominadas cumulativamente, em lei especial, penas privativas de liberdade e pecuniária, é defeso a substituição da prisão por multa.",
-      "cor": "green",
+      "cor": "pink",
       "vinculante": false,
       "chips": []
     },
@@ -206,31 +206,31 @@
       "numero": 191,
       "titulo": "Pronúncia - Prescrição",
       "texto": "A pronúncia é causa interruptiva da prescrição, ainda que o Tribunal do Júri venha a desclassificar o crime.",
-      "cor": "emerald",
+      "cor": "red",
       "vinculante": false,
       "chips": []
     },
     {
       "numero": 192,
-      "titulo": "Execução Penal",
-      "texto": "Compete ao Juízo das Execuções Penais do Estado a execução das penas impostas a sentenciados pela Justiça Federal, Militar ou Eleitoral, quando recolhidos a estabelecimentos sujeitos a Administração Estadual.",
-      "cor": "teal",
+      "titulo": "Competência Execução Pena Condenados JF",
+      "texto": "Compete ao juízo das execuções penais do Estado a execução das penas impostas a sentenciados pela Justiça Federal, Militar ou Eleitoral, quando recolhidos a estabelecimentos sujeitos a administração estadual. ",
+      "cor": "orange",
       "vinculante": false,
       "chips": []
     },
     {
       "numero": 200,
-      "titulo": "Documento Falso Federal",
+      "titulo": "Competência - Passaporte Falso ",
       "texto": "O juízo federal competente para processar e julgar acusado de crime de uso de passaporte falso é o do lugar onde o delito se consumou.",
-      "cor": "cyan",
+      "cor": "purple",
       "vinculante": false,
       "chips": []
     },
     {
       "numero": 208,
-      "titulo": "Prefeito - Verba Federal",
-      "texto": "Compete a Justiça Federal processar e julgar prefeito municipal por desvio de verba sujeita a prestação de contas perante órgão federal.",
-      "cor": "sky",
+      "titulo": "Competência - Prefeito e Verba Federal",
+      "texto": "Compete à Justiça Federal processar e julgar prefeito municipal por desvio de verba sujeita a prestação de contas perante órgão federal. ",
+      "cor": "purple",
       "vinculante": false,
       "chips": []
     },
@@ -268,17 +268,17 @@
     },
     {
       "numero": 241,
-      "titulo": "Reincidência",
+      "titulo": "Reincidência - Bis in Idem",
       "texto": "A reincidência penal não pode ser considerada como circunstância agravante e, simultaneamente, como circunstância judicial.",
-      "cor": "indigo",
+      "cor": "pink",
       "vinculante": false,
       "chips": []
     },
     {
       "numero": 243,
-      "titulo": "Suspensão do Processo",
+      "titulo": "Suspensão - Pena Superior a 1 Ano",
       "texto": "O benefício da suspensão do processo não é aplicável em relação às infrações penais cometidas em concurso material, concurso formal ou continuidade delitiva, quando a pena mínima cominada, seja pelo somatório, seja pela incidência da majorante, ultrapassar o limite de um (01) ano.",
-      "cor": "purple",
+      "cor": "pink",
       "vinculante": false,
       "chips": []
     },
@@ -318,7 +318,7 @@
       "numero": 341,
       "titulo": "Remição - Estudo",
       "texto": "A frequência a curso de ensino formal é causa de remição de parte do tempo de execução de pena sob regime fechado ou semiaberto.",
-      "cor": "lime",
+      "cor": "orange",
       "vinculante": false,
       "chips": []
     },
@@ -349,13 +349,13 @@
     {
       "numero": 439,
       "titulo": "Exame Criminológico",
-      "texto": "",
+      "texto": "Admite-se o exame criminológico pelas peculiaridades do caso, desde que em decisão motivada.",
       "cor": "blue",
       "vinculante": false,
       "chips": [
         "SUPERADA EM PARTE"
       ],
-      "nota": "A Lei 14.843/2024 tornou obrigatório o exame criminológico, devendo ser fundamentada sua dispensa excepcional."
+      "nota": "A Lei n. 14.843/2024 tornou obrigatório o exame criminológico, devendo ser fundamentada sua dispensa excepcional."
     },
     {
       "numero": 440,
@@ -369,7 +369,7 @@
       "numero": 441,
       "titulo": "Falta Grave",
       "texto": "A falta grave não interrompe o prazo para obtenção de livramento condicional.",
-      "cor": "indigo",
+      "cor": "orange",
       "vinculante": false,
       "chips": []
     },
@@ -409,7 +409,7 @@
       "numero": 471,
       "titulo": "Crimes Hediondos",
       "texto": "Os condenados por crimes hediondos ou assemelhados cometidos antes da vigência da Lei n. 11.464/2007 sujeitam-se ao disposto no art. 112 da Lei n. 7.210/1984 (Lei de Execução Penal) para a progressão de regime prisional.",
-      "cor": "sky",
+      "cor": "orange",
       "vinculante": false,
       "chips": []
     },
@@ -417,7 +417,7 @@
       "numero": 491,
       "titulo": "Progressão Per Saltum",
       "texto": "É inadmissível a chamada progressão per saltum de regime prisional.",
-      "cor": "purple",
+      "cor": "orange",
       "vinculante": false,
       "chips": []
     },
@@ -425,7 +425,7 @@
       "numero": 493,
       "titulo": "Pena Substitutiva",
       "texto": "É inadmissível a fixação de pena substitutiva (art. 44 do CP) como condição especial ao regime aberto.",
-      "cor": "blue",
+      "cor": "orange",
       "vinculante": false,
       "chips": []
     },
@@ -473,7 +473,7 @@
       "numero": 520,
       "titulo": "Saída Temporária",
       "texto": "O benefício de saída temporária no âmbito da execução penal é ato jurisdicional insuscetível de delegação à autoridade administrativa do estabelecimento prisional.",
-      "cor": "pink",
+      "cor": "orange",
       "vinculante": false,
       "chips": []
     },
@@ -489,7 +489,7 @@
       "numero": 526,
       "titulo": "Falta Grave",
       "texto": "O reconhecimento de falta grave decorrente do cometimento de fato definido como crime doloso no cumprimento da pena prescinde do trânsito em julgado de sentença penal condenatória no processo penal instaurado para apuração do fato.",
-      "cor": "red",
+      "cor": "orange",
       "vinculante": false,
       "chips": []
     },
@@ -505,7 +505,7 @@
       "numero": 533,
       "titulo": "Falta Disciplinar",
       "texto": "Para o reconhecimento da prática de falta disciplinar no âmbito da execução penal, é imprescindível a instauração de procedimento administrativo pelo diretor do estabelecimento prisional, assegurado o direito de defesa, a ser realizado por advogado constituído ou defensor público nomeado.",
-      "cor": "amber",
+      "cor": "orange",
       "vinculante": false,
       "chips": []
     },
@@ -513,7 +513,7 @@
       "numero": 534,
       "titulo": "Interrupção da Contagem",
       "texto": "A prática de falta grave interrompe a contagem do prazo para a progressão de regime de cumprimento de pena, o qual se reinicia a partir do cometimento dessa infração.",
-      "cor": "pink",
+      "cor": "orange",
       "vinculante": false,
       "chips": []
     },
@@ -521,7 +521,7 @@
       "numero": 535,
       "titulo": "Comutação de Pena",
       "texto": "A prática de falta grave não interrompe o prazo para fim de comutação de pena ou indulto.",
-      "cor": "yellow",
+      "cor": "orange",
       "vinculante": false,
       "chips": []
     },
@@ -555,7 +555,7 @@
       "numero": 546,
       "titulo": "Documento Falso",
       "texto": "A competência para processar e julgar o crime de uso de documento falso é firmada em razão da entidade ou órgão ao qual foi apresentado o documento público, não importando a qualificação do órgão expedidor.",
-      "cor": "green",
+      "cor": "purple",
       "vinculante": false,
       "chips": []
     },
@@ -563,7 +563,7 @@
       "numero": 562,
       "titulo": "Remição - Atividades",
       "texto": "É possível a remição de parte do tempo de execução da pena quando o condenado, em regime fechado ou semiaberto, desempenha atividade laborativa, ainda que extramuros.",
-      "cor": "emerald",
+      "cor": "orange",
       "vinculante": false,
       "chips": []
     },
@@ -701,7 +701,7 @@
       "numero": 643,
       "titulo": "Pena Restritiva",
       "texto": "A execução da pena restritiva de direitos depende do trânsito em julgado da condenação.",
-      "cor": "lime",
+      "cor": "orange",
       "vinculante": false,
       "chips": []
     },
@@ -741,7 +741,7 @@
       "numero": 660,
       "titulo": "Celular na Prisão",
       "texto": "A posse, pelo apenado, de aparelho celular ou de seus componentes essenciais constitui falta grave.",
-      "cor": "rose",
+      "cor": "orange",
       "vinculante": false,
       "chips": []
     },
@@ -749,7 +749,7 @@
       "numero": 661,
       "titulo": "Perícia do Celular",
       "texto": "A falta grave prescinde da perícia do celular apreendido ou de seus componentes essenciais.",
-      "cor": "red",
+      "cor": "orange",
       "vinculante": false,
       "chips": []
     },

@@ -13,7 +13,9 @@ CORES_INTENSIDADE = {
     'pink': '500', 'indigo': '500', 'yellow': '500', 'orange': '500',
     'teal': '500', 'cyan': '500', 'lime': '500', 'emerald': '500',
     'violet': '500', 'fuchsia': '500', 'rose': '500', 'sky': '500',
-    'amber': '500', 'gray': '600'
+    'amber': '500', 'gray': '600', 'slate': '600', 'zinc': '600',
+    'stone': '500', 'neutral': '600', 'warmGray': '600', 'trueGray': '600',
+    'coolGray': '600', 'blueGray': '600'
 }
 
 def carregar_sumulas(diretorio='Data'):

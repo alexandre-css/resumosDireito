@@ -101,9 +101,32 @@ Pronto! O HTML foi atualizado automaticamente! ✓
 
 ## 🎨 Cores Disponíveis
 
--   `red`, `blue`, `green`, `purple`, `pink`, `indigo`
--   `yellow`, `orange`, `teal`, `cyan`, `lime`, `emerald`
--   `violet`, `fuchsia`, `rose`, `sky`, `amber`, `gray`
+### Categorias Principais:
+
+-   🔴 `red` - **Júri**
+-   🟠 `orange` - **Execução Penal**
+-   🟢 `green` - **Crimes Geral**
+-   🔷 `teal` - **Processual**
+-   💙 `indigo` - **Prescrição**
+-   🟣 `purple` - **Competência**
+-   🌸 `pink` - **Aplicação da Pena**
+-   🌹 `rose` - **Perdão Judicial**
+
+### Categorias Adicionais:
+
+-   🔵 `blue` - Outros
+-   💠 `cyan` - Recursos
+-   🟢 `lime` - Ação Penal
+-   🟡 `amber` - Medidas Cautelares
+-   💚 `emerald` - Crimes Contra Ordem
+-   🟣 `violet` - Nulidades
+-   🌺 `fuchsia` - Suspensão Condicional
+-   ☁️ `sky` - Garantias
+-   🟡 `yellow` - Prova
+-   ⚫ `slate` - Especial
+-   ⚫ `zinc` - Transação
+-   🟤 `stone` - Crimes Tributários
+-   ⚫ `gray` - Diversos
 
 ---
 

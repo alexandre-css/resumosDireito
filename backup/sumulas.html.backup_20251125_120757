@@ -225,6 +225,13 @@
             
             
             
+            
+            
+            
+            
+            
+            
+            
             <!-- SÚMULAS DO STF -->
             <div class="mt-16">
                 <div class="text-center mb-6 cursor-pointer" onclick="toggleSumulas('stf')">
@@ -528,12 +535,12 @@
 
                                 <!-- Súmula 344/STF -->
                                 <div
-                                    class="bg-white border-l-4 border-emerald-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                    class="bg-white border-l-4 border-amber-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                                     <div class="flex items-center mb-2">
                                         <div
-                                            class="bg-emerald-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                            class="bg-amber-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             344</div>
-                                        <h4 class="font-bold text-emerald-700">HC - Recurso Ex Officio</h4>
+                                        <h4 class="font-bold text-amber-700">HC - Recurso Ex Officio</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">Sentença de primeira instância concessiva de "habeas corpus", em caso de crime praticado em detrimento de bens, serviços ou interesses da união, está sujeita a recurso "ex officio".</p>
                                 </div>
@@ -600,12 +607,12 @@
 
                                 <!-- Súmula 395/STF -->
                                 <div
-                                    class="bg-white border-l-4 border-indigo-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                    class="bg-white border-l-4 border-amber-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                                     <div class="flex items-center mb-2">
                                         <div
-                                            class="bg-indigo-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                            class="bg-amber-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             395</div>
-                                        <h4 class="font-bold text-indigo-700">Habeas Corpus - Custas</h4>
+                                        <h4 class="font-bold text-amber-700">Habeas Corpus - Custas</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">Não se conhece de recurso de "habeas corpus" cujo objeto seja resolver sobre o ônus das custas, por não estar mais em causa a liberdade de locomoção.</p>
                                 </div>
@@ -816,12 +823,12 @@
 
                                 <!-- Súmula 606/STF -->
                                 <div
-                                    class="bg-white border-l-4 border-red-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                    class="bg-white border-l-4 border-amber-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                                     <div class="flex items-center mb-2">
                                         <div
-                                            class="bg-red-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                            class="bg-amber-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             606</div>
-                                        <h4 class="font-bold text-red-700">Habeas Corpus Originário</h4>
+                                        <h4 class="font-bold text-amber-700">Habeas Corpus Originário</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">Não cabe "habeas corpus" originário para o tribunal pleno de decisão de turma, ou do plenário, proferida em "habeas corpus" ou no respectivo recurso.</p>
                                 </div>
@@ -876,12 +883,12 @@
 
                                 <!-- Súmula 691/STF -->
                                 <div
-                                    class="bg-white border-l-4 border-orange-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                    class="bg-white border-l-4 border-amber-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                                     <div class="flex items-center mb-2">
                                         <div
-                                            class="bg-orange-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                            class="bg-amber-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             691</div>
-                                        <h4 class="font-bold text-orange-700">Habeas Corpus - Competência</h4>
+                                        <h4 class="font-bold text-amber-700">Habeas Corpus - Competência</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">Não compete ao Supremo Tribunal Federal conhecer de "habeas corpus" impetrado contra decisão do relator que, em "habeas corpus" requerido a Tribunal Superior, indefere a liminar.</p>
                                 </div>
@@ -900,36 +907,36 @@
 
                                 <!-- Súmula 693/STF -->
                                 <div
-                                    class="bg-white border-l-4 border-yellow-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                    class="bg-white border-l-4 border-amber-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                                     <div class="flex items-center mb-2">
                                         <div
-                                            class="bg-yellow-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                            class="bg-amber-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             693</div>
-                                        <h4 class="font-bold text-yellow-700">Habeas Corpus - Multa</h4>
+                                        <h4 class="font-bold text-amber-700">Habeas Corpus - Multa</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">Não cabe "habeas corpus" contra decisão condenatória a pena de multa, ou relativo a processo em curso por infração penal a que a pena pecuniária seja a única cominada.</p>
                                 </div>
 
                                 <!-- Súmula 694/STF -->
                                 <div
-                                    class="bg-white border-l-4 border-lime-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                    class="bg-white border-l-4 border-amber-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                                     <div class="flex items-center mb-2">
                                         <div
-                                            class="bg-lime-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                            class="bg-amber-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             694</div>
-                                        <h4 class="font-bold text-lime-700">Habeas Corpus - Exclusão Militar</h4>
+                                        <h4 class="font-bold text-amber-700">Habeas Corpus - Exclusão Militar</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">Não cabe "habeas corpus" contra a imposição da pena de exclusão de militar ou de perda de patente ou de função pública.</p>
                                 </div>
 
                                 <!-- Súmula 695/STF -->
                                 <div
-                                    class="bg-white border-l-4 border-green-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                    class="bg-white border-l-4 border-amber-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                                     <div class="flex items-center mb-2">
                                         <div
-                                            class="bg-green-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                            class="bg-amber-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             695</div>
-                                        <h4 class="font-bold text-green-700">Habeas Corpus - Pena Extinta</h4>
+                                        <h4 class="font-bold text-amber-700">Habeas Corpus - Pena Extinta</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">Não cabe "habeas corpus" quando já extinta a pena privativa de liberdade.</p>
                                 </div>
@@ -1252,84 +1259,84 @@
 
                                 <!-- Súmula 17/STJ -->
                                 <div
-                                    class="bg-white border-l-4 border-red-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                    class="bg-white border-l-4 border-green-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                                     <div class="flex items-center mb-2">
                                         <div
-                                            class="bg-red-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                            class="bg-green-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             17</div>
-                                        <h4 class="font-bold text-red-700">Falso e Estelionato</h4>
+                                        <h4 class="font-bold text-green-700">Falso e Estelionato</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">Quando o falso se exaure no estelionato, sem mais potencialidade lesiva, é por este absorvido.</p>
                                 </div>
 
                                 <!-- Súmula 18/STJ -->
                                 <div
-                                    class="bg-white border-l-4 border-orange-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                    class="bg-white border-l-4 border-purple-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                                     <div class="flex items-center mb-2">
                                         <div
-                                            class="bg-orange-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                            class="bg-purple-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             18</div>
-                                        <h4 class="font-bold text-orange-700">Perdão Judicial</h4>
+                                        <h4 class="font-bold text-purple-700">Perdão Judicial</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">A sentença concessiva do perdão judicial é declaratória da extinção da punibilidade, não subsistindo qualquer efeito condenatório.</p>
                                 </div>
 
                                 <!-- Súmula 21/STJ -->
                                 <div
-                                    class="bg-white border-l-4 border-amber-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                    class="bg-white border-l-4 border-red-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                                     <div class="flex items-center mb-2">
                                         <div
-                                            class="bg-amber-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                            class="bg-red-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             21</div>
-                                        <h4 class="font-bold text-amber-700">Pronúncia</h4>
+                                        <h4 class="font-bold text-red-700">Pronúncia</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">Pronunciado o réu, fica superada a alegação do constrangimento ilegal da prisão por excesso de prazo na instrução.</p>
                                 </div>
 
                                 <!-- Súmula 24/STJ -->
                                 <div
-                                    class="bg-white border-l-4 border-yellow-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                    class="bg-white border-l-4 border-green-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                                     <div class="flex items-center mb-2">
                                         <div
-                                            class="bg-yellow-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                            class="bg-green-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             24</div>
-                                        <h4 class="font-bold text-yellow-700">Estelionato Previdenciário</h4>
+                                        <h4 class="font-bold text-green-700">Estelionato Previdenciário</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">Aplica-se ao crime de estelionato, em que figure como vítima entidade autárquica da previdência social, a qualificadora do § 3º, do art. 171 do Código Penal.</p>
                                 </div>
 
                                 <!-- Súmula 40/STJ -->
                                 <div
-                                    class="bg-white border-l-4 border-lime-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                    class="bg-white border-l-4 border-orange-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                                     <div class="flex items-center mb-2">
                                         <div
-                                            class="bg-lime-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                            class="bg-orange-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             40</div>
-                                        <h4 class="font-bold text-lime-700">Saída Temporária</h4>
+                                        <h4 class="font-bold text-orange-700">Saída Temporária</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">Para obtenção dos benefícios de saída temporária e trabalho externo, considera- se o tempo de cumprimento da pena no regime fechado.</p>
                                 </div>
 
                                 <!-- Súmula 48/STJ -->
                                 <div
-                                    class="bg-white border-l-4 border-green-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                    class="bg-white border-l-4 border-purple-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                                     <div class="flex items-center mb-2">
                                         <div
-                                            class="bg-green-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                            class="bg-purple-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             48</div>
-                                        <h4 class="font-bold text-green-700">Competência - Estelionato</h4>
+                                        <h4 class="font-bold text-purple-700">Competência - Estelionato</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">Compete ao juízo do local da obtenção da vantagem ilícita processar e julgar crime de estelionato cometido mediante falsificação de cheque.</p>
                                 </div>
 
                                 <!-- Súmula 51/STJ -->
                                 <div
-                                    class="bg-white border-l-4 border-emerald-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                    class="bg-white border-l-4 border-green-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                                     <div class="flex items-center mb-2">
                                         <div
-                                            class="bg-emerald-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                            class="bg-green-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             51</div>
-                                        <h4 class="font-bold text-emerald-700">Jogo do Bicho</h4>
+                                        <h4 class="font-bold text-green-700">Jogo do Bicho</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">A punição do intermediador, no jogo do bicho, independe da identificação do "apostador" ou do "banqueiro".</p>
                                 </div>
@@ -1348,72 +1355,72 @@
 
                                 <!-- Súmula 53/STJ -->
                                 <div
-                                    class="bg-white border-l-4 border-cyan-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                    class="bg-white border-l-4 border-purple-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                                     <div class="flex items-center mb-2">
                                         <div
-                                            class="bg-cyan-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                            class="bg-purple-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             53</div>
-                                        <h4 class="font-bold text-cyan-700">Competência - Civil</h4>
+                                        <h4 class="font-bold text-purple-700">Competência - Civil</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">Compete a Justiça Comum Estadual processar e julgar civil acusado de prática de crime contra instituições militares estaduais.</p>
                                 </div>
 
                                 <!-- Súmula 59/STJ -->
                                 <div
-                                    class="bg-white border-l-4 border-sky-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                    class="bg-white border-l-4 border-purple-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                                     <div class="flex items-center mb-2">
                                         <div
-                                            class="bg-sky-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                            class="bg-purple-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             59</div>
-                                        <h4 class="font-bold text-sky-700">Conflito de Competência</h4>
+                                        <h4 class="font-bold text-purple-700">Conflito de Competência</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">Não há conflito de competência se já existe sentença com trânsito em julgado, proferida por um dos juízos conflitantes.</p>
                                 </div>
 
                                 <!-- Súmula 62/STJ -->
                                 <div
-                                    class="bg-white border-l-4 border-blue-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                    class="bg-white border-l-4 border-purple-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                                     <div class="flex items-center mb-2">
                                         <div
-                                            class="bg-blue-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                            class="bg-purple-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             62</div>
-                                        <h4 class="font-bold text-blue-700">Carteira de Trabalho</h4>
+                                        <h4 class="font-bold text-purple-700">Competência - Falso CTPS</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">Compete a Justiça Estadual processar e julgar o crime de falsa anotação na carteira de trabalho e previdência social, atribuído a empresa privada.</p>
                                 </div>
 
                                 <!-- Súmula 64/STJ -->
                                 <div
-                                    class="bg-white border-l-4 border-indigo-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                    class="bg-white border-l-4 border-teal-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                                     <div class="flex items-center mb-2">
                                         <div
-                                            class="bg-indigo-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                            class="bg-teal-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             64</div>
-                                        <h4 class="font-bold text-indigo-700">Excesso de Prazo</h4>
+                                        <h4 class="font-bold text-teal-700">Excesso de Prazo</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">Não constitui constrangimento ilegal o excesso de prazo na instrução, provocado pela defesa.</p>
                                 </div>
 
                                 <!-- Súmula 73/STJ -->
                                 <div
-                                    class="bg-white border-l-4 border-violet-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                    class="bg-white border-l-4 border-purple-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                                     <div class="flex items-center mb-2">
                                         <div
-                                            class="bg-violet-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                            class="bg-purple-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             73</div>
-                                        <h4 class="font-bold text-violet-700">Moeda Falsa</h4>
+                                        <h4 class="font-bold text-purple-700">Competência - Moeda Falsa</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">A utilização de papel moeda grosseiramente falsificado configura, em tese, o crime de estelionato, da competência da Justiça Estadual.</p>
                                 </div>
 
                                 <!-- Súmula 74/STJ -->
                                 <div
-                                    class="bg-white border-l-4 border-purple-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                    class="bg-white border-l-4 border-pink-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                                     <div class="flex items-center mb-2">
                                         <div
-                                            class="bg-purple-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                            class="bg-pink-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             74</div>
-                                        <h4 class="font-bold text-purple-700">Menoridade</h4>
+                                        <h4 class="font-bold text-pink-700">Prova Menoridade</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">Para efeitos penais, o reconhecimento da menoridade do réu requer prova por documento hábil.</p>
                                 </div>
@@ -1432,170 +1439,171 @@
 
                                 <!-- Súmula 96/STJ -->
                                 <div
-                                    class="bg-white border-l-4 border-pink-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                    class="bg-white border-l-4 border-green-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                                     <div class="flex items-center mb-2">
                                         <div
-                                            class="bg-pink-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                            class="bg-green-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             96</div>
-                                        <h4 class="font-bold text-pink-700">Extorsão</h4>
+                                        <h4 class="font-bold text-green-700">Extorsão</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">O crime de extorsão consuma-se independentemente da obtenção da vantagem indevida.</p>
                                 </div>
 
                                 <!-- Súmula 104/STJ -->
                                 <div
-                                    class="bg-white border-l-4 border-rose-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                    class="bg-white border-l-4 border-purple-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                                     <div class="flex items-center mb-2">
                                         <div
-                                            class="bg-rose-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                            class="bg-purple-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             104</div>
-                                        <h4 class="font-bold text-rose-700">Falsificação</h4>
+                                        <h4 class="font-bold text-purple-700">Competência - Falsificação</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">Compete a Justiça Estadual o processo e julgamento dos crimes de falsificação e uso de documento falso relativo a estabelecimento particular de ensino.</p>
                                 </div>
 
                                 <!-- Súmula 107/STJ -->
                                 <div
-                                    class="bg-white border-l-4 border-red-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                    class="bg-white border-l-4 border-purple-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                                     <div class="flex items-center mb-2">
                                         <div
-                                            class="bg-red-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                            class="bg-purple-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             107</div>
-                                        <h4 class="font-bold text-red-700">Estelionato INSS</h4>
+                                        <h4 class="font-bold text-purple-700">Competência - Estelionato INSS</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">Compete à Justiça Comum Estadual processar e julgar crime de estelionato praticado mediante falsificação das guias de recolhimento das contribuições previdenciárias, quando não ocorrente lesão à autarquia federal.</p>
                                 </div>
 
                                 <!-- Súmula 122/STJ -->
                                 <div
-                                    class="bg-white border-l-4 border-orange-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                    class="bg-white border-l-4 border-purple-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                                     <div class="flex items-center mb-2">
                                         <div
-                                            class="bg-orange-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                            class="bg-purple-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             122</div>
-                                        <h4 class="font-bold text-orange-700">Conexão Federal</h4>
+                                        <h4 class="font-bold text-purple-700">Competência - Conexão Federal</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">Compete a justiça federal o processo e julgamento unificado dos crimes conexos de competência federal e estadual, não se aplicando a regra do art. 78, II, "a", do Código de Processo Penal.</p>
                                 </div>
 
                                 <!-- Súmula 140/STJ -->
                                 <div
-                                    class="bg-white border-l-4 border-orange-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                    class="bg-white border-l-4 border-purple-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                                     <div class="flex items-center mb-2">
                                         <div
-                                            class="bg-orange-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                            class="bg-purple-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             140</div>
-                                        <h4 class="font-bold text-orange-700">Indígena</h4>
+                                        <h4 class="font-bold text-purple-700">Competência - Indígena</h4>
                                     </div>
-                                    <p class="text-sm text-gray-700 italic text-justify">Compete a Justiça Comum Estadual processar e julgar crime em que o indígena figure como autor ou vítima.</p>
+                                    <p class="text-sm text-gray-700 italic text-justify">Compete à Justiça Comum Estadual processar e julgar crime em que o indígena figure como autor ou vítima.</p>
                                 </div>
 
                                 <!-- Súmula 147/STJ -->
                                 <div
-                                    class="bg-white border-l-4 border-yellow-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                    class="bg-white border-l-4 border-purple-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                                     <div class="flex items-center mb-2">
                                         <div
-                                            class="bg-yellow-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                            class="bg-purple-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             147</div>
-                                        <h4 class="font-bold text-yellow-700">Funcionário Público Federal</h4>
+                                        <h4 class="font-bold text-purple-700">Competência - Funcionário Público Federal</h4>
                                     </div>
-                                    <p class="text-sm text-gray-700 italic text-justify">Compete a Justiça Federal processar e julgar os crimes praticados contra funcionário público federal, quando relacionados com o exercício da função.</p>
+                                    <p class="text-sm text-gray-700 italic text-justify">Compete à Justiça Federal processar e julgar os crimes praticados contra funcionário público federal, quando relacionados com o exercício da função.</p>
                                 </div>
 
                                 <!-- Súmula 151/STJ -->
                                 <div
-                                    class="bg-white border-l-4 border-amber-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                    class="bg-white border-l-4 border-purple-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                                     <div class="flex items-center mb-2">
                                         <div
-                                            class="bg-amber-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                            class="bg-purple-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             151</div>
-                                        <h4 class="font-bold text-amber-700">Contrabando e Descaminho</h4>
+                                        <h4 class="font-bold text-purple-700">Competência - Contrabando e Descaminho</h4>
                                     </div>
-                                    <p class="text-sm text-gray-700 italic text-justify">A competência para o processo e julgamento por crime de contrabando ou descaminho define-se pela prevenção do Juízo Federal do lugar da apreensão dos bens.</p>
+                                    <p class="text-sm text-gray-700 italic text-justify">A competência para o processo e julgamento por crime de contrabando ou descaminho define-se pela prevenção do juízo federal do lugar da apreensão dos bens.</p>
                                 </div>
 
                                 <!-- Súmula 164/STJ -->
-                                <div
-                                    class="bg-white border-l-4 border-yellow-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-                                    <div class="flex items-center mb-2">
-                                        <div
-                                            class="bg-yellow-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
-                                            164</div>
-                                        <h4 class="font-bold text-yellow-700">Prefeito - Foro</h4>
-                                    </div>
-                                    <p class="text-sm text-gray-700 italic text-justify">O prefeito municipal, após a extinção do mandato, continua sujeito a processo por crime previsto no art. 1º do Decreto-lei n. 201, de 27/02/67.</p>
-                                </div>
-
-                                <!-- Súmula 165/STJ -->
-                                <div
-                                    class="bg-white border-l-4 border-lime-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-                                    <div class="flex items-center mb-2">
-                                        <div
-                                            class="bg-lime-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
-                                            165</div>
-                                        <h4 class="font-bold text-lime-700">Falso Testemunho</h4>
-                                    </div>
-                                    <p class="text-sm text-gray-700 italic text-justify">Compete a justiça federal processar e julgar crime de falso testemunho cometido no processo trabalhista.</p>
-                                </div>
-
-                                <!-- Súmula 171/STJ -->
                                 <div
                                     class="bg-white border-l-4 border-green-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                                     <div class="flex items-center mb-2">
                                         <div
                                             class="bg-green-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                            164</div>
+                                        <h4 class="font-bold text-green-700">Prefeito - Foro</h4>
+                                    </div>
+                                    <p class="text-sm text-gray-700 italic text-justify">O prefeito municipal, após a extinção do mandato, continua sujeito a processo por crime previsto no art. 1. do Dec. Lei n. 201, de 27/02/67.
+</p>
+                                </div>
+
+                                <!-- Súmula 165/STJ -->
+                                <div
+                                    class="bg-white border-l-4 border-purple-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                    <div class="flex items-center mb-2">
+                                        <div
+                                            class="bg-purple-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                            165</div>
+                                        <h4 class="font-bold text-purple-700">Competência - Falso Testemunho Trabalhista</h4>
+                                    </div>
+                                    <p class="text-sm text-gray-700 italic text-justify">Compete à Justiça Federal processar e julgar crime de falso testemunho cometido no processo trabalhista.</p>
+                                </div>
+
+                                <!-- Súmula 171/STJ -->
+                                <div
+                                    class="bg-white border-l-4 border-pink-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                    <div class="flex items-center mb-2">
+                                        <div
+                                            class="bg-pink-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             171</div>
-                                        <h4 class="font-bold text-green-700">Penas Cumulativas</h4>
+                                        <h4 class="font-bold text-pink-700">Cumulação de Penas e Substituição</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">Cominadas cumulativamente, em lei especial, penas privativas de liberdade e pecuniária, é defeso a substituição da prisão por multa.</p>
                                 </div>
 
                                 <!-- Súmula 191/STJ -->
                                 <div
-                                    class="bg-white border-l-4 border-emerald-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                    class="bg-white border-l-4 border-red-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                                     <div class="flex items-center mb-2">
                                         <div
-                                            class="bg-emerald-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                            class="bg-red-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             191</div>
-                                        <h4 class="font-bold text-emerald-700">Pronúncia - Prescrição</h4>
+                                        <h4 class="font-bold text-red-700">Pronúncia - Prescrição</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">A pronúncia é causa interruptiva da prescrição, ainda que o Tribunal do Júri venha a desclassificar o crime.</p>
                                 </div>
 
                                 <!-- Súmula 192/STJ -->
                                 <div
-                                    class="bg-white border-l-4 border-teal-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                    class="bg-white border-l-4 border-orange-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                                     <div class="flex items-center mb-2">
                                         <div
-                                            class="bg-teal-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                            class="bg-orange-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             192</div>
-                                        <h4 class="font-bold text-teal-700">Execução Penal</h4>
+                                        <h4 class="font-bold text-orange-700">Competência Execução Pena Condenados JF</h4>
                                     </div>
-                                    <p class="text-sm text-gray-700 italic text-justify">Compete ao Juízo das Execuções Penais do Estado a execução das penas impostas a sentenciados pela Justiça Federal, Militar ou Eleitoral, quando recolhidos a estabelecimentos sujeitos a Administração Estadual.</p>
+                                    <p class="text-sm text-gray-700 italic text-justify">Compete ao juízo das execuções penais do Estado a execução das penas impostas a sentenciados pela Justiça Federal, Militar ou Eleitoral, quando recolhidos a estabelecimentos sujeitos a administração estadual. </p>
                                 </div>
 
                                 <!-- Súmula 200/STJ -->
                                 <div
-                                    class="bg-white border-l-4 border-cyan-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                    class="bg-white border-l-4 border-purple-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                                     <div class="flex items-center mb-2">
                                         <div
-                                            class="bg-cyan-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                            class="bg-purple-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             200</div>
-                                        <h4 class="font-bold text-cyan-700">Documento Falso Federal</h4>
+                                        <h4 class="font-bold text-purple-700">Competência - Passaporte Falso </h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">O juízo federal competente para processar e julgar acusado de crime de uso de passaporte falso é o do lugar onde o delito se consumou.</p>
                                 </div>
 
                                 <!-- Súmula 208/STJ -->
                                 <div
-                                    class="bg-white border-l-4 border-sky-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                    class="bg-white border-l-4 border-purple-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                                     <div class="flex items-center mb-2">
                                         <div
-                                            class="bg-sky-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                            class="bg-purple-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             208</div>
-                                        <h4 class="font-bold text-sky-700">Prefeito - Verba Federal</h4>
+                                        <h4 class="font-bold text-purple-700">Competência - Prefeito e Verba Federal</h4>
                                     </div>
-                                    <p class="text-sm text-gray-700 italic text-justify">Compete a Justiça Federal processar e julgar prefeito municipal por desvio de verba sujeita a prestação de contas perante órgão federal.</p>
+                                    <p class="text-sm text-gray-700 italic text-justify">Compete à Justiça Federal processar e julgar prefeito municipal por desvio de verba sujeita a prestação de contas perante órgão federal. </p>
                                 </div>
 
                                 <!-- Súmula 209/STJ -->
@@ -1648,24 +1656,24 @@
 
                                 <!-- Súmula 241/STJ -->
                                 <div
-                                    class="bg-white border-l-4 border-indigo-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                    class="bg-white border-l-4 border-pink-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                                     <div class="flex items-center mb-2">
                                         <div
-                                            class="bg-indigo-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                            class="bg-pink-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             241</div>
-                                        <h4 class="font-bold text-indigo-700">Reincidência</h4>
+                                        <h4 class="font-bold text-pink-700">Reincidência - Bis in Idem</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">A reincidência penal não pode ser considerada como circunstância agravante e, simultaneamente, como circunstância judicial.</p>
                                 </div>
 
                                 <!-- Súmula 243/STJ -->
                                 <div
-                                    class="bg-white border-l-4 border-purple-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                    class="bg-white border-l-4 border-pink-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                                     <div class="flex items-center mb-2">
                                         <div
-                                            class="bg-purple-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                            class="bg-pink-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             243</div>
-                                        <h4 class="font-bold text-purple-700">Suspensão do Processo</h4>
+                                        <h4 class="font-bold text-pink-700">Suspensão - Pena Superior a 1 Ano</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">O benefício da suspensão do processo não é aplicável em relação às infrações penais cometidas em concurso material, concurso formal ou continuidade delitiva, quando a pena mínima cominada, seja pelo somatório, seja pela incidência da majorante, ultrapassar o limite de um (01) ano.</p>
                                 </div>
@@ -1780,8 +1788,8 @@
                                                 SUPERADA EM PARTE</div>
                                         </div>
                                     </div>
-                                    <p class="text-sm text-gray-700 italic text-justify"></p>
-                                    <p class="text-xs bg-blue-50 p-2 rounded border-l-2 border-blue-300 mt-2">A Lei 14.843/2024 tornou obrigatório o exame criminológico, devendo ser fundamentada sua dispensa excepcional.</p>
+                                    <p class="text-sm text-gray-700 italic text-justify">Admite-se o exame criminológico pelas peculiaridades do caso, desde que em decisão motivada.</p>
+                                    <p class="text-xs bg-blue-50 p-2 rounded border-l-2 border-blue-300 mt-2">A Lei n. 14.843/2024 tornou obrigatório o exame criminológico, devendo ser fundamentada sua dispensa excepcional.</p>
                                 </div>
 
                                 <!-- Súmula 440/STJ -->
@@ -2588,24 +2596,6 @@
                                         <h4 class="font-bold text-cyan-700">Bebida Alcoólica</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">Fornecimento de bebida alcoólica a criança ou adolescente, após o advento da lei 13.106/15, configura o crime previsto no art. 243 do ECA.</p>
-                                </div>
-
-                                <!-- Súmula 999/ECA -->
-                                <div
-                                    class="bg-white border-l-4 border-purple-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 relative">
-                                    <div class="flex items-center mb-2">
-                                        <div
-                                            class="bg-purple-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
-                                            999</div>
-                                        <h4 class="font-bold text-purple-700">teste</h4>
-                                        <div class="ml-auto relative">
-                                            <div
-                                                class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs font-bold flex items-center justify-center whitespace-nowrap">
-                                                ALTERADA</div>
-                                        </div>
-                                    </div>
-                                    <p class="text-sm text-gray-700 italic text-justify">teste</p>
-                                    <p class="text-xs bg-purple-50 p-2 rounded border-l-2 border-purple-300 mt-2">teste</p>
                                 </div>
 
                         </div>
