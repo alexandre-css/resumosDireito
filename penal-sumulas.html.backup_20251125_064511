@@ -216,7 +216,6 @@
             
             
             
-            
             <!-- SÚMULAS DO STF -->
             <div class="mt-16">
                 <div class="text-center mb-6 cursor-pointer" onclick="toggleSumulas('stf')">
@@ -1209,7 +1208,7 @@
                                         <div
                                             class="bg-rose-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             723</div>
-                                        <h4 class="font-bold text-rose-700">Suspensão - Crime Continuado</h4>
+                                        <h4 class="font-bold text-rose-700">Suspensão Condicional - Crime Continuado</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">Não se admite a suspensão condicional do processo por crime continuado, se a soma da pena mínima da infração mais grave com o aumento mínimo de um sexto for superior a um ano.</p>
                                 </div>

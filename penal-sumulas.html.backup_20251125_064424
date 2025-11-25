@@ -215,8 +215,6 @@
             
             
             
-            
-            
             <!-- SÚMULAS DO STF -->
             <div class="mt-16">
                 <div class="text-center mb-6 cursor-pointer" onclick="toggleSumulas('stf')">
@@ -1053,7 +1051,7 @@
                                         <div
                                             class="bg-violet-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             709</div>
-                                        <h4 class="font-bold text-violet-700">Acórdão - Recebimento Denúncia</h4>
+                                        <h4 class="font-bold text-violet-700">Recurso Contra Absolvição</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">Salvo quando nula a decisão de primeiro grau, o acórdão que provê o recurso contra a rejeição da denúncia vale, desde logo, pelo recebimento dela.</p>
                                 </div>
@@ -1065,7 +1063,7 @@
                                         <div
                                             class="bg-purple-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             710</div>
-                                        <h4 class="font-bold text-purple-700">Contagem Prazos</h4>
+                                        <h4 class="font-bold text-purple-700">Prazos Processuais</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">No processo penal, contam-se os prazos da data da intimação, e não da juntada aos autos do mandado ou da carta precatória ou de ordem.</p>
                                 </div>
@@ -1077,7 +1075,7 @@
                                         <div
                                             class="bg-yellow-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             711</div>
-                                        <h4 class="font-bold text-yellow-700">Crimes Continuado e Permanente</h4>
+                                        <h4 class="font-bold text-yellow-700">Crime Continuado</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">A lei penal mais grave aplica-se ao crime continuado ou ao crime permanente, se a sua vigência é anterior à cessação da continuidade ou da permanência.</p>
                                 </div>
@@ -1089,7 +1087,7 @@
                                         <div
                                             class="bg-fuchsia-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             712</div>
-                                        <h4 class="font-bold text-fuchsia-700">Contraditório no Desaforamento</h4>
+                                        <h4 class="font-bold text-fuchsia-700">Desaforamento</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">É nula a decisão que determina o desaforamento de processo da competência do júri sem audiência da defesa.</p>
                                 </div>
@@ -1101,7 +1099,7 @@
                                         <div
                                             class="bg-pink-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             713</div>
-                                        <h4 class="font-bold text-pink-700">Efeitos Apelação Júri</h4>
+                                        <h4 class="font-bold text-pink-700">Apelação Júri</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">O efeito devolutivo da apelação contra decisões do júri é adstrito aos fundamentos da sua interposição.</p>
                                 </div>
@@ -1113,7 +1111,7 @@
                                         <div
                                             class="bg-green-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             714</div>
-                                        <h4 class="font-bold text-green-700">Legitimidade Crime Contra a Honra</h4>
+                                        <h4 class="font-bold text-green-700">Crime Contra Honra</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">É concorrente a legitimidade do ofendido, mediante queixa, e do ministério público, condicionada à representação do ofendido, para a ação penal por crime contra a honra de servidor público em razão do exercício de suas funções.</p>
                                 </div>
@@ -1125,7 +1123,7 @@
                                         <div
                                             class="bg-rose-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             715</div>
-                                        <h4 class="font-bold text-rose-700">Pena Unificada e Benefícios</h4>
+                                        <h4 class="font-bold text-rose-700">Pena Unificada</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">A pena unificada para atender ao limite de trinta anos de cumprimento, determinado pelo art. 75 do código penal, não é considerada para a concessão de outros benefícios, como o livramento condicional ou regime mais favorável de execução.</p>
                                 </div>
@@ -1149,7 +1147,7 @@
                                         <div
                                             class="bg-amber-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             717</div>
-                                        <h4 class="font-bold text-amber-700">Progressão em Prisão Especial</h4>
+                                        <h4 class="font-bold text-amber-700">Prisão Especial</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">Não impede a progressão de regime de execução da pena, fixada em sentença não transitada em julgado, o fato de o réu se encontrar em prisão especial.</p>
                                 </div>
@@ -1161,7 +1159,7 @@
                                         <div
                                             class="bg-green-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             718</div>
-                                        <h4 class="font-bold text-green-700">Regime - Gravidade em Abstrato</h4>
+                                        <h4 class="font-bold text-green-700">Regime de Cumprimento</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">A opinião do julgador sobre a gravidade em abstrato do crime não constitui motivação idônea para a imposição de regime mais severo do que o permitido segundo a pena aplicada.</p>
                                 </div>
@@ -1197,7 +1195,7 @@
                                         <div
                                             class="bg-indigo-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             721</div>
-                                        <h4 class="font-bold text-indigo-700">Tribunal do Júri - Competência</h4>
+                                        <h4 class="font-bold text-indigo-700">Tribunal do Júri</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">A competência constitucional do Tribunal do Júri prevalece sobre o foro por prerrogativa de função estabelecido exclusivamente pela Constituição Estadual.</p>
                                 </div>
@@ -1209,7 +1207,7 @@
                                         <div
                                             class="bg-rose-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             723</div>
-                                        <h4 class="font-bold text-rose-700">Suspensão - Crime Continuado</h4>
+                                        <h4 class="font-bold text-rose-700">Suspensão Condicional</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">Não se admite a suspensão condicional do processo por crime continuado, se a soma da pena mínima da infração mais grave com o aumento mínimo de um sexto for superior a um ano.</p>
                                 </div>

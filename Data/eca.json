@@ -1,0 +1,78 @@
+{
+  "tribunal": "ECA",
+  "total": 9,
+  "sumulas": [
+    {
+      "numero": 108,
+      "titulo": "Medidas Sócio-educativas",
+      "texto": "A aplicação de medidas sócio-educativas ao adolescente, pela prática de ato infracional, é da competência exclusiva do juiz.",
+      "cor": "purple",
+      "vinculante": false,
+      "chips": []
+    },
+    {
+      "numero": 265,
+      "titulo": "Oitiva do Menor",
+      "texto": "É necessária a oitiva do menor infrator antes de decretar-se a regressão da medida sócio-educativa.",
+      "cor": "pink",
+      "vinculante": false,
+      "chips": []
+    },
+    {
+      "numero": 338,
+      "titulo": "Prescrição",
+      "texto": "A prescrição penal é aplicável nas medidas sócio-educativas.",
+      "cor": "rose",
+      "vinculante": false,
+      "chips": []
+    },
+    {
+      "numero": 342,
+      "titulo": "Nulidade da Desistência",
+      "texto": "No procedimento para aplicação de medida sócio-educativa, é nula a desistência de outras provas em face da confissão do adolescente.",
+      "cor": "red",
+      "vinculante": false,
+      "chips": []
+    },
+    {
+      "numero": 383,
+      "titulo": "Competência",
+      "texto": "A competência para processar e julgar as ações conexas de interesse de menor é, em princípio, do foro do domicílio do detentor de sua guarda.",
+      "cor": "orange",
+      "vinculante": false,
+      "chips": []
+    },
+    {
+      "numero": 492,
+      "titulo": "Tráfico de Drogas",
+      "texto": "O ato infracional análogo ao tráfico de drogas, por si só, não conduz obrigatoriamente à imposição de medida socioeducativa de internação do adolescente.",
+      "cor": "yellow",
+      "vinculante": false,
+      "chips": []
+    },
+    {
+      "numero": 594,
+      "titulo": "Legitimidade MP",
+      "texto": "O Ministério Público tem legitimidade ativa para ajuizar ação de alimentos em proveito de criança ou adolescente independentemente do exercício do poder familiar dos pais, ou do fato de o menor se encontrar nas situações de risco descritas no art. 98 do Estatuto da Criança e do Adolescente, ou de quaisquer outros questionamentos acerca da existência ou eficiência da Defensoria Pública na comarca.",
+      "cor": "green",
+      "vinculante": false,
+      "chips": []
+    },
+    {
+      "numero": 605,
+      "titulo": "Maioridade Penal",
+      "texto": "A superveniência da maioridade penal não interfere na apuração de ato infracional nem na aplicabilidade de medida socioeducativa em curso, inclusive na liberdade assistida, enquanto não atingida a idade de 21 anos.",
+      "cor": "teal",
+      "vinculante": false,
+      "chips": []
+    },
+    {
+      "numero": 669,
+      "titulo": "Bebida Alcoólica",
+      "texto": "Fornecimento de bebida alcoólica a criança ou adolescente, após o advento da lei 13.106/15, configura o crime previsto no art. 243 do ECA.",
+      "cor": "cyan",
+      "vinculante": false,
+      "chips": []
+    }
+  ]
+}
