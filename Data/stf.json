@@ -5,7 +5,7 @@
     {
       "numero": 11,
       "titulo": "Uso de Algemas",
-      "texto": "Só é lícito o uso de algemas em caso de resistência e de fundado receio de fuga ou de perigo à integridade física própria ou alheia, por parte do preso ou de terceiros, justificada a excepcionalidade por escrito, sob pena de responsabilidade disciplinar civil e penal do agente ou da autoridade e de nulidade da prisão ou do ato processual a que se refere, sem prejuízo da responsabilidade civil do Estado.",
+      "texto": "Só é lícito o uso de algemas em casos de resistência e de fundado receio de fuga ou de perigo à integridade física própria ou alheia, por parte do preso ou de terceiros, justificada a excepcionalidade por escrito, sob pena de responsabilidade disciplinar, civil e penal do agente ou da autoridade e de nulidade da prisão ou do ato processual a que se refere, sem prejuízo da responsabilidade civil do Estado.",
       "cor": "emerald",
       "vinculante": true,
       "chips": [
@@ -25,7 +25,7 @@
     {
       "numero": 24,
       "titulo": "Crime Tributário",
-      "texto": "Não se tipifica crime material contra a ordem tributária, previsto no art. 1º, incisos I a IV, da lei 8.137/90, antes do lançamento definitivo do tributo.",
+      "texto": "Não se tipifica crime material contra a ordem tributária, previsto no art. 1º, incisos I a IV, da Lei 8.137/1990, antes do lançamento definitivo do tributo.",
       "cor": "stone",
       "vinculante": true,
       "chips": [
@@ -35,7 +35,7 @@
     {
       "numero": 26,
       "titulo": "Exame Criminológico",
-      "texto": "Para efeito de progressão de regime no cumprimento de pena por crime hediondo, ou equiparado, o juízo da execução observará a inconstitucionalidade do art. 2º da lei n. 8.072, de 25 de julho de 1990, sem prejuízo de avaliar se o condenado preenche, ou não, os requisitos objetivos e subjetivos do benefício, podendo determinar, para tal fim, de modo fundamentado, a realização de exame criminológico.",
+      "texto": "Para efeito de progressão de regime no cumprimento de pena por crime hediondo, ou equiparado, o juízo da execução observará a inconstitucionalidade do art. 2º da Lei 8.072, de 25 de julho de 1990, sem prejuízo de avaliar se o condenado preenche, ou não, os requisitos objetivos e subjetivos do benefício, podendo determinar, para tal fim, de modo fundamentado, a realização de exame criminológico.",
       "cor": "orange",
       "vinculante": true,
       "chips": [
@@ -85,7 +85,7 @@
     {
       "numero": 59,
       "titulo": "Tráfico Privilegiado",
-      "texto": "É impositiva a fixação do regime aberto e a substituição da pena privativa de liberdade por restritiva de direitos quando reconhecida a figura do tráfico privilegiado (art. 33, § 4º, da Lei 11.343/06) e ausentes vetores negativos na primeira fase da dosimetria (art. 59 do CP), observados os requisitos do art. 33, § 2º, alínea 'c' e do art. 44, ambos do Código Penal.",
+      "texto": "É impositiva a fixação do regime aberto e a substituição da pena privativa de liberdade por restritiva de direitos quando reconhecida a figura do tráfico privilegiado (art. 33, § 4º, da Lei 11.343/06) e ausentes vetores negativos na primeira fase da dosimetria (art. 59 do CP), observados os requisitos do art. 33, § 2º, alínea c, e do art. 44, ambos do Código Penal.",
       "cor": "lime",
       "vinculante": true,
       "chips": [
@@ -194,7 +194,7 @@
       "numero": 355,
       "titulo": "Embargos Infringentes",
       "texto": "Em caso de embargos infringentes parciais, é tardio o recurso extraordinário interposto após o julgamento dos embargos, quanto à parte da decisão embargada que não fora por eles abrangida.",
-      "cor": "cyan",
+      "cor": "teal",
       "vinculante": false,
       "chips": []
     },
@@ -258,7 +258,7 @@
       "numero": 451,
       "titulo": "Cessação do Exercício",
       "texto": "A competência especial por prerrogativa de função não se estende ao crime cometido após a cessação definitiva do exercício funcional.",
-      "cor": "blue",
+      "cor": "purple",
       "vinculante": false,
       "chips": []
     },
@@ -290,7 +290,7 @@
       "numero": 499,
       "titulo": "Sursis",
       "texto": "Não obsta à concessão do \"sursis\" condenação anterior à pena de multa.",
-      "cor": "blue",
+      "cor": "pink",
       "vinculante": false,
       "chips": []
     },
@@ -369,7 +369,7 @@
     {
       "numero": 606,
       "titulo": "Habeas Corpus Originário",
-      "texto": "Não cabe habeas corpus originário para o Tribunal Pleno de decisão de Turma ou do Plenário, proferida em habeas corpus ou no respectivo recurso.",
+      "texto": "Não cabe habeas corpus originário para o Tribunal Pleno de decisão de Turma, ou do Plenário, proferida em habeas corpus ou no respectivo recurso.",
       "cor": "amber",
       "vinculante": false,
       "chips": []
@@ -481,16 +481,16 @@
     {
       "numero": 703,
       "titulo": "Prefeito - Extinção do Mandato",
-      "texto": "A extinção do mandato do prefeito não impede a instauração de processo pela prática dos crimes previstos no art. 1º do decreto-lei 201/1967.",
-      "cor": "cyan",
+      "texto": "A extinção do mandato do prefeito não impede a instauração de processo pela prática dos crimes previstos no art. 1º do Dl. 201/67.",
+      "cor": "green",
       "vinculante": false,
       "chips": []
     },
     {
       "numero": 704,
       "titulo": "Conexão - Foro por Prerrogativa",
-      "texto": "Não viola as garantias do juiz natural, da ampla defesa e do devido processo legal a atração por continência ou conexão do processo do co-réu ao foro por prerrogativa de função de um dos denunciados.",
-      "cor": "blue",
+      "texto": "Não viola as garantias do juiz natural, da ampla defesa e do devido processo legal a atração por continência ou conexão do processo do corréu ao foro por prerrogativa de função de um dos denunciados.",
+      "cor": "emerald",
       "vinculante": false,
       "chips": []
     },
@@ -514,7 +514,7 @@
       "numero": 707,
       "titulo": "Nulidade - Intimação Contrarrazões",
       "texto": "Constitui nulidade a falta de intimação do denunciado para oferecer contra-razões ao recurso interposto da rejeição da denúncia, não a suprindo a nomeação de defensor dativo.",
-      "cor": "blue",
+      "cor": "violet",
       "vinculante": false,
       "chips": []
     },
@@ -586,7 +586,7 @@
       "numero": 716,
       "titulo": "Progressão Antes do Trânsito",
       "texto": "Admite-se a progressão de regime de cumprimento da pena ou a aplicação imediata de regime menos severo nela determinada, antes do trânsito em julgado da sentença condenatória.",
-      "cor": "red",
+      "cor": "orange",
       "vinculante": false,
       "chips": []
     },
