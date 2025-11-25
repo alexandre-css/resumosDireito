@@ -304,6 +304,8 @@
 
 
             
+            
+            
             <!-- SÚMULAS DO STF -->
             <div class="mt-16">
                 <div class="text-center mb-6 cursor-pointer" onclick="toggleSumulas('stf')">
@@ -1680,14 +1682,14 @@
 
                                 <!-- Súmula 209/STJ -->
                                 <div
-                                    class="bg-white border-l-4 border-blue-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                    class="bg-white border-l-4 border-purple-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                                     <div class="flex items-center mb-2">
                                         <div
-                                            class="bg-blue-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                            class="bg-purple-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             209</div>
-                                        <h4 class="font-bold text-blue-700">Prefeito - Verba Estadual</h4>
+                                        <h4 class="font-bold text-purple-700">Prefeito - Verba Estadual</h4>
                                     </div>
-                                    <p class="text-sm text-gray-700 italic text-justify">Compete a Justiça Estadual processar e julgar prefeito por desvio de verba transferida e incorporada ao patrimônio municipal.</p>
+                                    <p class="text-sm text-gray-700 italic text-justify">Compete à Justiça Estadual processar e julgar prefeito por desvio de verba transferida e incorporada ao patrimônio municipal.</p>
                                 </div>
 
                                 <!-- Súmula 220/STJ -->
@@ -2249,7 +2251,7 @@
                                         <div
                                             class="bg-coral-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             588</div>
-                                        <h4 class="font-bold text-coral-700">Violência Doméstica</h4>
+                                        <h4 class="font-bold text-coral-700">Violência Doméstica - Substituição da Pena</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">A prática de crime ou contravenção penal contra a mulher com violência ou grave ameaça no ambiente doméstico impossibilita a substituição da pena privativa de liberdade por restritiva de direitos.</p>
                                 </div>
