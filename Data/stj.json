@@ -6,7 +6,7 @@
       "numero": 17,
       "titulo": "Falso e Estelionato",
       "texto": "Quando o falso se exaure no estelionato, sem mais potencialidade lesiva, é por este absorvido.",
-      "cor": "green",
+      "cor": "yellow",
       "vinculante": false,
       "chips": []
     },
@@ -20,7 +20,7 @@
     },
     {
       "numero": 21,
-      "titulo": "Pronúncia",
+      "titulo": "Pronúncia - Excesso de Prazo",
       "texto": "Pronunciado o réu, fica superada a alegação do constrangimento ilegal da prisão por excesso de prazo na instrução.",
       "cor": "red",
       "vinculante": false,
@@ -30,7 +30,7 @@
       "numero": 24,
       "titulo": "Estelionato Previdenciário",
       "texto": "Aplica-se ao crime de estelionato, em que figure como vítima entidade autárquica da previdência social, a qualificadora do § 3º, do art. 171 do Código Penal.",
-      "cor": "green",
+      "cor": "yellow",
       "vinculante": false,
       "chips": []
     },
@@ -69,7 +69,7 @@
     {
       "numero": 53,
       "titulo": "Competência - Civil",
-      "texto": "Compete a Justiça Comum Estadual processar e julgar civil acusado de prática de crime contra instituições militares estaduais.",
+      "texto": "Compete à Justiça Comum Estadual processar e julgar civil acusado de prática de crime contra instituições militares estaduais.",
       "cor": "purple",
       "vinculante": false,
       "chips": []
@@ -85,7 +85,7 @@
     {
       "numero": 62,
       "titulo": "Competência - Falso CTPS",
-      "texto": "Compete a Justiça Estadual processar e julgar o crime de falsa anotação na carteira de trabalho e previdência social, atribuído a empresa privada.",
+      "texto": "Compete à Justiça Estadual processar e julgar o crime de falsa anotação na carteira de trabalho e previdência social, atribuído a empresa privada.",
       "cor": "purple",
       "vinculante": false,
       "chips": []
@@ -117,8 +117,8 @@
     {
       "numero": 78,
       "titulo": "Justiça Militar",
-      "texto": "Compete a Justiça Militar processar e julgar policial de corporação estadual, ainda que o delito tenha sido praticado em outra unidade federativa.",
-      "cor": "fuchsia",
+      "texto": "Compete à Justiça Militar processar e julgar policial de corporação estadual, ainda que o delito tenha sido praticado em outra unidade federativa.",
+      "cor": "purple",
       "vinculante": false,
       "chips": []
     },
@@ -126,14 +126,14 @@
       "numero": 96,
       "titulo": "Extorsão",
       "texto": "O crime de extorsão consuma-se independentemente da obtenção da vantagem indevida.",
-      "cor": "green",
+      "cor": "yellow",
       "vinculante": false,
       "chips": []
     },
     {
       "numero": 104,
       "titulo": "Competência - Falsificação",
-      "texto": "Compete a Justiça Estadual o processo e julgamento dos crimes de falsificação e uso de documento falso relativo a estabelecimento particular de ensino.",
+      "texto": "Compete à Justiça Estadual o processo e julgamento dos crimes de falsificação e uso de documento falso relativo a estabelecimento particular de ensino.",
       "cor": "purple",
       "vinculante": false,
       "chips": []
@@ -149,7 +149,7 @@
     {
       "numero": 122,
       "titulo": "Competência - Conexão Federal",
-      "texto": "Compete a justiça federal o processo e julgamento unificado dos crimes conexos de competência federal e estadual, não se aplicando a regra do art. 78, II, \"a\", do Código de Processo Penal.",
+      "texto": "Compete à Justiça Federal o processo e julgamento unificado dos crimes conexos de competência federal e estadual, não se aplicando a regra do art. 78, II, \"a\", do Código de Processo Penal.",
       "cor": "purple",
       "vinculante": false,
       "chips": []
@@ -180,7 +180,7 @@
     },
     {
       "numero": 164,
-      "titulo": "Prefeito - Foro",
+      "titulo": "Prefeito - Extinção Mandato",
       "texto": "O prefeito municipal, após a extinção do mandato, continua sujeito a processo por crime previsto no art. 1. do Dec. Lei n. 201, de 27/02/67.\n",
       "cor": "green",
       "vinculante": false,
@@ -206,7 +206,7 @@
       "numero": 191,
       "titulo": "Pronúncia - Prescrição",
       "texto": "A pronúncia é causa interruptiva da prescrição, ainda que o Tribunal do Júri venha a desclassificar o crime.",
-      "cor": "red",
+      "cor": "indigo",
       "vinculante": false,
       "chips": []
     },
@@ -252,9 +252,9 @@
     },
     {
       "numero": 231,
-      "titulo": "Circunstância Atenuante",
+      "titulo": "Pena Abaixo do Mínimo",
       "texto": "A incidência da circunstância atenuante não pode conduzir à redução da pena abaixo do mínimo legal.",
-      "cor": "blue",
+      "cor": "pink",
       "vinculante": false,
       "chips": []
     },
@@ -286,7 +286,7 @@
       "numero": 269,
       "titulo": "Regime Semiaberto",
       "texto": "É admissível a adoção do regime prisional semiaberto aos reincidentes condenados a pena igual ou inferior a quatro anos se favoráveis as circunstâncias judiciais.",
-      "cor": "yellow",
+      "cor": "pink",
       "vinculante": false,
       "chips": []
     },
@@ -294,7 +294,7 @@
       "numero": 273,
       "titulo": "Carta Precatória",
       "texto": "Intimada a defesa da expedição da carta precatória, torna-se desnecessária intimação da data da audiência no juízo deprecado.",
-      "cor": "orange",
+      "cor": "teal",
       "vinculante": false,
       "chips": []
     },
@@ -302,15 +302,15 @@
       "numero": 330,
       "titulo": "Resposta Preliminar",
       "texto": "É desnecessária a resposta preliminar de que trata o artigo 514 do Código de Processo Penal, na ação penal instruída por inquérito policial.",
-      "cor": "amber",
+      "cor": "teal",
       "vinculante": false,
       "chips": []
     },
     {
       "numero": 337,
-      "titulo": "Desclassificação",
+      "titulo": "Desclassificação e Suspensão Condicional",
       "texto": "É cabível a suspensão condicional do processo na desclassificação do crime e na procedência parcial da pretensão punitiva.",
-      "cor": "yellow",
+      "cor": "fuchsia",
       "vinculante": false,
       "chips": []
     },
@@ -326,15 +326,15 @@
       "numero": 347,
       "titulo": "Apelação do Réu",
       "texto": "O conhecimento de recurso de apelação do réu independe de sua prisão.",
-      "cor": "green",
+      "cor": "teal",
       "vinculante": false,
       "chips": []
     },
     {
       "numero": 415,
-      "titulo": "Suspensão Prescrição",
+      "titulo": "Suspensão Prazo Prescricional",
       "texto": "O período de suspensão do prazo prescricional é regulado pelo máximo da pena cominada.",
-      "cor": "emerald",
+      "cor": "indigo",
       "vinculante": false,
       "chips": []
     },
@@ -342,7 +342,7 @@
       "numero": 438,
       "titulo": "Prescrição Antecipada",
       "texto": "É inadmissível a extinção da punibilidade pela prescrição da pretensão punitiva com fundamento em pena hipotética, independentemente da existência ou sorte do processo penal.",
-      "cor": "teal",
+      "cor": "indigo",
       "vinculante": false,
       "chips": []
     },
@@ -361,7 +361,7 @@
       "numero": 440,
       "titulo": "Pena-Base no Mínimo",
       "texto": "Fixada a pena-base no mínimo legal, é vedado o estabelecimento de regime prisional mais gravoso do que o cabível em razão da sanção imposta, com base apenas na gravidade abstrata do delito.",
-      "cor": "green",
+      "cor": "pink",
       "vinculante": false,
       "chips": []
     },
@@ -377,7 +377,7 @@
       "numero": 442,
       "titulo": "Furto Qualificado",
       "texto": "É inadmissível aplicar, no furto qualificado, pelo concurso de agentes, a majorante do roubo.",
-      "cor": "purple",
+      "cor": "yellow",
       "vinculante": false,
       "chips": []
     },
@@ -385,7 +385,7 @@
       "numero": 443,
       "titulo": "Roubo Circunstanciado",
       "texto": "O aumento na terceira fase de aplicação da pena no crime de roubo circunstanciado exige fundamentação concreta, não sendo suficiente para a sua exasperação a mera indicação do número de majorantes.",
-      "cor": "pink",
+      "cor": "yellow",
       "vinculante": false,
       "chips": []
     },
@@ -425,7 +425,7 @@
       "numero": 493,
       "titulo": "Pena Substitutiva",
       "texto": "É inadmissível a fixação de pena substitutiva (art. 44 do CP) como condição especial ao regime aberto.",
-      "cor": "orange",
+      "cor": "pink",
       "vinculante": false,
       "chips": []
     },
@@ -433,23 +433,23 @@
       "numero": 500,
       "titulo": "ECA - Art. 244-B",
       "texto": "A configuração do crime do art. 244-B do ECA independe da prova da efetiva corrupção do menor, por se tratar de delito formal.",
-      "cor": "indigo",
+      "cor": "green",
       "vinculante": false,
       "chips": []
     },
     {
       "numero": 501,
-      "titulo": "Lei de Drogas",
+      "titulo": "Lei de Drogas - Aplicação Retroativa",
       "texto": "É cabível a aplicação retroativa da Lei n. 11.343/2006, desde que o resultado da incidência das suas disposições, na íntegra, seja mais favorável ao réu do que o advindo da aplicação da Lei n. 6.368/1976, sendo vedada a combinação de leis.",
-      "cor": "violet",
+      "cor": "lime",
       "vinculante": false,
       "chips": []
     },
     {
       "numero": 502,
-      "titulo": "Tráfico - Materialidade",
+      "titulo": "Direito Autoral",
       "texto": "Presentes a materialidade e a autoria, afigura-se típica, em relação ao crime previsto no art. 184, § 2º, do CP, a conduta de expor à venda CDs e DVDs piratas.",
-      "cor": "purple",
+      "cor": "green",
       "vinculante": false,
       "chips": []
     },
@@ -457,7 +457,7 @@
       "numero": 511,
       "titulo": "Furto Privilegiado",
       "texto": "É possível o reconhecimento do privilégio previsto no § 2º do art. 155 do CP nos casos de crime de furto qualificado, se estiverem presentes a primariedade do agente, o pequeno valor da coisa e a qualificadora for de ordem objetiva.",
-      "cor": "rose",
+      "cor": "yellow",
       "vinculante": false,
       "chips": []
     },
@@ -465,7 +465,7 @@
       "numero": 513,
       "titulo": "Abolitio Criminis",
       "texto": "A 'abolitio criminis' temporária prevista na Lei n. 10.826/2003 aplica-se ao crime de posse de arma de fogo de uso permitido com numeração, marca ou qualquer outro sinal de identificação raspado, suprimido ou adulterado, praticado somente até 23/10/2005.",
-      "cor": "fuchsia",
+      "cor": "green",
       "vinculante": false,
       "chips": []
     },
@@ -481,7 +481,7 @@
       "numero": 522,
       "titulo": "Falsa Identidade",
       "texto": "A conduta de atribuir-se falsa identidade perante autoridade policial é típica, ainda que em situação de alegada autodefesa.",
-      "cor": "rose",
+      "cor": "green",
       "vinculante": false,
       "chips": []
     },
@@ -529,15 +529,15 @@
       "numero": 536,
       "titulo": "Suspensão e Transação",
       "texto": "A suspensão condicional do processo e a transação penal não se aplicam na hipótese de delitos sujeitos ao rito da Lei Maria da Penha.",
-      "cor": "purple",
+      "cor": "coral",
       "vinculante": false,
       "chips": []
     },
     {
       "numero": 542,
-      "titulo": "Lei Maria da Penha",
+      "titulo": "Lesão Corporal - Violência Doméstica",
       "texto": "A ação penal relativa ao crime de lesão corporal resultante de violência doméstica contra a mulher é pública incondicionada.",
-      "cor": "lime",
+      "cor": "coral",
       "vinculante": false,
       "chips": []
     },
@@ -545,11 +545,12 @@
       "numero": 545,
       "titulo": "Confissão",
       "texto": "A confissão do autor possibilita a atenuação da pena prevista no art. 65, III, d, do Código Penal, independentemente de ser utilizada na formação do convencimento do julgador.",
-      "cor": "red",
+      "cor": "pink",
       "vinculante": false,
       "chips": [
         "ALTERADA"
-      ]
+      ],
+      "nota": "A Terceira Seção, na sessão de 10/09/2025, ao julgar o REsp 2.001.973/RS (tema repetitivo 1194), deliberou pela REVISÃO do enunciado da Súmula 545. REDAÇÃO ANTERIOR: Quando a confissão for utilizada para a formação do convencimento do julgador, o réu fará jus à atenuante prevista no art. 65, III, d, do Código Penal."
     },
     {
       "numero": 546,
@@ -571,7 +572,7 @@
       "numero": 567,
       "titulo": "Vigilância Eletrônica",
       "texto": "Sistema de vigilância realizado por monitoramento eletrônico ou por existência de segurança no interior de estabelecimento comercial, por si só, não torna impossível a configuração do crime de furto.",
-      "cor": "teal",
+      "cor": "yellow",
       "vinculante": false,
       "chips": []
     },
@@ -595,7 +596,7 @@
       "numero": 582,
       "titulo": "Roubo - Consumação",
       "texto": "Consuma-se o crime de roubo com a inversão da posse do bem mediante emprego de violência ou grave ameaça, ainda que por breve tempo e em seguida à perseguição imediata ao agente e recuperação da coisa roubada, sendo prescindível a posse mansa e pacífica ou desvigiada.",
-      "cor": "blue",
+      "cor": "yellow",
       "vinculante": false,
       "chips": []
     },
@@ -603,7 +604,7 @@
       "numero": 587,
       "titulo": "Tráfico Transnacional",
       "texto": "Para a incidência da majorante prevista no art. 40, V, da Lei n. 11.343/2006, é desnecessária a efetiva transposição de fronteiras entre estados da Federação, sendo suficiente a demonstração inequívoca da intenção de realizar o tráfico interestadual.",
-      "cor": "indigo",
+      "cor": "lime",
       "vinculante": false,
       "chips": []
     },
@@ -611,7 +612,7 @@
       "numero": 588,
       "titulo": "Violência Doméstica",
       "texto": "A prática de crime ou contravenção penal contra a mulher com violência ou grave ameaça no ambiente doméstico impossibilita a substituição da pena privativa de liberdade por restritiva de direitos.",
-      "cor": "violet",
+      "cor": "coral",
       "vinculante": false,
       "chips": []
     },
@@ -619,7 +620,7 @@
       "numero": 589,
       "titulo": "Insignificância",
       "texto": "É inaplicável o princípio da insignificância nos crimes ou contravenções penais praticados contra a mulher no âmbito das relações domésticas.",
-      "cor": "pink",
+      "cor": "coral",
       "vinculante": false,
       "chips": []
     },
@@ -627,15 +628,15 @@
       "numero": 593,
       "titulo": "Estupro de Vulnerável",
       "texto": "O crime de estupro de vulnerável se configura com a conjunção carnal ou prática de ato libidinoso com menor de 14 anos, sendo irrelevante eventual consentimento da vítima para a prática do ato, sua experiência sexual anterior ou existência de relacionamento amoroso com o agente.",
-      "cor": "purple",
+      "cor": "magenta",
       "vinculante": false,
       "chips": []
     },
     {
       "numero": 600,
-      "titulo": "Lei Maria da Penha - Âmbito",
+      "titulo": "Violência Doméstica - Coabitação",
       "texto": "Para a configuração da violência doméstica e familiar prevista no artigo 5º da Lei n. 11.340/2006 (Lei Maria da Penha) não se exige a coabitação entre autor e vítima.",
-      "cor": "fuchsia",
+      "cor": "coral",
       "vinculante": false,
       "chips": []
     },
@@ -643,7 +644,7 @@
       "numero": 606,
       "titulo": "Transmissão Clandestina",
       "texto": "Não se aplica o princípio da insignificância a casos de transmissão clandestina de sinal de internet via radiofrequência, que caracteriza o fato típico previsto no art. 183 da Lei n. 9.472/1997.",
-      "cor": "pink",
+      "cor": "green",
       "vinculante": false,
       "chips": []
     },
@@ -651,7 +652,7 @@
       "numero": 607,
       "titulo": "Tráfico Transnacional - Consumação",
       "texto": "A majorante do tráfico transnacional de drogas (art. 40, I, da Lei n. 11.343/2006) configura-se com a prova da destinação internacional das drogas, ainda que não consumada a transposição de fronteiras.",
-      "cor": "rose",
+      "cor": "lime",
       "vinculante": false,
       "chips": []
     },
@@ -659,7 +660,7 @@
       "numero": 617,
       "titulo": "Livramento Condicional",
       "texto": "A ausência de suspensão ou revogação do livramento condicional antes do término do período de prova enseja a extinção da punibilidade pelo integral cumprimento da pena.",
-      "cor": "red",
+      "cor": "orange",
       "vinculante": false,
       "chips": []
     },
@@ -667,17 +668,18 @@
       "numero": 630,
       "titulo": "Confissão e Tráfico",
       "texto": "A incidência da atenuante da confissão espontânea no crime de tráfico ilícito de entorpecentes quando o acusado admitir a posse ou a propriedade para uso próprio, negando a prática do tráfico de drogas, deve ocorrer em proporção inferior à que seria devida no caso de confissão plena.",
-      "cor": "orange",
+      "cor": "lime",
       "vinculante": false,
       "chips": [
         "ALTERADA"
-      ]
+      ],
+      "nota": "A Terceira Seção, na sessão de 10/09/2025, ao julgar o REsp 2.001.973/RS (tema repetitivo 1194), deliberou pela REVISÃO do enunciado da Súmula 630. REDAÇÃO ANTERIOR: A incidência da atenuante da confissão espontânea no crime de tráfico ilícito de entorpecentes exige o reconhecimento da traficância pelo acusado, não bastando a mera admissão da posse ou propriedade para uso próprio."
     },
     {
       "numero": 631,
       "titulo": "Indulto",
       "texto": "O indulto extingue os efeitos primários da condenação (pretensão executória), mas não atinge os efeitos secundários, penais ou extrapenais.",
-      "cor": "amber",
+      "cor": "orange",
       "vinculante": false,
       "chips": []
     },
@@ -693,7 +695,7 @@
       "numero": 639,
       "titulo": "Regime Mais Gravoso",
       "texto": "Não fere o contraditório e o devido processo decisão que, sem ouvida prévia da defesa, determine transferência ou permanência de custodiado em estabelecimento penitenciário federal.",
-      "cor": "yellow",
+      "cor": "orange",
       "vinculante": false,
       "chips": []
     },
@@ -725,7 +727,7 @@
       "numero": 658,
       "titulo": "Apropriação Indébita",
       "texto": "O crime de apropriação indébita tributária pode ocorrer tanto em operações próprias como em razão de substituição tributária.",
-      "cor": "teal",
+      "cor": "stone",
       "vinculante": false,
       "chips": []
     },
@@ -773,7 +775,7 @@
       "numero": 667,
       "titulo": "Suspensão Condicional",
       "texto": "A eventual aceitação de proposta de suspensão condicional do processo não prejudica a análise do pedido de trancamento da ação penal.",
-      "cor": "blue",
+      "cor": "fuchsia",
       "vinculante": false,
       "chips": []
     },
@@ -781,7 +783,7 @@
       "numero": 668,
       "titulo": "Porte de Arma Proibida",
       "texto": "Não é considerado hediondo o delito de porte ou posse de arma de fogo de uso permitido, mesmo que apresente numeração, marca ou qualquer outro sinal de identificação raspado, suprimido ou adulterado.",
-      "cor": "indigo",
+      "cor": "green",
       "vinculante": false,
       "chips": []
     },
@@ -789,7 +791,7 @@
       "numero": 670,
       "titulo": "Crimes Sexuais",
       "texto": "Nos crimes sexuais cometidos contra a vítima em situação de vulnerabilidade temporária, em que ela recupera suas capacidades físicas e mentais e o pleno discernimento para decidir acerca da persecução penal de seu ofensor, a ação penal é pública condicionada à representação se o fato houver sido praticado na vigência da redação conferida ao art. 225 do Código Penal pela Lei n. 12.015, de 2009.",
-      "cor": "violet",
+      "cor": "magenta",
       "vinculante": false,
       "chips": []
     },
@@ -797,7 +799,7 @@
       "numero": 676,
       "titulo": "Prisão Preventiva",
       "texto": "Em razão da Lei 13.964/2019, não é mais possível ao juiz, de ofício, decretar ou converter prisão em flagrante em prisão preventiva.",
-      "cor": "purple",
+      "cor": "emerald",
       "vinculante": false,
       "chips": []
     }

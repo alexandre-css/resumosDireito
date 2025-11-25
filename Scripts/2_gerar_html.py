@@ -12,8 +12,8 @@ CORES_INTENSIDADE = {
     'red': '500', 'blue': '500', 'green': '500', 'purple': '500',
     'pink': '500', 'indigo': '500', 'yellow': '500', 'orange': '500',
     'teal': '500', 'cyan': '500', 'lime': '500', 'emerald': '500',
-    'violet': '500', 'fuchsia': '500', 'rose': '500', 'sky': '500',
-    'amber': '500', 'gray': '600', 'slate': '600', 'zinc': '600',
+    'violet': '500', 'fuchsia': '500', 'rose': '500', 'magenta': '500',
+    'amber': '500', 'gray': '600', 'brown': '500', 'coral': '500',
     'stone': '500', 'neutral': '600', 'warmGray': '600', 'trueGray': '600',
     'coolGray': '600', 'blueGray': '600'
 }
@@ -97,7 +97,7 @@ def gerar_card_sumula(sumula, tribunal):
     # Adicionar nota se houver
     if nota:
         html += f'''
-                                    <p class="text-xs bg-{cor}-50 p-2 rounded border-l-2 border-{cor}-300 mt-2">{nota}</p>'''
+                                    <p class="text-xs bg-{cor}-50 p-2 rounded border-l-2 border-{cor}-300 mt-2 text-justify">{nota}</p>'''
     
     html += '''
                                 </div>

@@ -6,6 +6,15 @@
     "indigo": "Prescrição",
     "purple": "Competência",
     "pink": "Aplicação da Pena",
+    "rose": "Perdão Judicial",
+    "blue": "Outros",
+    "lime": "Tráfico",
     "amber": "Habeas Corpus",
-    "violet": "Nulidades"
+    "emerald": "Garantias",
+    "violet": "Nulidades",
+    "fuchsia": "Suspensão Condicional",
+    "magenta": "Dignidade Sexual",
+    "yellow": "Patrimônio",
+    "coral": "Violência Doméstica",
+    "stone": "Tributário"
 }

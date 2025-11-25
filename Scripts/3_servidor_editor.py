@@ -195,17 +195,17 @@ class EditorHandler(BaseHTTPRequestHandler):
 
     <script>
         const coresEmoji = {
-            red: '🔴', orange: '🟠', green: '🟢', teal: '🔷', indigo: '💙',
-            purple: '🟣', pink: '🌸', rose: '🌹', blue: '🔵', cyan: '💠',
-            lime: '🟢', amber: '🟡', emerald: '💚', violet: '🟣', fuchsia: '🌺',
-            sky: '☁️', yellow: '🟡', slate: '⚫', zinc: '⚫', stone: '🟤', gray: '⚫'
+            red: '#ef4444', orange: '#f97316', green: '#22c55e', teal: '#14b8a6', indigo: '#6366f1',
+            purple: '#a855f7', pink: '#ec4899', rose: '#f43f5e', blue: '#3b82f6', cyan: '#06b6d4',
+            lime: '#84cc16', amber: '#f59e0b', emerald: '#10b981', violet: '#8b5cf6', fuchsia: '#d946ef',
+            magenta: '#e11d48', yellow: '#eab308', brown: '#92400e', coral: '#fb7185', stone: '#78716c', gray: '#6b7280'
         };
         
         const coresNome = {
             red: 'Vermelho', orange: 'Laranja', green: 'Verde', teal: 'Teal', indigo: 'Índigo',
             purple: 'Roxo', pink: 'Rosa', rose: 'Rosa-forte', blue: 'Azul', cyan: 'Ciano',
             lime: 'Lima', amber: 'Âmbar', emerald: 'Esmeralda', violet: 'Violeta', fuchsia: 'Fúcsia',
-            sky: 'Azul-céu', yellow: 'Amarelo', slate: 'Ardósia', zinc: 'Zinco', stone: 'Pedra', gray: 'Cinza'
+            magenta: 'Magenta', yellow: 'Amarelo', brown: 'Marrom', coral: 'Coral', stone: 'Pedra', gray: 'Cinza'
         };
 
         let categorias = {};
@@ -225,7 +225,7 @@ class EditorHandler(BaseHTTPRequestHandler):
             lista.innerHTML = Object.keys(coresNome).map(cor => `
                 <div class="flex items-center gap-4 p-3 border rounded-lg hover:bg-gray-50">
                     <div class="flex items-center gap-2 w-48">
-                        <span class="text-2xl">${coresEmoji[cor]}</span>
+                        <span class="inline-block w-6 h-6 rounded-full" style="background-color: ${coresEmoji[cor]}"></span>
                         <span class="font-medium text-gray-700">${coresNome[cor]}</span>
                     </div>
                     <input type="text" 
@@ -311,6 +311,52 @@ class EditorHandler(BaseHTTPRequestHandler):
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Editor de Súmulas - ResumosDireito</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        magenta: {
+                            50: '#fdf2f8',
+                            100: '#fce7f3',
+                            200: '#fbcfe8',
+                            300: '#f9a8d4',
+                            400: '#f472b6',
+                            500: '#e11d48',
+                            600: '#be123c',
+                            700: '#9f1239',
+                            800: '#881337',
+                            900: '#701a2e'
+                        },
+                        coral: {
+                            50: '#fff1f2',
+                            100: '#ffe4e6',
+                            200: '#fecdd3',
+                            300: '#fda4af',
+                            400: '#fb7185',
+                            500: '#fb7185',
+                            600: '#f43f5e',
+                            700: '#e11d48',
+                            800: '#be123c',
+                            900: '#9f1239'
+                        },
+                        brown: {
+                            50: '#fefce8',
+                            100: '#fef9c3',
+                            200: '#fef08a',
+                            300: '#fde047',
+                            400: '#facc15',
+                            500: '#92400e',
+                            600: '#78350f',
+                            700: '#78350f',
+                            800: '#451a03',
+                            900: '#451a03'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
     <style>
         .sumula-item {
             transition: all 0.2s;
@@ -323,6 +369,15 @@ class EditorHandler(BaseHTTPRequestHandler):
             -webkit-line-clamp: 2;
             -webkit-box-orient: vertical;
             overflow: hidden;
+        }
+        /* Indicador de cor customizado */
+        .cor-indicator {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            margin-right: 8px;
+            vertical-align: middle;
         }
     </style>
 </head>
@@ -377,7 +432,7 @@ class EditorHandler(BaseHTTPRequestHandler):
                 
                 <!-- Barra de Pesquisa -->
                 <div class="mb-4">
-                    <div class="relative">
+                    <div class="relative mb-2">
                         <input type="text" id="pesquisa-sumulas" 
                             placeholder="🔍 Pesquisar no texto das súmulas..."
                             class="w-full px-4 py-2 pr-10 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
@@ -386,7 +441,13 @@ class EditorHandler(BaseHTTPRequestHandler):
                             ✖
                         </button>
                     </div>
-                    <div id="resultado-pesquisa" class="text-sm text-gray-600 mt-1"></div>
+                    
+                    <!-- Filtro por Cor -->
+                    <div class="flex flex-wrap gap-1 mb-2" id="filtro-cores">
+                        <!-- Preenchido dinamicamente -->
+                    </div>
+                    
+                    <div id="resultado-pesquisa" class="text-sm text-gray-600"></div>
                 </div>
                 
                 <!-- Ações em Massa -->
@@ -400,9 +461,21 @@ class EditorHandler(BaseHTTPRequestHandler):
                         </button>
                     </div>
                     <div class="flex gap-2">
-                        <select id="cor-massa" class="flex-1 px-3 py-2 text-sm border border-blue-300 rounded-lg">
-                            <option value="">Selecione uma cor...</option>
-                        </select>
+                        <div class="relative flex-1">
+                            <button type="button" id="cor-massa-button" 
+                                class="w-full px-3 py-2 text-sm border border-blue-300 rounded-lg bg-white text-left flex items-center justify-between">
+                                <span id="cor-massa-selected" class="flex items-center">
+                                    <span>Selecione uma cor...</span>
+                                </span>
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </button>
+                            <input type="hidden" id="cor-massa" value="">
+                            <div id="cor-massa-dropdown" class="hidden absolute z-20 w-full mt-1 bg-white border border-gray-300 rounded-lg shadow-lg max-h-60 overflow-auto">
+                                <!-- Preenchido dinamicamente -->
+                            </div>
+                        </div>
                         <button onclick="aplicarCorEmMassa()" 
                             class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 text-sm font-semibold">
                             🎨 Aplicar
@@ -436,29 +509,22 @@ class EditorHandler(BaseHTTPRequestHandler):
                         </div>
                         <div>
                             <label class="block text-sm font-medium text-gray-700 mb-2">Cor</label>
-                            <select id="cor" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500">
-                                <option value="red">🔴 Vermelho - Júri</option>
-                                <option value="orange">🟠 Laranja - Execução Penal</option>
-                                <option value="green">🟢 Verde - Crimes Geral</option>
-                                <option value="teal">🔷 Teal - Processual</option>
-                                <option value="indigo">💙 Índigo - Prescrição</option>
-                                <option value="purple">🟣 Roxo - Competência</option>
-                                <option value="pink">🌸 Rosa - Aplicação da Pena</option>
-                                <option value="rose">🌹 Rosa-forte - Perdão Judicial</option>
-                                <option value="blue">🔵 Azul - Outros</option>
-                                <option value="cyan">💠 Ciano - Recursos</option>
-                                <option value="lime">🟢 Lima - Ação Penal</option>
-                                <option value="amber">🟡 Âmbar - Medidas Cautelares</option>
-                                <option value="emerald">💚 Esmeralda - Crimes Contra Ordem</option>
-                                <option value="violet">🟣 Violeta - Nulidades</option>
-                                <option value="fuchsia">🌺 Fúcsia - Suspensão Condicional</option>
-                                <option value="sky">☁️ Azul-céu - Garantias</option>
-                                <option value="yellow">🟡 Amarelo - Prova</option>
-                                <option value="slate">⚫ Ardósia - Especial</option>
-                                <option value="zinc">⚫ Zinco - Transação</option>
-                                <option value="stone">🟤 Pedra - Crimes Tributários</option>
-                                <option value="gray">⚫ Cinza - Diversos</option>
-                            </select>
+                            <div class="relative">
+                                <button type="button" id="cor-button" 
+                                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 bg-white text-left flex items-center justify-between">
+                                    <span id="cor-selected" class="flex items-center">
+                                        <span class="cor-indicator bg-blue-500"></span>
+                                        <span>Azul - Outros</span>
+                                    </span>
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                    </svg>
+                                </button>
+                                <input type="hidden" id="cor" value="blue">
+                                <div id="cor-dropdown" class="hidden absolute z-10 w-full mt-1 bg-white border border-gray-300 rounded-lg shadow-lg max-h-60 overflow-auto">
+                                    <!-- Preenchido dinamicamente -->
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -524,6 +590,7 @@ class EditorHandler(BaseHTTPRequestHandler):
         let categorias = {};
         let sumulasSelecionadas = new Set();
         let textoPesquisa = '';
+        let coresFiltradas = new Set(); // Cores selecionadas para filtro
 
         // Carregar categorias
         async function carregarCategorias() {
@@ -532,82 +599,160 @@ class EditorHandler(BaseHTTPRequestHandler):
                 categorias = await response.json();
                 atualizarDropdownCores();
                 atualizarDropdownCoreMassa();
+                criarFiltroCores(); // Criar filtro após carregar categorias
             } catch (error) {
                 console.error('Erro ao carregar categorias:', error);
             }
         }
 
         function atualizarDropdownCoreMassa() {
-            const select = document.getElementById('cor-massa');
-            if (!select) return;
+            const button = document.getElementById('cor-massa-button');
+            const dropdown = document.getElementById('cor-massa-dropdown');
+            const corInput = document.getElementById('cor-massa');
+            const corSelected = document.getElementById('cor-massa-selected');
+            
+            if (!button || !dropdown) return;
             
             const coresConfig = [
-                {cor: 'red', emoji: '🔴', nome: 'Vermelho'},
-                {cor: 'orange', emoji: '🟠', nome: 'Laranja'},
-                {cor: 'green', emoji: '🟢', nome: 'Verde'},
-                {cor: 'teal', emoji: '🔷', nome: 'Teal'},
-                {cor: 'indigo', emoji: '💙', nome: 'Índigo'},
-                {cor: 'purple', emoji: '🟣', nome: 'Roxo'},
-                {cor: 'pink', emoji: '🌸', nome: 'Rosa'},
-                {cor: 'rose', emoji: '🌹', nome: 'Rosa-forte'},
-                {cor: 'blue', emoji: '🔵', nome: 'Azul'},
-                {cor: 'cyan', emoji: '💠', nome: 'Ciano'},
-                {cor: 'lime', emoji: '🟢', nome: 'Lima'},
-                {cor: 'amber', emoji: '🟡', nome: 'Âmbar'},
-                {cor: 'emerald', emoji: '💚', nome: 'Esmeralda'},
-                {cor: 'violet', emoji: '🟣', nome: 'Violeta'},
-                {cor: 'fuchsia', emoji: '🌺', nome: 'Fúcsia'},
-                {cor: 'sky', emoji: '☁️', nome: 'Azul-céu'},
-                {cor: 'yellow', emoji: '🟡', nome: 'Amarelo'},
-                {cor: 'slate', emoji: '⚫', nome: 'Ardósia'},
-                {cor: 'zinc', emoji: '⚫', nome: 'Zinco'},
-                {cor: 'stone', emoji: '🟤', nome: 'Pedra'},
-                {cor: 'gray', emoji: '⚫', nome: 'Cinza'}
+                {cor: 'red', nome: 'Vermelho', hex: '#ef4444'},
+                {cor: 'orange', nome: 'Laranja', hex: '#f97316'},
+                {cor: 'green', nome: 'Verde', hex: '#22c55e'},
+                {cor: 'teal', nome: 'Teal', hex: '#14b8a6'},
+                {cor: 'indigo', nome: 'Índigo', hex: '#6366f1'},
+                {cor: 'purple', nome: 'Roxo', hex: '#a855f7'},
+                {cor: 'pink', nome: 'Rosa', hex: '#ec4899'},
+                {cor: 'rose', nome: 'Rosa-forte', hex: '#f43f5e'},
+                {cor: 'blue', nome: 'Azul', hex: '#3b82f6'},
+                {cor: 'cyan', nome: 'Ciano', hex: '#06b6d4'},
+                {cor: 'lime', nome: 'Lima', hex: '#84cc16'},
+                {cor: 'amber', nome: 'Âmbar', hex: '#f59e0b'},
+                {cor: 'emerald', nome: 'Esmeralda', hex: '#10b981'},
+                {cor: 'violet', nome: 'Violeta', hex: '#8b5cf6'},
+                {cor: 'fuchsia', nome: 'Fúcsia', hex: '#d946ef'},
+                {cor: 'magenta', nome: 'Magenta', hex: '#e11d48'},
+                {cor: 'yellow', nome: 'Amarelo', hex: '#eab308'},
+                {cor: 'brown', nome: 'Marrom', hex: '#92400e'},
+                {cor: 'coral', nome: 'Coral', hex: '#fb7185'},
+                {cor: 'stone', nome: 'Pedra', hex: '#78716c'},
+                {cor: 'gray', nome: 'Cinza', hex: '#6b7280'}
             ];
             
-            select.innerHTML = '<option value="">Selecione uma cor...</option>' + 
-                coresConfig.map(c => {
-                    const categoria = categorias[c.cor] || '';
-                    const texto = categoria ? `${c.emoji} ${c.nome} - ${categoria}` : `${c.emoji} ${c.nome}`;
-                    return `<option value="${c.cor}">${texto}</option>`;
-                }).join('');
+            // Preencher dropdown
+            dropdown.innerHTML = coresConfig.map(c => {
+                const categoria = categorias[c.cor] || '';
+                const texto = categoria ? `${c.nome} - ${categoria}` : c.nome;
+                return `
+                    <div class="px-4 py-2 hover:bg-gray-100 cursor-pointer flex items-center text-sm" 
+                         data-cor="${c.cor}" data-nome="${texto}" data-hex="${c.hex}">
+                        <span class="cor-indicator" style="background-color: ${c.hex}"></span>
+                        <span>${texto}</span>
+                    </div>
+                `;
+            }).join('');
+            
+            // Toggle dropdown
+            button.onclick = (e) => {
+                e.preventDefault();
+                dropdown.classList.toggle('hidden');
+            };
+            
+            // Fechar ao clicar fora
+            document.addEventListener('click', (e) => {
+                if (!button.contains(e.target) && !dropdown.contains(e.target)) {
+                    dropdown.classList.add('hidden');
+                }
+            });
+            
+            // Selecionar cor
+            dropdown.querySelectorAll('[data-cor]').forEach(item => {
+                item.onclick = () => {
+                    const cor = item.dataset.cor;
+                    const nome = item.dataset.nome;
+                    const hex = item.dataset.hex;
+                    
+                    corInput.value = cor;
+                    corSelected.innerHTML = `
+                        <span class="cor-indicator" style="background-color: ${hex}"></span>
+                        <span>${nome}</span>
+                    `;
+                    dropdown.classList.add('hidden');
+                };
+            });
         }
 
         function atualizarDropdownCores() {
-            const select = document.getElementById('cor');
-            if (!select) return;
+            const button = document.getElementById('cor-button');
+            const dropdown = document.getElementById('cor-dropdown');
+            const corInput = document.getElementById('cor');
+            const corSelected = document.getElementById('cor-selected');
+            
+            if (!button || !dropdown) return;
             
             const coresConfig = [
-                {cor: 'red', emoji: '🔴', nome: 'Vermelho'},
-                {cor: 'orange', emoji: '🟠', nome: 'Laranja'},
-                {cor: 'green', emoji: '🟢', nome: 'Verde'},
-                {cor: 'teal', emoji: '🔷', nome: 'Teal'},
-                {cor: 'indigo', emoji: '💙', nome: 'Índigo'},
-                {cor: 'purple', emoji: '🟣', nome: 'Roxo'},
-                {cor: 'pink', emoji: '🌸', nome: 'Rosa'},
-                {cor: 'rose', emoji: '🌹', nome: 'Rosa-forte'},
-                {cor: 'blue', emoji: '🔵', nome: 'Azul'},
-                {cor: 'cyan', emoji: '💠', nome: 'Ciano'},
-                {cor: 'lime', emoji: '🟢', nome: 'Lima'},
-                {cor: 'amber', emoji: '🟡', nome: 'Âmbar'},
-                {cor: 'emerald', emoji: '💚', nome: 'Esmeralda'},
-                {cor: 'violet', emoji: '🟣', nome: 'Violeta'},
-                {cor: 'fuchsia', emoji: '🌺', nome: 'Fúcsia'},
-                {cor: 'sky', emoji: '☁️', nome: 'Azul-céu'},
-                {cor: 'yellow', emoji: '🟡', nome: 'Amarelo'},
-                {cor: 'slate', emoji: '⚫', nome: 'Ardósia'},
-                {cor: 'zinc', emoji: '⚫', nome: 'Zinco'},
-                {cor: 'stone', emoji: '🟤', nome: 'Pedra'},
-                {cor: 'gray', emoji: '⚫', nome: 'Cinza'}
+                {cor: 'red', nome: 'Vermelho', hex: '#ef4444'},
+                {cor: 'orange', nome: 'Laranja', hex: '#f97316'},
+                {cor: 'green', nome: 'Verde', hex: '#22c55e'},
+                {cor: 'teal', nome: 'Teal', hex: '#14b8a6'},
+                {cor: 'indigo', nome: 'Índigo', hex: '#6366f1'},
+                {cor: 'purple', nome: 'Roxo', hex: '#a855f7'},
+                {cor: 'pink', nome: 'Rosa', hex: '#ec4899'},
+                {cor: 'rose', nome: 'Rosa-forte', hex: '#f43f5e'},
+                {cor: 'blue', nome: 'Azul', hex: '#3b82f6'},
+                {cor: 'cyan', nome: 'Ciano', hex: '#06b6d4'},
+                {cor: 'lime', nome: 'Lima', hex: '#84cc16'},
+                {cor: 'amber', nome: 'Âmbar', hex: '#f59e0b'},
+                {cor: 'emerald', nome: 'Esmeralda', hex: '#10b981'},
+                {cor: 'violet', nome: 'Violeta', hex: '#8b5cf6'},
+                {cor: 'fuchsia', nome: 'Fúcsia', hex: '#d946ef'},
+                {cor: 'magenta', nome: 'Magenta', hex: '#e11d48'},
+                {cor: 'yellow', nome: 'Amarelo', hex: '#eab308'},
+                {cor: 'brown', nome: 'Marrom', hex: '#92400e'},
+                {cor: 'coral', nome: 'Coral', hex: '#fb7185'},
+                {cor: 'stone', nome: 'Pedra', hex: '#78716c'},
+                {cor: 'gray', nome: 'Cinza', hex: '#6b7280'}
             ];
             
-            const valorAtual = select.value;
-            select.innerHTML = coresConfig.map(c => {
+            // Preencher dropdown
+            dropdown.innerHTML = coresConfig.map(c => {
                 const categoria = categorias[c.cor] || '';
-                const texto = categoria ? `${c.emoji} ${c.nome} - ${categoria}` : `${c.emoji} ${c.nome}`;
-                return `<option value="${c.cor}">${texto}</option>`;
+                const texto = categoria ? `${c.nome} - ${categoria}` : c.nome;
+                return `
+                    <div class="px-4 py-2 hover:bg-gray-100 cursor-pointer flex items-center" 
+                         data-cor="${c.cor}" data-nome="${texto}" data-hex="${c.hex}">
+                        <span class="cor-indicator" style="background-color: ${c.hex}"></span>
+                        <span>${texto}</span>
+                    </div>
+                `;
             }).join('');
-            select.value = valorAtual || 'blue';
+            
+            // Toggle dropdown
+            button.onclick = (e) => {
+                e.preventDefault();
+                dropdown.classList.toggle('hidden');
+            };
+            
+            // Fechar ao clicar fora
+            document.addEventListener('click', (e) => {
+                if (!button.contains(e.target) && !dropdown.contains(e.target)) {
+                    dropdown.classList.add('hidden');
+                }
+            });
+            
+            // Selecionar cor
+            dropdown.querySelectorAll('[data-cor]').forEach(item => {
+                item.onclick = () => {
+                    const cor = item.dataset.cor;
+                    const nome = item.dataset.nome;
+                    const hex = item.dataset.hex;
+                    
+                    corInput.value = cor;
+                    corSelected.innerHTML = `
+                        <span class="cor-indicator" style="background-color: ${hex}"></span>
+                        <span>${nome}</span>
+                    `;
+                    dropdown.classList.add('hidden');
+                };
+            });
         }
 
         async function carregarSumulas(tribunal) {
@@ -648,6 +793,7 @@ class EditorHandler(BaseHTTPRequestHandler):
                 
                 atualizarLista();
                 atualizarContador();
+                criarFiltroCores(); // Atualizar filtro de cores após carregar súmulas
             } catch (error) {
                 mostrarToast('Erro ao carregar súmulas', 'error');
             }
@@ -656,20 +802,27 @@ class EditorHandler(BaseHTTPRequestHandler):
         function atualizarLista() {
             const lista = document.getElementById('lista-sumulas');
             
-            // Filtrar súmulas pela pesquisa
+            // Filtrar súmulas pela pesquisa e por cor
             let sumulasFiltradas = sumulas;
+            
+            // Filtro de texto
             if (textoPesquisa) {
                 const termo = textoPesquisa.toLowerCase();
-                sumulasFiltradas = sumulas.filter(s => 
+                sumulasFiltradas = sumulasFiltradas.filter(s => 
                     s.texto.toLowerCase().includes(termo) ||
                     s.titulo.toLowerCase().includes(termo) ||
                     s.numero.toString().includes(termo)
                 );
             }
             
+            // Filtro de cores
+            if (coresFiltradas.size > 0) {
+                sumulasFiltradas = sumulasFiltradas.filter(s => coresFiltradas.has(s.cor));
+            }
+            
             // Atualizar contador de resultados
             const resultadoDiv = document.getElementById('resultado-pesquisa');
-            if (textoPesquisa) {
+            if (textoPesquisa || coresFiltradas.size > 0) {
                 resultadoDiv.textContent = `${sumulasFiltradas.length} de ${sumulas.length} súmulas`;
             } else {
                 resultadoDiv.textContent = '';
@@ -846,6 +999,94 @@ class EditorHandler(BaseHTTPRequestHandler):
                 atualizarLista();
             }
         }
+        
+        function criarFiltroCores() {
+            const filtroCores = document.getElementById('filtro-cores');
+            if (!filtroCores) return;
+            
+            // Contar quantas súmulas de cada cor existem
+            const coresUsadas = new Map();
+            sumulas.forEach(s => {
+                coresUsadas.set(s.cor, (coresUsadas.get(s.cor) || 0) + 1);
+            });
+            
+            const coresConfig = [
+                {cor: 'red', nome: 'Vermelho', hex: '#ef4444'},
+                {cor: 'orange', nome: 'Laranja', hex: '#f97316'},
+                {cor: 'green', nome: 'Verde', hex: '#22c55e'},
+                {cor: 'teal', nome: 'Teal', hex: '#14b8a6'},
+                {cor: 'indigo', nome: 'Índigo', hex: '#6366f1'},
+                {cor: 'purple', nome: 'Roxo', hex: '#a855f7'},
+                {cor: 'pink', nome: 'Rosa', hex: '#ec4899'},
+                {cor: 'rose', nome: 'Rosa-forte', hex: '#f43f5e'},
+                {cor: 'blue', nome: 'Azul', hex: '#3b82f6'},
+                {cor: 'cyan', nome: 'Ciano', hex: '#06b6d4'},
+                {cor: 'lime', nome: 'Lima', hex: '#84cc16'},
+                {cor: 'amber', nome: 'Âmbar', hex: '#f59e0b'},
+                {cor: 'emerald', nome: 'Esmeralda', hex: '#10b981'},
+                {cor: 'violet', nome: 'Violeta', hex: '#8b5cf6'},
+                {cor: 'fuchsia', nome: 'Fúcsia', hex: '#d946ef'},
+                {cor: 'magenta', nome: 'Magenta', hex: '#e11d48'},
+                {cor: 'yellow', nome: 'Amarelo', hex: '#eab308'},
+                {cor: 'brown', nome: 'Marrom', hex: '#92400e'},
+                {cor: 'coral', nome: 'Coral', hex: '#fb7185'},
+                {cor: 'stone', nome: 'Pedra', hex: '#78716c'},
+                {cor: 'gray', nome: 'Cinza', hex: '#6b7280'}
+            ];
+            
+            // Filtrar apenas cores que estão sendo usadas
+            const coresComSumulas = coresConfig.filter(c => coresUsadas.has(c.cor));
+            
+            filtroCores.innerHTML = `
+                <button onclick="limparFiltros()" 
+                    class="px-3 py-1.5 text-xs bg-gray-100 hover:bg-gray-200 rounded border border-gray-300 font-medium">
+                    Todas
+                </button>
+            ` + coresComSumulas.map(c => {
+                const categoria = categorias[c.cor] || c.nome;
+                const quantidade = coresUsadas.get(c.cor);
+                return `
+                    <button onclick="toggleFiltroCor('${c.cor}')" 
+                        id="filtro-${c.cor}"
+                        class="w-8 h-8 bg-white hover:bg-gray-50 rounded border border-gray-300 flex items-center justify-center"
+                        title="${categoria} (${quantidade})">
+                        <span class="w-5 h-5 rounded-full" style="background-color: ${c.hex};"></span>
+                    </button>
+                `;
+            }).join('');
+        }
+        
+        function toggleFiltroCor(cor) {
+            if (coresFiltradas.has(cor)) {
+                coresFiltradas.delete(cor);
+            } else {
+                coresFiltradas.add(cor);
+            }
+            
+            // Atualizar visual dos botões
+            const btn = document.getElementById(`filtro-${cor}`);
+            if (coresFiltradas.has(cor)) {
+                btn.classList.remove('bg-white', 'hover:bg-gray-50');
+                btn.classList.add('bg-blue-100', 'border-blue-500', 'ring-2', 'ring-blue-300');
+            } else {
+                btn.classList.add('bg-white', 'hover:bg-gray-50');
+                btn.classList.remove('bg-blue-100', 'border-blue-500', 'ring-2', 'ring-blue-300');
+            }
+            
+            atualizarLista();
+        }
+        
+        function limparFiltros() {
+            coresFiltradas.clear();
+            
+            // Remover destaque de todos os botões
+            document.querySelectorAll('[id^="filtro-"]').forEach(btn => {
+                btn.classList.add('bg-white', 'hover:bg-gray-50');
+                btn.classList.remove('bg-blue-100', 'border-blue-500', 'ring-2', 'ring-blue-300');
+            });
+            
+            atualizarLista();
+        }
 
         async function atualizarContador() {
             for (const tribunal of ['stf', 'stj', 'eca']) {
@@ -905,9 +1146,51 @@ class EditorHandler(BaseHTTPRequestHandler):
             document.getElementById('numero').value = sumula.numero;
             document.getElementById('titulo').value = sumula.titulo;
             document.getElementById('texto').value = sumula.texto;
-            document.getElementById('cor').value = sumula.cor;
             document.getElementById('vinculante').checked = sumula.vinculante || false;
             document.getElementById('nota').value = sumula.nota || '';
+            
+            // Atualizar dropdown de cor customizado
+            const corInput = document.getElementById('cor');
+            const corSelected = document.getElementById('cor-selected');
+            const corAtual = sumula.cor || 'blue';
+            
+            corInput.value = corAtual;
+            
+            // Encontrar informações da cor
+            const coresConfig = [
+                {cor: 'red', nome: 'Vermelho', hex: '#ef4444'},
+                {cor: 'orange', nome: 'Laranja', hex: '#f97316'},
+                {cor: 'green', nome: 'Verde', hex: '#22c55e'},
+                {cor: 'teal', nome: 'Teal', hex: '#14b8a6'},
+                {cor: 'indigo', nome: 'Índigo', hex: '#6366f1'},
+                {cor: 'purple', nome: 'Roxo', hex: '#a855f7'},
+                {cor: 'pink', nome: 'Rosa', hex: '#ec4899'},
+                {cor: 'rose', nome: 'Rosa-forte', hex: '#f43f5e'},
+                {cor: 'blue', nome: 'Azul', hex: '#3b82f6'},
+                {cor: 'cyan', nome: 'Ciano', hex: '#06b6d4'},
+                {cor: 'lime', nome: 'Lima', hex: '#84cc16'},
+                {cor: 'amber', nome: 'Âmbar', hex: '#f59e0b'},
+                {cor: 'emerald', nome: 'Esmeralda', hex: '#10b981'},
+                {cor: 'violet', nome: 'Violeta', hex: '#8b5cf6'},
+                {cor: 'fuchsia', nome: 'Fúcsia', hex: '#d946ef'},
+                {cor: 'magenta', nome: 'Magenta', hex: '#e11d48'},
+                {cor: 'yellow', nome: 'Amarelo', hex: '#eab308'},
+                {cor: 'brown', nome: 'Marrom', hex: '#92400e'},
+                {cor: 'coral', nome: 'Coral', hex: '#fb7185'},
+                {cor: 'stone', nome: 'Pedra', hex: '#78716c'},
+                {cor: 'gray', nome: 'Cinza', hex: '#6b7280'}
+            ];
+            
+            const corInfo = coresConfig.find(c => c.cor === corAtual) || coresConfig.find(c => c.cor === 'blue');
+            const categoria = categorias[corAtual] || '';
+            const textoFinal = categoria ? `${corInfo.nome} - ${categoria}` : corInfo.nome;
+            
+            if (corSelected) {
+                corSelected.innerHTML = `
+                    <span class="cor-indicator" style="background-color: ${corInfo.hex}"></span>
+                    <span>${textoFinal}</span>
+                `;
+            }
             
             document.querySelectorAll('.chip-checkbox').forEach(cb => {
                 cb.checked = (sumula.chips || []).includes(cb.value);
@@ -926,6 +1209,10 @@ class EditorHandler(BaseHTTPRequestHandler):
                     const porTribunal = { stf: [], stj: [], eca: [] };
                     
                     sumulas.forEach(s => {
+                        if (!s._tribunal) {
+                            console.error('Súmula sem tribunal:', s);
+                            return;
+                        }
                         const trib = s._tribunal.toLowerCase();
                         const { _tribunal, ...sumulaLimpa } = s;
                         porTribunal[trib].push(sumulaLimpa);
@@ -938,10 +1225,15 @@ class EditorHandler(BaseHTTPRequestHandler):
                     ]);
                 } else {
                     // Salvar tribunal específico
+                    const sumulasLimpas = sumulas.map(s => {
+                        const { _tribunal, ...sumulaLimpa } = s;
+                        return sumulaLimpa;
+                    });
+                    
                     const data = {
                         tribunal: tribunalAtual.toUpperCase(),
-                        total: sumulas.length,
-                        sumulas: sumulas
+                        total: sumulasLimpas.length,
+                        sumulas: sumulasLimpas
                     };
                     
                     const response = await fetch(`/api/sumulas/${tribunalAtual}`, {
@@ -959,7 +1251,8 @@ class EditorHandler(BaseHTTPRequestHandler):
                 await carregarSumulas(tribunalAtual);
                 cancelarEdicao();
             } catch (error) {
-                mostrarToast('Erro ao salvar', 'error');
+                console.error('Erro ao salvar:', error);
+                mostrarToast('Erro ao salvar: ' + error.message, 'error');
             }
         }
 
@@ -985,9 +1278,20 @@ class EditorHandler(BaseHTTPRequestHandler):
             
             const indice = document.getElementById('indice-edicao').value;
             if (indice === '') {
+                // Adicionar nova
+                if (tribunalAtual === 'todos') {
+                    mostrarToast('Selecione um tribunal específico para adicionar', 'error');
+                    return;
+                }
                 sumulas.push(sumula);
             } else {
-                sumulas[parseInt(indice)] = sumula;
+                // Editar existente - preservar _tribunal se existir
+                const indiceInt = parseInt(indice);
+                const tribunalOriginal = sumulas[indiceInt]._tribunal;
+                sumulas[indiceInt] = sumula;
+                if (tribunalOriginal) {
+                    sumulas[indiceInt]._tribunal = tribunalOriginal;
+                }
             }
             
             sumulas.sort((a, b) => a.numero - b.numero);
@@ -1040,7 +1344,7 @@ class EditorHandler(BaseHTTPRequestHandler):
         }
 
         // Inicializar
-        carregarCategorias();
+        carregarCategorias(); // Isso já vai chamar criarFiltroCores() depois
         selecionarTribunal('todos');
         atualizarContador();
     </script>

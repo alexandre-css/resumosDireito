@@ -7,50 +7,6 @@
         <title>Súmulas - Processo Penal</title>
         <script src="https://cdn.tailwindcss.com"></script>
         <script>
-            tailwind.config = {
-                theme: {
-                    extend: {
-                        colors: {
-                            magenta: {
-                                50: '#fdf2f8',
-                                100: '#fce7f3',
-                                200: '#fbcfe8',
-                                300: '#f9a8d4',
-                                400: '#f472b6',
-                                500: '#e11d48',
-                                600: '#be123c',
-                                700: '#9f1239',
-                                800: '#881337',
-                                900: '#701a2e'
-                            },
-                            coral: {
-                                50: '#fff1f2',
-                                100: '#ffe4e6',
-                                200: '#fecdd3',
-                                300: '#fda4af',
-                                400: '#fb7185',
-                                500: '#fb7185',
-                                600: '#f43f5e',
-                                700: '#e11d48',
-                                800: '#be123c',
-                                900: '#9f1239'
-                            },
-                            brown: {
-                                50: '#fefce8',
-                                100: '#fef9c3',
-                                200: '#fef08a',
-                                300: '#fde047',
-                                400: '#facc15',
-                                500: '#92400e',
-                                600: '#78350f',
-                                700: '#78350f',
-                                800: '#451a03',
-                                900: '#451a03'
-                            }
-                        }
-                    }
-                }
-            }
             window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
         </script>
         <script defer src="https://cdn.vercel-insights.com/v1/script.debug.js"></script>
@@ -297,12 +253,6 @@
             
             
             
-            
-            
-            
-            
-            
-            
             <!-- SÚMULAS DO STF -->
             <div class="mt-16">
                 <div class="text-center mb-6 cursor-pointer" onclick="toggleSumulas('stf')">
@@ -362,10 +312,10 @@
 
                                 <!-- Súmula 24/STF -->
                                 <div
-                                    class="bg-gradient-to-r from-stone-500 to-stone-700 border-l-4 border-stone-900 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 relative">
+                                    class="bg-gradient-to-r from-green-500 to-green-700 border-l-4 border-green-900 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 relative">
                                     <div class="flex items-center mb-2">
                                         <div
-                                            class="bg-white text-stone-700 rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                            class="bg-white text-green-700 rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             24</div>
                                         <h4 class="font-bold text-white">Crime Tributário</h4>
                                         <div class="ml-auto relative">
@@ -510,12 +460,12 @@
 
                                 <!-- Súmula 146/STF -->
                                 <div
-                                    class="bg-white border-l-4 border-indigo-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                    class="bg-white border-l-4 border-cyan-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                                     <div class="flex items-center mb-2">
                                         <div
-                                            class="bg-indigo-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                            class="bg-cyan-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             146</div>
-                                        <h4 class="font-bold text-indigo-700">Prescrição</h4>
+                                        <h4 class="font-bold text-cyan-700">Prescrição</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">A prescrição da ação penal regula-se pela pena concretizada na sentença, quando não há recurso da acusação.</p>
                                 </div>
@@ -582,12 +532,12 @@
 
                                 <!-- Súmula 210/STF -->
                                 <div
-                                    class="bg-white border-l-4 border-teal-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                    class="bg-white border-l-4 border-green-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                                     <div class="flex items-center mb-2">
                                         <div
-                                            class="bg-teal-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                            class="bg-green-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             210</div>
-                                        <h4 class="font-bold text-teal-700">Assistente MP - Recurso</h4>
+                                        <h4 class="font-bold text-green-700">Assistente MP - Recurso</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">O assistente do ministério público pode recorrer, inclusive extraordinariamente, na ação penal, nos casos dos arts. 584, § 1º, e 598 do código de processo penal.</p>
                                 </div>
@@ -714,12 +664,12 @@
 
                                 <!-- Súmula 448/STF -->
                                 <div
-                                    class="bg-white border-l-4 border-teal-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                    class="bg-white border-l-4 border-purple-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                                     <div class="flex items-center mb-2">
                                         <div
-                                            class="bg-teal-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                            class="bg-purple-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             448</div>
-                                        <h4 class="font-bold text-teal-700">Assistente - Prazo</h4>
+                                        <h4 class="font-bold text-purple-700">Assistente - Prazo</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">O prazo para o assistente recorrer, supletivamente, começa a correr imediatamente após o transcurso do prazo do Ministério Público.</p>
                                 </div>
@@ -750,24 +700,24 @@
 
                                 <!-- Súmula 497/STF -->
                                 <div
-                                    class="bg-white border-l-4 border-indigo-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                    class="bg-white border-l-4 border-cyan-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                                     <div class="flex items-center mb-2">
                                         <div
-                                            class="bg-indigo-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                            class="bg-cyan-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             497</div>
-                                        <h4 class="font-bold text-indigo-700">Prescrição - Crime Continuado</h4>
+                                        <h4 class="font-bold text-cyan-700">Crime Continuado</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">Quando se tratar de crime continuado, a prescrição regula-se pela pena imposta na sentença, não se computando o acréscimo decorrente da continuação.</p>
                                 </div>
 
                                 <!-- Súmula 498/STF -->
                                 <div
-                                    class="bg-white border-l-4 border-purple-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                    class="bg-white border-l-4 border-teal-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                                     <div class="flex items-center mb-2">
                                         <div
-                                            class="bg-purple-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                            class="bg-teal-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             498</div>
-                                        <h4 class="font-bold text-purple-700">Economia Popular</h4>
+                                        <h4 class="font-bold text-teal-700">Economia Popular</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">Compete à Justiça dos Estados, em ambas as instâncias, o processo e o julgamento dos crimes contra a economia popular.</p>
                                 </div>
@@ -858,12 +808,12 @@
 
                                 <!-- Súmula 592/STF -->
                                 <div
-                                    class="bg-white border-l-4 border-indigo-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                    class="bg-white border-l-4 border-cyan-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                                     <div class="flex items-center mb-2">
                                         <div
-                                            class="bg-indigo-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                            class="bg-cyan-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             592</div>
-                                        <h4 class="font-bold text-indigo-700">Prescrição - Crimes Falimentares</h4>
+                                        <h4 class="font-bold text-cyan-700">Crimes Falimentares</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">Nos crimes falimentares, aplicam-se as causas interruptivas da prescrição, previstas no Código Penal.</p>
                                 </div>
@@ -918,12 +868,12 @@
 
                                 <!-- Súmula 609/STF -->
                                 <div
-                                    class="bg-white border-l-4 border-stone-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                    class="bg-white border-l-4 border-brown-600 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                                     <div class="flex items-center mb-2">
                                         <div
-                                            class="bg-stone-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                            class="bg-brown-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             609</div>
-                                        <h4 class="font-bold text-stone-700">Ação Penal - Sonegação Fiscal</h4>
+                                        <h4 class="font-bold text-brown-700">Ação Penal - Sonegação Fiscal</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">É pública incondicionada a ação penal por crime de sonegação fiscal.</p>
                                 </div>
@@ -1050,14 +1000,14 @@
 
                                 <!-- Súmula 702/STF -->
                                 <div
-                                    class="bg-white border-l-4 border-purple-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                    class="bg-white border-l-4 border-indigo-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                                     <div class="flex items-center mb-2">
                                         <div
-                                            class="bg-purple-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                            class="bg-indigo-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             702</div>
-                                        <h4 class="font-bold text-purple-700">Prefeitos - Competência</h4>
+                                        <h4 class="font-bold text-indigo-700">Prefeitos - Competência</h4>
                                     </div>
-                                    <p class="text-sm text-gray-700 italic text-justify">A competência do tribunal de justiça para julgar prefeitos restringe-se aos crimes de competência da justiça comum estadual; nos demais casos, a competência originária caberá ao respectivo tribunal de segundo grau.</p>
+                                    <p class="text-sm text-gray-700 italic text-justify">A competência do Tribunal de Justiça para julgar prefeitos restringe-se aos crimes de competência da justiça comum estadual; nos demais casos, a competência originária caberá ao respectivo tribunal de segundo grau.</p>
                                 </div>
 
                                 <!-- Súmula 703/STF -->
@@ -1122,12 +1072,12 @@
 
                                 <!-- Súmula 708/STF -->
                                 <div
-                                    class="bg-white border-l-4 border-violet-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                    class="bg-white border-l-4 border-indigo-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                                     <div class="flex items-center mb-2">
                                         <div
-                                            class="bg-violet-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                            class="bg-indigo-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             708</div>
-                                        <h4 class="font-bold text-violet-700">Apelação - Renúncia</h4>
+                                        <h4 class="font-bold text-indigo-700">Apelação - Renúncia</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">É nulo o julgamento da apelação se, após a manifestação nos autos da renúncia do único defensor, o réu não foi previamente intimado para constituir outro.</p>
                                 </div>
@@ -1146,24 +1096,24 @@
 
                                 <!-- Súmula 710/STF -->
                                 <div
-                                    class="bg-white border-l-4 border-teal-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                    class="bg-white border-l-4 border-purple-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                                     <div class="flex items-center mb-2">
                                         <div
-                                            class="bg-teal-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                            class="bg-purple-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             710</div>
-                                        <h4 class="font-bold text-teal-700">Contagem Prazos</h4>
+                                        <h4 class="font-bold text-purple-700">Contagem Prazos</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">No processo penal, contam-se os prazos da data da intimação, e não da juntada aos autos do mandado ou da carta precatória ou de ordem.</p>
                                 </div>
 
                                 <!-- Súmula 711/STF -->
                                 <div
-                                    class="bg-white border-l-4 border-pink-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                    class="bg-white border-l-4 border-yellow-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                                     <div class="flex items-center mb-2">
                                         <div
-                                            class="bg-pink-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                            class="bg-yellow-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             711</div>
-                                        <h4 class="font-bold text-pink-700">Crimes Continuado e Permanente</h4>
+                                        <h4 class="font-bold text-yellow-700">Crimes Continuado e Permanente</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">A lei penal mais grave aplica-se ao crime continuado ou ao crime permanente, se a sua vigência é anterior à cessação da continuidade ou da permanência.</p>
                                 </div>
@@ -1433,7 +1383,7 @@
                                             53</div>
                                         <h4 class="font-bold text-purple-700">Competência - Civil</h4>
                                     </div>
-                                    <p class="text-sm text-gray-700 italic text-justify">Compete à Justiça Comum Estadual processar e julgar civil acusado de prática de crime contra instituições militares estaduais.</p>
+                                    <p class="text-sm text-gray-700 italic text-justify">Compete a Justiça Comum Estadual processar e julgar civil acusado de prática de crime contra instituições militares estaduais.</p>
                                 </div>
 
                                 <!-- Súmula 59/STJ -->
@@ -1457,7 +1407,7 @@
                                             62</div>
                                         <h4 class="font-bold text-purple-700">Competência - Falso CTPS</h4>
                                     </div>
-                                    <p class="text-sm text-gray-700 italic text-justify">Compete à Justiça Estadual processar e julgar o crime de falsa anotação na carteira de trabalho e previdência social, atribuído a empresa privada.</p>
+                                    <p class="text-sm text-gray-700 italic text-justify">Compete a Justiça Estadual processar e julgar o crime de falsa anotação na carteira de trabalho e previdência social, atribuído a empresa privada.</p>
                                 </div>
 
                                 <!-- Súmula 64/STJ -->
@@ -1529,7 +1479,7 @@
                                             104</div>
                                         <h4 class="font-bold text-purple-700">Competência - Falsificação</h4>
                                     </div>
-                                    <p class="text-sm text-gray-700 italic text-justify">Compete à Justiça Estadual o processo e julgamento dos crimes de falsificação e uso de documento falso relativo a estabelecimento particular de ensino.</p>
+                                    <p class="text-sm text-gray-700 italic text-justify">Compete a Justiça Estadual o processo e julgamento dos crimes de falsificação e uso de documento falso relativo a estabelecimento particular de ensino.</p>
                                 </div>
 
                                 <!-- Súmula 107/STJ -->
@@ -1553,7 +1503,7 @@
                                             122</div>
                                         <h4 class="font-bold text-purple-700">Competência - Conexão Federal</h4>
                                     </div>
-                                    <p class="text-sm text-gray-700 italic text-justify">Compete à Justiça Federal o processo e julgamento unificado dos crimes conexos de competência federal e estadual, não se aplicando a regra do art. 78, II, "a", do Código de Processo Penal.</p>
+                                    <p class="text-sm text-gray-700 italic text-justify">Compete a justiça federal o processo e julgamento unificado dos crimes conexos de competência federal e estadual, não se aplicando a regra do art. 78, II, "a", do Código de Processo Penal.</p>
                                 </div>
 
                                 <!-- Súmula 140/STJ -->
@@ -1599,7 +1549,7 @@
                                         <div
                                             class="bg-green-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             164</div>
-                                        <h4 class="font-bold text-green-700">Prefeito - Extinção Mandato</h4>
+                                        <h4 class="font-bold text-green-700">Prefeito - Foro</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">O prefeito municipal, após a extinção do mandato, continua sujeito a processo por crime previsto no art. 1. do Dec. Lei n. 201, de 27/02/67.
 </p>
@@ -1631,12 +1581,12 @@
 
                                 <!-- Súmula 191/STJ -->
                                 <div
-                                    class="bg-white border-l-4 border-indigo-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                    class="bg-white border-l-4 border-red-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                                     <div class="flex items-center mb-2">
                                         <div
-                                            class="bg-indigo-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                            class="bg-red-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             191</div>
-                                        <h4 class="font-bold text-indigo-700">Pronúncia - Prescrição</h4>
+                                        <h4 class="font-bold text-red-700">Pronúncia - Prescrição</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">A pronúncia é causa interruptiva da prescrição, ainda que o Tribunal do Júri venha a desclassificar o crime.</p>
                                 </div>
@@ -1691,12 +1641,12 @@
 
                                 <!-- Súmula 220/STJ -->
                                 <div
-                                    class="bg-white border-l-4 border-indigo-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                    class="bg-white border-l-4 border-cyan-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                                     <div class="flex items-center mb-2">
                                         <div
-                                            class="bg-indigo-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                            class="bg-cyan-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             220</div>
-                                        <h4 class="font-bold text-indigo-700">Reincidência e Prescrição</h4>
+                                        <h4 class="font-bold text-cyan-700">Reincidência e Prescrição</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">A reincidência não influi no prazo da prescrição da pretensão punitiva.</p>
                                 </div>
@@ -1811,12 +1761,12 @@
 
                                 <!-- Súmula 347/STJ -->
                                 <div
-                                    class="bg-white border-l-4 border-teal-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                    class="bg-white border-l-4 border-green-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                                     <div class="flex items-center mb-2">
                                         <div
-                                            class="bg-teal-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                            class="bg-green-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             347</div>
-                                        <h4 class="font-bold text-teal-700">Apelação do Réu</h4>
+                                        <h4 class="font-bold text-green-700">Apelação do Réu</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">O conhecimento de recurso de apelação do réu independe de sua prisão.</p>
                                 </div>
@@ -1828,19 +1778,19 @@
                                         <div
                                             class="bg-indigo-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             415</div>
-                                        <h4 class="font-bold text-indigo-700">Suspensão Prazo Prescricional</h4>
+                                        <h4 class="font-bold text-indigo-700">Suspensão Prescrição</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">O período de suspensão do prazo prescricional é regulado pelo máximo da pena cominada.</p>
                                 </div>
 
                                 <!-- Súmula 438/STJ -->
                                 <div
-                                    class="bg-white border-l-4 border-indigo-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                    class="bg-white border-l-4 border-cyan-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                                     <div class="flex items-center mb-2">
                                         <div
-                                            class="bg-indigo-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                            class="bg-cyan-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             438</div>
-                                        <h4 class="font-bold text-indigo-700">Prescrição Antecipada</h4>
+                                        <h4 class="font-bold text-cyan-700">Prescrição Antecipada</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">É inadmissível a extinção da punibilidade pela prescrição da pretensão punitiva com fundamento em pena hipotética, independentemente da existência ou sorte do processo penal.</p>
                                 </div>
@@ -1973,12 +1923,12 @@
 
                                 <!-- Súmula 500/STJ -->
                                 <div
-                                    class="bg-white border-l-4 border-green-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                    class="bg-white border-l-4 border-indigo-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                                     <div class="flex items-center mb-2">
                                         <div
-                                            class="bg-green-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                            class="bg-indigo-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             500</div>
-                                        <h4 class="font-bold text-green-700">ECA - Art. 244-B</h4>
+                                        <h4 class="font-bold text-indigo-700">ECA - Art. 244-B</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">A configuração do crime do art. 244-B do ECA independe da prova da efetiva corrupção do menor, por se tratar de delito formal.</p>
                                 </div>
@@ -2002,7 +1952,7 @@
                                         <div
                                             class="bg-green-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             502</div>
-                                        <h4 class="font-bold text-green-700">Direito Autoral</h4>
+                                        <h4 class="font-bold text-green-700">Violação de Direito Autoral</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">Presentes a materialidade e a autoria, afigura-se típica, em relação ao crime previsto no art. 184, § 2º, do CP, a conduta de expor à venda CDs e DVDs piratas.</p>
                                 </div>
@@ -2154,7 +2104,6 @@
                                         </div>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">A confissão do autor possibilita a atenuação da pena prevista no art. 65, III, d, do Código Penal, independentemente de ser utilizada na formação do convencimento do julgador.</p>
-                                    <p class="text-xs bg-pink-50 p-2 rounded border-l-2 border-pink-300 mt-2 text-justify">A Terceira Seção, na sessão de 10/09/2025, ao julgar o REsp 2.001.973/RS (tema repetitivo 1194), deliberou pela REVISÃO do enunciado da Súmula 545. REDAÇÃO ANTERIOR: Quando a confissão for utilizada para a formação do convencimento do julgador, o réu fará jus à atenuante prevista no art. 65, III, d, do Código Penal.</p>
                                 </div>
 
                                 <!-- Súmula 546/STJ -->
@@ -2267,12 +2216,12 @@
 
                                 <!-- Súmula 593/STJ -->
                                 <div
-                                    class="bg-white border-l-4 border-magenta-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                    class="bg-white border-l-4 border-purple-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                                     <div class="flex items-center mb-2">
                                         <div
-                                            class="bg-magenta-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                            class="bg-purple-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             593</div>
-                                        <h4 class="font-bold text-magenta-700">Estupro de Vulnerável</h4>
+                                        <h4 class="font-bold text-purple-700">Estupro de Vulnerável</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">O crime de estupro de vulnerável se configura com a conjunção carnal ou prática de ato libidinoso com menor de 14 anos, sendo irrelevante eventual consentimento da vítima para a prática do ato, sua experiência sexual anterior ou existência de relacionamento amoroso com o agente.</p>
                                 </div>
@@ -2291,12 +2240,12 @@
 
                                 <!-- Súmula 606/STJ -->
                                 <div
-                                    class="bg-white border-l-4 border-green-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                    class="bg-white border-l-4 border-pink-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                                     <div class="flex items-center mb-2">
                                         <div
-                                            class="bg-green-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                            class="bg-pink-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             606</div>
-                                        <h4 class="font-bold text-green-700">Transmissão Clandestina</h4>
+                                        <h4 class="font-bold text-pink-700">Transmissão Clandestina</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">Não se aplica o princípio da insignificância a casos de transmissão clandestina de sinal de internet via radiofrequência, que caracteriza o fato típico previsto no art. 183 da Lei n. 9.472/1997.</p>
                                 </div>
@@ -2417,12 +2366,12 @@
 
                                 <!-- Súmula 658/STJ -->
                                 <div
-                                    class="bg-white border-l-4 border-stone-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                    class="bg-white border-l-4 border-teal-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                                     <div class="flex items-center mb-2">
                                         <div
-                                            class="bg-stone-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                            class="bg-teal-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             658</div>
-                                        <h4 class="font-bold text-stone-700">Apropriação Indébita</h4>
+                                        <h4 class="font-bold text-teal-700">Apropriação Indébita</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">O crime de apropriação indébita tributária pode ocorrer tanto em operações próprias como em razão de substituição tributária.</p>
                                 </div>
@@ -2501,12 +2450,12 @@
 
                                 <!-- Súmula 668/STJ -->
                                 <div
-                                    class="bg-white border-l-4 border-green-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                    class="bg-white border-l-4 border-indigo-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                                     <div class="flex items-center mb-2">
                                         <div
-                                            class="bg-green-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                            class="bg-indigo-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             668</div>
-                                        <h4 class="font-bold text-green-700">Porte de Arma Proibida</h4>
+                                        <h4 class="font-bold text-indigo-700">Porte de Arma Proibida</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">Não é considerado hediondo o delito de porte ou posse de arma de fogo de uso permitido, mesmo que apresente numeração, marca ou qualquer outro sinal de identificação raspado, suprimido ou adulterado.</p>
                                 </div>
@@ -2525,12 +2474,12 @@
 
                                 <!-- Súmula 676/STJ -->
                                 <div
-                                    class="bg-white border-l-4 border-emerald-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                    class="bg-white border-l-4 border-purple-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                                     <div class="flex items-center mb-2">
                                         <div
-                                            class="bg-emerald-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                            class="bg-purple-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             676</div>
-                                        <h4 class="font-bold text-emerald-700">Prisão Preventiva</h4>
+                                        <h4 class="font-bold text-purple-700">Prisão Preventiva</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">Em razão da Lei 13.964/2019, não é mais possível ao juiz, de ofício, decretar ou converter prisão em flagrante em prisão preventiva.</p>
                                 </div>
@@ -2589,12 +2538,12 @@
 
                                 <!-- Súmula 338/ECA -->
                                 <div
-                                    class="bg-white border-l-4 border-indigo-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                    class="bg-white border-l-4 border-cyan-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                                     <div class="flex items-center mb-2">
                                         <div
-                                            class="bg-indigo-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                            class="bg-cyan-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             338</div>
-                                        <h4 class="font-bold text-indigo-700">Prescrição MSE</h4>
+                                        <h4 class="font-bold text-cyan-700">Prescrição</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">A prescrição penal é aplicável nas medidas sócio-educativas.</p>
                                 </div>
