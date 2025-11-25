@@ -216,6 +216,15 @@
             
             
             
+            
+            
+            
+            
+            
+            
+            
+            
+            
             <!-- SÚMULAS DO STF -->
             <div class="mt-16">
                 <div class="text-center mb-6 cursor-pointer" onclick="toggleSumulas('stf')">
@@ -1208,7 +1217,7 @@
                                         <div
                                             class="bg-rose-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             723</div>
-                                        <h4 class="font-bold text-rose-700">Suspensão Condicional - Crime Continuado</h4>
+                                        <h4 class="font-bold text-rose-700">Suspensão - Crime Continuado</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">Não se admite a suspensão condicional do processo por crime continuado, se a soma da pena mínima da infração mais grave com o aumento mínimo de um sexto for superior a um ano.</p>
                                 </div>
@@ -2579,6 +2588,24 @@
                                         <h4 class="font-bold text-cyan-700">Bebida Alcoólica</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">Fornecimento de bebida alcoólica a criança ou adolescente, após o advento da lei 13.106/15, configura o crime previsto no art. 243 do ECA.</p>
+                                </div>
+
+                                <!-- Súmula 999/ECA -->
+                                <div
+                                    class="bg-white border-l-4 border-purple-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 relative">
+                                    <div class="flex items-center mb-2">
+                                        <div
+                                            class="bg-purple-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                            999</div>
+                                        <h4 class="font-bold text-purple-700">teste</h4>
+                                        <div class="ml-auto relative">
+                                            <div
+                                                class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs font-bold flex items-center justify-center whitespace-nowrap">
+                                                ALTERADA</div>
+                                        </div>
+                                    </div>
+                                    <p class="text-sm text-gray-700 italic text-justify">teste</p>
+                                    <p class="text-xs bg-purple-50 p-2 rounded border-l-2 border-purple-300 mt-2">teste</p>
                                 </div>
 
                         </div>

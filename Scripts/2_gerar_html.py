@@ -175,7 +175,7 @@ def gerar_secao_tribunal(tribunal, sumulas):
 def gerar_html_completo(sumulas):
     """Gera HTML completo substituindo apenas a seção de súmulas"""
     # Ler template HTML atual
-    with open('penal-sumulas.html', 'r', encoding='utf-8') as f:
+    with open('sumulas.html', 'r', encoding='utf-8') as f:
         html_atual = f.read()
     
     # Gerar HTML das súmulas
@@ -191,37 +191,37 @@ def gerar_html_completo(sumulas):
     
     return html_novo
 
-def salvar_html(html, arquivo='penal-sumulas.html', backup=True):
+def salvar_html(html, arquivo='sumulas.html', backup=True):
     """Salva HTML gerando backup do original"""
     if backup and os.path.exists(arquivo):
         timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
-        backup_file = f'{arquivo}.backup_{timestamp}'
+        backup_file = f'backup/{arquivo}.backup_{timestamp}'
         os.rename(arquivo, backup_file)
-        print(f'✓ Backup criado: {backup_file}')
+        print(f'[OK] Backup criado: {backup_file}')
     
     with open(arquivo, 'w', encoding='utf-8') as f:
         f.write(html)
-    print(f'✓ HTML gerado: {arquivo}')
+    print(f'[OK] HTML gerado: {arquivo}')
 
 if __name__ == '__main__':
     print("="*80)
-    print("GERADOR DE HTML DE SÚMULAS")
+    print("GERADOR DE HTML DE SUMULAS")
     print("="*80)
     print()
     
     try:
         # Carregar súmulas
-        print("1. Carregando súmulas dos JSONs...")
+        print("1. Carregando sumulas dos JSONs...")
         sumulas = carregar_sumulas()
-        print(f"   ✓ STF: {len(sumulas['stf'])} súmulas")
-        print(f"   ✓ STJ: {len(sumulas['stj'])} súmulas")
-        print(f"   ✓ ECA: {len(sumulas['eca'])} súmulas")
+        print(f"   [OK] STF: {len(sumulas['stf'])} sumulas")
+        print(f"   [OK] STJ: {len(sumulas['stj'])} sumulas")
+        print(f"   [OK] ECA: {len(sumulas['eca'])} sumulas")
         print()
         
         # Gerar HTML
         print("2. Gerando HTML...")
         html = gerar_html_completo(sumulas)
-        print("   ✓ HTML gerado")
+        print("   [OK] HTML gerado")
         print()
         
         # Salvar
@@ -230,10 +230,10 @@ if __name__ == '__main__':
         print()
         
         print("="*80)
-        print("✓ CONCLUÍDO COM SUCESSO!")
+        print("[OK] CONCLUIDO COM SUCESSO!")
         print("="*80)
         
     except Exception as erro:
-        print(f"\n✗ ERRO: {erro}")
+        print(f"\n[ERRO]: {erro}")
         import traceback
         traceback.print_exc()

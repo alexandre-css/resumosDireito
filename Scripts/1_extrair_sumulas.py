@@ -118,8 +118,8 @@ if __name__ == '__main__':
     print("Extraindo súmulas do HTML...\n")
     
     try:
-        # Usar penal-sumulas.html por padrão
-        arquivo = 'penal-sumulas.html'
+        # Usar sumulas.html por padrão
+        arquivo = 'sumulas.html'
         sumulas = extrair_sumulas_html(arquivo)
         salvar_json(sumulas)
         

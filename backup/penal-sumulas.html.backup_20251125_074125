@@ -214,6 +214,14 @@
             
             
             
+            
+            
+            
+            
+            
+            
+            
+            
             <!-- SÚMULAS DO STF -->
             <div class="mt-16">
                 <div class="text-center mb-6 cursor-pointer" onclick="toggleSumulas('stf')">
@@ -329,7 +337,7 @@
                                         <div
                                             class="bg-white text-indigo-700 rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             36</div>
-                                        <h4 class="font-bold text-white">Competência Falsificação Documentos</h4>
+                                        <h4 class="font-bold text-white">Falsificação Documentos</h4>
                                         <div class="ml-auto relative">
                                             <div
                                                 class="bg-yellow-400 text-gray-900 px-3 py-1 rounded-full text-xs font-bold flex items-center justify-center whitespace-nowrap">
@@ -498,7 +506,7 @@
                                         <div
                                             class="bg-green-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             210</div>
-                                        <h4 class="font-bold text-green-700">Assistente - Recurso</h4>
+                                        <h4 class="font-bold text-green-700">Assistente MP - Recurso</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">O assistente do ministério público pode recorrer, inclusive extraordinariamente, na ação penal, nos casos dos arts. 584, § 1º, e 598 do código de processo penal.</p>
                                 </div>
@@ -510,7 +518,7 @@
                                         <div
                                             class="bg-rose-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             246</div>
-                                        <h4 class="font-bold text-rose-700">Cheque Sem Fraude</h4>
+                                        <h4 class="font-bold text-rose-700">Cheque Sem Fundos</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">Comprovado não ter havido fraude, não se configura o crime de emissão de cheque sem fundos.</p>
                                 </div>
@@ -522,7 +530,7 @@
                                         <div
                                             class="bg-emerald-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             344</div>
-                                        <h4 class="font-bold text-emerald-700">Habeas Corpus</h4>
+                                        <h4 class="font-bold text-emerald-700">HC - Recurso Ex Officio</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">Sentença de primeira instância concessiva de "habeas corpus", em caso de crime praticado em detrimento de bens, serviços ou interesses da união, está sujeita a recurso "ex officio".</p>
                                 </div>
@@ -558,7 +566,7 @@
                                         <div
                                             class="bg-sky-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             361</div>
-                                        <h4 class="font-bold text-sky-700">Exame Pericial</h4>
+                                        <h4 class="font-bold text-sky-700">Nulidade Exame Pericial</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">No processo penal, é nulo o exame realizado por um só perito, considerando-se impedido o que tiver funcionado, anteriormente, na diligência de apreensão.</p>
                                 </div>
@@ -570,7 +578,7 @@
                                         <div
                                             class="bg-blue-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             366</div>
-                                        <h4 class="font-bold text-blue-700">Citação Edital</h4>
+                                        <h4 class="font-bold text-blue-700">Citação por Edital</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">Não é nula a citação por edital que indica o dispositivo da lei penal, embora não transcreva a denúncia ou queixa, ou não resuma os fatos em que se baseia.</p>
                                 </div>
@@ -594,7 +602,7 @@
                                         <div
                                             class="bg-indigo-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             395</div>
-                                        <h4 class="font-bold text-indigo-700">Habeas Corpus - Ônus</h4>
+                                        <h4 class="font-bold text-indigo-700">Habeas Corpus - Custas</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">Não se conhece de recurso de "habeas corpus" cujo objeto seja resolver sobre o ônus das custas, por não estar mais em causa a liberdade de locomoção.</p>
                                 </div>
@@ -618,7 +626,7 @@
                                         <div
                                             class="bg-violet-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             431</div>
-                                        <h4 class="font-bold text-violet-700">Recurso Criminal</h4>
+                                        <h4 class="font-bold text-violet-700">Intimação - Sessão de Julgamento</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">É nulo o julgamento de recurso criminal, na segunda instância, sem prévia intimação, ou publicação da pauta, salvo em "habeas corpus".</p>
                                 </div>
@@ -702,7 +710,7 @@
                                         <div
                                             class="bg-teal-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             522</div>
-                                        <h4 class="font-bold text-teal-700">Drogas</h4>
+                                        <h4 class="font-bold text-teal-700">Tráfico - Competência</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">Salvo ocorrência de tráfico para o exterior, quando, então, a competência será da Justiça Federal, compete à justiça dos estados o processo e julgamento dos crimes relativos a entorpecentes.</p>
                                 </div>
@@ -714,7 +722,7 @@
                                         <div
                                             class="bg-pink-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             523</div>
-                                        <h4 class="font-bold text-pink-700">Defesa - Nulidade</h4>
+                                        <h4 class="font-bold text-pink-700">Falta de Defesa</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">No processo penal, a falta da defesa constitui nulidade absoluta, mas a sua deficiência só o anulará se houver prova de prejuízo para o réu.</p>
                                 </div>
@@ -726,7 +734,7 @@
                                         <div
                                             class="bg-red-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             524</div>
-                                        <h4 class="font-bold text-red-700">Arquivamento</h4>
+                                        <h4 class="font-bold text-red-700">Arquivamento Inquérito</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">Arquivado o inquérito policial, por despacho do juiz, a requerimento do promotor de justiça, não pode a ação penal ser iniciada, sem novas provas.</p>
                                 </div>
@@ -738,7 +746,7 @@
                                         <div
                                             class="bg-teal-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             525</div>
-                                        <h4 class="font-bold text-teal-700">Aplicação em 2ª Instância</h4>
+                                        <h4 class="font-bold text-teal-700">Medida de Segurança</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">A medida de segurança não será aplicada em segunda instância, quando só o réu tenha recorrido.</p>
                                 </div>
@@ -750,7 +758,7 @@
                                         <div
                                             class="bg-red-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             554</div>
-                                        <h4 class="font-bold text-red-700">Pagamento Posterior</h4>
+                                        <h4 class="font-bold text-red-700">Cheque Sem Fundos</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">O pagamento de cheque emitido sem provisão de fundos, após o recebimento da denúncia, não obsta ao prosseguimento da ação penal.</p>
                                 </div>
@@ -762,7 +770,7 @@
                                         <div
                                             class="bg-purple-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             555</div>
-                                        <h4 class="font-bold text-purple-700">Conflito de Competência</h4>
+                                        <h4 class="font-bold text-purple-700">Conflito de Jurisdição</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">É competente o Tribunal de Justiça para julgar conflito de jurisdição entre Juiz de Direito do estado e a Justiça Militar local.</p>
                                 </div>
@@ -798,7 +806,7 @@
                                         <div
                                             class="bg-rose-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             603</div>
-                                        <h4 class="font-bold text-rose-700">Latrocínio</h4>
+                                        <h4 class="font-bold text-rose-700">Latrocínio - Competência</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">A competência para o processo e julgamento de latrocínio é do juiz singular e não do Tribunal do Júri.</p>
                                 </div>
@@ -810,7 +818,7 @@
                                         <div
                                             class="bg-red-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             606</div>
-                                        <h4 class="font-bold text-red-700">Habeas Corpus</h4>
+                                        <h4 class="font-bold text-red-700">Habeas Corpus Originário</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">Não cabe "habeas corpus" originário para o tribunal pleno de decisão de turma, ou do plenário, proferida em "habeas corpus" ou no respectivo recurso.</p>
                                 </div>
@@ -822,7 +830,7 @@
                                         <div
                                             class="bg-yellow-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             608</div>
-                                        <h4 class="font-bold text-yellow-700">Estupro</h4>
+                                        <h4 class="font-bold text-yellow-700">Ação Penal - Estupro</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">No crime de estupro, praticado mediante violência real, a ação penal é pública incondicionada.</p>
                                 </div>
@@ -834,7 +842,7 @@
                                         <div
                                             class="bg-lime-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             609</div>
-                                        <h4 class="font-bold text-lime-700">Sonegação Fiscal</h4>
+                                        <h4 class="font-bold text-lime-700">Ação Penal - Sonegação Fiscal</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">É pública incondicionada a ação penal por crime de sonegação fiscal.</p>
                                 </div>
@@ -846,7 +854,7 @@
                                         <div
                                             class="bg-pink-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             610</div>
-                                        <h4 class="font-bold text-pink-700">Latrocínio</h4>
+                                        <h4 class="font-bold text-pink-700">Latrocínio - Consumação</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">Há crime de latrocínio, quando o homicídio se consuma, ainda que não realize o agente a subtração de bens da vítima.</p>
                                 </div>
@@ -870,7 +878,7 @@
                                         <div
                                             class="bg-orange-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             691</div>
-                                        <h4 class="font-bold text-orange-700">Habeas Corpus - STF</h4>
+                                        <h4 class="font-bold text-orange-700">Habeas Corpus - Competência</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">Não compete ao Supremo Tribunal Federal conhecer de "habeas corpus" impetrado contra decisão do relator que, em "habeas corpus" requerido a Tribunal Superior, indefere a liminar.</p>
                                 </div>
@@ -906,7 +914,7 @@
                                         <div
                                             class="bg-lime-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             694</div>
-                                        <h4 class="font-bold text-lime-700">Habeas Corpus - Exclusão</h4>
+                                        <h4 class="font-bold text-lime-700">Habeas Corpus - Exclusão Militar</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">Não cabe "habeas corpus" contra a imposição da pena de exclusão de militar ou de perda de patente ou de função pública.</p>
                                 </div>
@@ -942,7 +950,7 @@
                                         <div
                                             class="bg-pink-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             700</div>
-                                        <h4 class="font-bold text-pink-700">Prazo para Agravo</h4>
+                                        <h4 class="font-bold text-pink-700">Agravo em Execução - Prazo</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">É de cinco dias o prazo para interposição de agravo contra decisão do juiz da execução penal.</p>
                                 </div>
@@ -954,7 +962,7 @@
                                         <div
                                             class="bg-teal-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             701</div>
-                                        <h4 class="font-bold text-teal-700">Mandado de Segurança - MP</h4>
+                                        <h4 class="font-bold text-teal-700">Mandado de Segurança - Litisconsorte</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">No mandado de segurança impetrado pelo Ministério Público contra decisão proferida em processo penal, é obrigatória a citação do réu como litisconsorte passivo.</p>
                                 </div>
@@ -966,7 +974,7 @@
                                         <div
                                             class="bg-indigo-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             702</div>
-                                        <h4 class="font-bold text-indigo-700">Prefeitos</h4>
+                                        <h4 class="font-bold text-indigo-700">Prefeitos - Competência</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">A competência do Tribunal de Justiça para julgar prefeitos restringe-se aos crimes de competência da justiça comum estadual; nos demais casos, a competência originária caberá ao respectivo tribunal de segundo grau.</p>
                                 </div>
@@ -978,7 +986,7 @@
                                         <div
                                             class="bg-cyan-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             703</div>
-                                        <h4 class="font-bold text-cyan-700">Prefeito</h4>
+                                        <h4 class="font-bold text-cyan-700">Prefeito - Extinção do Mandato</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">A extinção do mandato do prefeito não impede a instauração de processo pela prática dos crimes previstos no art. 1º do decreto-lei 201/1967.</p>
                                 </div>
@@ -990,7 +998,7 @@
                                         <div
                                             class="bg-blue-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             704</div>
-                                        <h4 class="font-bold text-blue-700">Conexão</h4>
+                                        <h4 class="font-bold text-blue-700">Conexão - Foro por Prerrogativa</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">Não viola as garantias do juiz natural, da ampla defesa e do devido processo legal a atração por continência ou conexão do processo do co-réu ao foro por prerrogativa de função de um dos denunciados.</p>
                                 </div>
@@ -1014,7 +1022,7 @@
                                         <div
                                             class="bg-sky-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             706</div>
-                                        <h4 class="font-bold text-sky-700">Competência Penal</h4>
+                                        <h4 class="font-bold text-sky-700">Nulidade - Prevenção</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">É relativa a nulidade decorrente da inobservância da competência penal por prevenção.</p>
                                 </div>
@@ -1026,7 +1034,7 @@
                                         <div
                                             class="bg-blue-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             707</div>
-                                        <h4 class="font-bold text-blue-700">Intimação Denunciado</h4>
+                                        <h4 class="font-bold text-blue-700">Nulidade - Intimação Contrarrazões</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">Constitui nulidade a falta de intimação do denunciado para oferecer contra-razões ao recurso interposto da rejeição da denúncia, não a suprindo a nomeação de defensor dativo.</p>
                                 </div>
@@ -1050,7 +1058,7 @@
                                         <div
                                             class="bg-violet-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             709</div>
-                                        <h4 class="font-bold text-violet-700">Recurso Contra Absolvição</h4>
+                                        <h4 class="font-bold text-violet-700">Acórdão - Recebimento Denúncia</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">Salvo quando nula a decisão de primeiro grau, o acórdão que provê o recurso contra a rejeição da denúncia vale, desde logo, pelo recebimento dela.</p>
                                 </div>
@@ -1062,7 +1070,7 @@
                                         <div
                                             class="bg-purple-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             710</div>
-                                        <h4 class="font-bold text-purple-700">Prazos Processuais</h4>
+                                        <h4 class="font-bold text-purple-700">Contagem Prazos</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">No processo penal, contam-se os prazos da data da intimação, e não da juntada aos autos do mandado ou da carta precatória ou de ordem.</p>
                                 </div>
@@ -1074,7 +1082,7 @@
                                         <div
                                             class="bg-yellow-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             711</div>
-                                        <h4 class="font-bold text-yellow-700">Crime Continuado</h4>
+                                        <h4 class="font-bold text-yellow-700">Crimes Continuado e Permanente</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">A lei penal mais grave aplica-se ao crime continuado ou ao crime permanente, se a sua vigência é anterior à cessação da continuidade ou da permanência.</p>
                                 </div>
@@ -1086,7 +1094,7 @@
                                         <div
                                             class="bg-fuchsia-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             712</div>
-                                        <h4 class="font-bold text-fuchsia-700">Desaforamento</h4>
+                                        <h4 class="font-bold text-fuchsia-700">Contraditório no Desaforamento</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">É nula a decisão que determina o desaforamento de processo da competência do júri sem audiência da defesa.</p>
                                 </div>
@@ -1098,7 +1106,7 @@
                                         <div
                                             class="bg-pink-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             713</div>
-                                        <h4 class="font-bold text-pink-700">Apelação Júri</h4>
+                                        <h4 class="font-bold text-pink-700">Efeitos Apelação Júri</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">O efeito devolutivo da apelação contra decisões do júri é adstrito aos fundamentos da sua interposição.</p>
                                 </div>
@@ -1110,7 +1118,7 @@
                                         <div
                                             class="bg-green-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             714</div>
-                                        <h4 class="font-bold text-green-700">Crime Contra Honra</h4>
+                                        <h4 class="font-bold text-green-700">Legitimidade Crime Contra a Honra</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">É concorrente a legitimidade do ofendido, mediante queixa, e do ministério público, condicionada à representação do ofendido, para a ação penal por crime contra a honra de servidor público em razão do exercício de suas funções.</p>
                                 </div>
@@ -1122,7 +1130,7 @@
                                         <div
                                             class="bg-rose-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             715</div>
-                                        <h4 class="font-bold text-rose-700">Pena Unificada</h4>
+                                        <h4 class="font-bold text-rose-700">Pena Unificada e Benefícios</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">A pena unificada para atender ao limite de trinta anos de cumprimento, determinado pelo art. 75 do código penal, não é considerada para a concessão de outros benefícios, como o livramento condicional ou regime mais favorável de execução.</p>
                                 </div>
@@ -1146,7 +1154,7 @@
                                         <div
                                             class="bg-amber-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             717</div>
-                                        <h4 class="font-bold text-amber-700">Prisão Especial</h4>
+                                        <h4 class="font-bold text-amber-700">Progressão em Prisão Especial</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">Não impede a progressão de regime de execução da pena, fixada em sentença não transitada em julgado, o fato de o réu se encontrar em prisão especial.</p>
                                 </div>
@@ -1158,7 +1166,7 @@
                                         <div
                                             class="bg-green-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             718</div>
-                                        <h4 class="font-bold text-green-700">Regime de Cumprimento</h4>
+                                        <h4 class="font-bold text-green-700">Regime - Gravidade em Abstrato</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">A opinião do julgador sobre a gravidade em abstrato do crime não constitui motivação idônea para a imposição de regime mais severo do que o permitido segundo a pena aplicada.</p>
                                 </div>
@@ -1194,7 +1202,7 @@
                                         <div
                                             class="bg-indigo-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             721</div>
-                                        <h4 class="font-bold text-indigo-700">Tribunal do Júri</h4>
+                                        <h4 class="font-bold text-indigo-700">Tribunal do Júri - Competência</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">A competência constitucional do Tribunal do Júri prevalece sobre o foro por prerrogativa de função estabelecido exclusivamente pela Constituição Estadual.</p>
                                 </div>
@@ -1206,7 +1214,7 @@
                                         <div
                                             class="bg-rose-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             723</div>
-                                        <h4 class="font-bold text-rose-700">Suspensão Condicional</h4>
+                                        <h4 class="font-bold text-rose-700">Suspensão - Crime Continuado</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">Não se admite a suspensão condicional do processo por crime continuado, se a soma da pena mínima da infração mais grave com o aumento mínimo de um sexto for superior a um ano.</p>
                                 </div>
@@ -2577,6 +2585,24 @@
                                         <h4 class="font-bold text-cyan-700">Bebida Alcoólica</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">Fornecimento de bebida alcoólica a criança ou adolescente, após o advento da lei 13.106/15, configura o crime previsto no art. 243 do ECA.</p>
+                                </div>
+
+                                <!-- Súmula 999/ECA -->
+                                <div
+                                    class="bg-white border-l-4 border-orange-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 relative">
+                                    <div class="flex items-center mb-2">
+                                        <div
+                                            class="bg-orange-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                            999</div>
+                                        <h4 class="font-bold text-orange-700">Teste</h4>
+                                        <div class="ml-auto relative">
+                                            <div
+                                                class="bg-orange-500 text-white px-3 py-1 rounded-full text-xs font-bold flex items-center justify-center whitespace-nowrap">
+                                                SUPERADA EM PARTE</div>
+                                        </div>
+                                    </div>
+                                    <p class="text-sm text-gray-700 italic text-justify">A superveniência da maioridade penal não interfere na apuração de ato infracional nem na aplicabilidade de medida socioeducativa em curso, inclusive na liberdade assistida, enquanto não atingida a idade de 21 anos.</p>
+                                    <p class="text-xs bg-orange-50 p-2 rounded border-l-2 border-orange-300 mt-2">Este é um teste de uma nota Este é um teste de uma nota Este é um teste de uma nota Este é um teste de uma nota Este é um teste de uma nota Este é um teste de uma nota Este é um teste de uma nota Este é um teste de uma nota Este é um teste de uma nota.</p>
                                 </div>
 
                         </div>
