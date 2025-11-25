@@ -237,8 +237,8 @@
     {
       "numero": 209,
       "titulo": "Prefeito - Verba Estadual",
-      "texto": "Compete a Justiça Estadual processar e julgar prefeito por desvio de verba transferida e incorporada ao patrimônio municipal.",
-      "cor": "blue",
+      "texto": "Compete à Justiça Estadual processar e julgar prefeito por desvio de verba transferida e incorporada ao patrimônio municipal.",
+      "cor": "purple",
       "vinculante": false,
       "chips": []
     },
@@ -610,7 +610,7 @@
     },
     {
       "numero": 588,
-      "titulo": "Violência Doméstica",
+      "titulo": "Violência Doméstica - Substituição da Pena",
       "texto": "A prática de crime ou contravenção penal contra a mulher com violência ou grave ameaça no ambiente doméstico impossibilita a substituição da pena privativa de liberdade por restritiva de direitos.",
       "cor": "coral",
       "vinculante": false,
@@ -687,7 +687,7 @@
       "numero": 636,
       "titulo": "Folha de Antecedentes",
       "texto": "A folha de antecedentes criminais é documento suficiente a comprovar os maus antecedentes e a reincidência.",
-      "cor": "orange",
+      "cor": "pink",
       "vinculante": false,
       "chips": []
     },
@@ -701,7 +701,7 @@
     },
     {
       "numero": 643,
-      "titulo": "Pena Restritiva",
+      "titulo": "Pena Restritiva de Direitos e Trânsito",
       "texto": "A execução da pena restritiva de direitos depende do trânsito em julgado da condenação.",
       "cor": "orange",
       "vinculante": false,
@@ -749,7 +749,7 @@
     },
     {
       "numero": 661,
-      "titulo": "Perícia do Celular",
+      "titulo": "Falta Grave - Perícia do Celular",
       "texto": "A falta grave prescinde da perícia do celular apreendido ou de seus componentes essenciais.",
       "cor": "orange",
       "vinculante": false,
