@@ -1,6 +1,6 @@
 {
   "tribunal": "STF",
-  "total": 25,
+  "total": 24,
   "temas": [
     {
       "numero": 59,
@@ -110,13 +110,6 @@
       "chips": []
     },
     {
-      "numero": 703,
-      "titulo": "Militar - Sanções Disciplinares",
-      "tese": "O art. 47 da Lei nº 6.880/80 foi recepcionado pela Constituição Federal de 1988, sendo válidos, por conseguinte, os incisos IV e V do art. 24 do Decreto nº 4.346/02, os quais não ofendem o princípio da reserva legal.",
-      "cor": "blue",
-      "chips": []
-    },
-    {
       "numero": 941,
       "titulo": "PAD e Audiência de Justificação",
       "tese": "A oitiva do condenado pelo Juízo da Execução Penal, em audiência de justificação realizada na presença do defensor e do Ministério Público, afasta a necessidade de prévio Procedimento Administrativo Disciplinar (PAD), assim como supre eventual ausência ou insuficiência de defesa técnica no PAD instaurado para apurar a prática de falta grave durante o cumprimento da pena.",
@@ -175,10 +168,9 @@
     },
     {
       "numero": 1267,
-      "titulo": "",
+      "titulo": "Indulto Natalino (11.302/2022)",
       "tese": "É constitucional o indulto natalino do art. 5º, caput e parágrafo único, do Decreto Presidencial nº 11.302, de 22/12/2022.",
-      "comentario": "",
-      "cor": "blue",
+      "cor": "orange",
       "chips": []
     }
   ]
