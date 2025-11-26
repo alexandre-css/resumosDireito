@@ -544,12 +544,12 @@ class EditorHandler(BaseHTTPRequestHandler):
                         <label class="block text-sm font-medium text-gray-700 mb-2">Chips</label>
                         <div class="space-y-2">
                             <label class="flex items-center space-x-2">
-                                <input type="checkbox" value="ALTERADA" class="chip-checkbox w-4 h-4">
-                                <span class="text-sm">ALTERADA</span>
+                                <input type="checkbox" value="ALTERADO" class="chip-checkbox w-4 h-4">
+                                <span class="text-sm">ALTERADO</span>
                             </label>
                             <label class="flex items-center space-x-2">
-                                <input type="checkbox" value="SUPERADA EM PARTE" class="chip-checkbox w-4 h-4">
-                                <span class="text-sm">SUPERADA EM PARTE</span>
+                                <input type="checkbox" value="SUPERADO EM PARTE" class="chip-checkbox w-4 h-4">
+                                <span class="text-sm">SUPERADO EM PARTE</span>
                             </label>
                         </div>
                     </div>
