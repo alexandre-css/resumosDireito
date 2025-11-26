@@ -1,6 +1,6 @@
 {
   "tribunal": "STF",
-  "total": 26,
+  "total": 25,
   "temas": [
     {
       "numero": 59,
@@ -18,114 +18,95 @@
     },
     {
       "numero": 170,
-      "titulo": "",
+      "titulo": "Julgamento por Juízes Convocados",
       "tese": "Não viola o postulado constitucional do juiz natural o julgamento de apelação por órgão composto majoritariamente por juízes convocados, autorizado no âmbito da Justiça Federal pela Lei 9.788/1999.",
-      "comentario": "",
-      "cor": "blue",
+      "cor": "emerald",
       "chips": []
     },
     {
       "numero": 184,
-      "titulo": "",
+      "titulo": "MP - Poder de Investigação",
       "tese": "O Ministério Público dispõe de competência para promover, por autoridade própria, e por prazo razoável, investigações de natureza penal, desde que respeitados os direitos e garantias que assistem a qualquer indiciado ou a qualquer pessoa sob investigação do Estado, observadas, sempre, por seus agentes, as hipóteses de reserva constitucional de jurisdição e, também, as prerrogativas profissionais de que se acham investidos, em nosso País, os Advogados (Lei 8.906/1994, art. 7º, notadamente os incisos I, II, III, XI, XIII, XIV e XIX), sem prejuízo da possibilidade – sempre presente no Estado democrático de Direito – do permanente controle jurisdicional dos atos, necessariamente documentados (Súmula Vinculante 14), praticados pelos membros dessa Instituição.",
-      "comentario": "",
-      "cor": "blue",
+      "cor": "emerald",
       "chips": []
     },
     {
       "numero": 238,
-      "titulo": "",
+      "titulo": "Transação Penal",
       "tese": "A homologação da transação penal prevista no artigo 76 da Lei 9.099/1995 não faz coisa julgada material e, descumpridas suas cláusulas, retoma-se a situação anterior, possibilitando-se ao Ministério Público a continuidade da persecução penal mediante oferecimento de denúncia ou requisição de inquérito policial.",
-      "comentario": "",
-      "cor": "blue",
-      "chips": []
+      "cor": "fuchsia",
+      "chips": [],
+      "comentario": "Ver Súmula Vinculante 35."
     },
     {
       "numero": 240,
-      "titulo": "",
+      "titulo": "Precatória - Participação do Réu",
       "tese": "Inexiste nulidade pela ausência, em oitiva de testemunha por carta precatória, de réu preso que não manifestou expressamente intenção de participar da audiência.",
-      "comentario": "",
-      "cor": "blue",
+      "cor": "violet",
       "chips": []
     },
     {
       "numero": 280,
-      "titulo": "",
+      "titulo": "Entrada em Domicílio",
       "tese": "A entrada forçada em domicílio sem mandado judicial só é lícita, mesmo em período noturno, quando amparada em fundadas razões, devidamente justificadas a posteriori, que indiquem que dentro da casa ocorre situação de flagrante delito, sob pena de responsabilidade disciplinar, civil e penal do agente ou da autoridade, e de nulidade dos atos praticados.",
-      "comentario": "",
-      "cor": "blue",
-      "chips": []
-    },
-    {
-      "numero": 358,
-      "titulo": "",
-      "tese": "A competência constitucional do tribunal para decidir sobre a perda do posto e da patente dos oficiais e da graduação das praças é específica, nos termos do artigo 125, § 4º, não autorizando a concessão de reforma de policial militar julgado inapto a permanecer nas fileiras da corporação.",
-      "comentario": "",
-      "cor": "blue",
+      "cor": "emerald",
       "chips": []
     },
     {
       "numero": 393,
-      "titulo": "",
+      "titulo": "Competência - Material Pornográfico",
       "tese": "Compete à Justiça Federal processar e julgar os crimes consistentes em disponibilizar ou adquirir material pornográfico, acessível transnacionalmente, envolvendo criança ou adolescente, quando praticados por meio da rede mundial de computadores (arts. 241, 241-A e 241-B da Lei nº 8.069/1990).",
-      "comentario": "",
-      "cor": "blue",
+      "cor": "purple",
       "chips": []
     },
     {
       "numero": 423,
-      "titulo": "",
+      "titulo": "Regime Prisional",
       "tese": "I - A falta de estabelecimento penal adequado não autoriza a manutenção do condenado em regime prisional mais gravoso; II - Os juízes da execução penal poderão avaliar os estabelecimentos destinados aos regimes semiaberto e aberto, para qualificação como adequados a tais regimes. São aceitáveis estabelecimentos que não se qualifiquem como “colônia agrícola, industrial” (regime semiaberto) ou “casa de albergado ou estabelecimento adequado” (regime aberto) (art. 33, §1º, alíneas “b” e “c”); III - Havendo déficit de vagas, deverá determinar-se: (i) a saída antecipada de sentenciado no regime com falta de vagas; (ii) a liberdade eletronicamente monitorada ao sentenciado que sai antecipadamente ou é posto em prisão domiciliar por falta de vagas; (iii) o cumprimento de penas restritivas de direito e/ou estudo ao sentenciado que progride ao regime aberto. Até que sejam estruturadas as medidas alternativas propostas, poderá ser deferida a prisão domiciliar ao sentenciado.",
-      "comentario": "",
-      "cor": "blue",
-      "chips": []
+      "cor": "orange",
+      "chips": [],
+      "comentario": "Súmula Vinculante 56."
     },
     {
       "numero": 453,
-      "titulo": "",
+      "titulo": "Foro - Magistrados Aposentados",
       "tese": "O foro especial por prerrogativa de função não se estende a magistrados aposentados.",
-      "comentario": "",
-      "cor": "blue",
+      "cor": "emerald",
       "chips": []
     },
     {
       "numero": 477,
-      "titulo": "",
+      "titulo": "Execução Penal - Perda por Falta Grave",
       "tese": "1. A revogação ou modificação do ato normativo em que se fundou a edição de enunciado de súmula vinculante acarreta, em regra, a necessidade de sua revisão ou cancelamento pelo Supremo Tribunal Federal, conforme o caso. 2. É constitucional a previsão legislativa de perda dos dias remidos pelo condenado que comete falta grave no curso da execução penal",
-      "comentario": "",
-      "cor": "blue",
+      "cor": "orange",
       "chips": []
     },
     {
       "numero": 580,
-      "titulo": "",
+      "titulo": "Competência - Direito Autoral",
       "tese": "Compete à Justiça Federal processar e julgar o crime de violação de direito autoral de caráter transnacional.",
-      "comentario": "",
-      "cor": "blue",
+      "cor": "green",
       "chips": []
     },
     {
       "numero": 613,
-      "titulo": "",
+      "titulo": "Citação por Hora Certa",
       "tese": "1. É constitucional a citação por hora certa, prevista no art. 362, do Código de Processo Penal. 2. A ocultação do réu para ser citado infringe cláusulas constitucionais do devido processo legal e viola as garantias constitucionais do acesso à justiça e da razoável duração do processo.",
-      "comentario": "",
-      "cor": "blue",
+      "cor": "teal",
       "chips": []
     },
     {
       "numero": 648,
-      "titulo": "",
+      "titulo": "Ambiental - Animais Silvestres",
       "tese": "Compete à Justiça Federal processar e julgar o crime ambiental de caráter transnacional que envolva animais silvestres, ameaçados de extinção e espécimes exóticas ou protegidas por compromissos internacionais assumidos pelo Brasil.",
-      "comentario": "",
-      "cor": "blue",
+      "cor": "purple",
       "chips": []
     },
     {
       "numero": 661,
-      "titulo": "",
+      "titulo": "Interceptação - Renovação",
       "tese": "São lícitas as sucessivas renovações de interceptação telefônica, desde que, verificados os requisitos do artigo 2º da Lei nº 9.296/1996 e demonstrada a necessidade da medida diante de elementos concretos e a complexidade da investigação, a decisão judicial inicial e as prorrogações sejam devidamente motivadas, com justificativa legítima, ainda que sucinta, a embasar a continuidade das investigações.",
-      "comentario": "",
-      "cor": "blue",
+      "cor": "emerald",
       "chips": []
     },
     {
@@ -137,26 +118,24 @@
     },
     {
       "numero": 941,
-      "titulo": "",
+      "titulo": "PAD e Audiência de Justificação",
       "tese": "A oitiva do condenado pelo Juízo da Execução Penal, em audiência de justificação realizada na presença do defensor e do Ministério Público, afasta a necessidade de prévio Procedimento Administrativo Disciplinar (PAD), assim como supre eventual ausência ou insuficiência de defesa técnica no PAD instaurado para apurar a prática de falta grave durante o cumprimento da pena.",
-      "comentario": "",
-      "cor": "blue",
+      "cor": "orange",
       "chips": []
     },
     {
       "numero": 977,
-      "titulo": "",
+      "titulo": "Apreensão de Celular",
       "tese": "1. A mera apreensão do aparelho celular, nos termos do art. 6º do CPP ou em flagrante delito, não está sujeita à reserva de jurisdição. Contudo, o acesso aos dados nele contidos deve observar as seguintes condicionantes: 1.1 Nas hipóteses de encontro fortuito de aparelho celular, o acesso aos respectivos dados para o fim exclusivo de esclarecer a autoria do fato supostamente criminoso, ou de quem seja o seu proprietário, não depende de consentimento ou de prévia decisão judicial, desde que justificada posteriormente a adoção da medida. 1.2. Em se tratando de aparelho celular apreendido na forma do art. 6º do CPP ou por ocasião da prisão em flagrante, o acesso aos respectivos dados será condicionado ao consentimento expresso e livre do titular dos dados ou de prévia decisão judicial (cf. art. 7º, inciso III, e art. 10, § 2º, da Lei nº 12.965/2014) que justifique, com base em elementos concretos, a proporcionalidade da medida e delimite sua abrangência à luz de direitos fundamentais à intimidade, à privacidade, à proteção dos dados pessoais e à autodeterminação informacional, inclusive nos meios digitais (art. 5º, X e LXXIX, CRFB/88). Nesses casos, a celeridade se impõe, devendo a Autoridade Policial atuar com a maior rapidez e eficiência possíveis e o Poder Judiciário conferir tramitação e apreciação prioritárias aos pedidos dessa natureza, inclusive em regime de plantão. 2. A autoridade policial poderá adotar as providências necessárias para a preservação dos dados e metadados contidos no aparelho celular apreendido, antes da autorização judicial, justificando, posteriormente, as razões de referido acesso. 3. As teses acima enunciadas só produzirão efeitos prospectivos, ressalvados os pedidos eventualmente formulados por defesas até a data do encerramento do presente julgamento.",
-      "comentario": "",
-      "cor": "blue",
-      "chips": []
+      "cor": "emerald",
+      "chips": [],
+      "comentario": "Modulação: efeitos a partir de 25/06/2025, exceto quanto a pedidos formulados até esta data."
     },
     {
       "numero": 990,
-      "titulo": "",
+      "titulo": "Compartilhamento de Relatórios",
       "tese": "1. É constitucional o compartilhamento dos relatórios de inteligência financeira da UIF e da íntegra do procedimento fiscalizatório da Receita Federal do Brasil, que define o lançamento do tributo, com os órgãos de persecução penal para fins criminais, sem a obrigatoriedade de prévia autorização judicial, devendo ser resguardado o sigilo das informações em procedimentos formalmente instaurados e sujeitos a posterior controle jurisdicional. 2. O compartilhamento pela UIF e pela RFB, referente ao item anterior, deve ser feito unicamente por meio de comunicações formais, com garantia de sigilo, certificação do destinatário e estabelecimento de instrumentos efetivos de apuração e correção de eventuais desvios.",
-      "comentario": "",
-      "cor": "blue",
+      "cor": "emerald",
       "chips": []
     },
     {

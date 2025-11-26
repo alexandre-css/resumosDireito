@@ -12,50 +12,47 @@
     },
     {
       "numero": 157,
-      "titulo": "",
+      "titulo": "Crimes Tributários - Insignificância",
       "tese": "Incide o princípio da insignificância aos crimes tributários federais e de descaminho quando o débito tributário verificado não ultrapassar o limite de R$ 20.000,00 (vinte mil reais), a teor do disposto no art. 20 da Lei n. 10.522/2002, com as atualizações efetivadas pelas Portarias 75 e 130, ambas do Ministério da Fazenda.",
-      "comentario": "",
-      "cor": "blue",
+      "cor": "stone",
       "chips": []
     },
     {
       "numero": 190,
-      "titulo": "",
+      "titulo": "Pena Abaixo do Mínimo",
       "tese": "O critério trifásico de individualização da pena, trazido pelo art. 68 do Código Penal, não permite ao Magistrado extrapolar os marcos mínimo e máximo abstratamente cominados para a aplicação da sanção penal.",
-      "comentario": "",
-      "cor": "blue",
-      "chips": []
+      "cor": "pink",
+      "chips": [],
+      "comentario": "Ver Súmula 231/STJ"
     },
     {
       "numero": 191,
-      "titulo": "",
+      "titulo": "Lei de Drogas - Aplicação Retroativa",
       "tese": "É cabível a aplicação retroativa da Lei n. 11.343/2006, desde que o resultado da incidência das suas disposições, na íntegra, seja mais favorável ao réu do que o advindo da utilização da Lei 6.368/76, sendo vedada a combinação de leis.",
-      "comentario": "Súmula Originada: 501",
-      "cor": "blue",
-      "chips": []
+      "cor": "lime",
+      "chips": [],
+      "comentario": "Súmula Originada: 501"
     },
     {
       "numero": 221,
-      "titulo": "",
+      "titulo": "ECA - Art. 244-B",
       "tese": "A configuração do crime do art. 244-B do ECA independe da prova da efetiva corrupção do menor, por se tratar de delito formal.",
-      "comentario": "Súmula Originada: 500",
-      "cor": "blue",
-      "chips": []
+      "cor": "green",
+      "chips": [],
+      "comentario": "Súmula Originada: 500"
     },
     {
       "numero": 446,
-      "titulo": "",
+      "titulo": "Recusa ao Bafômetro",
       "tese": "O indivíduo não pode ser compelido a colaborar com os referidos testes do 'bafômetro' ou do exame de sangue, em respeito ao princípio segundo o qual ninguém é obrigado a se autoincriminar (nemo tenetur se detegere).",
-      "comentario": "",
-      "cor": "blue",
+      "cor": "emerald",
       "chips": []
     },
     {
       "numero": 447,
-      "titulo": "",
+      "titulo": "Art. 306 do CTB - Critério Objetivo",
       "tese": "O tipo penal do art. 306 do Código de Trânsito Brasileiro é formado, entre outros, por um elemento objetivo, de natureza exata, que não permite a aplicação de critérios subjetivos de interpretação, qual seja, o índice de 6 decigramas de álcool por litro de sangue. O grau de embriaguez é elementar objetiva do tipo, não configurando a conduta típica o exercício da atividade em qualquer outra concentração inferior àquela determinada pela lei, emanada do Congresso Nacional. O decreto regulamentador, podendo elencar quaisquer meios de prova que considerasse hábeis à tipicidade da conduta, tratou especificamente de 2 (dois) exames por métodos técnicos e científicos que poderiam ser realizados em aparelhos homologados pelo CONTRAN, quais sejam, o exame de sangue e o etilômetro.",
-      "comentario": "",
-      "cor": "blue",
+      "cor": "green",
       "chips": []
     },
     {
@@ -68,35 +65,34 @@
     },
     {
       "numero": 581,
-      "titulo": "",
+      "titulo": "Estupro e Atentado - Hediondez",
       "tese": "Os crimes de estupro e atentado violento ao pudor praticados antes da edição da Lei nº 12.015/2009, ainda que em sua forma simples, configuram modalidades de crime hediondo.",
-      "comentario": "",
-      "cor": "blue",
+      "cor": "magenta",
       "chips": []
     },
     {
       "numero": 585,
-      "titulo": "",
+      "titulo": "Confissão e Reincidência",
       "tese": "É possível, na segunda fase da dosimetria da pena, a compensação integral da atenuante da confissão espontânea com a agravante da reincidência, seja ela específica ou não. Todavia, nos casos de multirreincidência, deve ser reconhecida a preponderância da agravante prevista no art. 61, I, do Código Penal, sendo admissível a sua compensação proporcional com a atenuante da confissão espontânea, em estrito atendimento aos princípios da individualização da pena e da proporcionalidade.",
-      "comentario": "",
-      "cor": "blue",
-      "chips": []
+      "cor": "pink",
+      "chips": [],
+      "comentario": "Ver Súmulas 545/STJ e 630/STJ e Tema 1194/STJ."
     },
     {
       "numero": 593,
-      "titulo": "",
+      "titulo": "Direito Autoral",
       "tese": "Considera-se \"típica, formal e materialmente, a conduta prevista no artigo 184, § 2º, do Código Penal, afastando, assim, a aplicação do princípio da adequação social, de quem expõe à venda CD's E DVD's 'piratas'.\"",
-      "comentario": "Súmula Originada: 502",
-      "cor": "blue",
-      "chips": []
+      "cor": "green",
+      "chips": [],
+      "comentario": "Súmula Originada: 502"
     },
     {
       "numero": 596,
-      "titulo": "",
+      "titulo": "Abolitio Criminis",
       "tese": "É típica a conduta de possuir arma de fogo de uso permitido com numeração, marca ou qualquer outro sinal de identificação raspado, suprimido ou adulterado, praticada após 23/10/2005, pois, em relação a esse delito, a abolitio criminis temporária cessou nessa data, termo final da prorrogação dos prazos previstos na redação original dos arts. 30 e 32 da Lei n. 10.826/2003.",
-      "comentario": "Súmula Originada: 513",
-      "cor": "blue",
-      "chips": []
+      "cor": "green",
+      "chips": [],
+      "comentario": "Súmula Originada: 513"
     },
     {
       "numero": 600,
@@ -108,43 +104,43 @@
     },
     {
       "numero": 646,
-      "titulo": "",
+      "titulo": "Falsa Identidade e Autodefesa",
       "tese": "É típica a conduta de atribuir-se falsa identidade perante autoridade policial, ainda que em situação de alegada autodefesa (art. 307 do CP).",
-      "comentario": "",
-      "cor": "blue",
-      "chips": []
+      "cor": "green",
+      "chips": [],
+      "comentario": "Súmula 522/STJ."
     },
     {
       "numero": 652,
-      "titulo": "",
+      "titulo": "Falta Disciplinar",
       "tese": "Para o reconhecimento da prática de falta disciplinar, no âmbito da execução penal, é imprescindível a instauração de procedimento administrativo pelo diretor do estabelecimento prisional, assegurado o direito de defesa, a ser realizado por advogado constituído ou defensor público nomeado.",
-      "comentario": "Súmula Originada: 533",
-      "cor": "blue",
-      "chips": []
+      "cor": "orange",
+      "chips": [],
+      "comentario": "Súmula Originada: 533"
     },
     {
       "numero": 655,
-      "titulo": "",
+      "titulo": "Falta Grave",
       "tese": "O reconhecimento de falta grave decorrente do cometimento de fato definido como crime doloso no cumprimento da pena prescinde do trânsito em julgado de sentença penal condenatória no processo penal instaurado para apuração do fato.",
-      "comentario": "Súmula Originada: 526",
-      "cor": "blue",
-      "chips": []
+      "cor": "orange",
+      "chips": [],
+      "comentario": "Súmula Originada: 526"
     },
     {
       "numero": 709,
-      "titulo": "",
+      "titulo": "Interrupção da Contagem",
       "tese": "1. A prática de falta grave interrompe o prazo para a progressão de regime, acarretando a modificação da data-base e o início de nova contagem do lapso necessário para o preenchimento do requisito objetivo.\n2. Em se tratando de livramento condicional, não ocorre a interrupção do prazo pela prática de falta grave. Aplicação da Súmula 441/STJ.\n3. Também não é interrompido automaticamente o prazo pela falta grave no que diz respeito à comutação de pena ou indulto, mas a sua concessão deverá observar o cumprimento dos requisitos previstos no decreto presidencial pelo qual foram instituídos.",
-      "comentario": "Súmula Originada: 534",
-      "cor": "blue",
-      "chips": []
+      "cor": "orange",
+      "chips": [],
+      "comentario": "Súmula Originada: 534"
     },
     {
       "numero": 901,
-      "titulo": "",
+      "titulo": "Direção de Veículo",
       "tese": "É de perigo abstrato o crime previsto no art. 310 do Código de Trânsito Brasileiro. Assim, não é exigível, para o aperfeiçoamento do crime, a ocorrência de lesão ou de perigo de dano concreto na conduta de quem permite, confia ou entrega a direção de veículo automotor a pessoa não habilitada, com habilitação cassada ou com o direito de dirigir suspenso, ou ainda a quem, por seu estado de saúde, física ou mental, ou por embriaguez, não esteja em condições de conduzi-lo com segurança.",
-      "comentario": "Súmula Originada: 575",
-      "cor": "blue",
-      "chips": []
+      "cor": "green",
+      "chips": [],
+      "comentario": "Súmula Originada: 575"
     },
     {
       "numero": 916,
@@ -156,19 +152,19 @@
     },
     {
       "numero": 917,
-      "titulo": "",
+      "titulo": "Remição - Atividades",
       "tese": "É possível a remição de parte do tempo de execução da pena quando o condenado, em regime fechado ou semiaberto, desempenha atividade laborativa extramuros.",
-      "comentario": "Súmula Originada: 562",
-      "cor": "blue",
-      "chips": []
+      "cor": "orange",
+      "chips": [],
+      "comentario": "Súmula Originada: 562"
     },
     {
       "numero": 918,
-      "titulo": "",
+      "titulo": "Estupro de Vulnerável",
       "tese": "Para a caracterização do crime de estupro de vulnerável previsto no art. 217-A, caput, do Código Penal, basta que o agente tenha conjunção carnal ou pratique qualquer ato libidinoso com pessoa menor de 14 anos. O consentimento da vítima, sua eventual experiência sexual anterior ou a existência de relacionamento amoroso entre o agente e a vítima não afastam a ocorrência do crime.",
-      "comentario": "Súmula Originada: 593",
-      "cor": "blue",
-      "chips": []
+      "cor": "magenta",
+      "chips": [],
+      "comentario": "Súmula Originada: 593"
     },
     {
       "numero": 920,
@@ -187,11 +183,11 @@
     },
     {
       "numero": 926,
-      "titulo": "",
+      "titulo": "Direito Autoral",
       "tese": "É suficiente, para a comprovação da materialidade do delito previsto no art. 184, § 2º, do Código Penal, a perícia realizada, por amostragem, sobre os aspectos externos do material apreendido, sendo desnecessária a identificação dos titulares dos direitos autorais violados ou de quem os represente.",
-      "comentario": "Súmula Originada: 574",
-      "cor": "blue",
-      "chips": []
+      "cor": "green",
+      "chips": [],
+      "comentario": "Súmula Originada: 574"
     },
     {
       "numero": 930,
@@ -202,18 +198,16 @@
     },
     {
       "numero": 931,
-      "titulo": "",
+      "titulo": "Inadimplemento Pena de Multa",
       "tese": "O inadimplemento da pena de multa, após cumprida a pena privativa de liberdade ou restritiva de direitos, não obsta a extinção da punibilidade, ante a alegada hipossuficiência do condenado, salvo se diversamente entender o juiz competente, em decisão suficientemente motivada, que indique concretamente a possibilidade de pagamento da sanção pecuniária.",
-      "comentario": "",
-      "cor": "blue",
+      "cor": "orange",
       "chips": []
     },
     {
       "numero": 933,
-      "titulo": "",
+      "titulo": "Falso e Descaminho - Absorção",
       "tese": "Quando o falso se exaure no descaminho, sem mais potencialidade lesiva, é por este absorvido, como crime-fim, condição que não se altera por ser menor a pena a este cominada.",
-      "comentario": "",
-      "cor": "blue",
+      "cor": "green",
       "chips": []
     },
     {
@@ -225,50 +219,46 @@
     },
     {
       "numero": 959,
-      "titulo": "",
+      "titulo": "Termo Inicial Prazo Ministério Público",
       "tese": "O termo inicial da contagem do prazo para impugnar decisão judicial é, para o Ministério Público, a data da entrega dos autos na repartição administrativa do órgão, sendo irrelevante que a intimação pessoal tenha se dado em audiência, em cartório ou por mandado.",
-      "comentario": "",
-      "cor": "blue",
+      "cor": "teal",
       "chips": []
     },
     {
       "numero": 983,
-      "titulo": "",
+      "titulo": "Violência Doméstica - Indenização",
       "tese": "Nos casos de violência contra a mulher praticados no âmbito doméstico e familiar, é possível a fixação de valor mínimo indenizatório a título de dano moral, desde que haja pedido expresso da acusação ou da parte ofendida, ainda que não especificada a quantia, e independentemente de instrução probatória.",
-      "comentario": "",
-      "cor": "blue",
+      "cor": "coral",
       "chips": []
     },
     {
       "numero": 984,
-      "titulo": "",
+      "titulo": "Honorários Dativo",
       "tese": "1ª) As tabelas de honorários elaboradas unilateralmente pelos Conselhos Seccionais da OAB não vinculam o magistrado no momento de arbitrar o valor da remuneração a que faz jus o defensor dativo que atua no processo penal; servem como referência para o estabelecimento de valor que seja justo e que reflita o labor despendido pelo advogado;\n2ª) Nas hipóteses em que o juiz da causa considerar desproporcional a quantia indicada na tabela da OAB em relação aos esforços despendidos pelo defensor dativo para os atos processuais praticados, poderá, motivadamente, arbitrar outro valor;\n3ª) São, porém, vinculativas, quanto aos valores estabelecidos para os atos praticados por defensor dativo, as tabelas produzidas mediante acordo entre o Poder Público, a Defensoria Pública e a seccional da OAB.\n4ª) Dado o disposto no art. 105, parágrafo único, II, da Constituição da República, possui caráter vinculante a Tabela de Honorários da Justiça Federal, assim como tabelas similares instituídas, eventualmente, pelos órgãos competentes das Justiças dos Estados e do Distrito Federal, na forma dos arts 96, I, e 125, § 1º, parte final, da Constituição da República.",
-      "comentario": "",
-      "cor": "blue",
+      "cor": "teal",
       "chips": []
     },
     {
       "numero": 992,
-      "titulo": "",
+      "titulo": "Maioridade Penal",
       "tese": "A superveniência da maioridade penal não interfere na apuração de ato infracional nem na aplicabilidade de medida socioeducativa em curso, inclusive na liberdade assistida, enquanto não atingida a idade de 21 anos.",
-      "comentario": "",
-      "cor": "blue",
-      "chips": []
+      "cor": "emerald",
+      "chips": [],
+      "comentario": "Súmula Originada: 605."
     },
     {
       "numero": 993,
-      "titulo": "",
+      "titulo": "Regime Prisional",
       "tese": "A inexistência de estabelecimento penal adequado ao regime prisional determinado para o cumprimento da pena não autoriza a concessão imediata do benefício da prisão domiciliar, porquanto, nos termos da Súmula Vinculante n° 56, é imprescindível que a adoção de tal medida seja precedida das providências estabelecidas no julgamento do RE n° 641.320/RS, quais sejam: <br>(i) saída antecipada de outro sentenciado no regime com falta de vagas, abrindo-se, assim, vagas para os reeducandos que acabaram de progredir; <br>(ii) a liberdade eletronicamente monitorada ao sentenciado que sai antecipadamente ou é posto em prisão domiciliar por falta de vagas; e <br>(iii) cumprimento de penas restritivas de direitos e/ou estudo aos sentenciados em regime aberto.",
-      "comentario": "",
-      "cor": "blue",
-      "chips": []
+      "cor": "orange",
+      "chips": [],
+      "comentario": "Súmula Vinculante 56."
     },
     {
       "numero": 1006,
-      "titulo": "",
+      "titulo": "Unificação das Penas e Data-Base",
       "tese": "A unificação de penas não enseja a alteração da data-base para concessão de novos benefícios executórios.",
-      "comentario": "",
-      "cor": "blue",
+      "cor": "orange",
       "chips": []
     },
     {
@@ -336,19 +326,18 @@
     },
     {
       "numero": 1121,
-      "titulo": "",
+      "titulo": "Estupro de Vulnerável e Importunação",
       "tese": "Presente o dolo específico de satisfazer à lascívia, própria ou de terceiro, a prática de ato libidinoso com menor de 14 anos configura o crime de estupro de vulnerável (art. 217-A do CP), independentemente da ligeireza ou da superficialidade da conduta, não sendo possível a desclassificação para o delito de importunação sexual (art. 215-A do CP).",
-      "comentario": "",
-      "cor": "blue",
+      "cor": "magenta",
       "chips": []
     },
     {
       "numero": 1139,
-      "titulo": "",
+      "titulo": "Tráfico - Inquéritos em Curso",
       "tese": "É vedada a utilização de inquéritos e/ou ações penais em curso para impedir a aplicação do art. 33, § 4.º, da Lei n. 11.343/06.",
-      "comentario": "",
-      "cor": "blue",
-      "chips": []
+      "cor": "lime",
+      "chips": [],
+      "comentario": "Ver Súmula 444/STJ."
     },
     {
       "numero": 1143,
@@ -401,10 +390,9 @@
     },
     {
       "numero": 1168,
-      "titulo": "",
+      "titulo": "241-A e 241-B ECA - Concurso",
       "tese": "Os tipos penais trazidos nos arts. 241-A e 241-B do Estatuto da Criança e do Adolescente são autônomos, com verbos e condutas distintas, sendo que o crime do art. 241-B não configura fase normal, tampouco meio de execução para o crime do art. 241-A, o que possibilita o reconhecimento de concurso material de crimes.",
-      "comentario": "",
-      "cor": "blue",
+      "cor": "green",
       "chips": []
     },
     {
@@ -416,26 +404,23 @@
     },
     {
       "numero": 1172,
-      "titulo": "",
+      "titulo": "Agravamento Reincidência Específica",
       "tese": "A reincidência específica como único fundamento só justifica o agravamento da pena em fração mais gravosa que 1/6 em casos excepcionais e mediante detalhada fundamentação baseada em dados concretos do caso.",
-      "comentario": "",
-      "cor": "blue",
+      "cor": "pink",
       "chips": []
     },
     {
       "numero": 1186,
-      "titulo": "",
+      "titulo": "Lei Maria da Penha - Aplicação",
       "tese": "1. A condição de gênero feminino é suficiente para atrair a aplicabilidade da Lei Maria da Penha em casos de violência doméstica e familiar, prevalecendo sobre a questão etária. 2. A Lei Maria da Penha prevalece quando suas disposições conflitarem com as de estatutos específicos, como o da Criança e do Adolescente.",
-      "comentario": "",
-      "cor": "blue",
+      "cor": "coral",
       "chips": []
     },
     {
       "numero": 1189,
-      "titulo": "",
+      "titulo": "Violência Doméstica - Pena de Multa",
       "tese": "A vedação constante do art. 17 da Lei n. 11.340/2006 (Lei Maria da Penha) obsta a imposição, nos casos de violência doméstica e familiar contra a mulher, de pena de multa isoladamente, ainda que prevista de forma autônoma no preceito secundário do tipo penal imputado.",
-      "comentario": "",
-      "cor": "blue",
+      "cor": "coral",
       "chips": []
     },
     {
@@ -447,66 +432,59 @@
     },
     {
       "numero": 1194,
-      "titulo": "",
+      "titulo": "Atenuante da Confissão",
       "tese": "1. A atenuante genérica da confissão espontânea, prevista no art. 65, III, d, do Código Penal, é apta a abrandar a pena independentemente de ter sido utilizada na formação do convencimento do julgador e mesmo que existam outros elementos suficientes de prova, desde que não tenha havido retratação, exceto, neste último caso, que a confissão tenha servido à apuração dos fatos.  2. A atenuação deve ser aplicada em menor proporção e não poderá ser considerada preponderante no concurso com agravantes quando o fato confessado for tipificado com menor pena ou caracterizar circunstância excludente da tipicidade, da ilicitude ou da culpabilidade.",
-      "comentario": "",
-      "cor": "blue",
-      "chips": []
+      "cor": "pink",
+      "chips": [],
+      "comentario": "Ver Súmulas 545/STJ e 630/STJ e Tema 585/STJ."
     },
     {
       "numero": 1197,
-      "titulo": "",
+      "titulo": "Violência Doméstica e Agravante",
       "tese": "A aplicação da agravante do art. 61, inc. II, alínea f, do Código Penal (CP), em conjunto com as disposições da Lei Maria da Penha (Lei n. 11.340/2006), não configura bis in idem.",
-      "comentario": "",
-      "cor": "blue",
+      "cor": "coral",
       "chips": []
     },
     {
       "numero": 1202,
-      "titulo": "",
+      "titulo": "Estupro de Vulnerável e Continuidade",
       "tese": "No crime de estupro de vulnerável, é possível a aplicação da fração máxima de majoração prevista no art. 71, caput, do Código Penal, ainda que não haja a delimitação precisa do número de atos sexuais praticados, desde que o longo período de tempo e a recorrência das condutas permita concluir que houve 7 (sete) ou mais repetições.",
-      "comentario": "",
-      "cor": "blue",
+      "cor": "magenta",
       "chips": []
     },
     {
       "numero": 1205,
-      "titulo": "",
+      "titulo": "Furto - Devolução do Bem",
       "tese": "A restituição imediata e integral do bem furtado não constitui, por si só, motivo suficiente para a incidência do princípio da insignificância.",
-      "comentario": "",
-      "cor": "blue",
+      "cor": "yellow",
       "chips": []
     },
     {
       "numero": 1206,
-      "titulo": "",
+      "titulo": "Laudo Toxicológico - Assinatura",
       "tese": "A simples falta de assinatura do perito encarregado pela lavratura do laudo toxicológico definitivo constitui mera irregularidade e não tem o condão de anular a prova pericial na hipótese de existirem outros elementos que comprovem a sua autenticidade, notadamente quando o expert estiver devidamente identificado e for constatada a existência de substância ilícita.",
-      "comentario": "",
-      "cor": "blue",
+      "cor": "violet",
       "chips": []
     },
     {
       "numero": 1208,
-      "titulo": "",
+      "titulo": "Reincidência e Benefícios",
       "tese": "A reincidência pode ser admitida pelo juízo das execuções penais para análise da concessão de benefícios, ainda que não reconhecida pelo juízo que prolatou a sentença condenatória.",
-      "comentario": "",
-      "cor": "blue",
+      "cor": "orange",
       "chips": []
     },
     {
       "numero": 1214,
-      "titulo": "",
-      "tese": "É  obrigatória  a  redução  proporcional  da  pena-base  quando  o tribunal de segunda instância, em recurso exclusivo da defesa, afastar circunstância judicial negativa reconhecida na sentença. Todavia, não implicam reformatio in pejusa mera correção da classificação de um fato já valorado negativamente pela sentença para enquadrá-lo como outra circunstância judicial, nem o simples reforço de fundamentação para  manter  a  valoração  negativa  de  circunstância  já  reputada desfavorável na sentença.",
-      "comentario": "",
-      "cor": "blue",
+      "titulo": "Reenquadramento Circunstância Judicial",
+      "tese": "É  obrigatória  a  redução  proporcional  da  pena-base  quando  o tribunal de segunda instância, em recurso exclusivo da defesa, afastar circunstância judicial negativa reconhecida na sentença. Todavia, não implicam reformatio in pejus a mera correção da classificação de um fato já valorado negativamente pela sentença para enquadrá-lo como outra circunstância judicial, nem o simples reforço de fundamentação para  manter  a  valoração  negativa  de  circunstância  já  reputada desfavorável na sentença.",
+      "cor": "pink",
       "chips": []
     },
     {
       "numero": 1215,
-      "titulo": "",
+      "titulo": "Dignidade Sexual - Cumulação de Agravantes",
       "tese": "Nos crimes contra a dignidade sexual, não configura bis in idem a aplicação simultânea da agravante genérica do art. 61, II, \"f\", e da majorante específica do art. 226, II, ambos do Código Penal, salvo quando presente apenas a relação de autoridade do agente sobre a vítima, hipótese na qual deve ser aplicada tão somente a causa de aumento.",
-      "comentario": "",
-      "cor": "blue",
+      "cor": "magenta",
       "chips": []
     },
     {

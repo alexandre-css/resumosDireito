@@ -272,8 +272,6 @@
             
             
             
-            
-            
             <!-- TEMAS DO STF -->
             <div class="mt-16">
                 <div class="text-center mb-6 cursor-pointer" onclick="toggleTemas('stf')">
@@ -889,7 +887,6 @@
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify leading-relaxed">É possível, na segunda fase da dosimetria da pena, a compensação integral da atenuante da confissão espontânea com a agravante da reincidência, seja ela específica ou não. Todavia, nos casos de multirreincidência, deve ser reconhecida a preponderância da agravante prevista no art. 61, I, do Código Penal, sendo admissível a sua compensação proporcional com a atenuante da confissão espontânea, em estrito atendimento aos princípios da individualização da pena e da proporcionalidade.</p>
 
-                                    <p class="text-xs bg-pink-50 p-2 rounded border-l-2 border-pink-300 mt-2 text-justify">Ver Súmulas 545/STJ e 630/STJ e Tema 1194/STJ.</p>
                                 </div>
 
                                 <!-- Tema 593/STJ -->
@@ -1700,19 +1697,17 @@
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify leading-relaxed">1. A atenuante genérica da confissão espontânea, prevista no art. 65, III, d, do Código Penal, é apta a abrandar a pena independentemente de ter sido utilizada na formação do convencimento do julgador e mesmo que existam outros elementos suficientes de prova, desde que não tenha havido retratação, exceto, neste último caso, que a confissão tenha servido à apuração dos fatos.  2. A atenuação deve ser aplicada em menor proporção e não poderá ser considerada preponderante no concurso com agravantes quando o fato confessado for tipificado com menor pena ou caracterizar circunstância excludente da tipicidade, da ilicitude ou da culpabilidade.</p>
 
-                                    <p class="text-xs bg-pink-50 p-2 rounded border-l-2 border-pink-300 mt-2 text-justify">Ver Súmulas 545/STJ e 630/STJ e Tema 585/STJ.</p>
+                                    <p class="text-xs bg-pink-50 p-2 rounded border-l-2 border-pink-300 mt-2 text-justify">Ver Súmulas 545/STJ e 630/STJ.</p>
                                 </div>
 
                                 <!-- Tema 1197/STJ -->
                                 <div
-                                    class="bg-white border-l-4 border-coral-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 tema-card relative"
+                                    class="bg-white border-l-4 border-blue-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 tema-card relative"
                                     onclick="copiarTema(1197, 'STJ', `A aplicação da agravante do art. 61, inc. II, alínea f, do Código Penal (CP), em conjunto com as disposições da Lei Maria da Penha (Lei n. 11.340/2006), não configura bis in idem.`)">
                                     <div class="flex items-center mb-2">
                                         <div
-                                            class="bg-coral-500 text-white rounded-full w-10 h-10 flex items-center justify-center text-sm font-bold mr-3">
+                                            class="bg-blue-500 text-white rounded-full w-10 h-10 flex items-center justify-center text-sm font-bold mr-3">
                                             1197</div>
-
-                                        <h4 class="font-bold text-coral-700">Violência Doméstica e Agravante</h4>
 
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify leading-relaxed">A aplicação da agravante do art. 61, inc. II, alínea f, do Código Penal (CP), em conjunto com as disposições da Lei Maria da Penha (Lei n. 11.340/2006), não configura bis in idem.</p>
@@ -1721,14 +1716,12 @@
 
                                 <!-- Tema 1202/STJ -->
                                 <div
-                                    class="bg-white border-l-4 border-magenta-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 tema-card relative"
+                                    class="bg-white border-l-4 border-blue-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 tema-card relative"
                                     onclick="copiarTema(1202, 'STJ', `No crime de estupro de vulnerável, é possível a aplicação da fração máxima de majoração prevista no art. 71, caput, do Código Penal, ainda que não haja a delimitação precisa do número de atos sexuais praticados, desde que o longo período de tempo e a recorrência das condutas permita concluir que houve 7 (sete) ou mais repetições.`)">
                                     <div class="flex items-center mb-2">
                                         <div
-                                            class="bg-magenta-500 text-white rounded-full w-10 h-10 flex items-center justify-center text-sm font-bold mr-3">
+                                            class="bg-blue-500 text-white rounded-full w-10 h-10 flex items-center justify-center text-sm font-bold mr-3">
                                             1202</div>
-
-                                        <h4 class="font-bold text-magenta-700">Estupro de Vulnerável e Continuidade</h4>
 
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify leading-relaxed">No crime de estupro de vulnerável, é possível a aplicação da fração máxima de majoração prevista no art. 71, caput, do Código Penal, ainda que não haja a delimitação precisa do número de atos sexuais praticados, desde que o longo período de tempo e a recorrência das condutas permita concluir que houve 7 (sete) ou mais repetições.</p>
@@ -1737,14 +1730,12 @@
 
                                 <!-- Tema 1205/STJ -->
                                 <div
-                                    class="bg-white border-l-4 border-yellow-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 tema-card relative"
+                                    class="bg-white border-l-4 border-blue-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 tema-card relative"
                                     onclick="copiarTema(1205, 'STJ', `A restituição imediata e integral do bem furtado não constitui, por si só, motivo suficiente para a incidência do princípio da insignificância.`)">
                                     <div class="flex items-center mb-2">
                                         <div
-                                            class="bg-yellow-500 text-white rounded-full w-10 h-10 flex items-center justify-center text-sm font-bold mr-3">
+                                            class="bg-blue-500 text-white rounded-full w-10 h-10 flex items-center justify-center text-sm font-bold mr-3">
                                             1205</div>
-
-                                        <h4 class="font-bold text-yellow-700">Furto - Devolução do Bem</h4>
 
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify leading-relaxed">A restituição imediata e integral do bem furtado não constitui, por si só, motivo suficiente para a incidência do princípio da insignificância.</p>
@@ -1753,14 +1744,12 @@
 
                                 <!-- Tema 1206/STJ -->
                                 <div
-                                    class="bg-white border-l-4 border-violet-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 tema-card relative"
+                                    class="bg-white border-l-4 border-blue-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 tema-card relative"
                                     onclick="copiarTema(1206, 'STJ', `A simples falta de assinatura do perito encarregado pela lavratura do laudo toxicológico definitivo constitui mera irregularidade e não tem o condão de anular a prova pericial na hipótese de existirem outros elementos que comprovem a sua autenticidade, notadamente quando o expert estiver devidamente identificado e for constatada a existência de substância ilícita.`)">
                                     <div class="flex items-center mb-2">
                                         <div
-                                            class="bg-violet-500 text-white rounded-full w-10 h-10 flex items-center justify-center text-sm font-bold mr-3">
+                                            class="bg-blue-500 text-white rounded-full w-10 h-10 flex items-center justify-center text-sm font-bold mr-3">
                                             1206</div>
-
-                                        <h4 class="font-bold text-violet-700">Laudo Toxicológico - Assinatura</h4>
 
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify leading-relaxed">A simples falta de assinatura do perito encarregado pela lavratura do laudo toxicológico definitivo constitui mera irregularidade e não tem o condão de anular a prova pericial na hipótese de existirem outros elementos que comprovem a sua autenticidade, notadamente quando o expert estiver devidamente identificado e for constatada a existência de substância ilícita.</p>
@@ -1769,14 +1758,12 @@
 
                                 <!-- Tema 1208/STJ -->
                                 <div
-                                    class="bg-white border-l-4 border-orange-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 tema-card relative"
+                                    class="bg-white border-l-4 border-blue-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 tema-card relative"
                                     onclick="copiarTema(1208, 'STJ', `A reincidência pode ser admitida pelo juízo das execuções penais para análise da concessão de benefícios, ainda que não reconhecida pelo juízo que prolatou a sentença condenatória.`)">
                                     <div class="flex items-center mb-2">
                                         <div
-                                            class="bg-orange-500 text-white rounded-full w-10 h-10 flex items-center justify-center text-sm font-bold mr-3">
+                                            class="bg-blue-500 text-white rounded-full w-10 h-10 flex items-center justify-center text-sm font-bold mr-3">
                                             1208</div>
-
-                                        <h4 class="font-bold text-orange-700">Reincidência e Benefícios</h4>
 
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify leading-relaxed">A reincidência pode ser admitida pelo juízo das execuções penais para análise da concessão de benefícios, ainda que não reconhecida pelo juízo que prolatou a sentença condenatória.</p>
@@ -1785,30 +1772,26 @@
 
                                 <!-- Tema 1214/STJ -->
                                 <div
-                                    class="bg-white border-l-4 border-pink-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 tema-card relative"
-                                    onclick="copiarTema(1214, 'STJ', `É  obrigatória  a  redução  proporcional  da  pena-base  quando  o tribunal de segunda instância, em recurso exclusivo da defesa, afastar circunstância judicial negativa reconhecida na sentença. Todavia, não implicam reformatio in pejus a mera correção da classificação de um fato já valorado negativamente pela sentença para enquadrá-lo como outra circunstância judicial, nem o simples reforço de fundamentação para  manter  a  valoração  negativa  de  circunstância  já  reputada desfavorável na sentença.`)">
+                                    class="bg-white border-l-4 border-blue-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 tema-card relative"
+                                    onclick="copiarTema(1214, 'STJ', `É  obrigatória  a  redução  proporcional  da  pena-base  quando  o tribunal de segunda instância, em recurso exclusivo da defesa, afastar circunstância judicial negativa reconhecida na sentença. Todavia, não implicam reformatio in pejusa mera correção da classificação de um fato já valorado negativamente pela sentença para enquadrá-lo como outra circunstância judicial, nem o simples reforço de fundamentação para  manter  a  valoração  negativa  de  circunstância  já  reputada desfavorável na sentença.`)">
                                     <div class="flex items-center mb-2">
                                         <div
-                                            class="bg-pink-500 text-white rounded-full w-10 h-10 flex items-center justify-center text-sm font-bold mr-3">
+                                            class="bg-blue-500 text-white rounded-full w-10 h-10 flex items-center justify-center text-sm font-bold mr-3">
                                             1214</div>
 
-                                        <h4 class="font-bold text-pink-700">Reenquadramento Circunstância Judicial</h4>
-
                                     </div>
-                                    <p class="text-sm text-gray-700 italic text-justify leading-relaxed">É  obrigatória  a  redução  proporcional  da  pena-base  quando  o tribunal de segunda instância, em recurso exclusivo da defesa, afastar circunstância judicial negativa reconhecida na sentença. Todavia, não implicam reformatio in pejus a mera correção da classificação de um fato já valorado negativamente pela sentença para enquadrá-lo como outra circunstância judicial, nem o simples reforço de fundamentação para  manter  a  valoração  negativa  de  circunstância  já  reputada desfavorável na sentença.</p>
+                                    <p class="text-sm text-gray-700 italic text-justify leading-relaxed">É  obrigatória  a  redução  proporcional  da  pena-base  quando  o tribunal de segunda instância, em recurso exclusivo da defesa, afastar circunstância judicial negativa reconhecida na sentença. Todavia, não implicam reformatio in pejusa mera correção da classificação de um fato já valorado negativamente pela sentença para enquadrá-lo como outra circunstância judicial, nem o simples reforço de fundamentação para  manter  a  valoração  negativa  de  circunstância  já  reputada desfavorável na sentença.</p>
 
                                 </div>
 
                                 <!-- Tema 1215/STJ -->
                                 <div
-                                    class="bg-white border-l-4 border-magenta-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 tema-card relative"
+                                    class="bg-white border-l-4 border-blue-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 tema-card relative"
                                     onclick="copiarTema(1215, 'STJ', `Nos crimes contra a dignidade sexual, não configura bis in idem a aplicação simultânea da agravante genérica do art. 61, II, "f", e da majorante específica do art. 226, II, ambos do Código Penal, salvo quando presente apenas a relação de autoridade do agente sobre a vítima, hipótese na qual deve ser aplicada tão somente a causa de aumento.`)">
                                     <div class="flex items-center mb-2">
                                         <div
-                                            class="bg-magenta-500 text-white rounded-full w-10 h-10 flex items-center justify-center text-sm font-bold mr-3">
+                                            class="bg-blue-500 text-white rounded-full w-10 h-10 flex items-center justify-center text-sm font-bold mr-3">
                                             1215</div>
-
-                                        <h4 class="font-bold text-magenta-700">Dignidade Sexual - Cumulação de Agravantes</h4>
 
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify leading-relaxed">Nos crimes contra a dignidade sexual, não configura bis in idem a aplicação simultânea da agravante genérica do art. 61, II, "f", e da majorante específica do art. 226, II, ambos do Código Penal, salvo quando presente apenas a relação de autoridade do agente sobre a vítima, hipótese na qual deve ser aplicada tão somente a causa de aumento.</p>
