@@ -1,6 +1,6 @@
 {
   "tribunal": "STJ",
-  "total": 84,
+  "total": 89,
   "temas": [
     {
       "numero": 20,
@@ -16,6 +16,16 @@
       "tese": "Incide o princípio da insignificância aos crimes tributários federais e de descaminho quando o débito tributário verificado não ultrapassar o limite de R$ 20.000,00 (vinte mil reais), a teor do disposto no art. 20 da Lei n. 10.522/2002, com as atualizações efetivadas pelas Portarias 75 e 130, ambas do Ministério da Fazenda.",
       "cor": "stone",
       "chips": []
+    },
+    {
+      "numero": 177,
+      "titulo": "Violência Doméstica - Ação Penal",
+      "tese": "A ação penal nos crimes de lesão corporal leve cometidos em detrimento da mulher, no âmbito doméstico e familiar, é pública incondicionada.",
+      "cor": "coral",
+      "chips": [
+        "ALTERADA"
+      ],
+      "comentario": "Tese anterior: \"A ação penal nos crimes de lesão corporal leve cometidos em detrimento da mulher, no âmbito doméstico e familiar, é pública condicionada à representação da vítima\"."
     },
     {
       "numero": 190,
@@ -40,6 +50,16 @@
       "cor": "green",
       "chips": [],
       "comentario": "Súmula Originada: 500"
+    },
+    {
+      "numero": 445,
+      "titulo": "Autorização Saída Temporária",
+      "tese": "Primeira tese: É recomendável que cada autorização de saída temporária do preso seja precedida de decisão judicial motivada. Entretanto, se a apreciação individual do pedido estiver, por deficiência exclusiva do aparato estatal, a interferir no direito subjetivo do apenado e no escopo ressocializador da pena, deve ser reconhecida, excepcionalmente, a possibilidade de fixação de calendário anual de saídas temporárias por ato judicial único, observadas as hipóteses de revogação automática do art. 125 da LEP.\nSegunda tese: O calendário prévio das saídas temporárias deverá ser fixado, obrigatoriamente, pelo Juízo das Execuções, não se lhe permitindo delegar à autoridade prisional a escolha das datas específicas nas quais o apenado irá usufruir os benefícios. Inteligência da Súmula n. 520 do STJ.\nTerceira tese: Respeitado o limite anual de 35 dias, estabelecido pelo art. 124 da LEP, é cabível a concessão de maior número de autorizações de curta duração.\nQuarta tese: As autorizações de saída temporária para visita à família e para participação em atividades que concorram para o retorno ao convívio social, se limitadas a cinco vezes durante o ano, deverão observar o prazo mínimo de 45 dias de intervalo entre uma e outra. Na hipótese de maior número de saídas temporárias de curta duração, já intercaladas durante os doze meses do ano e muitas vezes sem pernoite, não se exige o intervalo previsto no art. 124, § 3°, da LEP.",
+      "cor": "orange",
+      "chips": [
+        "ALTERADA"
+      ],
+      "comentario": "Tese anterior: \"A autorização das saídas temporárias é ato jurisdicional da competência do Juízo das Execuções Penais. Não é possível delegar ao administrador do presídio a fiscalização sobre diversas saídas temporárias, por se tratar de atribuição exclusiva do magistrado das execuções penais, sujeita à ação fiscalizadora do Ministério Público\"."
     },
     {
       "numero": 446,
@@ -269,6 +289,14 @@
       "chips": []
     },
     {
+      "numero": 1060,
+      "titulo": "Desobediência",
+      "tese": "A desobediência à ordem legal de parada, emanada por agentes públicos em contexto de policiamento ostensivo, para a prevenção e repressão de crimes, constitui conduta penalmente típica, prevista no art. 330 do Código Penal Brasileiro.",
+      "cor": "green",
+      "chips": [],
+      "comentario": "Ver Tema 1242/STF (pendente de julgamento)."
+    },
+    {
       "numero": 1077,
       "titulo": "Reincidência e Antecedentes",
       "tese": "Condenações criminais transitadas em julgado, não consideradas para caracterizar a reincidência, somente podem ser valoradas, na primeira fase da dosimetria, a título de antecedentes criminais, não se admitindo sua utilização para desabonar a personalidade ou a conduta social do agente.",
@@ -280,6 +308,13 @@
       "titulo": "Progressão de Regime - Retroatividade",
       "tese": "É reconhecida a retroatividade do patamar estabelecido no art. 112, V, da Lei n. 13.964/2019, àqueles apenados que, embora tenham cometido crime hediondo ou equiparado sem resultado morte, não sejam reincidentes em delito de natureza semelhante.",
       "cor": "orange",
+      "chips": []
+    },
+    {
+      "numero": 1087,
+      "titulo": "Furto Qualificado x Noturno",
+      "tese": "A causa de aumento prevista no § 1° do art. 155 do Código Penal (prática do crime de furto no período noturno) não incide no crime de furto na sua forma qualificada (§ 4°).",
+      "cor": "yellow",
       "chips": []
     },
     {
@@ -437,6 +472,14 @@
       "cor": "pink",
       "chips": [],
       "comentario": "Ver Súmulas 545/STJ e 630/STJ e Tema 585/STJ."
+    },
+    {
+      "numero": 1196,
+      "titulo": "Progressão e Pacote Anticrime",
+      "tese": "É válida a aplicação retroativa do percentual de 50% (cinquenta por cento), para fins de progressão de regime, a condenado por crime hediondo, com resultado morte, que seja reincidente genérico, nos moldes da alteração legal promovida pela Lei n. 13.964/2019 no art. 112, inc. VI, alínea a, da Lei n. 7.210/84 (Lei de Execução Penal), bem como a posterior concessão do livramento condicional, podendo ser formulado posteriormente com base no art. 83, inc. V, do Código Penal, o que não configura combinação de leis na aplicação retroativa de norma penal material mais benéfica.",
+      "cor": "orange",
+      "chips": [],
+      "comentario": "Em decisão do Vice-Presidente, Min. Luis Felipe Salomão, no REsp 2.012.101/MG, e-STJ fls. 655-657, publicada no DJEN de 3/7/2025, foi determinado \"o sobrestamento do recurso extraordinário até o julgamento do TEMA 1.319 do STF\". "
     },
     {
       "numero": 1197,
@@ -597,7 +640,7 @@
       "numero": 1336,
       "titulo": "Tráfico - Indulto",
       "tese": "O indulto previsto no Decreto n. 11.846/2023 não se aplica ao condenado por tráfico de drogas na forma do caput e § 1º do art. 33 da Lei de Drogas, vedação essa que abrange a pena de multa eventualmente cominada, salvo se beneficiado com o redutor especial (art. 33, § 4º, da Lei n. 11.343/2006).",
-      "cor": "lime",
+      "cor": "orange",
       "chips": []
     },
     {
