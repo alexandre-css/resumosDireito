@@ -298,7 +298,7 @@
     },
     {
       "numero": 1106,
-      "titulo": "Execução Penal - Unificação",
+      "titulo": "Unificação de Penas",
       "tese": "Sobrevindo condenação por pena privativa de liberdade no curso da execução de pena restritiva de direitos, as penas serão objeto de unificação, com a reconversão da pena alternativa em privativa de liberdade, ressalvada a possibilidade de cumprimento simultâneo aos apenados em regime aberto e vedada a unificação automática nos casos em que a condenação substituída por pena alternativa é superveniente.",
       "cor": "orange",
       "chips": []
@@ -355,21 +355,21 @@
     },
     {
       "numero": 1155,
-      "titulo": "Execução Penal - Detração",
+      "titulo": "Detração",
       "tese": "1) O período de recolhimento obrigatório noturno e nos dias de folga, por comprometer o status libertatis do acusado, deve ser reconhecido como período a ser detraído da pena privativa de liberdade e da medida de segurança, em homenagem aos princípios da proporcionalidade e do non bis in idem. 2) O monitoramento eletrônico associado, atribuição do Estado, não é condição indeclinável para a detração dos períodos de submissão a essas medidas cautelares, não se justificando distinção de tratamento ao investigado ao qual não é determinado e disponibilizado o aparelhamento. 3) As horas de recolhimento domiciliar noturno e nos dias de folga devem ser convertidas em dias para contagem da detração da pena. Se no cômputo total remanescer período menor que vinte e quatro horas, essa fração de dia deverá ser desprezada.",
       "cor": "orange",
       "chips": []
     },
     {
       "numero": 1161,
-      "titulo": "Execução Penal - Livramento Condicional",
+      "titulo": "Livramento Condicional",
       "tese": "A valoração do requisito subjetivo para concessão do livramento condicional - bom comportamento durante da execução da pena (art. 83, inciso III, alínea \"a\", do Código Penal) - deve considerar todo o histórico prisional, não se limitando ao período de 12 meses referido na alínea \"b\" do mesmo inciso III do art. 83 do Código Penal.",
       "cor": "orange",
       "chips": []
     },
     {
       "numero": 1165,
-      "titulo": "Execução Penal - Progressão de Regime",
+      "titulo": "Progressão de Regime",
       "tese": "A decisão que defere a progressão de regime não tem natureza constitutiva, senão declaratória. O termo inicial para a progressão de regime deverá ser a data em que preenchidos os requisitos objetivo e subjetivo descritos no art. 112 da Lei 7.210, de 11/07/1984 (Lei de Execução Penal), e não a data em que efetivamente foi deferida a progressão. Essa data deverá ser definida de forma casuística, fixando-se como termo inicial o momento em que preenchido o último requisito pendente, seja ele o objetivo ou o subjetivo. Se por último for preenchido o requisito subjetivo, independentemente da anterior implementação do requisito objetivo, será aquele (o subjetivo) o marco para fixação da data-base para efeito de nova progressão de regime.",
       "cor": "orange",
       "chips": []

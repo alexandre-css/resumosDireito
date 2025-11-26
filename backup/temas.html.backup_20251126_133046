@@ -277,8 +277,6 @@
             
             
             
-            
-            
             <!-- TEMAS DO STF -->
             <div class="mt-16">
                 <div class="text-center mb-6 cursor-pointer" onclick="toggleTemas('stf')">
@@ -292,7 +290,7 @@
                             </path>
                         </svg>
                     </h2>
-                    <p class="text-sm text-gray-600 mt-2">Clique para expandir/recolher • 45 temas</p>
+                    <p class="text-sm text-gray-600 mt-2">Clique para expandir/recolher • 36 temas</p>
                 </div>
 
                 <div id="temas-stf" class="overflow-hidden transition-all duration-500 max-h-0">
@@ -318,71 +316,6 @@
 
                                 </div>
 
-                                <!-- Tema 113/STF -->
-                                <div
-                                    class="bg-white border-l-4 border-green-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 tema-card relative"
-                                    onclick="copiarTema(113, 'STF', `O art. 25 da Lei de Contravenções Penais (Decreto-lei 3.688/1941) não foi recepcionado pela Constituição de 1988, por violar os princípios da dignidade da pessoa humana (CF, art. 1º, III) e da isonomia (CF, art. 5º, caput e I).`)">
-                                    <div class="flex items-center mb-2">
-                                        <div
-                                            class="bg-green-500 text-white rounded-full w-10 h-10 flex items-center justify-center text-sm font-bold mr-3">
-                                            113</div>
-
-                                        <h4 class="font-bold text-green-700">LCP, art. 25 - Inconstitucionalidade</h4>
-
-                                    </div>
-                                    <p class="text-sm text-gray-700 italic text-justify leading-relaxed">O art. 25 da Lei de Contravenções Penais (Decreto-lei 3.688/1941) não foi recepcionado pela Constituição de 1988, por violar os princípios da dignidade da pessoa humana (CF, art. 1º, III) e da isonomia (CF, art. 5º, caput e I).</p>
-
-                                </div>
-
-                                <!-- Tema 114/STF -->
-                                <div
-                                    class="bg-white border-l-4 border-pink-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 tema-card relative"
-                                    onclick="copiarTema(114, 'STF', `Surge harmônico com o princípio constitucional da individualização da pena o inciso I do artigo 61 do Código Penal, no que prevê, como agravante, a reincidência.`)">
-                                    <div class="flex items-center mb-2">
-                                        <div
-                                            class="bg-pink-500 text-white rounded-full w-10 h-10 flex items-center justify-center text-sm font-bold mr-3">
-                                            114</div>
-
-                                        <h4 class="font-bold text-pink-700">Reincidência - Constitucionalidade</h4>
-
-                                    </div>
-                                    <p class="text-sm text-gray-700 italic text-justify leading-relaxed">Surge harmônico com o princípio constitucional da individualização da pena o inciso I do artigo 61 do Código Penal, no que prevê, como agravante, a reincidência.</p>
-
-                                </div>
-
-                                <!-- Tema 129/STF -->
-                                <div
-                                    class="bg-white border-l-4 border-pink-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 tema-card relative"
-                                    onclick="copiarTema(129, 'STF', `A existência de inquéritos policiais ou de ações penais sem trânsito em julgado não pode ser considerada como maus antecedentes para fins de dosimetria da pena.`)">
-                                    <div class="flex items-center mb-2">
-                                        <div
-                                            class="bg-pink-500 text-white rounded-full w-10 h-10 flex items-center justify-center text-sm font-bold mr-3">
-                                            129</div>
-
-                                        <h4 class="font-bold text-pink-700">Inquéritos em Curso</h4>
-
-                                    </div>
-                                    <p class="text-sm text-gray-700 italic text-justify leading-relaxed">A existência de inquéritos policiais ou de ações penais sem trânsito em julgado não pode ser considerada como maus antecedentes para fins de dosimetria da pena.</p>
-
-                                    <p class="text-xs bg-pink-50 p-2 rounded border-l-2 border-pink-300 mt-2 text-justify">Ver Súmula 444/STJ.</p>
-                                </div>
-
-                                <!-- Tema 150/STF -->
-                                <div
-                                    class="bg-white border-l-4 border-pink-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 tema-card relative"
-                                    onclick="copiarTema(150, 'STF', `Não se aplica ao reconhecimento dos maus antecedentes o prazo quinquenal de prescrição da reincidência, previsto no art. 64, I, do Código Penal, podendo o julgador, fundamentada e eventualmente, não promover qualquer incremento da pena-base em razão de condenações pretéritas, quando as considerar desimportantes, ou demasiadamente distanciadas no tempo, e, portanto, não necessárias à prevenção e repressão do crime, nos termos do comando do artigo 59, do Código Penal.`)">
-                                    <div class="flex items-center mb-2">
-                                        <div
-                                            class="bg-pink-500 text-white rounded-full w-10 h-10 flex items-center justify-center text-sm font-bold mr-3">
-                                            150</div>
-
-                                        <h4 class="font-bold text-pink-700">Maus Antecedentes - Prescrição</h4>
-
-                                    </div>
-                                    <p class="text-sm text-gray-700 italic text-justify leading-relaxed">Não se aplica ao reconhecimento dos maus antecedentes o prazo quinquenal de prescrição da reincidência, previsto no art. 64, I, do Código Penal, podendo o julgador, fundamentada e eventualmente, não promover qualquer incremento da pena-base em razão de condenações pretéritas, quando as considerar desimportantes, ou demasiadamente distanciadas no tempo, e, portanto, não necessárias à prevenção e repressão do crime, nos termos do comando do artigo 59, do Código Penal.</p>
-
-                                </div>
-
                                 <!-- Tema 154/STF -->
                                 <div
                                     class="bg-white border-l-4 border-teal-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 tema-card relative"
@@ -397,40 +330,6 @@
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify leading-relaxed">Qualquer decisão do Poder Judiciário que rejeite denúncia, que impronuncie ou absolva, sumariamente, os réus ou, ainda, que ordene a extinção, em sede de “habeas corpus”, de procedimentos penais não transgride o monopólio constitucional da ação penal pública (CF, art. 129, I) nem ofende os postulados do juiz natural (CF, art. 5º, inciso LIII) e da soberania do veredicto do Júri (CF, art. 5º, inciso XXXVIII, “c”).</p>
 
-                                </div>
-
-                                <!-- Tema 158/STF -->
-                                <div
-                                    class="bg-white border-l-4 border-pink-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 tema-card relative"
-                                    onclick="copiarTema(158, 'STF', `Circunstância atenuante genérica não pode conduzir à redução da pena abaixo do mínimo legal.`)">
-                                    <div class="flex items-center mb-2">
-                                        <div
-                                            class="bg-pink-500 text-white rounded-full w-10 h-10 flex items-center justify-center text-sm font-bold mr-3">
-                                            158</div>
-
-                                        <h4 class="font-bold text-pink-700">Pena Abaixo do Mínimo</h4>
-
-                                    </div>
-                                    <p class="text-sm text-gray-700 italic text-justify leading-relaxed">Circunstância atenuante genérica não pode conduzir à redução da pena abaixo do mínimo legal.</p>
-
-                                    <p class="text-xs bg-pink-50 p-2 rounded border-l-2 border-pink-300 mt-2 text-justify">Ver Súmula 231/STJ.</p>
-                                </div>
-
-                                <!-- Tema 169/STF -->
-                                <div
-                                    class="bg-white border-l-4 border-lime-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 tema-card relative"
-                                    onclick="copiarTema(169, 'STF', `I – É inadmissível a aplicação da causa de diminuição prevista no art. 33, § 4º, da Lei 11.343/2006 à pena relativa à condenação por crime cometido na vigência da Lei 6.368/1976; II – Não é possível a conjugação de partes mais benéficas das referidas normas, para criar-se uma terceira lei, sob pena de violação aos princípios da legalidade e da separação de Poderes; III – O juiz, contudo, deverá, no caso concreto, avaliar qual das mencionadas leis é mais favorável ao réu e aplicá-la em sua integralidade.`)">
-                                    <div class="flex items-center mb-2">
-                                        <div
-                                            class="bg-lime-500 text-white rounded-full w-10 h-10 flex items-center justify-center text-sm font-bold mr-3">
-                                            169</div>
-
-                                        <h4 class="font-bold text-lime-700">Tráfico Privilegiado - Retroação</h4>
-
-                                    </div>
-                                    <p class="text-sm text-gray-700 italic text-justify leading-relaxed">I – É inadmissível a aplicação da causa de diminuição prevista no art. 33, § 4º, da Lei 11.343/2006 à pena relativa à condenação por crime cometido na vigência da Lei 6.368/1976; II – Não é possível a conjugação de partes mais benéficas das referidas normas, para criar-se uma terceira lei, sob pena de violação aos princípios da legalidade e da separação de Poderes; III – O juiz, contudo, deverá, no caso concreto, avaliar qual das mencionadas leis é mais favorável ao réu e aplicá-la em sua integralidade.</p>
-
-                                    <p class="text-xs bg-lime-50 p-2 rounded border-l-2 border-lime-300 mt-2 text-justify">Ver Súmula 501/STJ.</p>
                                 </div>
 
                                 <!-- Tema 170/STF -->
@@ -465,38 +364,6 @@
 
                                 </div>
 
-                                <!-- Tema 187/STF -->
-                                <div
-                                    class="bg-white border-l-4 border-fuchsia-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 tema-card relative"
-                                    onclick="copiarTema(187, 'STF', `As consequências jurídicas extra penais previstas no art. 91 do Código Penal são decorrentes de sentença penal condenatória. Tal não ocorre, portanto, quando há transação penal (art. 76 da Lei 9.099/1995), cuja sentença tem natureza meramente homologatória, sem qualquer juízo sobre a responsabilidade criminal do aceitante. As consequências geradas pela transação penal são essencialmente aquelas estipuladas por modo consensual no respectivo instrumento de acordo.`)">
-                                    <div class="flex items-center mb-2">
-                                        <div
-                                            class="bg-fuchsia-500 text-white rounded-full w-10 h-10 flex items-center justify-center text-sm font-bold mr-3">
-                                            187</div>
-
-                                        <h4 class="font-bold text-fuchsia-700">Transação e Efeitos Extra Penais</h4>
-
-                                    </div>
-                                    <p class="text-sm text-gray-700 italic text-justify leading-relaxed">As consequências jurídicas extra penais previstas no art. 91 do Código Penal são decorrentes de sentença penal condenatória. Tal não ocorre, portanto, quando há transação penal (art. 76 da Lei 9.099/1995), cuja sentença tem natureza meramente homologatória, sem qualquer juízo sobre a responsabilidade criminal do aceitante. As consequências geradas pela transação penal são essencialmente aquelas estipuladas por modo consensual no respectivo instrumento de acordo.</p>
-
-                                </div>
-
-                                <!-- Tema 237/STF -->
-                                <div
-                                    class="bg-white border-l-4 border-emerald-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 tema-card relative"
-                                    onclick="copiarTema(237, 'STF', `É lícita a prova consistente em gravação ambiental realizada por um dos interlocutores sem conhecimento do outro.`)">
-                                    <div class="flex items-center mb-2">
-                                        <div
-                                            class="bg-emerald-500 text-white rounded-full w-10 h-10 flex items-center justify-center text-sm font-bold mr-3">
-                                            237</div>
-
-                                        <h4 class="font-bold text-emerald-700">Gravação Ambiental</h4>
-
-                                    </div>
-                                    <p class="text-sm text-gray-700 italic text-justify leading-relaxed">É lícita a prova consistente em gravação ambiental realizada por um dos interlocutores sem conhecimento do outro.</p>
-
-                                </div>
-
                                 <!-- Tema 238/STF -->
                                 <div
                                     class="bg-white border-l-4 border-fuchsia-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 tema-card relative"
@@ -512,23 +379,6 @@
                                     <p class="text-sm text-gray-700 italic text-justify leading-relaxed">A homologação da transação penal prevista no artigo 76 da Lei 9.099/1995 não faz coisa julgada material e, descumpridas suas cláusulas, retoma-se a situação anterior, possibilitando-se ao Ministério Público a continuidade da persecução penal mediante oferecimento de denúncia ou requisição de inquérito policial.</p>
 
                                     <p class="text-xs bg-fuchsia-50 p-2 rounded border-l-2 border-fuchsia-300 mt-2 text-justify">Ver Súmula Vinculante 35.</p>
-                                </div>
-
-                                <!-- Tema 239/STF -->
-                                <div
-                                    class="bg-white border-l-4 border-indigo-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 tema-card relative"
-                                    onclick="copiarTema(239, 'STF', `É inadmissível a extinção da punibilidade em virtude da decretação da prescrição "em perspectiva, projetada ou antecipada", isto é, com base em previsão da pena que hipoteticamente seria aplicada, independentemente da existência ou sorte do processo criminal.`)">
-                                    <div class="flex items-center mb-2">
-                                        <div
-                                            class="bg-indigo-500 text-white rounded-full w-10 h-10 flex items-center justify-center text-sm font-bold mr-3">
-                                            239</div>
-
-                                        <h4 class="font-bold text-indigo-700">Prescrição Antecipada</h4>
-
-                                    </div>
-                                    <p class="text-sm text-gray-700 italic text-justify leading-relaxed">É inadmissível a extinção da punibilidade em virtude da decretação da prescrição "em perspectiva, projetada ou antecipada", isto é, com base em previsão da pena que hipoteticamente seria aplicada, independentemente da existência ou sorte do processo criminal.</p>
-
-                                    <p class="text-xs bg-indigo-50 p-2 rounded border-l-2 border-indigo-300 mt-2 text-justify">Ver Súmula 438/STJ.</p>
                                 </div>
 
                                 <!-- Tema 240/STF -->
@@ -669,7 +519,7 @@
                                             class="bg-orange-500 text-white rounded-full w-10 h-10 flex items-center justify-center text-sm font-bold mr-3">
                                             477</div>
 
-                                        <h4 class="font-bold text-orange-700">Perda por Falta Grave</h4>
+                                        <h4 class="font-bold text-orange-700">Execução Penal - Perda por Falta Grave</h4>
 
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify leading-relaxed">1. A revogação ou modificação do ato normativo em que se fundou a edição de enunciado de súmula vinculante acarreta, em regra, a necessidade de sua revisão ou cancelamento pelo Supremo Tribunal Federal, conforme o caso. 2. É constitucional a previsão legislativa de perda dos dias remidos pelo condenado que comete falta grave no curso da execução penal</p>
@@ -1721,7 +1571,7 @@
                                             class="bg-orange-500 text-white rounded-full w-10 h-10 flex items-center justify-center text-sm font-bold mr-3">
                                             1106</div>
 
-                                        <h4 class="font-bold text-orange-700">Unificação de Penas</h4>
+                                        <h4 class="font-bold text-orange-700">Execução Penal - Unificação</h4>
 
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify leading-relaxed">Sobrevindo condenação por pena privativa de liberdade no curso da execução de pena restritiva de direitos, as penas serão objeto de unificação, com a reconversão da pena alternativa em privativa de liberdade, ressalvada a possibilidade de cumprimento simultâneo aos apenados em regime aberto e vedada a unificação automática nos casos em que a condenação substituída por pena alternativa é superveniente.</p>
@@ -1850,7 +1700,7 @@
                                             class="bg-orange-500 text-white rounded-full w-10 h-10 flex items-center justify-center text-sm font-bold mr-3">
                                             1155</div>
 
-                                        <h4 class="font-bold text-orange-700">Detração</h4>
+                                        <h4 class="font-bold text-orange-700">Execução Penal - Detração</h4>
 
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify leading-relaxed">1) O período de recolhimento obrigatório noturno e nos dias de folga, por comprometer o status libertatis do acusado, deve ser reconhecido como período a ser detraído da pena privativa de liberdade e da medida de segurança, em homenagem aos princípios da proporcionalidade e do non bis in idem. 2) O monitoramento eletrônico associado, atribuição do Estado, não é condição indeclinável para a detração dos períodos de submissão a essas medidas cautelares, não se justificando distinção de tratamento ao investigado ao qual não é determinado e disponibilizado o aparelhamento. 3) As horas de recolhimento domiciliar noturno e nos dias de folga devem ser convertidas em dias para contagem da detração da pena. Se no cômputo total remanescer período menor que vinte e quatro horas, essa fração de dia deverá ser desprezada.</p>
@@ -1866,7 +1716,7 @@
                                             class="bg-orange-500 text-white rounded-full w-10 h-10 flex items-center justify-center text-sm font-bold mr-3">
                                             1161</div>
 
-                                        <h4 class="font-bold text-orange-700">Livramento Condicional</h4>
+                                        <h4 class="font-bold text-orange-700">Execução Penal - Livramento Condicional</h4>
 
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify leading-relaxed">A valoração do requisito subjetivo para concessão do livramento condicional - bom comportamento durante da execução da pena (art. 83, inciso III, alínea "a", do Código Penal) - deve considerar todo o histórico prisional, não se limitando ao período de 12 meses referido na alínea "b" do mesmo inciso III do art. 83 do Código Penal.</p>
@@ -1882,7 +1732,7 @@
                                             class="bg-orange-500 text-white rounded-full w-10 h-10 flex items-center justify-center text-sm font-bold mr-3">
                                             1165</div>
 
-                                        <h4 class="font-bold text-orange-700">Progressão de Regime</h4>
+                                        <h4 class="font-bold text-orange-700">Execução Penal - Progressão de Regime</h4>
 
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify leading-relaxed">A decisão que defere a progressão de regime não tem natureza constitutiva, senão declaratória. O termo inicial para a progressão de regime deverá ser a data em que preenchidos os requisitos objetivo e subjetivo descritos no art. 112 da Lei 7.210, de 11/07/1984 (Lei de Execução Penal), e não a data em que efetivamente foi deferida a progressão. Essa data deverá ser definida de forma casuística, fixando-se como termo inicial o momento em que preenchido o último requisito pendente, seja ele o objetivo ou o subjetivo. Se por último for preenchido o requisito subjetivo, independentemente da anterior implementação do requisito objetivo, será aquele (o subjetivo) o marco para fixação da data-base para efeito de nova progressão de regime.</p>

@@ -278,7 +278,6 @@
             
             
             
-            
             <!-- TEMAS DO STF -->
             <div class="mt-16">
                 <div class="text-center mb-6 cursor-pointer" onclick="toggleTemas('stf')">
@@ -669,7 +668,7 @@
                                             class="bg-orange-500 text-white rounded-full w-10 h-10 flex items-center justify-center text-sm font-bold mr-3">
                                             477</div>
 
-                                        <h4 class="font-bold text-orange-700">Perda por Falta Grave</h4>
+                                        <h4 class="font-bold text-orange-700">Execução Penal - Perda por Falta Grave</h4>
 
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify leading-relaxed">1. A revogação ou modificação do ato normativo em que se fundou a edição de enunciado de súmula vinculante acarreta, em regra, a necessidade de sua revisão ou cancelamento pelo Supremo Tribunal Federal, conforme o caso. 2. É constitucional a previsão legislativa de perda dos dias remidos pelo condenado que comete falta grave no curso da execução penal</p>
@@ -1721,7 +1720,7 @@
                                             class="bg-orange-500 text-white rounded-full w-10 h-10 flex items-center justify-center text-sm font-bold mr-3">
                                             1106</div>
 
-                                        <h4 class="font-bold text-orange-700">Unificação de Penas</h4>
+                                        <h4 class="font-bold text-orange-700">Execução Penal - Unificação</h4>
 
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify leading-relaxed">Sobrevindo condenação por pena privativa de liberdade no curso da execução de pena restritiva de direitos, as penas serão objeto de unificação, com a reconversão da pena alternativa em privativa de liberdade, ressalvada a possibilidade de cumprimento simultâneo aos apenados em regime aberto e vedada a unificação automática nos casos em que a condenação substituída por pena alternativa é superveniente.</p>
@@ -1850,7 +1849,7 @@
                                             class="bg-orange-500 text-white rounded-full w-10 h-10 flex items-center justify-center text-sm font-bold mr-3">
                                             1155</div>
 
-                                        <h4 class="font-bold text-orange-700">Detração</h4>
+                                        <h4 class="font-bold text-orange-700">Execução Penal - Detração</h4>
 
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify leading-relaxed">1) O período de recolhimento obrigatório noturno e nos dias de folga, por comprometer o status libertatis do acusado, deve ser reconhecido como período a ser detraído da pena privativa de liberdade e da medida de segurança, em homenagem aos princípios da proporcionalidade e do non bis in idem. 2) O monitoramento eletrônico associado, atribuição do Estado, não é condição indeclinável para a detração dos períodos de submissão a essas medidas cautelares, não se justificando distinção de tratamento ao investigado ao qual não é determinado e disponibilizado o aparelhamento. 3) As horas de recolhimento domiciliar noturno e nos dias de folga devem ser convertidas em dias para contagem da detração da pena. Se no cômputo total remanescer período menor que vinte e quatro horas, essa fração de dia deverá ser desprezada.</p>
@@ -1866,7 +1865,7 @@
                                             class="bg-orange-500 text-white rounded-full w-10 h-10 flex items-center justify-center text-sm font-bold mr-3">
                                             1161</div>
 
-                                        <h4 class="font-bold text-orange-700">Livramento Condicional</h4>
+                                        <h4 class="font-bold text-orange-700">Execução Penal - Livramento Condicional</h4>
 
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify leading-relaxed">A valoração do requisito subjetivo para concessão do livramento condicional - bom comportamento durante da execução da pena (art. 83, inciso III, alínea "a", do Código Penal) - deve considerar todo o histórico prisional, não se limitando ao período de 12 meses referido na alínea "b" do mesmo inciso III do art. 83 do Código Penal.</p>
@@ -1882,7 +1881,7 @@
                                             class="bg-orange-500 text-white rounded-full w-10 h-10 flex items-center justify-center text-sm font-bold mr-3">
                                             1165</div>
 
-                                        <h4 class="font-bold text-orange-700">Progressão de Regime</h4>
+                                        <h4 class="font-bold text-orange-700">Execução Penal - Progressão de Regime</h4>
 
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify leading-relaxed">A decisão que defere a progressão de regime não tem natureza constitutiva, senão declaratória. O termo inicial para a progressão de regime deverá ser a data em que preenchidos os requisitos objetivo e subjetivo descritos no art. 112 da Lei 7.210, de 11/07/1984 (Lei de Execução Penal), e não a data em que efetivamente foi deferida a progressão. Essa data deverá ser definida de forma casuística, fixando-se como termo inicial o momento em que preenchido o último requisito pendente, seja ele o objetivo ou o subjetivo. Se por último for preenchido o requisito subjetivo, independentemente da anterior implementação do requisito objetivo, será aquele (o subjetivo) o marco para fixação da data-base para efeito de nova progressão de regime.</p>

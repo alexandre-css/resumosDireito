@@ -275,10 +275,6 @@
             
             
             
-            
-            
-            
-            
             <!-- TEMAS DO STF -->
             <div class="mt-16">
                 <div class="text-center mb-6 cursor-pointer" onclick="toggleTemas('stf')">
@@ -292,7 +288,7 @@
                             </path>
                         </svg>
                     </h2>
-                    <p class="text-sm text-gray-600 mt-2">Clique para expandir/recolher • 45 temas</p>
+                    <p class="text-sm text-gray-600 mt-2">Clique para expandir/recolher • 24 temas</p>
                 </div>
 
                 <div id="temas-stf" class="overflow-hidden transition-all duration-500 max-h-0">
@@ -318,71 +314,6 @@
 
                                 </div>
 
-                                <!-- Tema 113/STF -->
-                                <div
-                                    class="bg-white border-l-4 border-green-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 tema-card relative"
-                                    onclick="copiarTema(113, 'STF', `O art. 25 da Lei de Contravenções Penais (Decreto-lei 3.688/1941) não foi recepcionado pela Constituição de 1988, por violar os princípios da dignidade da pessoa humana (CF, art. 1º, III) e da isonomia (CF, art. 5º, caput e I).`)">
-                                    <div class="flex items-center mb-2">
-                                        <div
-                                            class="bg-green-500 text-white rounded-full w-10 h-10 flex items-center justify-center text-sm font-bold mr-3">
-                                            113</div>
-
-                                        <h4 class="font-bold text-green-700">LCP, art. 25 - Inconstitucionalidade</h4>
-
-                                    </div>
-                                    <p class="text-sm text-gray-700 italic text-justify leading-relaxed">O art. 25 da Lei de Contravenções Penais (Decreto-lei 3.688/1941) não foi recepcionado pela Constituição de 1988, por violar os princípios da dignidade da pessoa humana (CF, art. 1º, III) e da isonomia (CF, art. 5º, caput e I).</p>
-
-                                </div>
-
-                                <!-- Tema 114/STF -->
-                                <div
-                                    class="bg-white border-l-4 border-pink-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 tema-card relative"
-                                    onclick="copiarTema(114, 'STF', `Surge harmônico com o princípio constitucional da individualização da pena o inciso I do artigo 61 do Código Penal, no que prevê, como agravante, a reincidência.`)">
-                                    <div class="flex items-center mb-2">
-                                        <div
-                                            class="bg-pink-500 text-white rounded-full w-10 h-10 flex items-center justify-center text-sm font-bold mr-3">
-                                            114</div>
-
-                                        <h4 class="font-bold text-pink-700">Reincidência - Constitucionalidade</h4>
-
-                                    </div>
-                                    <p class="text-sm text-gray-700 italic text-justify leading-relaxed">Surge harmônico com o princípio constitucional da individualização da pena o inciso I do artigo 61 do Código Penal, no que prevê, como agravante, a reincidência.</p>
-
-                                </div>
-
-                                <!-- Tema 129/STF -->
-                                <div
-                                    class="bg-white border-l-4 border-pink-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 tema-card relative"
-                                    onclick="copiarTema(129, 'STF', `A existência de inquéritos policiais ou de ações penais sem trânsito em julgado não pode ser considerada como maus antecedentes para fins de dosimetria da pena.`)">
-                                    <div class="flex items-center mb-2">
-                                        <div
-                                            class="bg-pink-500 text-white rounded-full w-10 h-10 flex items-center justify-center text-sm font-bold mr-3">
-                                            129</div>
-
-                                        <h4 class="font-bold text-pink-700">Inquéritos em Curso</h4>
-
-                                    </div>
-                                    <p class="text-sm text-gray-700 italic text-justify leading-relaxed">A existência de inquéritos policiais ou de ações penais sem trânsito em julgado não pode ser considerada como maus antecedentes para fins de dosimetria da pena.</p>
-
-                                    <p class="text-xs bg-pink-50 p-2 rounded border-l-2 border-pink-300 mt-2 text-justify">Ver Súmula 444/STJ.</p>
-                                </div>
-
-                                <!-- Tema 150/STF -->
-                                <div
-                                    class="bg-white border-l-4 border-pink-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 tema-card relative"
-                                    onclick="copiarTema(150, 'STF', `Não se aplica ao reconhecimento dos maus antecedentes o prazo quinquenal de prescrição da reincidência, previsto no art. 64, I, do Código Penal, podendo o julgador, fundamentada e eventualmente, não promover qualquer incremento da pena-base em razão de condenações pretéritas, quando as considerar desimportantes, ou demasiadamente distanciadas no tempo, e, portanto, não necessárias à prevenção e repressão do crime, nos termos do comando do artigo 59, do Código Penal.`)">
-                                    <div class="flex items-center mb-2">
-                                        <div
-                                            class="bg-pink-500 text-white rounded-full w-10 h-10 flex items-center justify-center text-sm font-bold mr-3">
-                                            150</div>
-
-                                        <h4 class="font-bold text-pink-700">Maus Antecedentes - Prescrição</h4>
-
-                                    </div>
-                                    <p class="text-sm text-gray-700 italic text-justify leading-relaxed">Não se aplica ao reconhecimento dos maus antecedentes o prazo quinquenal de prescrição da reincidência, previsto no art. 64, I, do Código Penal, podendo o julgador, fundamentada e eventualmente, não promover qualquer incremento da pena-base em razão de condenações pretéritas, quando as considerar desimportantes, ou demasiadamente distanciadas no tempo, e, portanto, não necessárias à prevenção e repressão do crime, nos termos do comando do artigo 59, do Código Penal.</p>
-
-                                </div>
-
                                 <!-- Tema 154/STF -->
                                 <div
                                     class="bg-white border-l-4 border-teal-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 tema-card relative"
@@ -397,40 +328,6 @@
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify leading-relaxed">Qualquer decisão do Poder Judiciário que rejeite denúncia, que impronuncie ou absolva, sumariamente, os réus ou, ainda, que ordene a extinção, em sede de “habeas corpus”, de procedimentos penais não transgride o monopólio constitucional da ação penal pública (CF, art. 129, I) nem ofende os postulados do juiz natural (CF, art. 5º, inciso LIII) e da soberania do veredicto do Júri (CF, art. 5º, inciso XXXVIII, “c”).</p>
 
-                                </div>
-
-                                <!-- Tema 158/STF -->
-                                <div
-                                    class="bg-white border-l-4 border-pink-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 tema-card relative"
-                                    onclick="copiarTema(158, 'STF', `Circunstância atenuante genérica não pode conduzir à redução da pena abaixo do mínimo legal.`)">
-                                    <div class="flex items-center mb-2">
-                                        <div
-                                            class="bg-pink-500 text-white rounded-full w-10 h-10 flex items-center justify-center text-sm font-bold mr-3">
-                                            158</div>
-
-                                        <h4 class="font-bold text-pink-700">Pena Abaixo do Mínimo</h4>
-
-                                    </div>
-                                    <p class="text-sm text-gray-700 italic text-justify leading-relaxed">Circunstância atenuante genérica não pode conduzir à redução da pena abaixo do mínimo legal.</p>
-
-                                    <p class="text-xs bg-pink-50 p-2 rounded border-l-2 border-pink-300 mt-2 text-justify">Ver Súmula 231/STJ.</p>
-                                </div>
-
-                                <!-- Tema 169/STF -->
-                                <div
-                                    class="bg-white border-l-4 border-lime-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 tema-card relative"
-                                    onclick="copiarTema(169, 'STF', `I – É inadmissível a aplicação da causa de diminuição prevista no art. 33, § 4º, da Lei 11.343/2006 à pena relativa à condenação por crime cometido na vigência da Lei 6.368/1976; II – Não é possível a conjugação de partes mais benéficas das referidas normas, para criar-se uma terceira lei, sob pena de violação aos princípios da legalidade e da separação de Poderes; III – O juiz, contudo, deverá, no caso concreto, avaliar qual das mencionadas leis é mais favorável ao réu e aplicá-la em sua integralidade.`)">
-                                    <div class="flex items-center mb-2">
-                                        <div
-                                            class="bg-lime-500 text-white rounded-full w-10 h-10 flex items-center justify-center text-sm font-bold mr-3">
-                                            169</div>
-
-                                        <h4 class="font-bold text-lime-700">Tráfico Privilegiado - Retroação</h4>
-
-                                    </div>
-                                    <p class="text-sm text-gray-700 italic text-justify leading-relaxed">I – É inadmissível a aplicação da causa de diminuição prevista no art. 33, § 4º, da Lei 11.343/2006 à pena relativa à condenação por crime cometido na vigência da Lei 6.368/1976; II – Não é possível a conjugação de partes mais benéficas das referidas normas, para criar-se uma terceira lei, sob pena de violação aos princípios da legalidade e da separação de Poderes; III – O juiz, contudo, deverá, no caso concreto, avaliar qual das mencionadas leis é mais favorável ao réu e aplicá-la em sua integralidade.</p>
-
-                                    <p class="text-xs bg-lime-50 p-2 rounded border-l-2 border-lime-300 mt-2 text-justify">Ver Súmula 501/STJ.</p>
                                 </div>
 
                                 <!-- Tema 170/STF -->
@@ -465,38 +362,6 @@
 
                                 </div>
 
-                                <!-- Tema 187/STF -->
-                                <div
-                                    class="bg-white border-l-4 border-fuchsia-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 tema-card relative"
-                                    onclick="copiarTema(187, 'STF', `As consequências jurídicas extra penais previstas no art. 91 do Código Penal são decorrentes de sentença penal condenatória. Tal não ocorre, portanto, quando há transação penal (art. 76 da Lei 9.099/1995), cuja sentença tem natureza meramente homologatória, sem qualquer juízo sobre a responsabilidade criminal do aceitante. As consequências geradas pela transação penal são essencialmente aquelas estipuladas por modo consensual no respectivo instrumento de acordo.`)">
-                                    <div class="flex items-center mb-2">
-                                        <div
-                                            class="bg-fuchsia-500 text-white rounded-full w-10 h-10 flex items-center justify-center text-sm font-bold mr-3">
-                                            187</div>
-
-                                        <h4 class="font-bold text-fuchsia-700">Transação e Efeitos Extra Penais</h4>
-
-                                    </div>
-                                    <p class="text-sm text-gray-700 italic text-justify leading-relaxed">As consequências jurídicas extra penais previstas no art. 91 do Código Penal são decorrentes de sentença penal condenatória. Tal não ocorre, portanto, quando há transação penal (art. 76 da Lei 9.099/1995), cuja sentença tem natureza meramente homologatória, sem qualquer juízo sobre a responsabilidade criminal do aceitante. As consequências geradas pela transação penal são essencialmente aquelas estipuladas por modo consensual no respectivo instrumento de acordo.</p>
-
-                                </div>
-
-                                <!-- Tema 237/STF -->
-                                <div
-                                    class="bg-white border-l-4 border-emerald-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 tema-card relative"
-                                    onclick="copiarTema(237, 'STF', `É lícita a prova consistente em gravação ambiental realizada por um dos interlocutores sem conhecimento do outro.`)">
-                                    <div class="flex items-center mb-2">
-                                        <div
-                                            class="bg-emerald-500 text-white rounded-full w-10 h-10 flex items-center justify-center text-sm font-bold mr-3">
-                                            237</div>
-
-                                        <h4 class="font-bold text-emerald-700">Gravação Ambiental</h4>
-
-                                    </div>
-                                    <p class="text-sm text-gray-700 italic text-justify leading-relaxed">É lícita a prova consistente em gravação ambiental realizada por um dos interlocutores sem conhecimento do outro.</p>
-
-                                </div>
-
                                 <!-- Tema 238/STF -->
                                 <div
                                     class="bg-white border-l-4 border-fuchsia-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 tema-card relative"
@@ -512,23 +377,6 @@
                                     <p class="text-sm text-gray-700 italic text-justify leading-relaxed">A homologação da transação penal prevista no artigo 76 da Lei 9.099/1995 não faz coisa julgada material e, descumpridas suas cláusulas, retoma-se a situação anterior, possibilitando-se ao Ministério Público a continuidade da persecução penal mediante oferecimento de denúncia ou requisição de inquérito policial.</p>
 
                                     <p class="text-xs bg-fuchsia-50 p-2 rounded border-l-2 border-fuchsia-300 mt-2 text-justify">Ver Súmula Vinculante 35.</p>
-                                </div>
-
-                                <!-- Tema 239/STF -->
-                                <div
-                                    class="bg-white border-l-4 border-indigo-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 tema-card relative"
-                                    onclick="copiarTema(239, 'STF', `É inadmissível a extinção da punibilidade em virtude da decretação da prescrição "em perspectiva, projetada ou antecipada", isto é, com base em previsão da pena que hipoteticamente seria aplicada, independentemente da existência ou sorte do processo criminal.`)">
-                                    <div class="flex items-center mb-2">
-                                        <div
-                                            class="bg-indigo-500 text-white rounded-full w-10 h-10 flex items-center justify-center text-sm font-bold mr-3">
-                                            239</div>
-
-                                        <h4 class="font-bold text-indigo-700">Prescrição Antecipada</h4>
-
-                                    </div>
-                                    <p class="text-sm text-gray-700 italic text-justify leading-relaxed">É inadmissível a extinção da punibilidade em virtude da decretação da prescrição "em perspectiva, projetada ou antecipada", isto é, com base em previsão da pena que hipoteticamente seria aplicada, independentemente da existência ou sorte do processo criminal.</p>
-
-                                    <p class="text-xs bg-indigo-50 p-2 rounded border-l-2 border-indigo-300 mt-2 text-justify">Ver Súmula 438/STJ.</p>
                                 </div>
 
                                 <!-- Tema 240/STF -->
@@ -560,38 +408,6 @@
 
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify leading-relaxed">A entrada forçada em domicílio sem mandado judicial só é lícita, mesmo em período noturno, quando amparada em fundadas razões, devidamente justificadas a posteriori, que indiquem que dentro da casa ocorre situação de flagrante delito, sob pena de responsabilidade disciplinar, civil e penal do agente ou da autoridade, e de nulidade dos atos praticados.</p>
-
-                                </div>
-
-                                <!-- Tema 370/STF -->
-                                <div
-                                    class="bg-white border-l-4 border-pink-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 tema-card relative"
-                                    onclick="copiarTema(370, 'STF', `A suspensão de direitos políticos prevista no art. 15, inc. III, da Constituição Federal aplica-se no caso de substituição da pena privativa de liberdade pela restritiva de direitos.`)">
-                                    <div class="flex items-center mb-2">
-                                        <div
-                                            class="bg-pink-500 text-white rounded-full w-10 h-10 flex items-center justify-center text-sm font-bold mr-3">
-                                            370</div>
-
-                                        <h4 class="font-bold text-pink-700">Suspensão de Direitos Políticos</h4>
-
-                                    </div>
-                                    <p class="text-sm text-gray-700 italic text-justify leading-relaxed">A suspensão de direitos políticos prevista no art. 15, inc. III, da Constituição Federal aplica-se no caso de substituição da pena privativa de liberdade pela restritiva de direitos.</p>
-
-                                </div>
-
-                                <!-- Tema 371/STF -->
-                                <div
-                                    class="bg-white border-l-4 border-orange-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 tema-card relative"
-                                    onclick="copiarTema(371, 'STF', `Reveste-se de legitimidade jurídica a concessão, pelo Presidente da República, do benefício constitucional do indulto (CF, art. 84, XII), que traduz expressão do poder de graça do Estado, mesmo se se tratar de indulgência destinada a favorecer pessoa que, em razão de sua inimputabilidade ou semi-imputabilidade, sofre medida de segurança, ainda que de caráter pessoal e detentivo.`)">
-                                    <div class="flex items-center mb-2">
-                                        <div
-                                            class="bg-orange-500 text-white rounded-full w-10 h-10 flex items-center justify-center text-sm font-bold mr-3">
-                                            371</div>
-
-                                        <h4 class="font-bold text-orange-700">Indulto e Medida de Segurança</h4>
-
-                                    </div>
-                                    <p class="text-sm text-gray-700 italic text-justify leading-relaxed">Reveste-se de legitimidade jurídica a concessão, pelo Presidente da República, do benefício constitucional do indulto (CF, art. 84, XII), que traduz expressão do poder de graça do Estado, mesmo se se tratar de indulgência destinada a favorecer pessoa que, em razão de sua inimputabilidade ou semi-imputabilidade, sofre medida de segurança, ainda que de caráter pessoal e detentivo.</p>
 
                                 </div>
 
@@ -628,22 +444,6 @@
                                     <p class="text-xs bg-orange-50 p-2 rounded border-l-2 border-orange-300 mt-2 text-justify">Súmula Vinculante 56.</p>
                                 </div>
 
-                                <!-- Tema 438/STF -->
-                                <div
-                                    class="bg-white border-l-4 border-indigo-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 tema-card relative"
-                                    onclick="copiarTema(438, 'STF', `Em caso de inatividade processual decorrente de citação por edital, ressalvados os crimes previstos na Constituição Federal como imprescritíveis, é constitucional limitar o período de suspensão do prazo prescricional ao tempo de prescrição da pena máxima em abstrato cominada ao crime, a despeito de o processo permanecer suspenso.`)">
-                                    <div class="flex items-center mb-2">
-                                        <div
-                                            class="bg-indigo-500 text-white rounded-full w-10 h-10 flex items-center justify-center text-sm font-bold mr-3">
-                                            438</div>
-
-                                        <h4 class="font-bold text-indigo-700">CPP, art. 366 - Limitação</h4>
-
-                                    </div>
-                                    <p class="text-sm text-gray-700 italic text-justify leading-relaxed">Em caso de inatividade processual decorrente de citação por edital, ressalvados os crimes previstos na Constituição Federal como imprescritíveis, é constitucional limitar o período de suspensão do prazo prescricional ao tempo de prescrição da pena máxima em abstrato cominada ao crime, a despeito de o processo permanecer suspenso.</p>
-
-                                </div>
-
                                 <!-- Tema 453/STF -->
                                 <div
                                     class="bg-white border-l-4 border-emerald-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 tema-card relative"
@@ -669,42 +469,10 @@
                                             class="bg-orange-500 text-white rounded-full w-10 h-10 flex items-center justify-center text-sm font-bold mr-3">
                                             477</div>
 
-                                        <h4 class="font-bold text-orange-700">Perda por Falta Grave</h4>
+                                        <h4 class="font-bold text-orange-700">Execução Penal - Perda por Falta Grave</h4>
 
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify leading-relaxed">1. A revogação ou modificação do ato normativo em que se fundou a edição de enunciado de súmula vinculante acarreta, em regra, a necessidade de sua revisão ou cancelamento pelo Supremo Tribunal Federal, conforme o caso. 2. É constitucional a previsão legislativa de perda dos dias remidos pelo condenado que comete falta grave no curso da execução penal</p>
-
-                                </div>
-
-                                <!-- Tema 486/STF -->
-                                <div
-                                    class="bg-white border-l-4 border-lime-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 tema-card relative"
-                                    onclick="copiarTema(486, 'STF', `É constitucional a imposição da pena de suspensão de habilitação para dirigir veículo automotor ao motorista profissional condenado por homicídio culposo no trânsito.`)">
-                                    <div class="flex items-center mb-2">
-                                        <div
-                                            class="bg-lime-500 text-white rounded-full w-10 h-10 flex items-center justify-center text-sm font-bold mr-3">
-                                            486</div>
-
-                                        <h4 class="font-bold text-lime-700">Homicídio Culposo - Suspensão da Habilitação</h4>
-
-                                    </div>
-                                    <p class="text-sm text-gray-700 italic text-justify leading-relaxed">É constitucional a imposição da pena de suspensão de habilitação para dirigir veículo automotor ao motorista profissional condenado por homicídio culposo no trânsito.</p>
-
-                                </div>
-
-                                <!-- Tema 506/STF -->
-                                <div
-                                    class="bg-white border-l-4 border-lime-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 tema-card relative"
-                                    onclick="copiarTema(506, 'STF', `1. Não comete infração penal quem adquirir, guardar, tiver em depósito, transportar ou trouxer consigo, para consumo pessoal, a substância cannabis sativa, sem prejuízo do reconhecimento da ilicitude extrapenal da conduta, com apreensão da droga e aplicação de sanções de advertência sobre os efeitos dela (art. 28, I) e medida educativa de comparecimento a programa ou curso educativo (art. 28, III); 2. As sanções estabelecidas nos incisos I e III do art. 28 da Lei 11.343/06 serão aplicadas pelo juiz em procedimento de natureza não penal, sem nenhuma repercussão criminal para a conduta; 3. Em se tratando da posse de cannabis para consumo pessoal, a autoridade policial apreenderá a substância e notificará o autor do fato para comparecer em Juízo, na forma do regulamento a ser aprovado pelo CNJ. Até que o CNJ delibere a respeito, a competência para julgar as condutas do art. 28 da Lei 11.343/06 será dos Juizados Especiais Criminais, segundo a sistemática atual, vedada a atribuição de quaisquer efeitos penais para a sentença; 4. Nos termos do § 2º do artigo 28 da Lei 11.343/2006, será presumido usuário quem, para consumo próprio, adquirir, guardar, tiver em depósito, transportar ou trouxer consigo, até 40 gramas de cannabis sativa ou seis plantas-fêmeas, até que o Congresso Nacional venha a legislar a respeito; 5. A presunção do item anterior é relativa, não estando a autoridade policial e seus agentes impedidos de realizar a prisão em flagrante por tráfico de drogas, mesmo para quantidades inferiores ao limite acima estabelecido, quando presentes elementos que indiquem intuito de mercancia, como a forma de acondicionamento da droga, as circunstâncias da apreensão, a variedade de substâncias apreendidas, a apreensão simultânea de instrumentos como balança, registros de operações comerciais e aparelho celular contendo contatos de usuários ou traficantes; 6. Nesses casos, caberá ao Delegado de Polícia consignar, no auto de prisão em flagrante, justificativa minudente para afastamento da presunção do porte para uso pessoal, sendo vedada a alusão a critérios subjetivos arbitrários; 7. Na hipótese de prisão por quantidades inferiores à fixada no item 4, deverá o juiz, na audiência de custódia, avaliar as razões invocadas para o afastamento da presunção de porte para uso próprio; 8. A apreensão de quantidades superiores aos limites ora fixados não impede o juiz de concluir que a conduta é atípica, apontando nos autos prova suficiente da condição de usuário.`)">
-                                    <div class="flex items-center mb-2">
-                                        <div
-                                            class="bg-lime-500 text-white rounded-full w-10 h-10 flex items-center justify-center text-sm font-bold mr-3">
-                                            506</div>
-
-                                        <h4 class="font-bold text-lime-700">Porte de Droga - Tipicidade</h4>
-
-                                    </div>
-                                    <p class="text-sm text-gray-700 italic text-justify leading-relaxed">1. Não comete infração penal quem adquirir, guardar, tiver em depósito, transportar ou trouxer consigo, para consumo pessoal, a substância cannabis sativa, sem prejuízo do reconhecimento da ilicitude extrapenal da conduta, com apreensão da droga e aplicação de sanções de advertência sobre os efeitos dela (art. 28, I) e medida educativa de comparecimento a programa ou curso educativo (art. 28, III); 2. As sanções estabelecidas nos incisos I e III do art. 28 da Lei 11.343/06 serão aplicadas pelo juiz em procedimento de natureza não penal, sem nenhuma repercussão criminal para a conduta; 3. Em se tratando da posse de cannabis para consumo pessoal, a autoridade policial apreenderá a substância e notificará o autor do fato para comparecer em Juízo, na forma do regulamento a ser aprovado pelo CNJ. Até que o CNJ delibere a respeito, a competência para julgar as condutas do art. 28 da Lei 11.343/06 será dos Juizados Especiais Criminais, segundo a sistemática atual, vedada a atribuição de quaisquer efeitos penais para a sentença; 4. Nos termos do § 2º do artigo 28 da Lei 11.343/2006, será presumido usuário quem, para consumo próprio, adquirir, guardar, tiver em depósito, transportar ou trouxer consigo, até 40 gramas de cannabis sativa ou seis plantas-fêmeas, até que o Congresso Nacional venha a legislar a respeito; 5. A presunção do item anterior é relativa, não estando a autoridade policial e seus agentes impedidos de realizar a prisão em flagrante por tráfico de drogas, mesmo para quantidades inferiores ao limite acima estabelecido, quando presentes elementos que indiquem intuito de mercancia, como a forma de acondicionamento da droga, as circunstâncias da apreensão, a variedade de substâncias apreendidas, a apreensão simultânea de instrumentos como balança, registros de operações comerciais e aparelho celular contendo contatos de usuários ou traficantes; 6. Nesses casos, caberá ao Delegado de Polícia consignar, no auto de prisão em flagrante, justificativa minudente para afastamento da presunção do porte para uso pessoal, sendo vedada a alusão a critérios subjetivos arbitrários; 7. Na hipótese de prisão por quantidades inferiores à fixada no item 4, deverá o juiz, na audiência de custódia, avaliar as razões invocadas para o afastamento da presunção de porte para uso próprio; 8. A apreensão de quantidades superiores aos limites ora fixados não impede o juiz de concluir que a conduta é atípica, apontando nos autos prova suficiente da condição de usuário.</p>
 
                                 </div>
 
@@ -740,22 +508,6 @@
 
                                 </div>
 
-                                <!-- Tema 647/STF -->
-                                <div
-                                    class="bg-white border-l-4 border-lime-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 tema-card relative"
-                                    onclick="copiarTema(647, 'STF', `É possível o confisco de todo e qualquer bem de valor econômico apreendido em decorrência do tráfico de drogas, sem a necessidade de se perquirir a habitualidade, reiteração do uso do bem para tal finalidade, a sua modificação para dificultar a descoberta do local do acondicionamento da droga ou qualquer outro requisito além daqueles previstos expressamente no art. 243, parágrafo único, da Constituição Federal.`)">
-                                    <div class="flex items-center mb-2">
-                                        <div
-                                            class="bg-lime-500 text-white rounded-full w-10 h-10 flex items-center justify-center text-sm font-bold mr-3">
-                                            647</div>
-
-                                        <h4 class="font-bold text-lime-700">Tráfico - Bem Apreendido - Perdimento</h4>
-
-                                    </div>
-                                    <p class="text-sm text-gray-700 italic text-justify leading-relaxed">É possível o confisco de todo e qualquer bem de valor econômico apreendido em decorrência do tráfico de drogas, sem a necessidade de se perquirir a habitualidade, reiteração do uso do bem para tal finalidade, a sua modificação para dificultar a descoberta do local do acondicionamento da droga ou qualquer outro requisito além daqueles previstos expressamente no art. 243, parágrafo único, da Constituição Federal.</p>
-
-                                </div>
-
                                 <!-- Tema 648/STF -->
                                 <div
                                     class="bg-white border-l-4 border-purple-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 tema-card relative"
@@ -772,22 +524,6 @@
 
                                 </div>
 
-                                <!-- Tema 650/STF -->
-                                <div
-                                    class="bg-white border-l-4 border-green-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 tema-card relative"
-                                    onclick="copiarTema(650, 'STF', `É incabível a aplicação retroativa do art. 30 da Lei 10.826/2003, inserido pela Medida Provisória 417/2008, para extinguir a punibilidade do delito de posse de arma de fogo de uso permitido cometido antes da sua entrada em vigor.`)">
-                                    <div class="flex items-center mb-2">
-                                        <div
-                                            class="bg-green-500 text-white rounded-full w-10 h-10 flex items-center justify-center text-sm font-bold mr-3">
-                                            650</div>
-
-                                        <h4 class="font-bold text-green-700">Lei 10.826/2003, Art. 30 - Irretroatividade</h4>
-
-                                    </div>
-                                    <p class="text-sm text-gray-700 italic text-justify leading-relaxed">É incabível a aplicação retroativa do art. 30 da Lei 10.826/2003, inserido pela Medida Provisória 417/2008, para extinguir a punibilidade do delito de posse de arma de fogo de uso permitido cometido antes da sua entrada em vigor.</p>
-
-                                </div>
-
                                 <!-- Tema 661/STF -->
                                 <div
                                     class="bg-white border-l-4 border-emerald-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 tema-card relative"
@@ -801,70 +537,6 @@
 
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify leading-relaxed">São lícitas as sucessivas renovações de interceptação telefônica, desde que, verificados os requisitos do artigo 2º da Lei nº 9.296/1996 e demonstrada a necessidade da medida diante de elementos concretos e a complexidade da investigação, a decisão judicial inicial e as prorrogações sejam devidamente motivadas, com justificativa legítima, ainda que sucinta, a embasar a continuidade das investigações.</p>
-
-                                </div>
-
-                                <!-- Tema 758/STF -->
-                                <div
-                                    class="bg-white border-l-4 border-orange-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 tema-card relative"
-                                    onclick="copiarTema(758, 'STF', `O reconhecimento de falta grave consistente na prática de fato definido como crime doloso no curso da execução penal dispensa o trânsito em julgado da condenação criminal no juízo do conhecimento, desde que a apuração do ilícito disciplinar ocorra com observância do devido processo legal, do contraditório e da ampla defesa, podendo a instrução em sede executiva ser suprida por sentença criminal condenatória que verse sobre a materialidade, a autoria e as circunstâncias do crime correspondente à falta grave.`)">
-                                    <div class="flex items-center mb-2">
-                                        <div
-                                            class="bg-orange-500 text-white rounded-full w-10 h-10 flex items-center justify-center text-sm font-bold mr-3">
-                                            758</div>
-
-                                        <h4 class="font-bold text-orange-700">Falta Grave e Trânsito em Julgado</h4>
-
-                                    </div>
-                                    <p class="text-sm text-gray-700 italic text-justify leading-relaxed">O reconhecimento de falta grave consistente na prática de fato definido como crime doloso no curso da execução penal dispensa o trânsito em julgado da condenação criminal no juízo do conhecimento, desde que a apuração do ilícito disciplinar ocorra com observância do devido processo legal, do contraditório e da ampla defesa, podendo a instrução em sede executiva ser suprida por sentença criminal condenatória que verse sobre a materialidade, a autoria e as circunstâncias do crime correspondente à falta grave.</p>
-
-                                </div>
-
-                                <!-- Tema 788/STF -->
-                                <div
-                                    class="bg-white border-l-4 border-indigo-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 tema-card relative"
-                                    onclick="copiarTema(788, 'STF', `O prazo para a prescrição da execução da pena concretamente aplicada somente começa a correr do dia em que a sentença condenatória transita em julgado para ambas as partes, momento em que nasce para o Estado a pretensão executória da pena, conforme interpretação dada pelo Supremo Tribunal Federal ao princípio da presunção de inocência (art. 5º, inciso LVII, da Constituição Federal) nas ADC 43, 44 e 54.`)">
-                                    <div class="flex items-center mb-2">
-                                        <div
-                                            class="bg-indigo-500 text-white rounded-full w-10 h-10 flex items-center justify-center text-sm font-bold mr-3">
-                                            788</div>
-
-                                        <h4 class="font-bold text-indigo-700">Prescrição Executória - Termo Inicial</h4>
-
-                                    </div>
-                                    <p class="text-sm text-gray-700 italic text-justify leading-relaxed">O prazo para a prescrição da execução da pena concretamente aplicada somente começa a correr do dia em que a sentença condenatória transita em julgado para ambas as partes, momento em que nasce para o Estado a pretensão executória da pena, conforme interpretação dada pelo Supremo Tribunal Federal ao princípio da presunção de inocência (art. 5º, inciso LVII, da Constituição Federal) nas ADC 43, 44 e 54.</p>
-
-                                </div>
-
-                                <!-- Tema 857/STF -->
-                                <div
-                                    class="bg-white border-l-4 border-green-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 tema-card relative"
-                                    onclick="copiarTema(857, 'STF', `O art. 19 da Lei de Contravenções penais permanece válido e é aplicável ao porte de arma branca, cuja potencialidade lesiva deve ser aferida com base nas circunstâncias do caso concreto, tendo em conta, inclusive, o elemento subjetivo do agente.`)">
-                                    <div class="flex items-center mb-2">
-                                        <div
-                                            class="bg-green-500 text-white rounded-full w-10 h-10 flex items-center justify-center text-sm font-bold mr-3">
-                                            857</div>
-
-                                        <h4 class="font-bold text-green-700">Arma Branca - Constitucionalidade</h4>
-
-                                    </div>
-                                    <p class="text-sm text-gray-700 italic text-justify leading-relaxed">O art. 19 da Lei de Contravenções penais permanece válido e é aplicável ao porte de arma branca, cuja potencialidade lesiva deve ser aferida com base nas circunstâncias do caso concreto, tendo em conta, inclusive, o elemento subjetivo do agente.</p>
-
-                                </div>
-
-                                <!-- Tema 907/STF -->
-                                <div
-                                    class="bg-white border-l-4 border-green-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 tema-card relative"
-                                    onclick="copiarTema(907, 'STF', `A regra que prevê o crime do art. 305 do Código de Trânsito Brasileiro (Lei nº 9.503/97) é constitucional, posto não infirmar o princípio da não incriminação, garantido o direito ao silêncio e ressalvadas as hipóteses de exclusão da tipicidade e da antijuridicidade.`)">
-                                    <div class="flex items-center mb-2">
-                                        <div
-                                            class="bg-green-500 text-white rounded-full w-10 h-10 flex items-center justify-center text-sm font-bold mr-3">
-                                            907</div>
-
-                                        <h4 class="font-bold text-green-700">CTB, Art. 305 - Constitucionalidade</h4>
-
-                                    </div>
-                                    <p class="text-sm text-gray-700 italic text-justify leading-relaxed">A regra que prevê o crime do art. 305 do Código de Trânsito Brasileiro (Lei nº 9.503/97) é constitucional, posto não infirmar o princípio da não incriminação, garantido o direito ao silêncio e ressalvadas as hipóteses de exclusão da tipicidade e da antijuridicidade.</p>
 
                                 </div>
 
@@ -930,22 +602,6 @@
 
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify leading-relaxed">1. Em visitas sociais nos presídios ou estabelecimentos de segregação é inadmissível a revista íntima vexatória com o desnudamento de visitantes ou exames invasivos com finalidade de causar humilhação. A prova obtida por esse tipo de revista é ilícita, salvo decisões judiciais em cada caso concreto. A presente decisão tem efeitos prospectivos a partir da publicação da ata do julgamento. 2. A autoridade administrativa, de forma fundamentada e por escrito, tem o poder de não permitir a visita diante da presença de indício robusto de ser a pessoa visitante portadora de qualquer item corporal oculto ou sonegado, especialmente de material proibido, como produtos ilegais, drogas ou objetos perigosos. São considerados robustos indícios embasados em elementos tangíveis e verificáveis, como informações prévias de inteligência, denúncias, e comportamentos suspeitos. 3. Confere-se o prazo de 24 meses, a contar da data deste julgamento, para aquisição e instalação de equipamentos como scanners corporais, esteiras de raio X e portais detectores de metais em todos os estabelecimentos penais. 4. Fica determinado ao Ministério da Justiça e da Segurança Pública e aos Estados que, por meio dos recursos do Fundo Penitenciário Nacional e do Fundo Nacional de Segurança Pública, promovam a aquisição ou locação, e distribuição de scanners corporais para as unidades prisionais, em conformidade com sua atribuição de coordenação nacional da política penitenciária, assegurando a proteção dos servidores, a integridade dos detentos e a dignidade dos visitantes, prevenindo práticas abusivas e ilícitas, sem interferir na autonomia dos entes federativos, e garantindo a aplicação uniforme das diretrizes de segurança penitenciária no país. 5. Devem os entes federados, no âmbito de suas atribuições, garantir que a aquisição ou locação de scanners corporais para as unidades prisionais esteja contemplada no respectivo planejamento administrativo e orçamento, com total prioridade na aplicação dos recursos. 6. Excepcionalmente, na impossibilidade ou inefetividade de utilização do scanner corporal, esteira de raio-x, portais detectores de metais, a revista íntima para ingresso em estabelecimentos prisionais, diante de indícios robustos de suspeitas, tangíveis e verificáveis, deverá ser motivada para cada caso específico e dependerá da plena concordância do visitante, vedada, em qualquer circunstância, a execução da revista como forma de humilhação e de exposição vexatória; deve ser realizada em local adequado, exclusivo para tal verificação, e apenas em pessoas maiores e que possam emitir consentimento válido por si ou por meio de seu representante legal, de acordo com protocolos gerais e nacionais preestabelecidos e por pessoas do mesmo gênero do visitante, preferencialmente por profissionais de saúde, nas hipóteses de desnudamento e exames invasivos. (i) O excesso ou o abuso da realização da revista íntima acarretarão responsabilidade do agente público ou do profissional de saúde habilitado e ilicitude de eventual prova obtida. (ii) Caso não haja concordância do visitante, a autoridade administrativa poderá, de forma fundamentada e por escrito, impedir a realização da visita. (iii) O procedimento de revista em criança, adolescente ou pessoa com deficiência intelectual que não possa emitir consentimento válido será substituído pela revista invertida, direcionada à pessoa a ser visitada.</p>
-
-                                </div>
-
-                                <!-- Tema 1003/STF -->
-                                <div
-                                    class="bg-white border-l-4 border-green-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 tema-card relative"
-                                    onclick="copiarTema(1003, 'STF', `É inconstitucional a aplicação do preceito secundário do art. 273 do Código Penal, com redação dada pela Lei nº 9.677/98 (reclusão, de 10 a 15 anos, e multa), à hipótese prevista no seu § 1º-B, I, que versa sobre importar, vender, expor à venda, ter em depósito para vender ou, de qualquer forma, distribuir ou entregar produto sem registro no órgão de vigilância sanitária. Para estas situações específicas, fica repristinado o preceito secundário do art. 273, na sua redação originária (reclusão, de 1 a 3 anos, e multa`)">
-                                    <div class="flex items-center mb-2">
-                                        <div
-                                            class="bg-green-500 text-white rounded-full w-10 h-10 flex items-center justify-center text-sm font-bold mr-3">
-                                            1003</div>
-
-                                        <h4 class="font-bold text-green-700">CP, art. 273 - Constitucionalidade</h4>
-
-                                    </div>
-                                    <p class="text-sm text-gray-700 italic text-justify leading-relaxed">É inconstitucional a aplicação do preceito secundário do art. 273 do Código Penal, com redação dada pela Lei nº 9.677/98 (reclusão, de 10 a 15 anos, e multa), à hipótese prevista no seu § 1º-B, I, que versa sobre importar, vender, expor à venda, ter em depósito para vender ou, de qualquer forma, distribuir ou entregar produto sem registro no órgão de vigilância sanitária. Para estas situações específicas, fica repristinado o preceito secundário do art. 273, na sua redação originária (reclusão, de 1 a 3 anos, e multa</p>
 
                                 </div>
 
@@ -1721,7 +1377,7 @@
                                             class="bg-orange-500 text-white rounded-full w-10 h-10 flex items-center justify-center text-sm font-bold mr-3">
                                             1106</div>
 
-                                        <h4 class="font-bold text-orange-700">Unificação de Penas</h4>
+                                        <h4 class="font-bold text-orange-700">Execução Penal - Unificação</h4>
 
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify leading-relaxed">Sobrevindo condenação por pena privativa de liberdade no curso da execução de pena restritiva de direitos, as penas serão objeto de unificação, com a reconversão da pena alternativa em privativa de liberdade, ressalvada a possibilidade de cumprimento simultâneo aos apenados em regime aberto e vedada a unificação automática nos casos em que a condenação substituída por pena alternativa é superveniente.</p>
@@ -1850,7 +1506,7 @@
                                             class="bg-orange-500 text-white rounded-full w-10 h-10 flex items-center justify-center text-sm font-bold mr-3">
                                             1155</div>
 
-                                        <h4 class="font-bold text-orange-700">Detração</h4>
+                                        <h4 class="font-bold text-orange-700">Execução Penal - Detração</h4>
 
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify leading-relaxed">1) O período de recolhimento obrigatório noturno e nos dias de folga, por comprometer o status libertatis do acusado, deve ser reconhecido como período a ser detraído da pena privativa de liberdade e da medida de segurança, em homenagem aos princípios da proporcionalidade e do non bis in idem. 2) O monitoramento eletrônico associado, atribuição do Estado, não é condição indeclinável para a detração dos períodos de submissão a essas medidas cautelares, não se justificando distinção de tratamento ao investigado ao qual não é determinado e disponibilizado o aparelhamento. 3) As horas de recolhimento domiciliar noturno e nos dias de folga devem ser convertidas em dias para contagem da detração da pena. Se no cômputo total remanescer período menor que vinte e quatro horas, essa fração de dia deverá ser desprezada.</p>
@@ -1866,7 +1522,7 @@
                                             class="bg-orange-500 text-white rounded-full w-10 h-10 flex items-center justify-center text-sm font-bold mr-3">
                                             1161</div>
 
-                                        <h4 class="font-bold text-orange-700">Livramento Condicional</h4>
+                                        <h4 class="font-bold text-orange-700">Execução Penal - Livramento Condicional</h4>
 
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify leading-relaxed">A valoração do requisito subjetivo para concessão do livramento condicional - bom comportamento durante da execução da pena (art. 83, inciso III, alínea "a", do Código Penal) - deve considerar todo o histórico prisional, não se limitando ao período de 12 meses referido na alínea "b" do mesmo inciso III do art. 83 do Código Penal.</p>
@@ -1882,7 +1538,7 @@
                                             class="bg-orange-500 text-white rounded-full w-10 h-10 flex items-center justify-center text-sm font-bold mr-3">
                                             1165</div>
 
-                                        <h4 class="font-bold text-orange-700">Progressão de Regime</h4>
+                                        <h4 class="font-bold text-orange-700">Execução Penal - Progressão de Regime</h4>
 
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify leading-relaxed">A decisão que defere a progressão de regime não tem natureza constitutiva, senão declaratória. O termo inicial para a progressão de regime deverá ser a data em que preenchidos os requisitos objetivo e subjetivo descritos no art. 112 da Lei 7.210, de 11/07/1984 (Lei de Execução Penal), e não a data em que efetivamente foi deferida a progressão. Essa data deverá ser definida de forma casuística, fixando-se como termo inicial o momento em que preenchido o último requisito pendente, seja ele o objetivo ou o subjetivo. Se por último for preenchido o requisito subjetivo, independentemente da anterior implementação do requisito objetivo, será aquele (o subjetivo) o marco para fixação da data-base para efeito de nova progressão de regime.</p>

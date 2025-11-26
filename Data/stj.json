@@ -393,7 +393,7 @@
       "numero": 444,
       "titulo": "Inquéritos em Curso",
       "texto": "É vedada a utilização de inquéritos policiais e ações penais em curso para agravar a pena-base.",
-      "cor": "teal",
+      "cor": "pink",
       "vinculante": false,
       "chips": []
     },
