@@ -74,7 +74,7 @@
     },
     {
       "numero": 56,
-      "titulo": "Regime Prisional",
+      "titulo": "Manutenção em Regime mais Gravoso",
       "texto": "A falta de estabelecimento penal adequado não autoriza a manutenção do condenado em regime prisional mais gravoso, devendo-se observar, nessa hipótese, os parâmetros fixados no RE 641.320/RS.",
       "cor": "orange",
       "vinculante": true,
@@ -448,7 +448,7 @@
     },
     {
       "numero": 696,
-      "titulo": "Suspensão Condicional",
+      "titulo": "Suspensão Condicional -Recusa pelo MP",
       "texto": "Reunidos os pressupostos legais permissivos da suspensão condicional do processo, mas se recusando o promotor de justiça a propô-la, o juiz, dissentindo, remeterá a questão ao Procurador-Geral, aplicando-se por analogia o art. 28 do Código de Processo Penal.",
       "cor": "fuchsia",
       "vinculante": false,
@@ -632,7 +632,7 @@
     },
     {
       "numero": 723,
-      "titulo": "Suspensão - Crime Continuado",
+      "titulo": "Suspensão Condicional e Crime Continuado",
       "texto": "Não se admite a suspensão condicional do processo por crime continuado, se a soma da pena mínima da infração mais grave com o aumento mínimo de um sexto for superior a um ano.",
       "cor": "fuchsia",
       "vinculante": false,

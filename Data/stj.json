@@ -308,7 +308,7 @@
     },
     {
       "numero": 337,
-      "titulo": "Desclassificação e Suspensão Condicional",
+      "titulo": "Suspensão Condicional e Desclassificação",
       "texto": "É cabível a suspensão condicional do processo na desclassificação do crime e na procedência parcial da pretensão punitiva.",
       "cor": "fuchsia",
       "vinculante": false,
@@ -407,7 +407,7 @@
     },
     {
       "numero": 471,
-      "titulo": "Crimes Hediondos",
+      "titulo": "Progressão Crimes Hediondos",
       "texto": "Os condenados por crimes hediondos ou assemelhados cometidos antes da vigência da Lei n. 11.464/2007 sujeitam-se ao disposto no art. 112 da Lei n. 7.210/1984 (Lei de Execução Penal) para a progressão de regime prisional.",
       "cor": "orange",
       "vinculante": false,
@@ -471,7 +471,7 @@
     },
     {
       "numero": 520,
-      "titulo": "Saída Temporária",
+      "titulo": "Saída Temporária - Ato Jurisdicional",
       "texto": "O benefício de saída temporária no âmbito da execução penal é ato jurisdicional insuscetível de delegação à autoridade administrativa do estabelecimento prisional.",
       "cor": "orange",
       "vinculante": false,
@@ -487,7 +487,7 @@
     },
     {
       "numero": 526,
-      "titulo": "Falta Grave",
+      "titulo": "Falta Grave e Trânsito em Julgado",
       "texto": "O reconhecimento de falta grave decorrente do cometimento de fato definido como crime doloso no cumprimento da pena prescinde do trânsito em julgado de sentença penal condenatória no processo penal instaurado para apuração do fato.",
       "cor": "orange",
       "vinculante": false,
@@ -495,7 +495,7 @@
     },
     {
       "numero": 527,
-      "titulo": "Medida de Segurança",
+      "titulo": "Duração Medida de Segurança",
       "texto": "O tempo de duração da medida de segurança não deve ultrapassar o limite máximo da pena abstratamente cominada ao delito praticado.",
       "cor": "orange",
       "vinculante": false,
@@ -503,7 +503,7 @@
     },
     {
       "numero": 533,
-      "titulo": "Falta Disciplinar",
+      "titulo": "Falta Disciplinar e Procedimento Adm.",
       "texto": "Para o reconhecimento da prática de falta disciplinar no âmbito da execução penal, é imprescindível a instauração de procedimento administrativo pelo diretor do estabelecimento prisional, assegurado o direito de defesa, a ser realizado por advogado constituído ou defensor público nomeado.",
       "cor": "orange",
       "vinculante": false,
@@ -677,7 +677,7 @@
     },
     {
       "numero": 631,
-      "titulo": "Indulto",
+      "titulo": "Indulto e Efeitos Secundários",
       "texto": "O indulto extingue os efeitos primários da condenação (pretensão executória), mas não atinge os efeitos secundários, penais ou extrapenais.",
       "cor": "orange",
       "vinculante": false,
@@ -773,7 +773,7 @@
     },
     {
       "numero": 667,
-      "titulo": "Suspensão Condicional",
+      "titulo": "Suspensão Condicional e Trancamento do Processo",
       "texto": "A eventual aceitação de proposta de suspensão condicional do processo não prejudica a análise do pedido de trancamento da ação penal.",
       "cor": "fuchsia",
       "vinculante": false,

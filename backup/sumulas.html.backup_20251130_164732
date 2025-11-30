@@ -6,6 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Súmulas - Processo Penal</title>
         <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
         <script>
             tailwind.config = {
                 theme: {
@@ -107,12 +109,11 @@
                         </div>
                     </div>
                     <div class="hidden md:flex space-x-6">
-                        <a href="/" class="hover:text-blue-200 transition">Civil</a>
-                        <a href="/penal-sumulas.html" class="hover:text-blue-200 transition font-medium">Penal</a>
-                        <a href="/constitucional" class="hover:text-blue-200 transition">Constitucional</a>
-                        <a href="/administrativo" class="hover:text-blue-200 transition">Administrativo</a>
+                        <a href="civil.html" class="hover:text-blue-200 transition">Civil</a>
+                        <a href="penal.html" class="hover:text-blue-200 transition font-medium">Penal</a>
                     </div>
                 </div>
+            </div>
             </div>
         </nav>
 
@@ -133,16 +134,21 @@
                 </div>
                 <ul class="space-y-2">
                     <li>
-                        <a href="penal-sumulas.html"
-                            class="block p-3 text-blue-600 bg-blue-50 rounded font-medium border-l-4 border-blue-600">
-                            <div class="flex items-center">
-                                <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
-                                    </path>
-                                </svg>
-                                Súmulas
-                            </div>
+                        <a href="sumulas.html"
+                            class="flex items-center px-4 py-3 text-gray-700 hover:bg-blue-50 rounded-lg transition group">
+                            <span class="material-symbols-outlined mr-3 text-red-600 group-hover:text-red-700">
+                                menu_book
+                            </span>
+                            <span class="font-medium">Súmulas</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="temas.html"
+                            class="flex items-center px-4 py-3 text-gray-700 hover:bg-blue-50 rounded-lg transition group">
+                            <span class="material-symbols-outlined mr-3 text-indigo-600 group-hover:text-indigo-700">
+                                topic
+                            </span>
+                            <span class="font-medium">Temas</span>
                         </a>
                     </li>
                 </ul>
@@ -165,7 +171,7 @@
                                 d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
                                 clip-rule="evenodd"></path>
                         </svg></li>
-                    <li><a href="/penal" class="hover:text-blue-600">Processo Penal</a></li>
+                    <li><a href="penal.html" class="hover:text-blue-600">Penal</a></li>
                     <li><svg class="w-4 h-4 mx-2" fill="currentColor" viewBox="0 0 20 20">
                             <path fill-rule="evenodd"
                                 d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
@@ -303,12 +309,15 @@
 
 
 
-            
-            
-            
-            
-            
-            
+
+
+
+
+
+
+
+
+
             
             
             <!-- SÚMULAS DO STF -->
@@ -650,12 +659,12 @@
 
                                 <!-- Súmula 361/STF -->
                                 <div
-                                    class="bg-white border-l-4 border-sky-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                    class="bg-white border-l-4 border-violet-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                                     <div class="flex items-center mb-2">
                                         <div
-                                            class="bg-sky-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                            class="bg-violet-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             361</div>
-                                        <h4 class="font-bold text-sky-700">Nulidade Exame Pericial</h4>
+                                        <h4 class="font-bold text-violet-700">Nulidade Exame Pericial</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">No processo penal, é nulo o exame realizado por um só perito, considerando-se impedido o que tiver funcionado, anteriormente, na diligência de apreensão.</p>
                                 </div>
@@ -1027,7 +1036,7 @@
                                         <div
                                             class="bg-fuchsia-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             696</div>
-                                        <h4 class="font-bold text-fuchsia-700">Suspensão Condicional</h4>
+                                        <h4 class="font-bold text-fuchsia-700">Suspensão Condicional -Recusa pelo MP</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">Reunidos os pressupostos legais permissivos da suspensão condicional do processo, mas se recusando o promotor de justiça a propô-la, o juiz, dissentindo, remeterá a questão ao Procurador-Geral, aplicando-se por analogia o art. 28 do Código de Processo Penal.</p>
                                 </div>
@@ -1106,12 +1115,12 @@
 
                                 <!-- Súmula 706/STF -->
                                 <div
-                                    class="bg-white border-l-4 border-sky-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                    class="bg-white border-l-4 border-violet-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                                     <div class="flex items-center mb-2">
                                         <div
-                                            class="bg-sky-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                            class="bg-violet-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             706</div>
-                                        <h4 class="font-bold text-sky-700">Nulidade - Prevenção</h4>
+                                        <h4 class="font-bold text-violet-700">Nulidade - Prevenção</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">É relativa a nulidade decorrente da inobservância da competência penal por prevenção.</p>
                                 </div>
@@ -1303,7 +1312,7 @@
                                         <div
                                             class="bg-fuchsia-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             723</div>
-                                        <h4 class="font-bold text-fuchsia-700">Suspensão - Crime Continuado</h4>
+                                        <h4 class="font-bold text-fuchsia-700">Suspensão Condicional e Crime Continuado</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">Não se admite a suspensão condicional do processo por crime continuado, se a soma da pena mínima da infração mais grave com o aumento mínimo de um sexto for superior a um ano.</p>
                                 </div>
@@ -1800,7 +1809,7 @@
                                         <div
                                             class="bg-fuchsia-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             337</div>
-                                        <h4 class="font-bold text-fuchsia-700">Desclassificação e Suspensão Condicional</h4>
+                                        <h4 class="font-bold text-fuchsia-700">Suspensão Condicional e Desclassificação</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">É cabível a suspensão condicional do processo na desclassificação do crime e na procedência parcial da pretensão punitiva.</p>
                                 </div>
@@ -1921,12 +1930,12 @@
 
                                 <!-- Súmula 444/STJ -->
                                 <div
-                                    class="bg-white border-l-4 border-teal-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                    class="bg-white border-l-4 border-pink-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                                     <div class="flex items-center mb-2">
                                         <div
-                                            class="bg-teal-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                            class="bg-pink-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             444</div>
-                                        <h4 class="font-bold text-teal-700">Inquéritos em Curso</h4>
+                                        <h4 class="font-bold text-pink-700">Inquéritos em Curso</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">É vedada a utilização de inquéritos policiais e ações penais em curso para agravar a pena-base.</p>
                                 </div>
@@ -2215,12 +2224,12 @@
 
                                 <!-- Súmula 575/STJ -->
                                 <div
-                                    class="bg-white border-l-4 border-sky-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                                    class="bg-white border-l-4 border-green-500 rounded-lg p-4 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                                     <div class="flex items-center mb-2">
                                         <div
-                                            class="bg-sky-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
+                                            class="bg-green-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             575</div>
-                                        <h4 class="font-bold text-sky-700">Direção de Veículo</h4>
+                                        <h4 class="font-bold text-green-700">Direção de Veículo</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">Constitui crime a conduta de permitir, confiar ou entregar a direção de veículo automotor a pessoa que não seja habilitada, ou que se encontre em qualquer das situações previstas no art. 310 do CTB, independentemente da ocorrência de lesão ou de perigo de dano concreto na condução do veículo.</p>
                                 </div>
@@ -2502,7 +2511,7 @@
                                         <div
                                             class="bg-fuchsia-500 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold mr-3">
                                             667</div>
-                                        <h4 class="font-bold text-fuchsia-700">Suspensão Condicional</h4>
+                                        <h4 class="font-bold text-fuchsia-700">Suspensão Condicional e Trancamento do Processo</h4>
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify">A eventual aceitação de proposta de suspensão condicional do processo não prejudica a análise do pedido de trancamento da ação penal.</p>
                                 </div>
