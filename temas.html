@@ -3257,7 +3257,10 @@ Quarta tese: As autorizações de saída temporária para visita à família e p
                 let tribunalAtual = 'todos';
 
                 function copiarTema(numero, tribunal, tese) {
-                    const texto = `Tema ${numero}/${tribunal}: "${tese}".`;
+                    // Limpar o texto da tese (remover aspas existentes, pontos finais e limpar espaços)
+                    let teseLimpa = tese.trim().replace(/^[""]|[""]$/g, '').replace(/\.$/, '');
+                    
+                    const texto = `Tema ${numero}/${tribunal}: "${teseLimpa}".`;
                     navigator.clipboard.writeText(texto).then(() => {
                         // Feedback visual
                         mostrarNotificacao('Tema copiado!');
