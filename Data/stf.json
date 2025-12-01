@@ -1,6 +1,6 @@
 {
   "tribunal": "STF",
-  "total": 77,
+  "total": 78,
   "sumulas": [
     {
       "numero": 11,
@@ -171,6 +171,14 @@
       "titulo": "Cheque Sem Fundos",
       "texto": "Comprovado não ter havido fraude, não se configura o crime de emissão de cheque sem fundos.",
       "cor": "yellow",
+      "vinculante": false,
+      "chips": []
+    },
+    {
+      "numero": 267,
+      "titulo": "Não Cabimento Mandado de Segurança",
+      "texto": "Não cabe mandado de segurança contra ato judicial passível de recurso ou correição.",
+      "cor": "teal",
       "vinculante": false,
       "chips": []
     },
