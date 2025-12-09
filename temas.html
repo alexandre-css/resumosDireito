@@ -3456,11 +3456,11 @@ Quarta tese: As autorizações de saída temporária para visita à família e p
                         { id: 'temas-stf', arrow: 'arrow-stf' },
                         { id: 'temas-stj', arrow: 'arrow-stj' }
                     ];
-                    
+
                     secoes.forEach(secao => {
                         const container = document.getElementById(secao.id);
                         const arrow = document.getElementById(secao.arrow);
-                        
+
                         if (container && arrow) {
                             // Expandir a seção
                             container.style.maxHeight = container.scrollHeight + 'px';
@@ -3576,7 +3576,7 @@ Quarta tese: As autorizações de saída temporária para visita à família e p
                     });
 
                     reajustarAlturaTemas();
-                    
+
                     // Expandir seções visíveis
                     expandirSecoesVisiveis();
 
