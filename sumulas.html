@@ -2953,6 +2953,30 @@
                         secaoSTJPenal.style.display = '';
                         secaoSTJECA.style.display = '';
                     }
+                    
+                    // Expandir seções visíveis
+                    expandirSecoesVisiveis();
+                }
+
+                // Função para expandir automaticamente as seções visíveis
+                function expandirSecoesVisiveis() {
+                    const secoes = [
+                        { id: 'sumulas-stf', arrow: 'arrow-stf' },
+                        { id: 'sumulas-stj-penal', arrow: 'arrow-stj-penal' },
+                        { id: 'sumulas-stj-eca', arrow: 'arrow-stj-eca' }
+                    ];
+                    
+                    secoes.forEach(secao => {
+                        const container = document.getElementById(secao.id);
+                        const arrow = document.getElementById(secao.arrow);
+                        const secaoParent = container?.closest('.mt-16');
+                        
+                        if (container && arrow && secaoParent && secaoParent.style.display !== 'none') {
+                            // Expandir se a seção está visível
+                            container.style.maxHeight = container.scrollHeight + 'px';
+                            arrow.style.transform = 'rotate(180deg)';
+                        }
+                    });
                 }
 
                 // Função para toggle do dropdown de categorias
@@ -3071,6 +3095,9 @@
 
                     // Reajustar altura das seções expandidas
                     reajustarAlturaSumulas();
+                    
+                    // Expandir seções visíveis
+                    expandirSecoesVisiveis();
 
                     // Atualizar contador
                     const searchResults = document.getElementById('searchResults');

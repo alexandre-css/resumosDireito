@@ -3444,7 +3444,29 @@ Quarta tese: As autorizações de saída temporária para visita à família e p
                     const searchInput = document.getElementById('searchInput');
                     if (searchInput.value.trim()) {
                         buscarTemas();
+                    } else {
+                        // Expandir seções visíveis quando não há busca ativa
+                        expandirSecoesVisiveis();
                     }
+                }
+
+                // Função para expandir automaticamente as seções visíveis
+                function expandirSecoesVisiveis() {
+                    const secoes = [
+                        { id: 'temas-stf', arrow: 'arrow-stf' },
+                        { id: 'temas-stj', arrow: 'arrow-stj' }
+                    ];
+                    
+                    secoes.forEach(secao => {
+                        const container = document.getElementById(secao.id);
+                        const arrow = document.getElementById(secao.arrow);
+                        
+                        if (container && arrow) {
+                            // Expandir a seção
+                            container.style.maxHeight = container.scrollHeight + 'px';
+                            arrow.style.transform = 'rotate(180deg)';
+                        }
+                    });
                 }
 
                 // Função para toggle do dropdown de categorias
@@ -3554,6 +3576,9 @@ Quarta tese: As autorizações de saída temporária para visita à família e p
                     });
 
                     reajustarAlturaTemas();
+                    
+                    // Expandir seções visíveis
+                    expandirSecoesVisiveis();
 
                     const searchResults = document.getElementById('searchResults');
                     if (categoriasAtivas.size === 17) {
