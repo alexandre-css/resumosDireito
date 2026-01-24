@@ -1,7 +1,15 @@
 {
   "tribunal": "STJ",
-  "total": 104,
+  "total": 107,
   "sumulas": [
+    {
+      "numero": 6,
+      "titulo": "Acidente com Viatura PM",
+      "texto": "Compete à Justiça Comum Estadual processar e julgar delito decorrente de acidente de trânsito\nenvolvendo viatura de polícia militar, salvo se  autor e vítima forem policiais militares em situação\nde atividade.  ",
+      "cor": "purple",
+      "vinculante": false,
+      "chips": []
+    },
     {
       "numero": 17,
       "titulo": "Falso e Estelionato",
@@ -47,6 +55,14 @@
       "titulo": "Saída Temporária",
       "texto": "Para obtenção dos benefícios de saída temporária e trabalho externo, considera- se o tempo de cumprimento da pena no regime fechado.",
       "cor": "orange",
+      "vinculante": false,
+      "chips": []
+    },
+    {
+      "numero": 47,
+      "titulo": "Militar - Arma da Corporação",
+      "texto": "Compete à Justiça Militar processar e julgar crime cometido por militar  contra civil, com emprego\nde arma pertencente à corporação, mesmo não  estando em serviço. ",
+      "cor": "purple",
       "vinculante": false,
       "chips": []
     },
@@ -231,6 +247,14 @@
       "titulo": "Cumulação de Penas e Substituição",
       "texto": "Cominadas cumulativamente, em lei especial, penas privativas de liberdade e pecuniária, é defeso a substituição da prisão por multa.",
       "cor": "pink",
+      "vinculante": false,
+      "chips": []
+    },
+    {
+      "numero": 172,
+      "titulo": "Militar - Abuso de Autoridade",
+      "texto": "Compete à Justiça Comum processar e julgar militar por crime de abuso de autoridade, ainda que\npraticado em serviço. ",
+      "cor": "purple",
       "vinculante": false,
       "chips": []
     },
