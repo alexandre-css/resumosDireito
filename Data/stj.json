@@ -1,6 +1,6 @@
 {
   "tribunal": "STJ",
-  "total": 99,
+  "total": 104,
   "sumulas": [
     {
       "numero": 17,
@@ -31,6 +31,14 @@
       "titulo": "Estelionato Previdenciário",
       "texto": "Aplica-se ao crime de estelionato, em que figure como vítima entidade autárquica da previdência social, a qualificadora do § 3º, do art. 171 do Código Penal.",
       "cor": "yellow",
+      "vinculante": false,
+      "chips": []
+    },
+    {
+      "numero": 38,
+      "titulo": "Contravenção Penal e União",
+      "texto": "Compete à Justiça Estadual Comum, na vigência da Constituição de 1988, o processo por\ncontravenção penal, ainda que praticada em detrimento de  bens, serviços ou interesse da União ou\nde suas entidades.",
+      "cor": "purple",
       "vinculante": false,
       "chips": []
     },
@@ -115,9 +123,33 @@
       "chips": []
     },
     {
+      "numero": 75,
+      "titulo": "Militar e Fuga de Preso",
+      "texto": "Compete à Justiça Comum Estadual processar e julgar o policial militar  por crime de promover ou\nfacilitar a fuga de preso de estabelecimento  penal. ",
+      "cor": "purple",
+      "vinculante": false,
+      "chips": []
+    },
+    {
       "numero": 78,
       "titulo": "Justiça Militar",
       "texto": "Compete à Justiça Militar processar e julgar policial de corporação estadual, ainda que o delito tenha sido praticado em outra unidade federativa.",
+      "cor": "purple",
+      "vinculante": false,
+      "chips": []
+    },
+    {
+      "numero": 81,
+      "titulo": "Fiança ",
+      "texto": "Não se concede fiança quando, em concurso material, a soma das penas mínimas cominadas for superior a dois anos de reclusão. ",
+      "cor": "purple",
+      "vinculante": false,
+      "chips": []
+    },
+    {
+      "numero": 90,
+      "titulo": "Crime Militar e Comum",
+      "texto": "Compete à Justiça Estadual Militar processar e julgar o policial militar pela prática do crime militar,\ne à Comum pela prática do crime comum  simultâneo àquele. ",
       "cor": "purple",
       "vinculante": false,
       "chips": []
@@ -279,6 +311,14 @@
       "titulo": "Suspensão - Pena Superior a 1 Ano",
       "texto": "O benefício da suspensão do processo não é aplicável em relação às infrações penais cometidas em concurso material, concurso formal ou continuidade delitiva, quando a pena mínima cominada, seja pelo somatório, seja pela incidência da majorante, ultrapassar o limite de um (01) ano.",
       "cor": "pink",
+      "vinculante": false,
+      "chips": []
+    },
+    {
+      "numero": 244,
+      "titulo": "Cheque sem Fundos",
+      "texto": "Compete ao foro do local da recusa processar e julgar o crime de  estelionato mediante cheque sem\nprovisão de fundos. ",
+      "cor": "purple",
       "vinculante": false,
       "chips": []
     },

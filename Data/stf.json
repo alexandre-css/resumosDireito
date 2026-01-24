@@ -1,6 +1,6 @@
 {
   "tribunal": "STF",
-  "total": 78,
+  "total": 85,
   "sumulas": [
     {
       "numero": 11,
@@ -71,6 +71,17 @@
       "chips": [
         "VINCULANTE"
       ]
+    },
+    {
+      "numero": 46,
+      "titulo": "Crimes de Responsabilidade",
+      "texto": "A definição dos crimes de responsabilidade e o estabelecimento das respectivas normas de processo e julgamento são da competência legislativa privativa da União.",
+      "cor": "purple",
+      "vinculante": true,
+      "chips": [
+        "VINCULANTE"
+      ],
+      "nota": "Criada a partir da Súmula 722."
     },
     {
       "numero": 56,
@@ -183,6 +194,14 @@
       "chips": []
     },
     {
+      "numero": 310,
+      "titulo": "Prazo intimação",
+      "texto": "Quando a intimação tiver lugar na sexta-feira, ou a publicação com efeito de intimação for feita nesse dia, o prazo judicial terá início na segunda-feira imediata, salvo se não houver expediente, caso em que começará no primeiro dia útil que se seguir.",
+      "cor": "teal",
+      "vinculante": false,
+      "chips": []
+    },
+    {
       "numero": 344,
       "titulo": "HC - Recurso Ex Officio",
       "texto": "Sentença de primeira instância concessiva de \"habeas corpus\", em caso de crime praticado em detrimento de bens, serviços ou interesses da união, está sujeita a recurso \"ex officio\".",
@@ -235,6 +254,14 @@
       "titulo": "Habeas Corpus - Custas",
       "texto": "Não se conhece de recurso de \"habeas corpus\" cujo objeto seja resolver sobre o ônus das custas, por não estar mais em causa a liberdade de locomoção.",
       "cor": "amber",
+      "vinculante": false,
+      "chips": []
+    },
+    {
+      "numero": 396,
+      "titulo": "Término do Exercício Funcional",
+      "texto": "Para a ação penal por ofensa à honra, sendo admissível a exceção da verdade quanto ao desempenho de função pública, prevalece a competência especial por prerrogativa de função, ainda que já tenha cessado o exercício funcional do ofendido.",
+      "cor": "green",
       "vinculante": false,
       "chips": []
     },
@@ -303,6 +330,22 @@
       "chips": []
     },
     {
+      "numero": 508,
+      "titulo": "Banco do Brasil",
+      "texto": "Compete à Justiça Estadual, em ambas as instâncias, processar e julgar as causas em que for parte o Banco do Brasil S.A.",
+      "cor": "purple",
+      "vinculante": false,
+      "chips": []
+    },
+    {
+      "numero": 521,
+      "titulo": "Cheque sem fundos",
+      "texto": "O foro competente para o processo e julgamento dos crimes de estelionato, sob a modalidade da emissão dolosa de cheque sem provisão de fundos, é o do local onde se deu a recusa do pagamento pelo sacado.",
+      "cor": "purple",
+      "vinculante": false,
+      "chips": []
+    },
+    {
       "numero": 522,
       "titulo": "Tráfico - Competência",
       "texto": "Salvo ocorrência de tráfico para o exterior, quando, então, a competência será da Justiça Federal, compete à justiça dos estados o processo e julgamento dos crimes relativos a entorpecentes.",
@@ -346,6 +389,14 @@
       "numero": 555,
       "titulo": "Conflito de Jurisdição",
       "texto": "É competente o Tribunal de Justiça para julgar conflito de jurisdição entre Juiz de Direito do estado e a Justiça Militar local.",
+      "cor": "purple",
+      "vinculante": false,
+      "chips": []
+    },
+    {
+      "numero": 556,
+      "titulo": "Sociedade de Economia Mista",
+      "texto": "É competente a Justiça Comum para julgar as causas em que é parte sociedade de economia mista.",
       "cor": "purple",
       "vinculante": false,
       "chips": []
@@ -637,6 +688,15 @@
       "cor": "red",
       "vinculante": false,
       "chips": []
+    },
+    {
+      "numero": 722,
+      "titulo": "Crimes de Responsabilidade",
+      "texto": "São da competência legislativa da União a definição dos crimes de responsabilidade e o estabelecimento das respectivas normas de processo e julgamento.",
+      "cor": "purple",
+      "vinculante": false,
+      "chips": [],
+      "nota": "Convertida na Súmula Vinculante 46."
     },
     {
       "numero": 723,
