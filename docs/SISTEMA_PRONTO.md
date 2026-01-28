@@ -72,7 +72,7 @@ Todas as cores originais foram mantidas:
 | `Data/stf.json`      | ✅     | 77      |
 | `Data/stj.json`      | ✅     | 99      |
 | `Data/eca.json`      | ✅     | 9       |
-| `penal-sumulas.html` | ✅     | Gerado  |
+| `penal-public/public\sumulas.html` | ✅     | Gerado  |
 
 ---
 
@@ -80,8 +80,8 @@ Todas as cores originais foram mantidas:
 
 O sistema cria backup automático antes de gerar novo HTML:
 
--   ✅ `penal-sumulas.html.backup_20251125_054909`
--   ✅ `penal-sumulas.html.backup_20251125_061203`
+-   ✅ `penal-public/public\sumulas.html.backup_20251125_054909`
+-   ✅ `penal-public/public\sumulas.html.backup_20251125_061203`
 
 ---
 

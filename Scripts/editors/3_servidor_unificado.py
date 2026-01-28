@@ -133,7 +133,7 @@ class EditorHandler(BaseHTTPRequestHandler):
                 
                 # Gerar ambos os HTMLs
                 result_sumulas = subprocess.run(
-                    [python_exe, 'Scripts/2_gerar_html.py'],
+                    [python_exe, 'Scripts/generators/1_gerar_html_sumulas.py'],
                     capture_output=True,
                     text=True,
                     encoding=system_encoding,
@@ -142,7 +142,7 @@ class EditorHandler(BaseHTTPRequestHandler):
                 )
                 
                 result_temas = subprocess.run(
-                    [python_exe, 'Scripts/2_gerar_html_temas.py'],
+                    [python_exe, 'Scripts/generators/1_gerar_html_temas.py'],
                     capture_output=True,
                     text=True,
                     encoding=system_encoding,
@@ -446,9 +446,9 @@ if __name__ == '__main__':
     print()
     print("💡 INSTRUÇÕES:")
     print("   1. Execute simultaneamente:")
-    print("      - python Scripts/3_servidor_editor.py     (porta 8001)")
-    print("      - python Scripts/4_servidor_editor_temas.py (porta 8002)")
-    print("      - python Scripts/5_editor_unificado.py    (porta 8000)")
+    print("      - python Scripts/editors/2_servidor_sumulas.py     (porta 8001)")
+    print("      - python Scripts/editors/2_servidor_temas.py (porta 8002)")
+    print("      - python Scripts/editors/3_servidor_unificado.py    (porta 8000)")
     print()
     print("   2. Ou use o arquivo .bat para iniciar tudo automaticamente")
     print()

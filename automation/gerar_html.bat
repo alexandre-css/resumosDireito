@@ -9,7 +9,7 @@ echo ===========================================================================
 echo.
 
 cd /d "%~dp0"
-python Scripts/2_gerar_html.py
+python Scripts/generators/1_gerar_html_sumulas.py
 
 echo.
 echo ================================================================================

@@ -54,8 +54,8 @@ GERADOR DE HTML DE SÚMULAS
    ✓ HTML gerado
 
 3. Salvando arquivo...
-✓ Backup criado: penal-sumulas.html.backup_20251125_HHMMSS
-✓ HTML gerado: penal-sumulas.html
+✓ Backup criado: penal-public/public\sumulas.html.backup_20251125_HHMMSS
+✓ HTML gerado: penal-public/public\sumulas.html
 
 ================================================================================
 ✓ CONCLUÍDO COM SUCESSO!
@@ -64,7 +64,7 @@ GERADOR DE HTML DE SÚMULAS
 
 ### 7. Verificar
 
-Abra `penal-sumulas.html` no navegador e procure pela Súmula 720!
+Abra `penal-public/public\sumulas.html` no navegador e procure pela Súmula 720!
 
 ---
 

@@ -109,7 +109,7 @@ class EditorHandler(BaseHTTPRequestHandler):
                 python_exe = sys.executable
                 
                 result = subprocess.run(
-                    [python_exe, 'Scripts/2_gerar_html.py'],
+                    [python_exe, 'Scripts/generators/1_gerar_html_sumulas.py'],
                     capture_output=True,
                     text=True,
                     encoding=system_encoding,
@@ -1329,7 +1329,7 @@ class EditorHandler(BaseHTTPRequestHandler):
                 if (result.success) {
                     mostrarToast('✓ HTML gerado com sucesso!', 'success');
                     setTimeout(() => {
-                        alert('HTML atualizado!\\n\\nVerifique o arquivo penal-sumulas.html');
+                        alert('HTML atualizado!\\n\\nVerifique o arquivo penal-public/public\sumulas.html');
                     }, 500);
                 } else {
                     mostrarToast('Erro: ' + result.error, 'error');

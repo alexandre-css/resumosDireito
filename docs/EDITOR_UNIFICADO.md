@@ -26,19 +26,19 @@ Execute em terminais separados:
 **Terminal 1 - Editor de Súmulas:**
 
 ```bash
-python Scripts/3_servidor_editor.py
+python Scripts/editors/2_servidor_sumulas.py
 ```
 
 **Terminal 2 - Editor de Temas:**
 
 ```bash
-python Scripts/4_servidor_editor_temas.py
+python Scripts/editors/2_servidor_temas.py
 ```
 
 **Terminal 3 - Editor Unificado:**
 
 ```bash
-python Scripts/5_editor_unificado.py
+python Scripts/editors/3_servidor_unificado.py
 ```
 
 Acesse: http://localhost:8000

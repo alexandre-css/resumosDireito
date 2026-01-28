@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Processo Civil - ResumosDireito</title>
+        <title>Processo Penal - ResumosDireito</title>
         <script src="https://cdn.tailwindcss.com"></script>
         <link rel="stylesheet"
             href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -17,7 +17,7 @@
 
             body {
                 font-family: 'Roboto', sans-serif;
-                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
                 min-height: 100vh;
             }
 
@@ -45,12 +45,12 @@
                         </button>
                         <div class="flex items-center gap-2">
                             <div class="text-xl font-bold">ResumosDireito</div>
-                            <div class="text-xl font-light text-blue-200">Civil</div>
+                            <div class="text-xl font-light text-blue-200">Penal</div>
                         </div>
                     </div>
                     <div class="hidden md:flex space-x-6">
-                        <a href="civil.html" class="hover:text-blue-200 transition font-medium">Civil</a>
-                        <a href="penal.html" class="hover:text-blue-200 transition">Penal</a>
+                        <a href="public/public\civil.html" class="hover:text-blue-200 transition">Civil</a>
+                        <a href="public/public\penal.html" class="hover:text-blue-200 transition font-medium">Penal</a>
                     </div>
                 </div>
             </div>
@@ -63,7 +63,7 @@
             class="fixed top-0 left-0 z-50 h-screen w-64 bg-white shadow-lg transform -translate-x-full transition-transform">
             <div class="p-6">
                 <div class="flex justify-between items-center mb-6">
-                    <h3 class="text-lg font-semibold text-blue-800">Civil</h3>
+                    <h3 class="text-lg font-semibold text-blue-800">Penal</h3>
                     <button id="sidenav-close" class="text-gray-500 hover:text-gray-700">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -73,21 +73,21 @@
                 </div>
                 <ul class="space-y-2">
                     <li>
-                        <a href="acordao.html"
+                        <a href="public/public\sumulas.html"
                             class="flex items-center px-4 py-3 text-gray-700 hover:bg-blue-50 rounded-lg transition group">
-                            <span class="material-symbols-outlined mr-3 text-blue-600 group-hover:text-blue-700">
-                                gavel
+                            <span class="material-symbols-outlined mr-3 text-red-600 group-hover:text-red-700">
+                                menu_book
                             </span>
-                            <span class="font-medium">Estrutura de um Acórdão</span>
+                            <span class="font-medium">Súmulas</span>
                         </a>
                     </li>
                     <li>
-                        <a href="honorarios.html"
+                        <a href="public/public\temas.html"
                             class="flex items-center px-4 py-3 text-gray-700 hover:bg-blue-50 rounded-lg transition group">
-                            <span class="material-symbols-outlined mr-3 text-green-600 group-hover:text-green-700">
-                                payments
+                            <span class="material-symbols-outlined mr-3 text-indigo-600 group-hover:text-indigo-700">
+                                topic
                             </span>
-                            <span class="font-medium">Honorários de Sucumbência</span>
+                            <span class="font-medium">Temas</span>
                         </a>
                     </li>
                 </ul>
@@ -100,62 +100,64 @@
                 </div>
             </div>
         </nav>
+
         <div class="container mx-auto px-4 py-16 max-w-6xl">
             <header class="text-center mb-16">
-                <h1 class="text-5xl font-bold text-white mb-4">Direito Civil</h1>
+                <h1 class="text-5xl font-bold text-white mb-4">Direito Penal</h1>
                 <p class="text-xl text-white opacity-90">Selecione o conteúdo desejado</p>
             </header>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-                <!-- Card Estrutura de Acórdão -->
-                <a href="acordao.html" class="card-button block">
+                <!-- Card Súmulas -->
+                <a href="public/public\sumulas.html" class="card-button block">
                     <div class="bg-white rounded-xl shadow-2xl p-8 h-full flex flex-col justify-between">
                         <div>
                             <div class="flex justify-center mb-6">
-                                <div class="bg-blue-100 rounded-full p-6">
-                                    <svg class="w-16 h-16 text-blue-600" fill="none" stroke="currentColor"
+                                <div class="bg-red-100 rounded-full p-6">
+                                    <svg class="w-16 h-16 text-red-600" fill="none" stroke="currentColor"
                                         viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
+                                            d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253">
                                         </path>
                                     </svg>
                                 </div>
                             </div>
-                            <h2 class="text-2xl font-bold text-blue-900 mb-3 text-center">Estrutura de um Acórdão</h2>
-                            <p class="text-gray-600 text-center">Guia interativo sobre a estrutura e componentes de
-                                decisões colegiadas</p>
+                            <h2 class="text-2xl font-bold text-red-900 mb-3 text-center">Súmulas em Matéria Criminal
+                            </h2>
+                            <p class="text-gray-600 text-center">Compilação das súmulas do STF e STJ sobre questões de
+                                Direito Penal, Processo Penal, Execução Penal e ECA</p>
                         </div>
                         <div class="mt-6 text-center">
                             <span
-                                class="inline-block bg-blue-600 text-white px-6 py-2 rounded-full font-medium hover:bg-blue-700 transition">
+                                class="inline-block bg-red-600 text-white px-6 py-2 rounded-full font-medium hover:bg-red-700 transition">
                                 Acessar →
                             </span>
                         </div>
                     </div>
                 </a>
 
-                <!-- Card Honorários -->
-                <a href="honorarios.html" class="card-button block">
+                <!-- Card Temas -->
+                <a href="public/public\temas.html" class="card-button block">
                     <div class="bg-white rounded-xl shadow-2xl p-8 h-full flex flex-col justify-between">
                         <div>
                             <div class="flex justify-center mb-6">
-                                <div class="bg-green-100 rounded-full p-6">
-                                    <svg class="w-16 h-16 text-green-600" fill="none" stroke="currentColor"
+                                <div class="bg-indigo-100 rounded-full p-6">
+                                    <svg class="w-16 h-16 text-indigo-600" fill="none" stroke="currentColor"
                                         viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+                                            d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10">
                                         </path>
                                     </svg>
                                 </div>
                             </div>
-                            <h2 class="text-2xl font-bold text-green-900 mb-3 text-center">Honorários Advocatícios de
-                                Sucumbência</h2>
-                            <p class="text-gray-600 text-center">Guia completo sobre fixação, cálculo e aplicação dos
-                                honorários advocatícios</p>
+                            <h2 class="text-2xl font-bold text-indigo-900 mb-3 text-center">Temas em Matéria Criminal
+                            </h2>
+                            <p class="text-gray-600 text-center">Compilação dos Temas de Repercussão Geral (STF) e Temas
+                                Repetitivos (STJ)</p>
                         </div>
                         <div class="mt-6 text-center">
                             <span
-                                class="inline-block bg-green-600 text-white px-6 py-2 rounded-full font-medium hover:bg-green-700 transition">
+                                class="inline-block bg-indigo-600 text-white px-6 py-2 rounded-full font-medium hover:bg-indigo-700 transition">
                                 Acessar →
                             </span>
                         </div>

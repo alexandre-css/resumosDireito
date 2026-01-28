@@ -3,7 +3,7 @@ import re
 
 print("Reorganizando súmulas do STJ de forma SIMPLES e SEGURA...")
 
-with open('penal-sumulas.html', 'r', encoding='utf-8') as f:
+with open('penal-public/public\sumulas.html', 'r', encoding='utf-8') as f:
     linhas = f.readlines()
 
 # Encontrar início e fim da seção STJ
@@ -98,7 +98,7 @@ novo.extend(linhas[fim_cards:fim_stj])
 novo.extend(linhas[fim_stj:])
 
 # Salvar
-with open('penal-sumulas.html', 'w', encoding='utf-8') as f:
+with open('penal-public/public\sumulas.html', 'w', encoding='utf-8') as f:
     f.writelines(novo)
 
 print(f"\n✓ Súmulas reorganizadas!")

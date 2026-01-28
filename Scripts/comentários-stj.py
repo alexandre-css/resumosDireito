@@ -3,7 +3,7 @@ import re
 
 print("Adicionando comentários CORRETAMENTE (antes das linhas <div>)...")
 
-with open('penal-sumulas.html', 'r', encoding='utf-8') as f:
+with open('penal-public/public\sumulas.html', 'r', encoding='utf-8') as f:
     linhas = f.readlines()
 
 # Encontrar seção STJ
@@ -57,7 +57,7 @@ while i < len(linhas):
     i += 1
 
 # Salvar
-with open('penal-sumulas.html', 'w', encoding='utf-8') as f:
+with open('penal-public/public\sumulas.html', 'w', encoding='utf-8') as f:
     f.writelines(novas_linhas)
 
 print("\n✓ AGORA SIM! Comentários adicionados ANTES de cada <div>!")

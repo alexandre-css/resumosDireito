@@ -11,26 +11,26 @@ from pathlib import Path
 # Mapeamento de mudanças de caminho
 UPDATES = {
     # Scripts Python - geradores
-    'Scripts/2_gerar_html.py': 'Scripts/generators/1_gerar_html_sumulas.py',
-    'Scripts/2_gerar_html_temas.py': 'Scripts/generators/1_gerar_html_temas.py',
+    'Scripts/generators/1_gerar_html_sumulas.py': 'Scripts/generators/1_gerar_html_sumulas.py',
+    'Scripts/generators/1_gerar_html_temas.py': 'Scripts/generators/1_gerar_html_temas.py',
     
     # Scripts Python - editores
-    'Scripts/3_servidor_editor.py': 'Scripts/editors/2_servidor_sumulas.py',
-    'Scripts/4_servidor_editor_temas.py': 'Scripts/editors/2_servidor_temas.py',
-    'Scripts/5_editor_unificado.py': 'Scripts/editors/3_servidor_unificado.py',
+    'Scripts/editors/2_servidor_sumulas.py': 'Scripts/editors/2_servidor_sumulas.py',
+    'Scripts/editors/2_servidor_temas.py': 'Scripts/editors/2_servidor_temas.py',
+    'Scripts/editors/3_servidor_unificado.py': 'Scripts/editors/3_servidor_unificado.py',
     
     # Scripts Python - extractors
-    'Scripts/1_extrair_sumulas.py': 'Scripts/extractors/extrair_sumulas.py',
-    'Scripts/1_extrair_temas.py': 'Scripts/extractors/extrair_temas.py',
+    'Scripts/extractors/extrair_sumulas.py': 'Scripts/extractors/extrair_sumulas.py',
+    'Scripts/extractors/extrair_temas.py': 'Scripts/extractors/extrair_temas.py',
     
     # HTMLs
-    'sumulas.html': 'public/sumulas.html',
-    'temas.html': 'public/temas.html',
-    'index.html': 'public/index.html',
-    'penal.html': 'public/penal.html',
-    'civil.html': 'public/civil.html',
-    'acordao.html': 'public/acordao.html',
-    'honorarios.html': 'public/honorarios.html',
+    'public/public\sumulas.html': 'public/public/public\sumulas.html',
+    'public/public\temas.html': 'public/public/public\temas.html',
+    'public/public\index.html': 'public/public/public\index.html',
+    'public/public\penal.html': 'public/public/public\penal.html',
+    'public/public\civil.html': 'public/public/public\civil.html',
+    'public/public\acordao.html': 'public/public/public\acordao.html',
+    'public/public\honorarios.html': 'public/public/public\honorarios.html',
 }
 
 def atualizar_arquivo(filepath, updates):

@@ -148,7 +148,7 @@ Na página de configuração, clique em **"🔄 Restaurar Padrão"** para voltar
 ## 📁 Arquivos Envolvidos
 
 -   **`Data/categorias_cores.json`** - Arquivo de configuração
--   **`Scripts/3_servidor_editor.py`** - Servidor (carrega categorias)
+-   **`Scripts/editors/2_servidor_sumulas.py`** - Servidor (carrega categorias)
 -   **`configurar_categorias.bat`** - Atalho rápido
 -   **`editor.bat`** - Editor principal
 

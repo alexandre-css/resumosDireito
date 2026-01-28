@@ -205,7 +205,8 @@ def salvar_html(html, arquivo='sumulas.html', backup=True):
     """Salva HTML gerando backup do original"""
     if backup and os.path.exists(arquivo):
         timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
-        backup_file = f'backup/{arquivo}.backup_{timestamp}'
+        backup_filename = os.path.basename(arquivo)
+        backup_file = f'backup/{backup_filename}.backup_{timestamp}'
         os.rename(arquivo, backup_file)
         print(f'[OK] Backup criado: {backup_file}')
     

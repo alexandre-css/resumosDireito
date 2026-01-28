@@ -9,4 +9,4 @@ echo ===========================================================================
 echo.
 
 cd /d "%~dp0"
-python Scripts/4_servidor_editor_temas.py
+python Scripts/editors/2_servidor_temas.py

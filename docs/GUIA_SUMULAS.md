@@ -249,7 +249,7 @@ python Scripts/extrair_sumulas_para_json.py
 1. ✏️ **Editar JSON** → Adicionar/modificar súmula
 2. 💾 **Salvar** → Salvar arquivo JSON
 3. ▶️ **Rodar Script** → `python Scripts/gerar_sumulas_html.py`
-4. 👀 **Revisar** → Abrir `penal-sumulas.html` no navegador
+4. 👀 **Revisar** → Abrir `penal-public/public\sumulas.html` no navegador
 5. ✅ **Commit** → Se estiver OK, fazer commit no Git
 
 ---
