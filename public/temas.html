@@ -2777,7 +2777,25 @@ Quarta tese: As autorizações de saída temporária para visita à família e p
                     if (searchInput.value.trim()) {
                         buscarTemas();
                     } else {
-                        // Expandir seções visíveis quando não há busca ativa
+                        // Mostrar/ocultar seções baseado no filtro
+                        const searchResultsContainer = document.getElementById('searchResultsContainer');
+                        searchResultsContainer.style.display = 'none';
+
+                        const secaoSTF = document.querySelector('#temas-stf').closest('.mt-16');
+                        const secaoSTJ = document.querySelector('#temas-stj').closest('.mt-16');
+
+                        if (tribunal === 'todos') {
+                            if (secaoSTF) secaoSTF.style.display = '';
+                            if (secaoSTJ) secaoSTJ.style.display = '';
+                        } else if (tribunal === 'STF') {
+                            if (secaoSTF) secaoSTF.style.display = '';
+                            if (secaoSTJ) secaoSTJ.style.display = 'none';
+                        } else if (tribunal === 'STJ') {
+                            if (secaoSTF) secaoSTF.style.display = 'none';
+                            if (secaoSTJ) secaoSTJ.style.display = '';
+                        }
+
+                        // Expandir seções visíveis
                         expandirSecoesVisiveis();
                     }
                 }
