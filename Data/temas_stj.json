@@ -1,6 +1,6 @@
 {
   "tribunal": "STJ",
-  "total": 89,
+  "total": 90,
   "temas": [
     {
       "numero": 20,
@@ -473,6 +473,13 @@
       "chips": [],
       "modulacao_efeitos": "\"Os efeitos prejudiciais aos réus decorrentes da tese fixada neste julgamento alcançam apenas os fatos ocorridos após a publicação deste acórdão\".\n\nO acórdão foi publicado em 16/09/2025.",
       "comentario": "Ver Súmulas 545/STJ e 630/STJ e Tema 585/STJ."
+    },
+    {
+      "numero": 1195,
+      "titulo": "Comutação da Pena e Falta Grave",
+      "tese": "O período de doze meses a que se refere o art. 4º, I, do Decreto n. 9.246/2017 caracteriza-se pela não ocorrência de falta grave, não se relacionando à data de sua apuração, desde que já instaurado o processo administrativo disciplinar correspondente.",
+      "cor": "orange",
+      "chips": []
     },
     {
       "numero": 1196,

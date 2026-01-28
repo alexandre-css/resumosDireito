@@ -1,69 +1,128 @@
-# 📚 ResumosDireito - Sistema de Súmulas
+# 📚 ResumosDireito - Sistema Profissional de Súmulas e Temas
 
-Sistema completo de gerenciamento de súmulas jurídicas com interface web e geração automática de HTML.
+Sistema completo de gerenciamento de súmulas e temas jurídicos com interface web moderna, editor unificado e integração Git.
+
+[![Version](https://img.shields.io/badge/version-2.0-blue.svg)](https://github.com/alexandre-css/resumosDireito)
+[![License](https://img.shields.io/badge/license-Copyleft-green.svg)](LICENSE)
+[![Python](https://img.shields.io/badge/python-3.8+-yellow.svg)](https://www.python.org/)
 
 ---
 
-## 📁 Estrutura do Projeto
+## ✨ Funcionalidades Principais
+
+- 📋 **Súmulas**: STF (77), STJ (99), ECA (9)
+- 🎯 **Temas**: Repercussão Geral (STF) e Repetitivos (STJ)
+- 🎨 **Interface Moderna**: Design responsivo com Tailwind CSS
+- 🔄 **Editor Unificado**: Gerencie súmulas e temas em uma única interface
+- 🚀 **Git Integration**: Commit e push direto do editor
+- 📱 **Responsivo**: Funciona em desktop, tablet e mobile
+- 🔍 **Busca Avançada**: Pesquisa inteligente com filtros
+- 📦 **Categorização**: Sistema de cores e categorias customizáveis
+- 📝 **Campo "Modulação de Efeitos"**: Com suporte a quebras de parágrafo
+
+---
+
+## 📁 Estrutura do Projeto (v2.0)
 
 ```
 resumosDireito/
-├── 📄 index.html              # Página inicial
-├── 📄 sumulas.html            # Página de súmulas penais
-├── 📄 honorarios.html         # Calculadora de honorários
-├──
-├── 🔧 editor.bat              # Inicia editor web (PRINCIPAL)
-├── 🔧 gerar_html.bat          # Gera HTML das súmulas
+├── 📄 README.md                    # Este arquivo
+├── 📄 ESTRUTURA_PROJETO.md         # Documentação da estrutura
+├── 📄 .gitignore                   # Arquivos ignorados
+├── 🚀 editor_unificado.bat         # ⭐ PRINCIPAL - Editor completo
 │
-├── 📁 Data/                   # Arquivos JSON das súmulas
-│   ├── stf.json              # 77 súmulas do STF
-│   ├── stj.json              # 99 súmulas do STJ
-│   └── eca.json              # 9 súmulas do ECA
+├── 📂 public/                      # Páginas HTML públicas
+│   ├── index.html                  # Página inicial
+│   ├── penal.html                  # Seção penal
+│   ├── civil.html                  # Seção civil
+│   ├── sumulas.html                # Visualização de súmulas
+│   ├── temas.html                  # Visualização de temas
+│   ├── acordao.html                # Modelo de acórdão
+│   └── honorarios.html             # Calculadora de honorários
 │
-├── 📁 Scripts/                # Scripts Python principais
-│   ├── 1_extrair_sumulas.py  # Extrai HTML → JSON
-│   ├── 2_gerar_html.py       # Gera JSON → HTML
-│   └── 3_servidor_editor.py  # Servidor web do editor
+├── 📂 Data/                        # Dados JSON
+│   ├── categorias_cores.json       # Configuração de cores
+│   ├── stf.json, stj.json, eca.json # Súmulas
+│   └── temas_stf.json, temas_stj.json # Temas
 │
-├── 📁 docs/                   # Documentação
-│   ├── GUIA_SUMULAS.md       # Guia completo
-│   ├── LEIA-ME_SUMULAS.md    # Resumo rápido
-│   ├── EXEMPLO_ADICIONAR_SUMULA.md
-│   └── SISTEMA_PRONTO.md
+├── 📂 Scripts/                     # Scripts Python organizados
+│   ├── 📂 generators/              # Geradores de HTML
+│   ├── 📂 editors/                 # Servidores de edição
+│   ├── 📂 extractors/              # Extratores de dados
+│   └── 📂 utils/                   # Utilitários diversos
 │
-├── 📁 backup/                 # Backups automáticos
-└── 📁 utils/                  # Scripts auxiliares antigos
+├── 📂 automation/                  # Automação (.bat)
+├── 📂 docs/                        # Documentação completa
+└── 📂 backup/                      # Backups automáticos
 ```
 
----
-
-## 🚀 Como Usar
-
-### 1️⃣ **Editar Súmulas (RECOMENDADO)**
-
-Clique duplo em: **`editor.bat`**
-
-Isso abre uma interface web completa onde você pode:
-
--   ✏️ Editar súmulas existentes
--   ➕ Adicionar novas súmulas
--   🗑️ Excluir súmulas
--   🚀 Gerar HTML com um clique
-
-**URL:** http://localhost:8080
+📖 **Documentação completa da estrutura**: [ESTRUTURA_PROJETO.md](ESTRUTURA_PROJETO.md)
 
 ---
 
-### 2️⃣ **Editar Manualmente (Avançado)**
+## 🚀 Início Rápido
 
-1. Abra `Data/stf.json` (ou stj/eca)
-2. Edite o JSON
-3. Execute: **`gerar_html.bat`**
+### **Modo Mais Fácil - Editor Unificado**
+
+1. **Clique duplo em**: `editor_unificado.bat`
+2. Aguarde os 3 servidores iniciarem
+3. O navegador abrirá automaticamente em `http://localhost:8000`
+4. Use as abas para alternar entre **Súmulas** e **Temas**
+5. Edite, gere HTML e faça commit/push - tudo em uma interface!
+
+### **Funcionalidades do Editor:**
+- ✏️ **Edição completa** de súmulas e temas
+- 📋 **Abas integradas** para alternar entre conteúdos
+- 🔄 **Gerar HTML** de ambos com um clique
+- 🚀 **Commit & Push Git** direto da interface
+- 🎨 **Categorização visual** com cores
+- 📝 **Campo de modulação de efeitos** com quebras de parágrafo
 
 ---
 
-## 📝 Formato do JSON
+## 📖 Documentação
 
+### **Guias Principais:**
+- 📘 [ESTRUTURA_PROJETO.md](ESTRUTURA_PROJETO.md) - Organização e arquitetura
+- 📗 [EDITOR_UNIFICADO.md](docs/EDITOR_UNIFICADO.md) - Editor completo
+- 📙 [GUIA_SUMULAS.md](docs/GUIA_SUMULAS.md) - Documentação de súmulas
+- 📕 [CONFIGURAR_CATEGORIAS.md](docs/CONFIGURAR_CATEGORIAS.md) - Sistema de cores
+
+### **Recursos Adicionais:**
+- [EXEMPLO_ADICIONAR_SUMULA.md](docs/EXEMPLO_ADICIONAR_SUMULA.md)
+- [RECURSOS_EDITOR.md](docs/RECURSOS_EDITOR.md)
+- [SISTEMA_PRONTO.md](docs/SISTEMA_PRONTO.md)
+
+---
+
+## 🛠️ Tecnologias
+
+- **Frontend**: HTML5, Tailwind CSS, JavaScript vanilla
+- **Backend**: Python 3.8+
+- **Dados**: JSON
+- **Versionamento**: Git
+- **Automação**: Batch scripts (.bat)
+
+---
+
+## 🎨 Cores e Categorias
+
+### **Categorias Principais:**
+- 🔴 Vermelho - Júri
+- 🟠 Laranja - Execução Penal  
+- 🟢 Verde - Crimes Geral
+- 🔷 Teal - Processual
+- 💙 Índigo - Prescrição
+- 🟣 Roxo - Competência
+- 🌸 Rosa - Aplicação da Pena
+
+**+ 15 cores adicionais disponíveis!**
+
+---
+
+## 📋 Formato dos Dados
+
+### **Súmula:**
 ```json
 {
     "numero": 701,
@@ -72,58 +131,75 @@ Isso abre uma interface web completa onde você pode:
     "cor": "blue",
     "vinculante": false,
     "chips": ["ALTERADA"],
-    "nota": "Observação opcional"
+    "modulacao_efeitos": "Informações sobre modulação (opcional)",
+    "nota": "Comentário adicional (opcional)"
+}
+```
+
+### **Tema:**
+```json
+{
+    "numero": 1234,
+    "titulo": "Título do Tema",
+    "tese": "Tese fixada pelo tribunal.",
+    "cor": "indigo",
+    "chips": [],
+    "modulacao_efeitos": "Modulação de efeitos (opcional)",
+    "comentario": "Observações (opcional)"
 }
 ```
 
 ---
 
-## 🎨 Cores e Categorias
+## 🔧 Scripts e Automação
 
-### Categorias Principais:
+### **Arquivos .bat (Automação):**
+- `editor_unificado.bat` - ⭐ Editor completo (RECOMENDADO)
+- `gerar_html.bat` - Gera todos os HTMLs
+- `automation/editor_sumulas.bat` - Apenas súmulas
+- `automation/editor_temas.bat` - Apenas temas
 
--   🔴 **Vermelho** - Júri
--   🟠 **Laranja** - Execução Penal
--   🟢 **Verde** - Crimes Geral
--   🔷 **Teal** - Processual
--   💙 **Índigo** - Prescrição
--   🟣 **Roxo** - Competência
--   🌸 **Rosa** - Aplicação da Pena
--   🌹 **Rosa-forte** - Perdão Judicial
+### **Scripts Python:**
 
-### Mais 15 categorias adicionais disponíveis!
+#### **Geradores** (`Scripts/generators/`)
+- `1_gerar_html_sumulas.py` - Gera HTML de súmulas
+- `1_gerar_html_temas.py` - Gera HTML de temas
 
-Veja todas as cores no editor ou em `docs/GUIA_SUMULAS.md`
+#### **Editores** (`Scripts/editors/`)
+- `2_servidor_sumulas.py` - Servidor de edição de súmulas
+- `2_servidor_temas.py` - Servidor de edição de temas
+- `3_servidor_unificado.py` - Servidor do editor unificado
 
----
-
-## 🏷️ Chips Disponíveis
-
--   **VINCULANTE** (amarelo) - Súmulas vinculantes do STF
--   **ALTERADA** (azul) - Súmula foi alterada
--   **SUPERADA EM PARTE** (laranja) - Parcialmente superada
-
----
-
-## ⚙️ Scripts Disponíveis
-
-| Script                 | Descrição                        |
-| ---------------------- | -------------------------------- |
-| `editor.bat`           | Inicia editor web interativo     |
-| `gerar_html.bat`       | Gera HTML das súmulas            |
-| `1_extrair_sumulas.py` | Extrai súmulas do HTML para JSON |
-| `2_gerar_html.py`      | Gera HTML a partir dos JSONs     |
-| `3_servidor_editor.py` | Servidor web do editor           |
+#### **Utilitários** (`Scripts/utils/`)
+- `analise_completa.py` - Análise do sistema
+- `atualizar_textos.py` - Atualização em massa
+- `corrigir_sumulas.py` - Correções automáticas
 
 ---
 
-## 📚 Documentação
+## 🔄 Workflow Recomendado
 
-Consulte a pasta **`docs/`** para guias detalhados:
+1. Execute `editor_unificado.bat`
+2. Edite súmulas ou temas no navegador
+3. Clique em **"Gerar HTML"** para atualizar visualização
+4. Clique em **"Commit & Push"** para enviar ao GitHub
+5. ✨ Deploy automático (se configurado)
 
--   **GUIA_SUMULAS.md** - Documentação completa
--   **LEIA-ME_SUMULAS.md** - Guia rápido
--   **EXEMPLO_ADICIONAR_SUMULA.md** - Tutorial passo-a-passo
+---
+
+## 🚀 Reorganização do Projeto
+
+### **Primeira vez após atualização?**
+
+Execute (apenas uma vez):
+```batch
+reorganizar_projeto.bat
+```
+
+Isso irá:
+1. Criar nova estrutura de diretórios
+2. Mover arquivos para locais corretos
+3. Atualizar referências automaticamente
 
 ---
 
