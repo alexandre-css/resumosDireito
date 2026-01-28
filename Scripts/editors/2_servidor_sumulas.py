@@ -160,6 +160,8 @@ class EditorHandler(BaseHTTPRequestHandler):
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Configurar Categorias - ResumosDireito</title>
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body class="bg-gray-50">
     <div class="container mx-auto px-4 py-8 max-w-4xl">
@@ -168,7 +170,7 @@ class EditorHandler(BaseHTTPRequestHandler):
         </div>
         
         <header class="text-center mb-8">
-            <h1 class="text-4xl font-bold text-blue-900 mb-2">⚙️ Configurar Categorias</h1>
+            <h1 class="text-4xl font-bold text-blue-900 mb-2"><span class="material-symbols-outlined">settings</span> Configurar Categorias</h1>
             <p class="text-gray-600">Edite o nome das categorias para cada cor</p>
         </header>
 
@@ -178,17 +180,17 @@ class EditorHandler(BaseHTTPRequestHandler):
                 
                 <div class="flex gap-4 pt-4">
                     <button type="submit" class="flex-1 px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 font-semibold">
-                        💾 Salvar Configurações
+                        <span class="material-symbols-outlined">save</span> Salvar Configurações
                     </button>
                     <button type="button" onclick="resetarPadrao()" class="px-6 py-3 bg-gray-300 text-gray-700 rounded-lg hover:bg-gray-400 font-semibold">
-                        🔄 Restaurar Padrão
+                        <span class="material-symbols-outlined">sync</span> Restaurar Padrão
                     </button>
                 </div>
             </form>
         </div>
 
         <div class="bg-blue-50 border border-blue-200 rounded-lg p-4">
-            <h3 class="font-bold text-blue-900 mb-2">💡 Dica:</h3>
+            <h3 class="font-bold text-blue-900 mb-2"><span class="material-symbols-outlined">lightbulb</span> Dica:</h3>
             <p class="text-sm text-blue-800">Após salvar, reinicie o editor para ver as alterações no dropdown de cores!</p>
         </div>
     </div>
@@ -259,7 +261,7 @@ class EditorHandler(BaseHTTPRequestHandler):
                 });
                 
                 if (response.ok) {
-                    mostrarToast('✓ Configurações salvas com sucesso!', 'success');
+                    mostrarToast('<span class="material-symbols-outlined">check</span> Configurações salvas com sucesso!', 'success');
                     categorias = novasCategorias;
                 } else {
                     mostrarToast('Erro ao salvar configurações', 'error');
@@ -379,18 +381,25 @@ class EditorHandler(BaseHTTPRequestHandler):
             margin-right: 8px;
             vertical-align: middle;
         }
+        /* Alinhamento dos ícones Material Symbols */
+        .material-symbols-outlined {
+            vertical-align: middle !important;
+            display: inline-block !important;
+        }
     </style>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body class="bg-gray-50">
     <div class="container mx-auto px-4 py-8 max-w-7xl">
         <div class="flex justify-end mb-4">
             <a href="/config" class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 transition font-medium">
-                ⚙️ Configurar Categorias
+                <span class="material-symbols-outlined">settings</span> Configurar Categorias
             </a>
         </div>
         
         <header class="text-center mb-8">
-            <h1 class="text-4xl font-bold text-blue-900 mb-2">📝 Editor de Súmulas</h1>
+            <h1 class="text-4xl font-bold text-blue-900 mb-2 flex items-center gap-3"><span class="material-symbols-outlined" style="font-size: 2.5rem;">edit_note</span> Editor de Súmulas</h1>
             <p class="text-gray-600">Edição direta com salvamento automático</p>
         </header>
 
@@ -410,13 +419,13 @@ class EditorHandler(BaseHTTPRequestHandler):
                     STJ (<span id="count-stj">0</span>)
                 </button>
                 <button onclick="selecionarTribunal('eca')" id="btn-eca"
-                    class="flex-1 px-6 py-3 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition font-semibold">
+                    class="flex-1 px-6 py-3 bg-pink-600 text-white rounded-lg hover:bg-pink-700 transition font-semibold">
                     ECA (<span id="count-eca">0</span>)
                 </button>
             </div>
             <button onclick="gerarHTML()" id="btn-gerar"
                 class="w-full px-6 py-4 bg-green-600 text-white rounded-lg hover:bg-green-700 transition font-bold text-lg">
-                🚀 Gerar HTML Atualizado
+                Gerar HTML Atualizado
             </button>
         </div>
 
@@ -424,9 +433,9 @@ class EditorHandler(BaseHTTPRequestHandler):
             <!-- Lista de Súmulas -->
             <div class="lg:col-span-1 bg-white rounded-lg shadow-md p-6">
                 <div class="flex justify-between items-center mb-4">
-                    <h2 class="text-xl font-bold text-gray-800">📋 Súmulas</h2>
-                    <button onclick="novaSumula()" class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 text-sm font-semibold">
-                        ➕ Nova
+                    <h2 class="text-xl font-bold text-gray-800 flex items-center gap-2"><span class="material-symbols-outlined">description</span> Súmulas</h2>
+                    <button onclick="novaSumula()" class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 text-sm font-semibold flex items-center gap-1">
+                        <span class="material-symbols-outlined text-sm">add</span> Nova
                     </button>
                 </div>
                 
@@ -434,11 +443,11 @@ class EditorHandler(BaseHTTPRequestHandler):
                 <div class="mb-4">
                     <div class="relative mb-2">
                         <input type="text" id="pesquisa-sumulas" 
-                            placeholder="🔍 Pesquisar no texto das súmulas..."
+                            placeholder="Pesquisar no texto das súmulas..."
                             class="w-full px-4 py-2 pr-10 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
                         <button onclick="limparPesquisa()" 
                             class="absolute right-2 top-2 text-gray-400 hover:text-gray-600">
-                            ✖
+                            <span class="material-symbols-outlined">close</span>
                         </button>
                     </div>
                     
@@ -490,12 +499,12 @@ class EditorHandler(BaseHTTPRequestHandler):
 
             <!-- Formulário -->
             <div class="lg:col-span-2 bg-white rounded-lg shadow-md p-6">
-                <h2 class="text-2xl font-bold text-gray-800 mb-6">✏️ Editor</h2>
+                <h2 class="text-2xl font-bold text-gray-800 mb-6 flex items-center gap-2"><span class="material-symbols-outlined">edit</span> Editor</h2>
                 
                 <div id="mensagem-vazia" class="text-center py-12 text-gray-500">
-                    <p class="text-lg mb-2">👈 Selecione uma súmula para editar</p>
-                    <p class="text-sm">ou clique em "➕ Nova" para criar uma nova</p>
-                    <p class="text-xs mt-4 text-blue-600 hidden" id="aviso-todos">💡 Selecione um tribunal específico para adicionar novas súmulas</p>
+                    <p class="text-lg mb-2 flex items-center gap-2"><span class="material-symbols-outlined">arrow_back</span> Selecione uma súmula para editar</p>
+                    <p class="text-sm">ou clique em "<span class="material-symbols-outlined">add</span> Nova" para criar uma nova</p>
+                    <p class="text-xs mt-4 text-blue-600 hidden" id="aviso-todos"><span class="material-symbols-outlined">lightbulb</span> Selecione um tribunal específico para adicionar novas súmulas</p>
                 </div>
 
                 <form id="formulario" class="space-y-4 hidden">
@@ -576,13 +585,13 @@ class EditorHandler(BaseHTTPRequestHandler):
 
                     <div class="flex gap-4 pt-4">
                         <button type="submit" class="flex-1 px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 font-semibold">
-                            💾 Salvar
+                            <span class="material-symbols-outlined text-lg">save</span> Salvar
                         </button>
                         <button type="button" onclick="excluirSumula()" class="px-6 py-3 bg-red-600 text-white rounded-lg hover:bg-red-700 font-semibold">
-                            🗑️ Excluir
+                            <span class="material-symbols-outlined">delete</span> Excluir
                         </button>
                         <button type="button" onclick="cancelarEdicao()" class="px-6 py-3 bg-gray-300 text-gray-700 rounded-lg hover:bg-gray-400 font-semibold">
-                            ✖️ Cancelar
+                            <span class="material-symbols-outlined text-lg">close</span> Cancelar
                         </button>
                     </div>
                 </form>
@@ -951,7 +960,7 @@ class EditorHandler(BaseHTTPRequestHandler):
                         salvarTribunal('eca', porTribunal.eca)
                     ]);
                     
-                    mostrarToast(`✓ Cor alterada em ${quantidade} súmula(s)!`, 'success');
+                    mostrarToast(`<span class="material-symbols-outlined">check</span> Cor alterada em ${quantidade} súmula(s)!`, 'success');
                     
                     // Recarregar
                     await carregarSumulas('todos');
@@ -961,7 +970,7 @@ class EditorHandler(BaseHTTPRequestHandler):
             } else {
                 // Modo normal - salvar só o tribunal atual
                 await salvarSumula();
-                mostrarToast(`✓ Cor alterada em ${quantidade} súmula(s)!`, 'success');
+                mostrarToast(`<span class="material-symbols-outlined">check</span> Cor alterada em ${quantidade} súmula(s)!`, 'success');
             }
             
             // Limpar seleção
@@ -1255,7 +1264,7 @@ class EditorHandler(BaseHTTPRequestHandler):
                     }
                 }
                 
-                mostrarToast('✓ Salvo com sucesso!', 'success');
+                mostrarToast('<span class="material-symbols-outlined">check</span> Salvo com sucesso!', 'success');
                 await carregarSumulas(tribunalAtual);
                 cancelarEdicao();
             } catch (error) {
@@ -1320,14 +1329,14 @@ class EditorHandler(BaseHTTPRequestHandler):
         async function gerarHTML() {
             const btn = document.getElementById('btn-gerar');
             btn.disabled = true;
-            btn.textContent = '⏳ Gerando...';
+            btn.innerHTML = 'Gerando...';
             
             try {
                 const response = await fetch('/api/gerar-html', {method: 'POST'});
                 const result = await response.json();
                 
                 if (result.success) {
-                    mostrarToast('✓ HTML gerado com sucesso!', 'success');
+                    mostrarToast('HTML gerado com sucesso!', 'success');
                     setTimeout(() => {
                         alert('HTML atualizado!\\n\\nVerifique o arquivo sumulas.html');
                     }, 500);
@@ -1339,7 +1348,7 @@ class EditorHandler(BaseHTTPRequestHandler):
             }
             
             btn.disabled = false;
-            btn.textContent = '🚀 Gerar HTML Atualizado';
+            btn.innerHTML = 'Gerar HTML Atualizado';
         }
 
         function mostrarToast(msg, tipo) {
@@ -1372,7 +1381,7 @@ if __name__ == '__main__':
     server = HTTPServer(('localhost', PORT), EditorHandler)
     
     print("=" * 80)
-    print("🚀 SERVIDOR DO EDITOR DE SÚMULAS")
+    print("✅ SERVIDOR DO EDITOR DE SÚMULAS")
     print("=" * 80)
     print(f"\n✓ Servidor iniciado em: http://localhost:{PORT}")
     print("\n📝 Funcionalidades:")

@@ -71,6 +71,7 @@ resumosDireito/
 5. Edite, gere HTML e faça commit/push - tudo em uma interface!
 
 ### **Funcionalidades do Editor:**
+
 - ✏️ **Edição completa** de súmulas e temas
 - 📋 **Abas integradas** para alternar entre conteúdos
 - 🔄 **Gerar HTML** de ambos com um clique
@@ -83,12 +84,14 @@ resumosDireito/
 ## 📖 Documentação
 
 ### **Guias Principais:**
+
 - 📘 [ESTRUTURA_PROJETO.md](ESTRUTURA_PROJETO.md) - Organização e arquitetura
 - 📗 [EDITOR_UNIFICADO.md](docs/EDITOR_UNIFICADO.md) - Editor completo
 - 📙 [GUIA_SUMULAS.md](docs/GUIA_SUMULAS.md) - Documentação de súmulas
 - 📕 [CONFIGURAR_CATEGORIAS.md](docs/CONFIGURAR_CATEGORIAS.md) - Sistema de cores
 
 ### **Recursos Adicionais:**
+
 - [EXEMPLO_ADICIONAR_SUMULA.md](docs/EXEMPLO_ADICIONAR_SUMULA.md)
 - [RECURSOS_EDITOR.md](docs/RECURSOS_EDITOR.md)
 - [SISTEMA_PRONTO.md](docs/SISTEMA_PRONTO.md)
@@ -108,8 +111,9 @@ resumosDireito/
 ## 🎨 Cores e Categorias
 
 ### **Categorias Principais:**
+
 - 🔴 Vermelho - Júri
-- 🟠 Laranja - Execução Penal  
+- 🟠 Laranja - Execução Penal
 - 🟢 Verde - Crimes Geral
 - 🔷 Teal - Processual
 - 💙 Índigo - Prescrição
@@ -123,6 +127,7 @@ resumosDireito/
 ## 📋 Formato dos Dados
 
 ### **Súmula:**
+
 ```json
 {
     "numero": 701,
@@ -137,6 +142,7 @@ resumosDireito/
 ```
 
 ### **Tema:**
+
 ```json
 {
     "numero": 1234,
@@ -154,6 +160,7 @@ resumosDireito/
 ## 🔧 Scripts e Automação
 
 ### **Arquivos .bat (Automação):**
+
 - `editor_unificado.bat` - ⭐ Editor completo (RECOMENDADO)
 - `gerar_html.bat` - Gera todos os HTMLs
 - `automation/editor_sumulas.bat` - Apenas súmulas
@@ -162,15 +169,18 @@ resumosDireito/
 ### **Scripts Python:**
 
 #### **Geradores** (`Scripts/generators/`)
+
 - `1_gerar_html_sumulas.py` - Gera HTML de súmulas
 - `1_gerar_html_temas.py` - Gera HTML de temas
 
 #### **Editores** (`Scripts/editors/`)
+
 - `2_servidor_sumulas.py` - Servidor de edição de súmulas
 - `2_servidor_temas.py` - Servidor de edição de temas
 - `3_servidor_unificado.py` - Servidor do editor unificado
 
 #### **Utilitários** (`Scripts/utils/`)
+
 - `analise_completa.py` - Análise do sistema
 - `atualizar_textos.py` - Atualização em massa
 - `corrigir_sumulas.py` - Correções automáticas
@@ -192,11 +202,13 @@ resumosDireito/
 ### **Primeira vez após atualização?**
 
 Execute (apenas uma vez):
+
 ```batch
 reorganizar_projeto.bat
 ```
 
 Isso irá:
+
 1. Criar nova estrutura de diretórios
 2. Mover arquivos para locais corretos
 3. Atualizar referências automaticamente

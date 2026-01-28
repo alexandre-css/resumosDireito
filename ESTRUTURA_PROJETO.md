@@ -3,16 +3,19 @@
 ## 🎯 Princípios de Organização
 
 ### 1. **Separação de Responsabilidades**
+
 - Páginas públicas separadas de dados
 - Scripts separados por função
 - Documentação centralizada
 
 ### 2. **Nomenclatura Clara**
+
 - Pastas em minúsculas (exceto Data por compatibilidade)
 - Nomes descritivos e autoexplicativos
 - Prefixos numéricos para ordem de execução
 
 ### 3. **Hierarquia Lógica**
+
 - Nível raiz: apenas arquivos essenciais
 - Conteúdo agrupado por tipo e propósito
 - Estrutura facilita navegação e manutenção
@@ -90,6 +93,7 @@ resumosDireito/
 ## 🔄 Plano de Migração (se necessário)
 
 ### **Fase 1: Criar Nova Estrutura**
+
 ```bash
 # Criar diretórios
 mkdir public automation
@@ -99,6 +103,7 @@ mkdir Scripts\generators Scripts\editors Scripts\extractors
 ```
 
 ### **Fase 2: Mover Arquivos HTML**
+
 ```bash
 # Mover HTMLs para public/
 move *.html public\
@@ -106,6 +111,7 @@ move public\README.md .
 ```
 
 ### **Fase 3: Organizar Scripts**
+
 ```bash
 # Mover para generators/
 move Scripts\2_gerar_html.py Scripts\generators\1_gerar_html_sumulas.py
@@ -122,12 +128,14 @@ move Scripts\1_extrair_temas.py Scripts\extractors\
 ```
 
 ### **Fase 4: Organizar Automação**
+
 ```bash
 # Mover .bat para automation/
 move *.bat automation\
 ```
 
 ### **Fase 5: Atualizar Referências**
+
 - Atualizar caminhos nos scripts Python
 - Atualizar caminhos nos arquivos .bat
 - Atualizar links nos HTMLs
@@ -138,6 +146,7 @@ move *.bat automation\
 ## 📋 Checklist de Manutenção
 
 ### **Ao Adicionar Novo Arquivo:**
+
 - [ ] HTML público → `public/`
 - [ ] Dados JSON → `Data/`
 - [ ] Script gerador → `Scripts/generators/`
@@ -147,11 +156,13 @@ move *.bat automation\
 - [ ] Documentação → `docs/`
 
 ### **Nomenclatura de Scripts:**
+
 - Prefixo numérico: ordem de execução
 - Nome descritivo: função principal
 - Sufixo de tipo: `_sumulas`, `_temas`, `_unificado`
 
 ### **Exemplo:**
+
 ```
 1_gerar_html_sumulas.py    # 1 = gerador, nome claro, tipo específico
 2_servidor_sumulas.py      # 2 = editor/servidor, nome claro
@@ -163,17 +174,20 @@ move *.bat automation\
 ## 🚀 Benefícios da Estrutura
 
 ### **Para Desenvolvedores:**
+
 - ✅ Fácil localização de arquivos
 - ✅ Separação clara de responsabilidades
 - ✅ Facilita manutenção e expansão
 - ✅ Reduz conflitos de merge
 
 ### **Para Usuários:**
+
 - ✅ Automação simples via `.bat`
 - ✅ HTMLs públicos separados
 - ✅ Documentação acessível
 
 ### **Para o Projeto:**
+
 - ✅ Aparência profissional
 - ✅ Facilita onboarding
 - ✅ Preparado para crescimento

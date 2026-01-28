@@ -190,7 +190,7 @@ class EditorHandler(BaseHTTPRequestHandler):
                     self.end_headers()
                     self.wfile.write(json.dumps({
                         'success': True,
-                        'message': '✓ Não há mudanças para commitar',
+                        'message': '<span class="material-symbols-outlined">check</span> Não há mudanças para commitar',
                         'hasChanges': False
                     }).encode('utf-8'))
                     return
@@ -210,7 +210,7 @@ class EditorHandler(BaseHTTPRequestHandler):
                 self.end_headers()
                 self.wfile.write(json.dumps({
                     'success': True,
-                    'message': '✓ Mudanças enviadas para o GitHub!',
+                    'message': '<span class="material-symbols-outlined">check</span> Mudanças enviadas para o GitHub!',
                     'hasChanges': True,
                     'commitMessage': commit_message
                 }).encode('utf-8'))
@@ -256,6 +256,7 @@ class EditorHandler(BaseHTTPRequestHandler):
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Editor Unificado - Súmulas e Temas</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <style>
         .tab-button {
             transition: all 0.3s ease;
@@ -267,7 +268,14 @@ class EditorHandler(BaseHTTPRequestHandler):
         #toast {
             transition: all 0.3s ease;
         }
+        /* Alinhamento dos ícones Material Symbols */
+        .material-symbols-outlined {
+            vertical-align: middle !important;
+            display: inline-block !important;
+        }
     </style>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body class="bg-gray-50">
     <!-- Toast de Notificação -->
@@ -278,17 +286,17 @@ class EditorHandler(BaseHTTPRequestHandler):
         <div class="container mx-auto px-4 py-6">
             <div class="flex justify-between items-center">
                 <div>
-                    <h1 class="text-3xl font-bold">📝 Editor Unificado</h1>
+                    <h1 class="text-3xl font-bold"><span class="material-symbols-outlined">edit_note</span> Editor Unificado</h1>
                     <p class="text-blue-100 mt-1">Súmulas e Temas em uma única interface</p>
                 </div>
                 <div class="flex gap-3">
                     <button onclick="gerarHTML()" id="btn-gerar"
                         class="px-6 py-3 bg-green-500 hover:bg-green-600 text-white rounded-lg font-semibold shadow-lg flex items-center gap-2 transition">
-                        🔄 Gerar HTML
+                        <span class="material-symbols-outlined">sync</span> Gerar HTML
                     </button>
                     <button onclick="gitPush()" id="btn-git"
                         class="px-6 py-3 bg-purple-500 hover:bg-purple-600 text-white rounded-lg font-semibold shadow-lg flex items-center gap-2 transition">
-                        🚀 Commit & Push
+                        <span class="material-symbols-outlined">rocket_launch</span> Commit & Push
                     </button>
                 </div>
             </div>
@@ -301,11 +309,11 @@ class EditorHandler(BaseHTTPRequestHandler):
             <div class="flex gap-6">
                 <button onclick="mudarAba('sumulas')" id="tab-sumulas" 
                     class="tab-button px-4 py-4 font-semibold text-gray-600 active">
-                    📋 SÚMULAS
+                    <span class="material-symbols-outlined">description</span> SÚMULAS
                 </button>
                 <button onclick="mudarAba('temas')" id="tab-temas"
                     class="tab-button px-4 py-4 font-semibold text-gray-600">
-                    🎯 TEMAS
+                    <span class="material-symbols-outlined">target</span> TEMAS
                 </button>
             </div>
         </div>
@@ -318,7 +326,7 @@ class EditorHandler(BaseHTTPRequestHandler):
             <iframe src="http://localhost:8001" 
                 style="width:100%; height:calc(100vh - 300px); border:none;">
             </iframe>
-            <p class="text-sm text-gray-500 mt-4">💡 Editor de Súmulas carregado na porta 8001</p>
+            <p class="text-sm text-gray-500 mt-4"><span class="material-symbols-outlined">lightbulb</span> Editor de Súmulas carregado na porta 8001</p>
         </div>
 
         <!-- Aba Temas -->
@@ -326,7 +334,7 @@ class EditorHandler(BaseHTTPRequestHandler):
             <iframe src="http://localhost:8002" 
                 style="width:100%; height:calc(100vh - 300px); border:none;">
             </iframe>
-            <p class="text-sm text-gray-500 mt-4">💡 Editor de Temas carregado na porta 8002</p>
+            <p class="text-sm text-gray-500 mt-4"><span class="material-symbols-outlined">lightbulb</span> Editor de Temas carregado na porta 8002</p>
         </div>
     </div>
 
@@ -368,7 +376,7 @@ class EditorHandler(BaseHTTPRequestHandler):
         async function gerarHTML() {
             const btn = document.getElementById('btn-gerar');
             btn.disabled = true;
-            btn.textContent = '⏳ Gerando...';
+            btn.textContent = '<span class="material-symbols-outlined">hourglass_empty</span> Gerando...';
             
             try {
                 const response = await fetch('/api/gerar-html', {
@@ -379,7 +387,7 @@ class EditorHandler(BaseHTTPRequestHandler):
                 const data = await response.json();
                 
                 if (data.success) {
-                    mostrarToast('✓ HTML gerado com sucesso!', 'success');
+                    mostrarToast('<span class="material-symbols-outlined">check</span> HTML gerado com sucesso!', 'success');
                 } else {
                     mostrarToast('Erro: ' + data.error, 'error');
                 }
@@ -387,7 +395,7 @@ class EditorHandler(BaseHTTPRequestHandler):
                 mostrarToast('Erro ao gerar HTML: ' + error, 'error');
             } finally {
                 btn.disabled = false;
-                btn.innerHTML = '🔄 Gerar HTML';
+                btn.innerHTML = '<span class="material-symbols-outlined">sync</span> Gerar HTML';
             }
         }
 
@@ -398,7 +406,7 @@ class EditorHandler(BaseHTTPRequestHandler):
             
             const btn = document.getElementById('btn-git');
             btn.disabled = true;
-            btn.textContent = '⏳ Enviando...';
+            btn.textContent = '<span class="material-symbols-outlined">hourglass_empty</span> Enviando...';
             
             try {
                 const response = await fetch('/api/git/push', {
@@ -413,9 +421,9 @@ class EditorHandler(BaseHTTPRequestHandler):
                 
                 if (data.success) {
                     if (data.hasChanges) {
-                        mostrarToast('✓ Mudanças enviadas para o GitHub!', 'success');
+                        mostrarToast('<span class="material-symbols-outlined">check</span> Mudanças enviadas para o GitHub!', 'success');
                     } else {
-                        mostrarToast('✓ Não há mudanças para commitar', 'success');
+                        mostrarToast('<span class="material-symbols-outlined">check</span> Não há mudanças para commitar', 'success');
                     }
                 } else {
                     mostrarToast('Erro: ' + data.error, 'error');
@@ -424,7 +432,7 @@ class EditorHandler(BaseHTTPRequestHandler):
                 mostrarToast('Erro ao fazer push: ' + error, 'error');
             } finally {
                 btn.disabled = false;
-                btn.innerHTML = '🚀 Commit & Push';
+                btn.innerHTML = '<span class="material-symbols-outlined">rocket_launch</span> Commit & Push';
             }
         }
     </script>
@@ -437,14 +445,14 @@ def abrir_navegador():
 if __name__ == '__main__':
     PORT = 8000
     print("\n" + "="*80)
-    print("🎯 EDITOR UNIFICADO - SÚMULAS E TEMAS")
+    print("EDITOR UNIFICADO - SÚMULAS E TEMAS")
     print("="*80)
     print()
     print(f"✓ Servidor principal: http://localhost:{PORT}")
     print("✓ Editor de Súmulas:  http://localhost:8001")
     print("✓ Editor de Temas:    http://localhost:8002")
     print()
-    print("💡 INSTRUÇÕES:")
+    print("INSTRUÇÕES:")
     print("   1. Execute simultaneamente:")
     print("      - python Scripts/editors/2_servidor_sumulas.py     (porta 8001)")
     print("      - python Scripts/editors/2_servidor_temas.py (porta 8002)")
@@ -452,7 +460,7 @@ if __name__ == '__main__':
     print()
     print("   2. Ou use o arquivo .bat para iniciar tudo automaticamente")
     print()
-    print("🚀 RECURSOS:")
+    print("RECURSOS:")
     print("   - Alternar entre Súmulas e Temas em abas")
     print("   - Gerar HTML de ambos com um clique")
     print("   - Commit & Push Git direto do editor")

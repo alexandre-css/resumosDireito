@@ -157,7 +157,7 @@ def gerar_secao_tribunal(tribunal, temas):
 def gerar_html_completo(temas):
     """Gera HTML completo substituindo apenas a seção de temas"""
     # Ler template HTML atual
-    template_file = 'temas.html'
+    template_file = 'public/temas.html'
     
     if not os.path.exists(template_file):
         # Criar template inicial
@@ -438,12 +438,13 @@ def gerar_template_inicial(temas):
     </body>
 </html>'''
 
-def salvar_html(html, arquivo='temas.html', backup=True):
+def salvar_html(html, arquivo='public/temas.html', backup=True):
     """Salva HTML gerando backup do original"""
     if backup and os.path.exists(arquivo):
         timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
         os.makedirs('backup', exist_ok=True)
-        backup_file = f'backup/{arquivo}.backup_{timestamp}'
+        backup_filename = os.path.basename(arquivo)
+        backup_file = f'backup/{backup_filename}.backup_{timestamp}'
         
         # Copiar ao invés de renomear
         import shutil

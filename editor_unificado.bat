@@ -1,5 +1,5 @@
 @echo off
-title Editor Unificado - Súmulas e Temas
+title Editor Unificado - Sumulas e Temas
 color 0B
 
 echo ========================================
@@ -7,8 +7,8 @@ echo   Editor Unificado - Sistema Completo
 echo ========================================
 echo.
 
-REM Iniciar editor de súmulas em segundo plano
-echo [1/3] Iniciando editor de súmulas (porta 8001)...
+REM Iniciar editor de sumulas em segundo plano
+echo [1/3] Iniciando editor de sumulas (porta 8001)...
 start "Editor Sumulas" /MIN cmd /c "python Scripts\editors\2_servidor_sumulas.py"
 
 REM Aguardar 2 segundos
