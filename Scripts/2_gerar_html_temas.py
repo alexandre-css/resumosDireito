@@ -39,6 +39,7 @@ def gerar_card_tema(tema, tribunal):
     titulo = tema.get('titulo', '')
     tese = tema['tese']
     comentario = tema.get('comentario', '')
+    modulacao_efeitos = tema.get('modulacao_efeitos', '')
     cor = tema.get('cor', 'blue')
     chips = tema.get('chips', [])
     
@@ -90,10 +91,17 @@ def gerar_card_tema(tema, tribunal):
                                     <p class="text-sm {text_color} italic text-justify leading-relaxed">{tese}</p>
 '''
     
+    # Adicionar modulação de efeitos se houver (cor mais escura que comentário)
+    if modulacao_efeitos:
+        modulacao_formatada = modulacao_efeitos.replace('\n', '<br>')
+        html += f'''
+                                    <p class="text-xs bg-{cor}-100 p-2 rounded border-l-2 border-{cor}-400 mt-2 text-justify"><strong>Modulação de efeitos:</strong> {modulacao_formatada}</p>'''
+    
     # Adicionar comentário se houver
     if comentario:
+        comentario_formatado = comentario.replace('\n', '<br>')
         html += f'''
-                                    <p class="text-xs bg-{cor}-50 p-2 rounded border-l-2 border-{cor}-300 mt-2 text-justify">{comentario}</p>'''
+                                    <p class="text-xs bg-{cor}-50 p-2 rounded border-l-2 border-{cor}-300 mt-2 text-justify">{comentario_formatado}</p>'''
     
     html += '''
                                 </div>

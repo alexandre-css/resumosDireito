@@ -537,10 +537,6 @@ class EditorHandler(BaseHTTPRequestHandler):
                     </div>
 
                     <div>
-                        <label class="block text-sm font-medium text-gray-700 mb-2">Comentário</label>
-                        <textarea id="nota" rows="4"
-                            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"></textarea>
-                    </div>
                         <label class="block text-sm font-medium text-gray-700 mb-2">Chips</label>
                         <div class="space-y-2">
                             <label class="flex items-center space-x-2">
@@ -555,7 +551,14 @@ class EditorHandler(BaseHTTPRequestHandler):
                     </div>
 
                     <div>
-                        <label class="block text-sm font-medium text-gray-700 mb-2">Nota</label>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Modulação de Efeitos</label>
+                        <textarea id="modulacao_efeitos" rows="3"
+                            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
+                            placeholder="Informações sobre modulação de efeitos (se houver)"></textarea>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Comentário</label>
                         <textarea id="nota" rows="2"
                             class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"></textarea>
                     </div>
@@ -1134,6 +1137,7 @@ class EditorHandler(BaseHTTPRequestHandler):
             document.getElementById('numero').value = sumula.numero;
             document.getElementById('titulo').value = sumula.titulo || '';
             document.getElementById('texto').value = sumula.tese;
+            document.getElementById('modulacao_efeitos').value = sumula.modulacao_efeitos || '';
             document.getElementById('nota').value = sumula.comentario || '';
             
             // Atualizar dropdown de cor customizado
@@ -1254,6 +1258,9 @@ class EditorHandler(BaseHTTPRequestHandler):
                 cor: document.getElementById('cor').value,
                 chips: Array.from(document.querySelectorAll('.chip-checkbox:checked')).map(cb => cb.value)
             };
+            
+            const modulacao_efeitos = document.getElementById('modulacao_efeitos').value;
+            if (modulacao_efeitos) tema.modulacao_efeitos = modulacao_efeitos;
             
             const comentario = document.getElementById('nota').value;
             if (comentario) tema.comentario = comentario;

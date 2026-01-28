@@ -40,6 +40,7 @@ def gerar_card_sumula(sumula, tribunal):
     vinculante = sumula.get('vinculante', False)
     chips = sumula.get('chips', [])
     nota = sumula.get('nota')
+    modulacao_efeitos = sumula.get('modulacao_efeitos', '')
     
     intensidade = CORES_INTENSIDADE.get(cor, '500')
     
@@ -94,10 +95,17 @@ def gerar_card_sumula(sumula, tribunal):
                                     </div>
                                     <p class="text-sm {text_color} italic text-justify">{texto}</p>'''
     
+    # Adicionar modulação de efeitos se houver (cor mais escura que comentário)
+    if modulacao_efeitos:
+        modulacao_formatada = modulacao_efeitos.replace('\n', '<br>')
+        html += f'''
+                                    <p class="text-xs bg-{cor}-100 p-2 rounded border-l-2 border-{cor}-400 mt-2 text-justify"><strong>Modulação de efeitos:</strong> {modulacao_formatada}</p>'''
+    
     # Adicionar nota se houver
     if nota:
+        nota_formatada = nota.replace('\n', '<br>')
         html += f'''
-                                    <p class="text-xs bg-{cor}-50 p-2 rounded border-l-2 border-{cor}-300 mt-2 text-justify">{nota}</p>'''
+                                    <p class="text-xs bg-{cor}-50 p-2 rounded border-l-2 border-{cor}-300 mt-2 text-justify">{nota_formatada}</p>'''
     
     html += '''
                                 </div>

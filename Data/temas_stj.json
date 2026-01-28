@@ -471,7 +471,8 @@
       "tese": "1. A atenuante genérica da confissão espontânea, prevista no art. 65, III, d, do Código Penal, é apta a abrandar a pena independentemente de ter sido utilizada na formação do convencimento do julgador e mesmo que existam outros elementos suficientes de prova, desde que não tenha havido retratação, exceto, neste último caso, que a confissão tenha servido à apuração dos fatos.  2. A atenuação deve ser aplicada em menor proporção e não poderá ser considerada preponderante no concurso com agravantes quando o fato confessado for tipificado com menor pena ou caracterizar circunstância excludente da tipicidade, da ilicitude ou da culpabilidade.",
       "cor": "pink",
       "chips": [],
-      "comentario": "1. Modulação de efeitos:  \n\n\"Os efeitos prejudiciais aos réus decorrentes da tese fixada neste julgamento alcançam apenas os fatos ocorridos após a publicação deste acórdão\".\n\nO acórdão foi publicado em 16/09/2025.\n\n2. Ver Súmulas 545/STJ e 630/STJ e Tema 585/STJ."
+      "modulacao_efeitos": "\"Os efeitos prejudiciais aos réus decorrentes da tese fixada neste julgamento alcançam apenas os fatos ocorridos após a publicação deste acórdão\".\n\nO acórdão foi publicado em 16/09/2025.",
+      "comentario": "Ver Súmulas 545/STJ e 630/STJ e Tema 585/STJ."
     },
     {
       "numero": 1196,

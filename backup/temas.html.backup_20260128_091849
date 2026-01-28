@@ -388,8 +388,6 @@
             
             
             
-            
-            
             <!-- TEMAS DO STF -->
             <div class="mt-16">
                 <div class="text-center mb-6 cursor-pointer" onclick="toggleTemas('stf')">
@@ -1009,7 +1007,7 @@
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify leading-relaxed">1. A mera apreensão do aparelho celular, nos termos do art. 6º do CPP ou em flagrante delito, não está sujeita à reserva de jurisdição. Contudo, o acesso aos dados nele contidos deve observar as seguintes condicionantes: 1.1 Nas hipóteses de encontro fortuito de aparelho celular, o acesso aos respectivos dados para o fim exclusivo de esclarecer a autoria do fato supostamente criminoso, ou de quem seja o seu proprietário, não depende de consentimento ou de prévia decisão judicial, desde que justificada posteriormente a adoção da medida. 1.2. Em se tratando de aparelho celular apreendido na forma do art. 6º do CPP ou por ocasião da prisão em flagrante, o acesso aos respectivos dados será condicionado ao consentimento expresso e livre do titular dos dados ou de prévia decisão judicial (cf. art. 7º, inciso III, e art. 10, § 2º, da Lei nº 12.965/2014) que justifique, com base em elementos concretos, a proporcionalidade da medida e delimite sua abrangência à luz de direitos fundamentais à intimidade, à privacidade, à proteção dos dados pessoais e à autodeterminação informacional, inclusive nos meios digitais (art. 5º, X e LXXIX, CRFB/88). Nesses casos, a celeridade se impõe, devendo a Autoridade Policial atuar com a maior rapidez e eficiência possíveis e o Poder Judiciário conferir tramitação e apreciação prioritárias aos pedidos dessa natureza, inclusive em regime de plantão. 2. A autoridade policial poderá adotar as providências necessárias para a preservação dos dados e metadados contidos no aparelho celular apreendido, antes da autorização judicial, justificando, posteriormente, as razões de referido acesso. 3. As teses acima enunciadas só produzirão efeitos prospectivos, ressalvados os pedidos eventualmente formulados por defesas até a data do encerramento do presente julgamento.</p>
 
-                                    <p class="text-xs bg-emerald-100 p-2 rounded border-l-2 border-emerald-400 mt-2 text-justify"><strong>Modulação de efeitos:</strong> efeitos a partir de 25/06/2025, exceto quanto a pedidos formulados até esta data.</p>
+                                    <p class="text-xs bg-emerald-50 p-2 rounded border-l-2 border-emerald-300 mt-2 text-justify">Modulação: efeitos a partir de 25/06/2025, exceto quanto a pedidos formulados até esta data.</p>
                                 </div>
 
                                 <!-- Tema 990/STF -->
@@ -2227,7 +2225,9 @@ Quarta tese: As autorizações de saída temporária para visita à família e p
                                     </div>
                                     <p class="text-sm text-gray-700 italic text-justify leading-relaxed">1. A atenuante genérica da confissão espontânea, prevista no art. 65, III, d, do Código Penal, é apta a abrandar a pena independentemente de ter sido utilizada na formação do convencimento do julgador e mesmo que existam outros elementos suficientes de prova, desde que não tenha havido retratação, exceto, neste último caso, que a confissão tenha servido à apuração dos fatos.  2. A atenuação deve ser aplicada em menor proporção e não poderá ser considerada preponderante no concurso com agravantes quando o fato confessado for tipificado com menor pena ou caracterizar circunstância excludente da tipicidade, da ilicitude ou da culpabilidade.</p>
 
-                                    <p class="text-xs bg-pink-100 p-2 rounded border-l-2 border-pink-400 mt-2 text-justify"><strong>Modulação de efeitos:</strong> "Os efeitos prejudiciais aos réus decorrentes da tese fixada neste julgamento alcançam apenas os fatos ocorridos após a publicação deste acórdão".<br><br>O acórdão foi publicado em 16/09/2025.</p>
+                                    <p class="text-xs bg-pink-100 p-2 rounded border-l-2 border-pink-400 mt-2 text-justify"><strong>Modulação de efeitos:</strong> "Os efeitos prejudiciais aos réus decorrentes da tese fixada neste julgamento alcançam apenas os fatos ocorridos após a publicação deste acórdão".
+
+O acórdão foi publicado em 16/09/2025.</p>
                                     <p class="text-xs bg-pink-50 p-2 rounded border-l-2 border-pink-300 mt-2 text-justify">Ver Súmulas 545/STJ e 630/STJ e Tema 585/STJ.</p>
                                 </div>
 
