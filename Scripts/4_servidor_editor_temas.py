@@ -1341,10 +1341,12 @@ class EditorHandler(BaseHTTPRequestHandler):
 </html>'''
 
 def abrir_navegador():
-    webbrowser.open('http://localhost:8081')
+    # Não abrir navegador automaticamente - usado pelo editor unificado
+    pass
+    # webbrowser.open(f'http://localhost:8002')
 
 if __name__ == '__main__':
-    PORT = 8081  # Porta diferente do editor de súmulas
+    PORT = 8002  # Porta diferente do editor de súmulas
     server = HTTPServer(('localhost', PORT), EditorHandler)
     
     print("=" * 80)

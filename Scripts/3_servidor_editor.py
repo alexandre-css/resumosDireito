@@ -1363,10 +1363,12 @@ class EditorHandler(BaseHTTPRequestHandler):
 </html>'''
 
 def abrir_navegador():
-    webbrowser.open('http://localhost:8080')
+    # Não abrir navegador automaticamente - usado pelo editor unificado
+    pass
+    # webbrowser.open(f'http://localhost:8001')
 
 if __name__ == '__main__':
-    PORT = 8080
+    PORT = 8001
     server = HTTPServer(('localhost', PORT), EditorHandler)
     
     print("=" * 80)
