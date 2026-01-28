@@ -7,13 +7,15 @@ Editor completo com integração Git para gerenciar súmulas e temas em uma úni
 ### Opção 1: Arquivo .bat (Recomendado)
 
 Simplesmente execute:
+
 ```
 editor_unificado.bat
 ```
 
 Isso irá:
+
 - Iniciar o editor de súmulas (porta 8001)
-- Iniciar o editor de temas (porta 8002)  
+- Iniciar o editor de temas (porta 8002)
 - Iniciar o editor unificado (porta 8000)
 - Abrir automaticamente no navegador
 
@@ -22,16 +24,19 @@ Isso irá:
 Execute em terminais separados:
 
 **Terminal 1 - Editor de Súmulas:**
+
 ```bash
 python Scripts/3_servidor_editor.py
 ```
 
 **Terminal 2 - Editor de Temas:**
+
 ```bash
 python Scripts/4_servidor_editor_temas.py
 ```
 
 **Terminal 3 - Editor Unificado:**
+
 ```bash
 python Scripts/5_editor_unificado.py
 ```
@@ -41,10 +46,12 @@ Acesse: http://localhost:8000
 ## ✨ Funcionalidades
 
 ### 📋 Abas Integradas
+
 - **SÚMULAS**: Editar súmulas do STF, STJ e ECA
 - **TEMAS**: Editar temas de repercussão geral e repetitivos
 
 ### 🎨 Recursos
+
 - ✅ Alternar entre súmulas e temas em abas
 - ✅ Edição completa de todos os campos
 - ✅ Campo "Modulação de Efeitos" com quebra de parágrafo
@@ -61,6 +68,7 @@ O botão **"Commit & Push"** automaticamente:
 4. ✓ Envia para o GitHub (`git push`)
 
 **Mensagem de commit padrão:**
+
 ```
 Atualização de súmulas e temas - [data/hora]
 ```
@@ -78,11 +86,11 @@ editor_unificado.bat           → Inicia tudo automaticamente
 
 ## 🔧 Portas Utilizadas
 
-| Serviço | Porta | URL |
-|---------|-------|-----|
-| Editor Unificado | 8000 | http://localhost:8000 |
-| Editor Súmulas | 8001 | http://localhost:8001 |
-| Editor Temas | 8002 | http://localhost:8002 |
+| Serviço          | Porta | URL                   |
+| ---------------- | ----- | --------------------- |
+| Editor Unificado | 8000  | http://localhost:8000 |
+| Editor Súmulas   | 8001  | http://localhost:8001 |
+| Editor Temas     | 8002  | http://localhost:8002 |
 
 ## 💡 Dicas
 
