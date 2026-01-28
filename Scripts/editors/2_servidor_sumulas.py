@@ -1329,7 +1329,7 @@ class EditorHandler(BaseHTTPRequestHandler):
                 if (result.success) {
                     mostrarToast('✓ HTML gerado com sucesso!', 'success');
                     setTimeout(() => {
-                        alert('HTML atualizado!\\n\\nVerifique o arquivo penal-public/public\sumulas.html');
+                        alert('HTML atualizado!\\n\\nVerifique o arquivo sumulas.html');
                     }, 500);
                 } else {
                     mostrarToast('Erro: ' + result.error, 'error');
